@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\Desktop\\HappyMeatFarm\\HappyMeatFarm\\HappyMeatFarm.csproj": {}
+    "C:\\Users\\ASUS\\Desktop\\DoAnTN\\HappyMeatFarm\\HappyMeatFarm\\HappyMeatFarm.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\Desktop\\HappyMeatFarm\\HappyMeatFarm\\HappyMeatFarm.csproj": {
+    "C:\\Users\\ASUS\\Desktop\\DoAnTN\\HappyMeatFarm\\HappyMeatFarm\\HappyMeatFarm.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\HappyMeatFarm\\HappyMeatFarm\\HappyMeatFarm.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\DoAnTN\\HappyMeatFarm\\HappyMeatFarm\\HappyMeatFarm.csproj",
         "projectName": "HappyMeatFarm",
-        "projectPath": "C:\\Users\\ASUS\\Desktop\\HappyMeatFarm\\HappyMeatFarm\\HappyMeatFarm.csproj",
+        "projectPath": "C:\\Users\\ASUS\\Desktop\\DoAnTN\\HappyMeatFarm\\HappyMeatFarm\\HappyMeatFarm.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Desktop\\HappyMeatFarm\\HappyMeatFarm\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\Desktop\\DoAnTN\\HappyMeatFarm\\HappyMeatFarm\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
