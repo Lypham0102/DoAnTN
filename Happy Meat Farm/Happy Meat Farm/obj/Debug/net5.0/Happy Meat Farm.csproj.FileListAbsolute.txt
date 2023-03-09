@@ -236,5 +236,5 @@ C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\re
 C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.pdb
 C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.genruntimeconfig.cache
 C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.csproj.CopyComplete
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Account\DangKy.cshtml.g.cs
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Account\DangNhap.cshtml.g.cs
+C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\DangKy.cshtml.g.cs
+C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\DangNhap.cshtml.g.cs

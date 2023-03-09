@@ -40,6 +40,37 @@ namespace Happy_Meat_Farm.Controllers
             return View();
         }
 
+        //Trang đăng nhập
+        [HttpPost]
+        public ActionResult Login(string username, string password)
+        {
+            if (CheckCredentials(username, password))
+            {
+                // Đăng nhập thành công
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                // Thông báo lỗi đăng nhập
+                ViewBag.Error = "Invalid username or password";
+                return View();
+            }
+        }
+
+        private bool CheckCredentials(string username,string password)
+        {
+            // Kiểm tra thông tin đăng nhập
+            // ...
+        }
+
+
+        public IActionResult DangKy()
+        {
+            return View();
+        }
+
+
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
