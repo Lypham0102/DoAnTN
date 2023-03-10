@@ -26,6 +26,23 @@ a.navbar-brand {
     width: 200px;
     /* Các thuộc tính CSS khác */
 }
+
+.index-container {
+    font-size: 30px; /* Loại bỏ khoảng trống giữa các div */
+}
+
+.box {
+    display: inline-block;
+    width: 33.33%; /* Phần trăm chiếm chiều rộng của container */
+    height: 100px;
+    background-color: #ccc;
+    font-size: 16px; /* Định dạng kích thước chữ trong box */
+    box-sizing: border-box; /* Không tính padding và border vào chiều rộng */
+    padding: 20px;
+}
+
+
+/*sidebar*/
 .sidebar {
     width: 345px;
     position: fixed;
@@ -63,6 +80,8 @@ a.navbar-brand {
      
     /* Các thuộc tính CSS khác */
 }
+/*end*/
+
 
 .profile-name {
     display: flex;
@@ -78,6 +97,27 @@ a.navbar-brand {
     height: 10px; /* Tự động tính toán chiều cao tương ứng */
 }
 
+/*Index.cshtml*/
+.temperature, .revenue, .vatnuoi {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+}
+
+    .temperature h2, .revenue h2, .vatnuoi h2 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .temperature .value, .revenue .value, .vatnuoi .value {
+        font-size: 24px;
+        font-weight: bold;
+        color: #f00;
+    }
+
+
+/*end*/
 
 /* Provide sufficient contrast against white background */
 a {
@@ -139,12 +179,12 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    overflow-x: hidden;
 }
 .footer {
-    /*margin-left: 345px;*/
-    float:right;
+    margin-left: 345px;
     position: absolute;
     bottom: 0;
     width: 100%;
