@@ -26,6 +26,8 @@ a.navbar-brand {
     width: 200px;
     /* Các thuộc tính CSS khác */
 }
+
+/*Sidebar*/
 .sidebar {
     width: 300px;
     position: fixed;
@@ -63,6 +65,7 @@ a.navbar-brand {
      
     /* Các thuộc tính CSS khác */
 }
+/*end*/
 
 .profile-name {
     display: flex;
@@ -104,6 +107,67 @@ navbar-profile-name {
     white-space: nowrap;
     margin-left: 1rem;
 }
+
+
+/*index.cshtml*/
+.index-container {
+    font-size: 0px; /* Loại bỏ khoảng trống giữa các div */
+}
+
+.box {
+    display: inline-block;
+    width: 33.33%; /* Phần trăm chiếm chiều rộng của container */
+    height: 100px;
+    display: inline-block;
+    font-size: 16px; /* Định dạng kích thước chữ trong box */
+    box-sizing: border-box; /* Không tính padding và border vào chiều rộng */
+    padding: 20px;
+}
+
+.daily-report {
+    background-color: white;
+    border: 2px solid #ccc;
+    width: 400px;
+    height: 300px;
+    display: inline-block;
+    padding: 20px;
+    font-size: 16px;
+}
+.daily-report h2 {
+    color: red;
+}
+
+.daily-report ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.daily-report li {
+    margin-bottom: 10px;
+}
+
+
+
+
+.temperature, .revenue, .vatnuoi, .sochuong {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+}
+
+    .temperature h2, .revenue h2, .vatnuoi h2, .sochuong h2 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .temperature .value, .revenue .value, .vatnuoi .value, .sochuong .value {
+        font-size: 24px;
+        font-weight: bold;
+        color: #f00;
+    }
+/*end*/
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -139,9 +203,9 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-  
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    overflow-x: hidden;
 }
 .footer {
     margin-left: 300px;

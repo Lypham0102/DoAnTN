@@ -356,3 +356,4 @@ C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\r
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.pdb
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.genruntimeconfig.cache
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Home\QuanLyNhanSu.cshtml.g.cs
+C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Home\QuanLyNhanSu.cshtml.g.cs
