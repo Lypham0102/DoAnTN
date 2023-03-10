@@ -15,6 +15,7 @@
     <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <div class="sidebar-container">
             <div class="sidebar-brand ">
+                
                 <h4 class="text-white"><span class=""></span>Happy Meat Farm</h4>
                 <div class="sidebar-menu">
                     <ul>
@@ -110,15 +111,16 @@
             </main>
         </div>
     </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - Happy Meat Farm - Project Design - VJIT <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-        </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+   
+        <footer class="border-top footer text-muted">
+            <div class="container">
+                &copy; 2023 - Happy Meat Farm - Project Design - VJIT <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+            </div>
+        </footer>
+    
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

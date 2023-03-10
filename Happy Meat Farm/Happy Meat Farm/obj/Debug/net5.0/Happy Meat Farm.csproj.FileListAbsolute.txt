@@ -356,6 +356,7 @@ C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\r
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.pdb
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.genruntimeconfig.cache
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Home\QuanLyNhanSu.cshtml.g.cs
+<<<<<<< HEAD
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\AWSSDK.Core.dll
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\AWSSDK.SecurityToken.dll
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\DnsClient.dll
@@ -376,3 +377,6 @@ C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\S
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Web.WebPages.Razor.dll
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Web.WebPages.dll
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.Web.Infrastructure.dll
+=======
+C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Home\QuanLyNhanSu.cshtml.g.cs
+>>>>>>> 7de19710d6a77d42e62049962f89fd4b9a386cd8
