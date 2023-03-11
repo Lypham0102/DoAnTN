@@ -356,4 +356,27 @@ C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\r
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.pdb
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.genruntimeconfig.cache
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Home\QuanLyNhanSu.cshtml.g.cs
+<<<<<<< HEAD
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\AWSSDK.Core.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\AWSSDK.SecurityToken.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\DnsClient.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\MongoDB.Bson.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\MongoDB.Driver.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\MongoDB.Driver.Core.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\MongoDB.Libmongocrypt.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\SharpCompress.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Snappier.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\ZstdSharp.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\runtimes\linux\native\libmongocrypt.so
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\runtimes\win\native\mongocrypt.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Web.Mvc.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Web.Razor.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Web.Helpers.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Web.WebPages.Deployment.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Web.WebPages.Razor.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Web.WebPages.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.Web.Infrastructure.dll
+=======
 C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Home\QuanLyNhanSu.cshtml.g.cs
+>>>>>>> 7de19710d6a77d42e62049962f89fd4b9a386cd8

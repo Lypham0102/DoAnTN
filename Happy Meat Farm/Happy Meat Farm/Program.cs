@@ -6,14 +6,23 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Options;
+using Happy_Meat_Farm.Models;
+using Microsoft.Graph;
+using MongoDB.Driver;
+using Happy_Meat_Farm.Models;
+using Happy_Meat_Farm.Services;
+
 
 namespace Happy_Meat_Farm
 {
     public class Program
     {
+
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
+           
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
