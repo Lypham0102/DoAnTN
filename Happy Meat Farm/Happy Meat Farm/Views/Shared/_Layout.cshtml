@@ -15,11 +15,10 @@
     <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <div class="sidebar-container">
             <div class="sidebar-brand ">
-                
+
                 <h4 class="text-white"><span class=""></span>Happy Meat Farm</h4>
                 <div class="sidebar-menu">
                     <ul>
-
                         <li class="nav-item">
                             <a class="nav-link text-black-50 font-weight-bold " asp-area=" " asp-controller="Home" asp-action="Index">
                                 <i class='bx bx-home'></i>
@@ -39,11 +38,22 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black-50 font-weight-bold" asp-area=" " asp-controller="Home" asp-action="QuanLyVatNuoi">
-                                <i class='bx bx-bell'></i>
-                                <span class="text"></span>Quản lý vật Nuôi
-                            </a>
+                            <div class="dropdown">
+                                <a class="nav-link text-black-50 font-weight-bold" >
+                                    <i class='bx bx-bell'></i>
+                                    <span class="text"></span>Quản lý vật nuôi
+                                </a>
+                                <ul class="dropdown-content">
+                                    <li><a class="nav-link text-black-50 font-weight-bold" asp-area=" " asp-controller="Home" asp-action="QuanLyVatNuoi">
+                                        Thêm vật nuôi </a>
+                                    </li>
+                                    <li><a class="nav-link text-black-50 font-weight-bold" asp-area=" " asp-controller="Home" asp-action="ThemChuong"> Thêm chuồng</a></li>
+                                    <li><a class="nav-link text-black-50 font-weight-bold" asp-area=" " asp-controller="Home" asp-action="XuatChuong"> Xuất chuồng </a></li>
+                                </ul>
+                            </div>
                         </li>
+
+
                         <li class="nav-item">
                             <a class="nav-link text-black-50 font-weight-bold" asp-area=" " asp-controller="Home" asp-action="QuanLyBanHang">
                                 <i class='bx bx-cart'></i>
@@ -70,6 +80,7 @@
                     <input type="search" placeholder="Tìm kiếm" />
                 </div>
             </div>
+
             <li class="nav-item dropdown">
                 <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
                     <div class="navbar-profile text-white">
@@ -121,16 +132,16 @@
             </main>
         </div>
     </div>
-   
-        <footer class="border-top footer text-muted">
-            <div class="container">
-                &copy; 2023 - Happy Meat Farm - Project Design - VJIT <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-            </div>
-        </footer>
-    
-        <script src="~/lib/jquery/dist/jquery.min.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
-        @await RenderSectionAsync("Scripts", required: false)
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - Happy Meat Farm - Project Design - VJIT <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

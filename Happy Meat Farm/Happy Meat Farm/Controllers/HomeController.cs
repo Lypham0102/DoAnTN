@@ -44,6 +44,15 @@ namespace Happy_Meat_Farm.Controllers
         {
             return View();
         }
+        public IActionResult ThemChuong()
+        {
+            return View();
+        }
+        public IActionResult XuatChuong()
+        {
+            return View();
+        }
+
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

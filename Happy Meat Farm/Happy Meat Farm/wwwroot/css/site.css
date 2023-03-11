@@ -182,6 +182,27 @@ navbar-profile-name {
     }
 /*end*/
 
+/*dropdown menu*/
+.nav-item ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+    display: none;
+}
+
+    .nav-item ul li {
+        display: block;
+    }
+
+.nav-item:hover ul {
+    display: block;
+}
+
+/*end*/
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
