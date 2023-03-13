@@ -5,14 +5,12 @@
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\ASUS\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages;C:\Program Files (x86)\Microsoft\Xamarin\NuGet\</NuGetPackageFolders>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\ADMIN\.nuget\packages\</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.11.1</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.11.2</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <SourceRoot Include="C:\Users\ASUS\.nuget\packages\" />
-    <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
-    <SourceRoot Include="C:\Program Files (x86)\Microsoft\Xamarin\NuGet\" />
+    <SourceRoot Include="C:\Users\ADMIN\.nuget\packages\" />
   </ItemGroup>
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -376,11 +374,11 @@
     <Import Project="$(NuGetPackageRoot)swashbuckle.aspnetcore\6.5.0\build\Swashbuckle.AspNetCore.props" Condition="Exists('$(NuGetPackageRoot)swashbuckle.aspnetcore\6.5.0\build\Swashbuckle.AspNetCore.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgWebGrease Condition=" '$(PkgWebGrease)' == '' ">C:\Users\ASUS\.nuget\packages\webgrease\1.6.0</PkgWebGrease>
-    <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">C:\Users\ASUS\.nuget\packages\microsoft.extensions.apidescription.server\6.0.5</PkgMicrosoft_Extensions_ApiDescription_Server>
-    <PkgModernizr Condition=" '$(PkgModernizr)' == '' ">C:\Users\ASUS\.nuget\packages\modernizr\2.8.3</PkgModernizr>
-    <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\ASUS\.nuget\packages\microsoft.codeanalysis.analyzers\3.0.0</PkgMicrosoft_CodeAnalysis_Analyzers>
-    <PkgjQuery Condition=" '$(PkgjQuery)' == '' ">C:\Users\ASUS\.nuget\packages\jquery\3.6.3</PkgjQuery>
-    <PkgMicrosoft_CodeDom_Providers_DotNetCompilerPlatform Condition=" '$(PkgMicrosoft_CodeDom_Providers_DotNetCompilerPlatform)' == '' ">C:\Users\ASUS\.nuget\packages\microsoft.codedom.providers.dotnetcompilerplatform\3.6.0</PkgMicrosoft_CodeDom_Providers_DotNetCompilerPlatform>
+    <PkgWebGrease Condition=" '$(PkgWebGrease)' == '' ">C:\Users\ADMIN\.nuget\packages\webgrease\1.6.0</PkgWebGrease>
+    <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">C:\Users\ADMIN\.nuget\packages\microsoft.extensions.apidescription.server\6.0.5</PkgMicrosoft_Extensions_ApiDescription_Server>
+    <PkgModernizr Condition=" '$(PkgModernizr)' == '' ">C:\Users\ADMIN\.nuget\packages\modernizr\2.8.3</PkgModernizr>
+    <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\ADMIN\.nuget\packages\microsoft.codeanalysis.analyzers\3.0.0</PkgMicrosoft_CodeAnalysis_Analyzers>
+    <PkgjQuery Condition=" '$(PkgjQuery)' == '' ">C:\Users\ADMIN\.nuget\packages\jquery\3.6.3</PkgjQuery>
+    <PkgMicrosoft_CodeDom_Providers_DotNetCompilerPlatform Condition=" '$(PkgMicrosoft_CodeDom_Providers_DotNetCompilerPlatform)' == '' ">C:\Users\ADMIN\.nuget\packages\microsoft.codedom.providers.dotnetcompilerplatform\3.6.0</PkgMicrosoft_CodeDom_Providers_DotNetCompilerPlatform>
   </PropertyGroup>
 </Project>
