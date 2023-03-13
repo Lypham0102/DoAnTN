@@ -16,74 +16,66 @@
 <body>
     <div class="sidebar-container">
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
-
             <div class="sidebar-brand ">
-
                 <h4 class="text-white"><span class=""></span>Happy Meat Farm</h4>
                 <div class="sidebar-menu">
                     <ul>
                         <li class="nav-item">
-                            <a class="nav-link text-black-50 font-weight-bold" asp-area=" " asp-controller="Home" asp-action="Index">
+                            <a class="nav-link font-weight-bold" asp-area=" " asp-controller="Home" asp-action="Index">
                                 <button class="btn btn-link text-black-50 font-weight-bold" type="button">
-                                    <i class='bx bx-home'></i>
-                                    Tổng quan trang trại
+                                    <i class='bx bx-home'><span>Tổng quan trang trại</span></i>
                                 </button>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black-50 font-weight-bold" asp-area=" " asp-controller="Home" asp-action="QuanLyNhanSu">
+                            <a class="nav-link font-weight-bold" asp-area=" " asp-controller="Home" asp-action="QuanLyNhanSu">
                                 <button class="btn btn-link text-black-50 font-weight-bold" type="button">
-                                    <i class='bx bx-male-female'></i>
-                                    Quản lý nhân sự
+                                    <i class='bx bx-male-female'><span>Quản lý nhân sự</span></i>
                                 </button>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black-50 font-weight-bold" asp-area=" " asp-controller="Home" asp-action="QuanLyCongViec">
+                            <a class="nav-link font-weight-bold" asp-area=" " asp-controller="Home" asp-action="QuanLyCongViec">
                                 <button class="btn btn-link text-black-50 font-weight-bold" type="button">
-                                    <i class='bx bx-task'></i>
-                                    Quản lý công việc
+                                    <i class='bx bx-task'><span>Quản lý công việc</span></i>
                                 </button>
                             </a>
                         </li>
                         <p>
-                            <button class="btn btn-link text-black-50 font-weight-bold" type="button" id="collapse-btn">
-                                <i class='bx bx-bell'></i> Quản lý vật nuôi
+                            <button class="btn btn-link text-black-50 font-weight-bold" type="button" id="collapse-btn" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <i class='bx bx-bell'><span>Quản lý vật nuôi</span></i> 
                             </button>
                         </p>
                         <div class="collapse-menu">
                             <ul class="link-list">
                                 <li>
                                     <a class="nav-link text-black-50" asp-area=" " asp-controller="Home" asp-action="QuanLyVatNuoi">
-                                        Thêm vật nuôi
+                                        <span class="text"> Thêm vật nuôi</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a class="nav-link text-black-50" asp-area=" " asp-controller="Home" asp-action="ThemChuong">
-                                        Thêm chuồng
+                                        <span class="text">Thêm chuồng</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a class="nav-link text-black-50" asp-area=" " asp-controller="Home" asp-action="XuatChuong">
-                                        Xuất chuồng
+                                        <span class="text">Xuất chuồng</span>
                                     </a>
                                 </li>
                             </ul>
                         </div>
-
                         <li class="nav-item">
-                            <a class="nav-link text-black-50 font-weight-bold" asp-area=" " asp-controller="Home" asp-action="QuanLyBanHang">
+                            <a class="nav-link font-weight-bold" asp-area=" " asp-controller="Home" asp-action="QuanLyBanHang">
                                 <button class="btn btn-link text-black-50 font-weight-bold" type="button">
-                                    <i class='bx bx-cart'></i>
-                                    Quản lý giao dịch
+                                    <i class='bx bx-cart'><span>Quản lý giao dịch</span></i>
                                 </button>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black-50 font-weight-bold" asp-area=" " asp-controller="Home" asp-action="ThongKe">
+                            <a class="nav-link font-weight-bold" asp-area=" " asp-controller="Home" asp-action="ThongKe">
                                 <button class="btn btn-link text-black-50 font-weight-bold" type="button">
-                                    <i class='bx bx-cart'></i>
-                                    Thống kê
+                                    <i class='bx bx-bar-chart-alt-2'><span>Thống kê</span></i>
                                 </button>
                             </a>
                         </li>
@@ -95,56 +87,24 @@
     </div>
     <div class="main-content">
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-color border-bottom box-shadow mb-3">
-            <div class="banner-container">
-                <div class="search-wrapper">
-                    <span class="search"></span>
-                    <input type="search" placeholder="Tìm kiếm" />
-                </div>
-            </div>
-
-            <li class="nav-item dropdown">
-                <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
-                    <div class="navbar-profile text-white">
-                        <i class='bx bx-cog'></i>User_Name
-                        <p class="mb-0 d-none d-sm-block navbar-profile-name"></p>
-                        <i class="mdi mdi-menu-down d-none d-sm-block"></i>
-                    </div>
+            <div class="dropdown">
+                <a class="btn btn-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class='bx bx-cog'></i> Chào,Khôi Nguyên
                 </a>
-                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
-                    <a class="dropdown-item preview-item">
-                        <div class="preview-thumbnail">
-                            <div class="preview-icon bg-dark rounded-circle">
-                                <i class="mdi mdi-settings text-success"></i>
-                            </div>
-                        </div>
-                        <div class="preview-item-content">
-                            <p class="preview-subject mb-1">Hồ Sơ</p>
-                        </div>
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item preview-item">
-                        <div class="preview-thumbnail">
-                            <div class="preview-icon bg-dark rounded-circle">
-                                <i class="mdi mdi-settings text-success"></i>
-                            </div>
-                        </div>
-                        <div class="preview-item-content">
-                            <p class="preview-subject mb-1">Cài đặt</p>
-                        </div>
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item preview-item">
-                        <div class="preview-thumbnail">
-                            <div class="preview-icon bg-dark rounded-circle">
-                                <i class="mdi mdi-logout text-danger"></i>
-                            </div>
-                        </div>
-                        <div class="preview-item-content">
-                            <p class="preview-subject mb-1">Đăng xuất</p>
-                        </div>
-                    </a>
-                </div>
-            </li>
+
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Thông tin</a></li>
+                    <li><a class="dropdown-item" href="#">Cài đặt</a></li>
+                    <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+                </ul>
+            </div>
+        
+            <form class="d-flex search-wrapper" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+
+            
         </nav>
 
         <div class="container">
