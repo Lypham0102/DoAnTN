@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Happy_Meat_Farm.Interface;
+using Happy_Meat_Farm.Models;
 
 namespace Happy_Meat_Farm.Controllers
 {
@@ -20,5 +21,46 @@ namespace Happy_Meat_Farm.Controllers
         {
             return View(_context.GetAllNhanVien());
         }
+        public IActionResult Create()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult CreatePost(NhanVien nhanvienData)
+        {
+            _context.Create(nhanvienData);
+            return RedirectToAction("Index");
+        }
+        [HttpGet]
+        public IActionResult Edit(string Name)
+        {
+            var md = _context.GetNhanVienDetails(Name);
+            return View(md);
+        }
+        [HttpPost]
+        public IActionResult EditPost(string _id, NhanVien nhanviendata)
+        {
+            _context.Update(_id, nhanviendata);
+            return RedirectToAction("Index");
+        }
+        [HttpGet]
+        public IActionResult Details(string Name)
+        {
+            var md = _context.GetNhanVienDetails(Name);
+            return View(md);
+        }
+        [HttpGet]
+        public IActionResult Delete(string Name)
+        {
+            var md = _context.GetNhanVienDetails(Name);
+            return View(md);
+        }
+        [HttpPost]
+        public IActionResult DeletePost(string Name)
+        {
+            _context.Delete(Name);
+            return RedirectToAction("Index");
+        }
+
     }
 }

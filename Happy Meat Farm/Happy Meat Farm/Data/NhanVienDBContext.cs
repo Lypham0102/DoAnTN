@@ -26,9 +26,7 @@ namespace Happy_Meat_Farm.Data
         public IEnumerable<NhanVien> GetAllNhanVien()
         {
             return nhanviencollection.Find(a=>true).ToList();
-
         }
-
         public NhanVien GetNhanVienDetails(string Name)
         {
             var nhanviendetails = nhanviencollection.Find(a=>a.TenNV == Name).FirstOrDefault();
