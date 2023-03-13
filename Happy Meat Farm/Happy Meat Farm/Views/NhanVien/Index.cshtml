@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Happy_Meat_Farm.Models.NhanVien>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Danh sách nhân viên</h1>
+
+<p>
+    <a asp-action="Create">New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th style="width:100px"> Mã nhân viên </th>
+            <th style="width:200px"> Tên nhân viên </th>
+            <th style="width:120px"> CCCD </th>
+            <th style="width:120px"> SĐT</th>
+            <th style="width:150px"> Địa chỉ </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            @*<td>
+                @Html.DisplayFor(modelItem => item._id)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.MaNV)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenNV)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CCCD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SDT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DiaChi)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { Name = item.TenNV }) |
+                @Html.ActionLink("Details", "Details", new { Name = item.TenNV }) |
+                @Html.ActionLink("Delete", "Delete", new { Name = item.TenNV })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

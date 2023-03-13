@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using MongoDB.Driver;
+using MongoDB.Bson;
 
 namespace Happy_Meat_Farm.Controllers
 {
@@ -17,6 +19,22 @@ namespace Happy_Meat_Farm.Controllers
         {
             _logger = logger;
         }
+        //private IMongoCollection<NhanVien>_nhanvienCollection;
+        //public HomeController(IMongoClient client)
+        //{
+        //    //_logger = logger;
+        //    var database = client.GetDatabase("TrangTrai");
+        //    _nhanvienCollection = database.GetCollection<NhanVien>("NhanViens");
+
+        //}
+
+        [HttpGet]
+        public IEnumerable<NhanVien> Get() 
+        {
+            return null;
+            //return _nhanvienCollection.Find(s => s.MaNV != "").ToList();
+        }
+        
 
         public IActionResult Index()
         {

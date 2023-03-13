@@ -1,4 +1,8 @@
-﻿
+﻿@using PagedList
+@using Happy_Meat_Farm.Models
+@using Happy_Meat_Farm.Controllers
+@model Happy_Meat_Farm.Models.NhanVien
+@using MongoDB.Bson
 @{
     ViewData["Title"] = "QuanLyNhanSu";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -7,7 +11,7 @@
 <h2>Danh sách nhân viên</h2>
 
 <p>
-    @Html.ActionLink("Thêm Mới", "Themdienthoaimoi")
+    @Html.ActionLink("Thêm Mới", "")
 </p>
 <table class="table" border="1">
 
@@ -17,10 +21,8 @@
         <th style="width:120px"> CCCD </th>
         <th style="width:120px"> SDT</th>
         <th style="width:150px"> Địa chỉ </th>
-
-
     </tr>
+
     
-
-
+    
 </table>

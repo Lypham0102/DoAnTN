@@ -76,6 +76,10 @@
               "target": "Package",
               "version": "[2.2.0, )"
             },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
             "Microsoft.CodeDom.Providers.DotNetCompilerPlatform": {
               "target": "Package",
               "version": "[3.6.0, )"
@@ -107,6 +111,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "PagedList": {
+              "target": "Package",
+              "version": "[1.17.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

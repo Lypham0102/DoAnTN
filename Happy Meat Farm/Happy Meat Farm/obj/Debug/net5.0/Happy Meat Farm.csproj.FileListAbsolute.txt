@@ -1,241 +1,3 @@
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\appsettings.Development.json
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\appsettings.json
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Happy Meat Farm.exe
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Happy Meat Farm.deps.json
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Happy Meat Farm.runtimeconfig.json
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Happy Meat Farm.runtimeconfig.dev.json
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Happy Meat Farm.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\ref\Happy Meat Farm.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Happy Meat Farm.pdb
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Happy Meat Farm.Views.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Happy Meat Farm.Views.pdb
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.csproj.AssemblyReference.cache
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.AssemblyInfoInputs.cache
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.AssemblyInfo.cs
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.csproj.CoreCompileInputs.cache
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.RazorAssemblyInfo.cache
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.RazorAssemblyInfo.cs
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\staticwebassets\Happy Meat Farm.StaticWebAssets.Manifest.cache
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\staticwebassets\Happy Meat Farm.StaticWebAssets.xml
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\scopedcss\bundle\Happy Meat Farm.styles.css
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.TagHelpers.input.cache
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.TagHelpers.output.cache
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.RazorCoreGenerate.cache
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.RazorTargetAssemblyInfo.cache
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.RazorTargetAssemblyInfo.cs
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.Views.pdb
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\ref\Happy Meat Farm.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.pdb
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.genruntimeconfig.cache
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.csproj.CopyComplete
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Humanizer.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.CodeAnalysis.Razor.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.CodeAnalysis.Workspaces.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\dotnet-aspnet-codegenerator-design.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Newtonsoft.Json.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Composition.AttributedModel.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Composition.Convention.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Composition.Hosting.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Composition.Runtime.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Composition.TypedParts.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Home\QuanLyVatNuoi.cshtml.g.cs
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Home\QuanLyBanHang.cshtml.g.cs
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Home\ThongKe.cshtml.g.cs
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Home\QuanLyCongViec.cshtml.g.cs
-C:\Users\ASUS\Desktop\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\appsettings.Development.json
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\appsettings.json
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Happy Meat Farm.exe
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Happy Meat Farm.deps.json
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Happy Meat Farm.runtimeconfig.json
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Happy Meat Farm.runtimeconfig.dev.json
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Happy Meat Farm.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\ref\Happy Meat Farm.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Happy Meat Farm.pdb
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Happy Meat Farm.Views.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Happy Meat Farm.Views.pdb
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Humanizer.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.CodeAnalysis.Razor.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.CodeAnalysis.Workspaces.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\dotnet-aspnet-codegenerator-design.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Newtonsoft.Json.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Composition.AttributedModel.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Composition.Convention.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Composition.Hosting.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Composition.Runtime.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Composition.TypedParts.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.csproj.AssemblyReference.cache
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.AssemblyInfoInputs.cache
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.AssemblyInfo.cs
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.csproj.CoreCompileInputs.cache
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.RazorAssemblyInfo.cache
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.RazorAssemblyInfo.cs
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\staticwebassets\Happy Meat Farm.StaticWebAssets.Manifest.cache
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\staticwebassets\Happy Meat Farm.StaticWebAssets.xml
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\scopedcss\bundle\Happy Meat Farm.styles.css
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.TagHelpers.input.cache
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.TagHelpers.output.cache
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.RazorCoreGenerate.cache
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Home\QuanLyBanHang.cshtml.g.cs
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Home\QuanLyCongViec.cshtml.g.cs
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Home\QuanLyVatNuoi.cshtml.g.cs
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Home\ThongKe.cshtml.g.cs
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.RazorTargetAssemblyInfo.cache
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.RazorTargetAssemblyInfo.cs
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.Views.pdb
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\ref\Happy Meat Farm.dll
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.pdb
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.genruntimeconfig.cache
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.csproj.CopyComplete
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\appsettings.json
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Happy Meat Farm.exe
@@ -245,9 +7,69 @@ C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\H
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Happy Meat Farm.dll
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\ref\Happy Meat Farm.dll
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Happy Meat Farm.pdb
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\csc.exe
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\csc.exe.config
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\csc.rsp
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\csi.exe
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\csi.exe.config
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\csi.rsp
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\Microsoft.Managed.Core.targets
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\System.AppContext.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\System.Collections.Immutable.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\System.Console.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\System.Globalization.Calendars.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\System.IO.Compression.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\System.IO.FileSystem.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\System.Net.Http.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\System.Net.Sockets.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\System.Reflection.Metadata.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\System.ValueTuple.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\System.Xml.XmlDocument.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\System.Xml.XPath.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\vbc.exe
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\vbc.exe.config
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\vbc.rsp
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\VBCSCompiler.exe
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\roslyn\VBCSCompiler.exe.config
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Happy Meat Farm.Views.dll
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Happy Meat Farm.Views.pdb
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Antlr3.Runtime.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Azure.Core.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\DnsClient.dll
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Humanizer.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Web.Mvc.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Web.Razor.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Web.Optimization.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Web.Helpers.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Web.WebPages.Deployment.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Web.WebPages.Razor.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Web.WebPages.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
@@ -255,6 +77,25 @@ C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\M
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.CodeAnalysis.Razor.dll
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.Graph.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.Graph.Core.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.Kiota.Abstractions.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.Kiota.Authentication.Azure.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.Kiota.Http.HttpClientLibrary.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.Kiota.Serialization.Form.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.Kiota.Serialization.Json.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.Kiota.Serialization.Text.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.OpenApi.dll
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
@@ -263,12 +104,31 @@ C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\M
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.Web.Infrastructure.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\MongoDB.Bson.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\MongoDB.Driver.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\MongoDB.Driver.Core.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\MongoDB.Libmongocrypt.dll
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\PagedList.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\SharpCompress.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Composition.AttributedModel.dll
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Composition.Convention.dll
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Composition.Hosting.dll
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Composition.Runtime.dll
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Composition.TypedParts.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.IO.Pipelines.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Memory.Data.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Text.Encodings.Web.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Text.Json.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Tavis.UriTemplates.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\WebGrease.dll
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.resources.dll
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.resources.dll
@@ -323,11 +183,22 @@ C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\z
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\runtimes\linux\native\libsnappy64.so
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\runtimes\linux\native\libzstd.so
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\runtimes\osx\native\libsnappy64.dylib
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\runtimes\osx\native\libzstd.dylib
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\runtimes\win\native\libzstd.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\runtimes\win\native\snappy32.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\runtimes\win\native\snappy64.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\runtimes\linux\native\libmongocrypt.so
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\runtimes\win\native\mongocrypt.dll
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.csproj.AssemblyReference.cache
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.AssemblyInfoInputs.cache
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.AssemblyInfo.cs
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.RazorAssemblyInfo.cache
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.RazorAssemblyInfo.cs
@@ -340,8 +211,10 @@ C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\H
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Home\QuanLyBanHang.cshtml.g.cs
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Home\QuanLyCongViec.cshtml.g.cs
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Home\QuanLyNhanSu.cshtml.g.cs
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Home\QuanLyVatNuoi.cshtml.g.cs
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Home\ThongKe.cshtml.g.cs
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\NhanVien\ViewNhanVien.cshtml.g.cs
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -355,28 +228,4 @@ C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\H
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\ref\Happy Meat Farm.dll
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.pdb
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.genruntimeconfig.cache
-C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Home\QuanLyNhanSu.cshtml.g.cs
-<<<<<<< HEAD
-C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\AWSSDK.Core.dll
-C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\AWSSDK.SecurityToken.dll
-C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\DnsClient.dll
-C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\MongoDB.Bson.dll
-C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\MongoDB.Driver.dll
-C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\MongoDB.Driver.Core.dll
-C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\MongoDB.Libmongocrypt.dll
-C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\SharpCompress.dll
-C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Snappier.dll
-C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\ZstdSharp.dll
-C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\runtimes\linux\native\libmongocrypt.so
-C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\runtimes\osx\native\libmongocrypt.dylib
-C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\runtimes\win\native\mongocrypt.dll
-C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Web.Mvc.dll
-C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Web.Razor.dll
-C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Web.Helpers.dll
-C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Web.WebPages.Deployment.dll
-C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Web.WebPages.Razor.dll
-C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Web.WebPages.dll
-C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.Web.Infrastructure.dll
-=======
-C:\Users\ASUS\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Home\QuanLyNhanSu.cshtml.g.cs
->>>>>>> 7de19710d6a77d42e62049962f89fd4b9a386cd8
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\NhanVien\Index.cshtml.g.cs

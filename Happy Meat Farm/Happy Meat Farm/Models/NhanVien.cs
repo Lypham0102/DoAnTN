@@ -12,16 +12,12 @@ namespace Happy_Meat_Farm.Models
     public class NhanVien
     {
         [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
-        public string MaNV { get; set; } = String.Empty;
-
-        [BsonElement("tennv")]
-        public string TenNV { get; set; } = String.Empty;
-        [BsonElement("cccd")]
-        public string CCCD { get; set; } = String.Empty;
-        [BsonElement("sdt")]
+        [BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
+        public string _id { get; set; }
+        public string MaNV { get; set; }
+        public string TenNV { get; set; }
+        public string CCCD { get; set; }
         public string SDT { get; set; }
-        [BsonElement("diachi")]
-        public string DiaChi { get; set; } = String.Empty;
+        public string DiaChi { get; set; }
     }
 }
