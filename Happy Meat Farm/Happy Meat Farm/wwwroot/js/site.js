@@ -2,3 +2,10 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
+
+//collapse menu
+$(document).ready(function () {
+    $('#collapse-btn').click(function () {
+        $('.collapse-menu').toggleClass('hidden');
+    });
+});

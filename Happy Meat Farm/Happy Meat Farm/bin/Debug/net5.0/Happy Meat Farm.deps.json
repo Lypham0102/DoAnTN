@@ -42,7 +42,10 @@
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Http.Features": "5.0.17",
           "Microsoft.AspNetCore.Mvc.Abstractions": "2.2.0",
+<<<<<<< HEAD
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
+=======
+>>>>>>> 4039dcd212299718b4102fcdb0ede2801875e001
           "Microsoft.CodeDom.Providers.DotNetCompilerPlatform": "3.6.0",
           "Microsoft.Graph": "5.1.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "5.0.2",
@@ -51,7 +54,10 @@
           "Modernizr": "2.8.3",
           "MongoDB.Driver": "2.14.1",
           "Newtonsoft.Json": "13.0.3",
+<<<<<<< HEAD
           "PagedList": "1.17.0",
+=======
+>>>>>>> 4039dcd212299718b4102fcdb0ede2801875e001
           "Swashbuckle.AspNetCore": "6.5.0",
           "WebGrease": "1.6.0",
           "bootstrap": "5.2.3",
@@ -91,7 +97,11 @@
           "Microsoft.AspNetCore.Http.Connections.Common": "5.0.0.0",
           "Microsoft.AspNetCore.Http.Connections": "5.0.0.0",
           "Microsoft.AspNetCore.Http.Reference": "5.0.0.0",
+<<<<<<< HEAD
           "Microsoft.AspNetCore.Http.Extensions.Reference": "5.0.0.0",
+=======
+          "Microsoft.AspNetCore.Http.Extensions": "5.0.0.0",
+>>>>>>> 4039dcd212299718b4102fcdb0ede2801875e001
           "Microsoft.AspNetCore.HttpOverrides": "5.0.0.0",
           "Microsoft.AspNetCore.HttpsPolicy": "5.0.0.0",
           "Microsoft.AspNetCore.Identity": "5.0.0.0",
@@ -118,7 +128,11 @@
           "Microsoft.AspNetCore.ResponseCompression": "5.0.0.0",
           "Microsoft.AspNetCore.Rewrite": "5.0.0.0",
           "Microsoft.AspNetCore.Routing.Abstractions.Reference": "5.0.0.0",
+<<<<<<< HEAD
           "Microsoft.AspNetCore.Routing.Reference": "5.0.0.0",
+=======
+          "Microsoft.AspNetCore.Routing": "5.0.0.0",
+>>>>>>> 4039dcd212299718b4102fcdb0ede2801875e001
           "Microsoft.AspNetCore.Server.HttpSys": "5.0.0.0",
           "Microsoft.AspNetCore.Server.IIS": "5.0.0.0",
           "Microsoft.AspNetCore.Server.IISIntegration": "5.0.0.0",
@@ -163,7 +177,7 @@
           "Microsoft.Extensions.Identity.Stores": "5.0.0.0",
           "Microsoft.Extensions.Localization.Abstractions": "5.0.0.0",
           "Microsoft.Extensions.Localization": "5.0.0.0",
-          "Microsoft.Extensions.Logging.Abstractions.Reference": "5.0.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "5.0.0.0",
           "Microsoft.Extensions.Logging.Configuration": "5.0.0.0",
           "Microsoft.Extensions.Logging.Console": "5.0.0.0",
           "Microsoft.Extensions.Logging.Debug": "5.0.0.0",
@@ -531,6 +545,7 @@
           "System.Text.Encodings.Web": "7.0.0"
         }
       },
+<<<<<<< HEAD
       "Microsoft.AspNetCore.Http.Extensions/2.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
@@ -541,6 +556,10 @@
       },
       "Microsoft.AspNetCore.Http.Features/5.0.17": {
         "dependencies": {
+=======
+      "Microsoft.AspNetCore.Http.Features/5.0.17": {
+        "dependencies": {
+>>>>>>> 4039dcd212299718b4102fcdb0ede2801875e001
           "Microsoft.Extensions.Primitives": "5.0.1",
           "System.IO.Pipelines": "5.0.2"
         },
@@ -558,6 +577,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Routing.Abstractions": "2.2.0",
           "Microsoft.Net.Http.Headers": "2.2.0"
+<<<<<<< HEAD
         }
       },
       "Microsoft.AspNetCore.Mvc.Core/2.2.5": {
@@ -577,6 +597,8 @@
           "Microsoft.Extensions.Logging.Abstractions": "2.2.0",
           "System.Diagnostics.DiagnosticSource": "7.0.1",
           "System.Threading.Tasks.Extensions": "4.5.4"
+=======
+>>>>>>> 4039dcd212299718b4102fcdb0ede2801875e001
         }
       },
       "Microsoft.AspNetCore.Razor/2.2.0": {
@@ -601,6 +623,7 @@
           "Microsoft.AspNetCore.Razor": "2.2.0"
         }
       },
+<<<<<<< HEAD
       "Microsoft.AspNetCore.ResponseCaching.Abstractions/2.2.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "5.0.1"
@@ -615,6 +638,8 @@
           "Microsoft.Extensions.Options": "2.2.0"
         }
       },
+=======
+>>>>>>> 4039dcd212299718b4102fcdb0ede2801875e001
       "Microsoft.AspNetCore.Routing.Abstractions/2.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0"
@@ -897,6 +922,7 @@
         }
       },
       "Microsoft.CSharp/4.5.0": {},
+<<<<<<< HEAD
       "Microsoft.DotNet.PlatformAbstractions/2.1.0": {
         "dependencies": {
           "System.AppContext": "4.3.0",
@@ -924,12 +950,16 @@
           "Microsoft.Extensions.Primitives": "5.0.1"
         }
       },
+=======
+      "Microsoft.Extensions.ApiDescription.Server/6.0.5": {},
+>>>>>>> 4039dcd212299718b4102fcdb0ede2801875e001
       "Microsoft.Extensions.DependencyInjection/5.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
         }
       },
       "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {},
+<<<<<<< HEAD
       "Microsoft.Extensions.DependencyModel/2.1.0": {
         "dependencies": {
           "Microsoft.DotNet.PlatformAbstractions": "2.1.0",
@@ -962,6 +992,8 @@
         }
       },
       "Microsoft.Extensions.Logging.Abstractions/2.2.0": {},
+=======
+>>>>>>> 4039dcd212299718b4102fcdb0ede2801875e001
       "Microsoft.Extensions.ObjectPool/2.2.0": {},
       "Microsoft.Extensions.Options/2.2.0": {
         "dependencies": {
@@ -3125,7 +3157,7 @@
         },
         "compileOnly": true
       },
-      "Microsoft.Extensions.Logging.Abstractions.Reference/5.0.0.0": {
+      "Microsoft.Extensions.Logging.Abstractions/5.0.0.0": {
         "compile": {
           "Microsoft.Extensions.Logging.Abstractions.dll": {}
         },
@@ -4293,6 +4325,7 @@
       "path": "microsoft.aspnetcore.http.abstractions/2.2.0",
       "hashPath": "microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "Microsoft.AspNetCore.Http.Extensions/2.2.0": {
       "type": "package",
       "serviceable": true,
@@ -4303,6 +4336,11 @@
     "Microsoft.AspNetCore.Http.Features/5.0.17": {
       "type": "package",
       "serviceable": true,
+=======
+    "Microsoft.AspNetCore.Http.Features/5.0.17": {
+      "type": "package",
+      "serviceable": true,
+>>>>>>> 4039dcd212299718b4102fcdb0ede2801875e001
       "sha512": "sha512-3jG2xS+dx8DDCGV/F+STdPTg89lX3ao3dF/VEPvJaz3wzBIjuadipTtYNEXDIVuOPZwb6jdmhrX9jkzOIBm5cw==",
       "path": "microsoft.aspnetcore.http.features/5.0.17",
       "hashPath": "microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512"
@@ -4313,6 +4351,7 @@
       "sha512": "sha512-ET6uZpfVbGR1NjCuLaLy197cQ3qZUjzl7EG5SL4GfJH/c9KRE89MMBrQegqWsh0w1iRUB/zQaK0anAjxa/pz4g==",
       "path": "microsoft.aspnetcore.mvc.abstractions/2.2.0",
       "hashPath": "microsoft.aspnetcore.mvc.abstractions.2.2.0.nupkg.sha512"
+<<<<<<< HEAD
     },
     "Microsoft.AspNetCore.Mvc.Core/2.2.5": {
       "type": "package",
@@ -4320,6 +4359,8 @@
       "sha512": "sha512-/8sr8ixIUD57UFwUntha9bOwex7/AkZfdk1f9oNJG1Ek7p/uuKVa7fuHmYZpQOf35Oxrt+2Ku4WPwMSbNxOuWg==",
       "path": "microsoft.aspnetcore.mvc.core/2.2.5",
       "hashPath": "microsoft.aspnetcore.mvc.core.2.2.5.nupkg.sha512"
+=======
+>>>>>>> 4039dcd212299718b4102fcdb0ede2801875e001
     },
     "Microsoft.AspNetCore.Razor/2.2.0": {
       "type": "package",
@@ -4342,6 +4383,7 @@
       "path": "microsoft.aspnetcore.razor.runtime/2.2.0",
       "hashPath": "microsoft.aspnetcore.razor.runtime.2.2.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "Microsoft.AspNetCore.ResponseCaching.Abstractions/2.2.0": {
       "type": "package",
       "serviceable": true,
@@ -4356,6 +4398,8 @@
       "path": "microsoft.aspnetcore.routing/2.2.0",
       "hashPath": "microsoft.aspnetcore.routing.2.2.0.nupkg.sha512"
     },
+=======
+>>>>>>> 4039dcd212299718b4102fcdb0ede2801875e001
     "Microsoft.AspNetCore.Routing.Abstractions/2.2.0": {
       "type": "package",
       "serviceable": true,
@@ -4433,6 +4477,7 @@
       "path": "microsoft.csharp/4.5.0",
       "hashPath": "microsoft.csharp.4.5.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "Microsoft.DotNet.PlatformAbstractions/2.1.0": {
       "type": "package",
       "serviceable": true,
@@ -4440,6 +4485,8 @@
       "path": "microsoft.dotnet.platformabstractions/2.1.0",
       "hashPath": "microsoft.dotnet.platformabstractions.2.1.0.nupkg.sha512"
     },
+=======
+>>>>>>> 4039dcd212299718b4102fcdb0ede2801875e001
     "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
       "type": "package",
       "serviceable": true,
@@ -4447,6 +4494,7 @@
       "path": "microsoft.extensions.apidescription.server/6.0.5",
       "hashPath": "microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512"
     },
+<<<<<<< HEAD
     "Microsoft.Extensions.Configuration.Abstractions/2.2.0": {
       "type": "package",
       "serviceable": true,
@@ -4454,6 +4502,8 @@
       "path": "microsoft.extensions.configuration.abstractions/2.2.0",
       "hashPath": "microsoft.extensions.configuration.abstractions.2.2.0.nupkg.sha512"
     },
+=======
+>>>>>>> 4039dcd212299718b4102fcdb0ede2801875e001
     "Microsoft.Extensions.DependencyInjection/5.0.0": {
       "type": "package",
       "serviceable": true,
@@ -4468,6 +4518,7 @@
       "path": "microsoft.extensions.dependencyinjection.abstractions/5.0.0",
       "hashPath": "microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "Microsoft.Extensions.DependencyModel/2.1.0": {
       "type": "package",
       "serviceable": true,
@@ -4496,6 +4547,8 @@
       "path": "microsoft.extensions.logging.abstractions/2.2.0",
       "hashPath": "microsoft.extensions.logging.abstractions.2.2.0.nupkg.sha512"
     },
+=======
+>>>>>>> 4039dcd212299718b4102fcdb0ede2801875e001
     "Microsoft.Extensions.ObjectPool/2.2.0": {
       "type": "package",
       "serviceable": true,
@@ -4768,6 +4821,7 @@
       "sha512": "sha512-HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
       "path": "newtonsoft.json/13.0.3",
       "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
+<<<<<<< HEAD
     },
     "PagedList/1.17.0": {
       "type": "package",
@@ -4775,6 +4829,8 @@
       "sha512": "sha512-Ou6F3WKXh49hOo0TxWM+SkIGuKllYPuPPvnSYOlQ1sTrtuEyuDUhYbSJd5Sdb06i/sWUJZTjiUecEs3Ht/Hx3g==",
       "path": "pagedlist/1.17.0",
       "hashPath": "pagedlist.1.17.0.nupkg.sha512"
+=======
+>>>>>>> 4039dcd212299718b4102fcdb0ede2801875e001
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",
@@ -5625,7 +5681,11 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "Microsoft.AspNetCore.Http.Extensions.Reference/5.0.0.0": {
+=======
+    "Microsoft.AspNetCore.Http.Extensions/5.0.0.0": {
+>>>>>>> 4039dcd212299718b4102fcdb0ede2801875e001
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -5985,7 +6045,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.Extensions.Logging.Abstractions.Reference/5.0.0.0": {
+    "Microsoft.Extensions.Logging.Abstractions/5.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
