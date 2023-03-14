@@ -29,7 +29,7 @@ namespace Happy_Meat_Farm.Data
         }
         public NhanVien GetNhanVienDetails(string Name)
         {
-            var nhanviendetails = nhanviencollection.Find(a=>a.TenNV == Name).FirstOrDefault();
+            var nhanviendetails = nhanviencollection.Find(m=>m.TenNV == Name).FirstOrDefault();
             return nhanviendetails;
         }
 
@@ -41,7 +41,8 @@ namespace Happy_Meat_Farm.Data
         {
             var filter = Builders<NhanVien>.Filter.Eq(c => c._id, _id);
             var update = Builders<NhanVien>.Update
-                .Set("Ten", nhanvienData.TenNV)
+                .Set("MaNV", nhanvienData.MaNV)
+                .Set("TenNV", nhanvienData.TenNV)
                 .Set("CCCD", nhanvienData.CCCD)
                 .Set("SDT", nhanvienData.SDT)
                 .Set("DiaChi", nhanvienData.DiaChi);
@@ -50,6 +51,8 @@ namespace Happy_Meat_Farm.Data
 
         public void Delete(string Name)
         {
+
+            //var filter = Builders<NhanVien>.Filter.Eq(c => c.TenNV, Name);
             var filter = Builders<NhanVien>.Filter.Eq(c => c.TenNV, Name);
             nhanviencollection.DeleteOne(filter);
         }
