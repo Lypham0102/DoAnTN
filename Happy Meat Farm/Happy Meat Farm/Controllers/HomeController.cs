@@ -41,11 +41,6 @@ namespace Happy_Meat_Farm.Controllers
             return View();
         }
 
-        public IActionResult QuanLyNhanSu()
-        {
-            return View();
-        }
-
         public IActionResult QuanLyCongViec()
         {
             return View();
@@ -67,6 +62,10 @@ namespace Happy_Meat_Farm.Controllers
             return View();
         }
         public IActionResult XuatChuong()
+        {
+            return View();
+        }
+        public IActionResult ThongTinVatNuoi()
         {
             return View();
         }
