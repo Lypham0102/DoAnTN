@@ -61,6 +61,9 @@ namespace Happy_Meat_Farm.Controllers
             _context.Delete(Name);
             return RedirectToAction("Index");
         }
-
+        public IActionResult Login()
+        {
+            return View();
+        }
     }
 }
