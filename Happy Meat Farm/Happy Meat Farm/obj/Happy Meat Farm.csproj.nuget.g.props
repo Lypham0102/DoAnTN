@@ -380,5 +380,6 @@
     <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\ADMIN\.nuget\packages\microsoft.codeanalysis.analyzers\3.0.0</PkgMicrosoft_CodeAnalysis_Analyzers>
     <PkgjQuery Condition=" '$(PkgjQuery)' == '' ">C:\Users\ADMIN\.nuget\packages\jquery\3.6.3</PkgjQuery>
     <PkgMicrosoft_CodeDom_Providers_DotNetCompilerPlatform Condition=" '$(PkgMicrosoft_CodeDom_Providers_DotNetCompilerPlatform)' == '' ">C:\Users\ADMIN\.nuget\packages\microsoft.codedom.providers.dotnetcompilerplatform\3.6.0</PkgMicrosoft_CodeDom_Providers_DotNetCompilerPlatform>
+    <PkgAttributeRouting Condition=" '$(PkgAttributeRouting)' == '' ">C:\Users\ADMIN\.nuget\packages\attributerouting\3.4.2</PkgAttributeRouting>
   </PropertyGroup>
 </Project>

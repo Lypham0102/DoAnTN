@@ -40,6 +40,9 @@
     <PackageReference Include="System.Web.Mvc.Extensions" Version="1.1.1.2" />
     <PackageReference Include="System.Web.Mvc.Extensions.Mvc.4" Version="1.0.9" />
     <PackageReference Include="WebGrease" Version="1.6.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Routing" Version="2.2.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Routing.Abstractions" Version="2.2.0" />
+    <PackageReference Include="AttributeRouting" Version="3.4.2" />
   </ItemGroup>
 
   <ItemGroup>
@@ -47,10 +50,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Data\" />
-    <Folder Include="Models\" />
     <Folder Include="Scripts\" />
-    <Folder Include="Views\VatNuoi\" />
     <Folder Include="wwwroot\css\" />
     <Folder Include="wwwroot\images\" />
     <Folder Include="wwwroot\js\" />

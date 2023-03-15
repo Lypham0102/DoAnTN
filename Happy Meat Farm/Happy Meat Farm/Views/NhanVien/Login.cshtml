@@ -1,56 +1,8 @@
-﻿@model Happy_Meat_Farm.Models.TaiKhoan
-
+﻿
 @{
-    ViewData["Title"] = "Login";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Đăng nhập";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
 }
 
-<h1>Đăng Nhập</h1>
-
-<h5>Thông tin tài khoản</h5>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Login">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="_id" class="control-label"></label>
-                <input asp-for="_id" class="form-control" />
-                <span asp-validation-for="_id" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="MaTaiKhoan" class="control-label"></label>
-                <input asp-for="MaTaiKhoan" class="form-control" />
-                <span asp-validation-for="MaTaiKhoan" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="TenTaiKhoan" class="control-label"></label>
-                <input asp-for="TenTaiKhoan" class="form-control" />
-                <span asp-validation-for="TenTaiKhoan" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Passwork" class="control-label"></label>
-                <input asp-for="Passwork" class="form-control" />
-                <span asp-validation-for="Passwork" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="MaNongTrai" class="control-label"></label>
-                <input asp-for="MaNongTrai" class="form-control" />
-                <span asp-validation-for="MaNongTrai" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="MaNV" class="control-label"></label>
-                <input asp-for="MaNV" class="form-control" />
-                <span asp-validation-for="MaNV" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+<h1>Login</h1>
 

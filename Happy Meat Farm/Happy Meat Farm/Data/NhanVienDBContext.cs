@@ -45,7 +45,12 @@ namespace Happy_Meat_Farm.Data
                 .Set("TenNV", nhanvienData.TenNV)
                 .Set("CCCD", nhanvienData.CCCD)
                 .Set("SDT", nhanvienData.SDT)
-                .Set("DiaChi", nhanvienData.DiaChi);
+                .Set("DiaChi", nhanvienData.DiaChi)
+                .Set("MaNongTrai", nhanvienData.MaNT)
+                .Set("TenTaiKhoan", nhanvienData.TenTaiKhoan)
+                .Set("Passwork", nhanvienData.Passwork);
+
+
             nhanviencollection.UpdateOne(filter, update);
         }
 

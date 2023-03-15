@@ -44,6 +44,10 @@
               "target": "Package",
               "version": "[3.5.0.2, )"
             },
+            "AttributeRouting": {
+              "target": "Package",
+              "version": "[3.4.2, )"
+            },
             "Microsoft.AspNet.Mvc": {
               "target": "Package",
               "version": "[5.2.9, )"
@@ -79,6 +83,14 @@
             "Microsoft.AspNetCore.Mvc.Core": {
               "target": "Package",
               "version": "[2.2.5, )"
+            },
+            "Microsoft.AspNetCore.Routing": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.AspNetCore.Routing.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.CodeDom.Providers.DotNetCompilerPlatform": {
               "target": "Package",

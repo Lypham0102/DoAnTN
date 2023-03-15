@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Happy_Meat_Farm.Interface;
 using Happy_Meat_Farm.Models;
+using Microsoft.AspNetCore.Http;
 
 namespace Happy_Meat_Farm.Controllers
 {
@@ -61,7 +62,7 @@ namespace Happy_Meat_Farm.Controllers
             _context.Delete(Name);
             return RedirectToAction("Index");
         }
-        public IActionResult Login()
+        public IActionResult Login(string Name)
         {
             return View();
         }
