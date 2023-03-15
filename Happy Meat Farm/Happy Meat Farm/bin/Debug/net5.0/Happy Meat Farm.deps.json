@@ -34,6 +34,7 @@
       "Happy Meat Farm/1.0.0": {
         "dependencies": {
           "Antlr": "3.5.0.2",
+          "AttributeRouting": "3.4.2",
           "Microsoft.AspNet.Mvc": "5.2.9",
           "Microsoft.AspNet.Razor": "3.2.9",
           "Microsoft.AspNet.Web.Optimization": "1.1.3",
@@ -43,6 +44,8 @@
           "Microsoft.AspNetCore.Http.Features": "5.0.17",
           "Microsoft.AspNetCore.Mvc.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
+          "Microsoft.AspNetCore.Routing": "2.2.2",
+          "Microsoft.AspNetCore.Routing.Abstractions": "2.2.0",
           "Microsoft.CodeDom.Providers.DotNetCompilerPlatform": "3.6.0",
           "Microsoft.Graph": "5.1.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "5.0.2",
@@ -352,6 +355,47 @@
           "lib/Antlr3.Runtime.dll": {}
         }
       },
+      "AttributeRouting/3.4.2": {
+        "dependencies": {
+          "AttributeRouting.Core": "3.4.2",
+          "AttributeRouting.Core.Web": "3.4.2",
+          "WebActivator": "1.0.0"
+        },
+        "runtime": {
+          "lib/net40/AttributeRouting.Web.Mvc.dll": {
+            "assemblyVersion": "3.4.2.0",
+            "fileVersion": "3.4.2.0"
+          }
+        },
+        "compile": {
+          "lib/net40/AttributeRouting.Web.Mvc.dll": {}
+        }
+      },
+      "AttributeRouting.Core/3.4.2": {
+        "runtime": {
+          "lib/net40/AttributeRouting.dll": {
+            "assemblyVersion": "3.4.2.0",
+            "fileVersion": "3.4.2.0"
+          }
+        },
+        "compile": {
+          "lib/net40/AttributeRouting.dll": {}
+        }
+      },
+      "AttributeRouting.Core.Web/3.4.2": {
+        "dependencies": {
+          "AttributeRouting.Core": "3.4.2"
+        },
+        "runtime": {
+          "lib/net40/AttributeRouting.Web.dll": {
+            "assemblyVersion": "3.4.2.0",
+            "fileVersion": "3.4.2.0"
+          }
+        },
+        "compile": {
+          "lib/net40/AttributeRouting.Web.dll": {}
+        }
+      },
       "Azure.Core/1.28.0": {
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "7.0.0",
@@ -569,7 +613,7 @@
           "Microsoft.AspNetCore.Http.Extensions": "2.2.0",
           "Microsoft.AspNetCore.Mvc.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.ResponseCaching.Abstractions": "2.2.0",
-          "Microsoft.AspNetCore.Routing": "2.2.0",
+          "Microsoft.AspNetCore.Routing": "2.2.2",
           "Microsoft.AspNetCore.Routing.Abstractions": "2.2.0",
           "Microsoft.Extensions.DependencyInjection": "5.0.0",
           "Microsoft.Extensions.DependencyModel": "2.1.0",
@@ -606,7 +650,7 @@
           "Microsoft.Extensions.Primitives": "5.0.1"
         }
       },
-      "Microsoft.AspNetCore.Routing/2.2.0": {
+      "Microsoft.AspNetCore.Routing/2.2.2": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Extensions": "2.2.0",
           "Microsoft.AspNetCore.Routing.Abstractions": "2.2.0",
@@ -2474,6 +2518,17 @@
           "lib/netstandard2.0/Tavis.UriTemplates.dll": {}
         }
       },
+      "WebActivator/1.0.0": {
+        "runtime": {
+          "lib/WebActivator.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/WebActivator.dll": {}
+        }
+      },
       "WebGrease/1.6.0": {
         "dependencies": {
           "Antlr": "3.5.0.2",
@@ -4160,6 +4215,27 @@
       "path": "antlr/3.5.0.2",
       "hashPath": "antlr.3.5.0.2.nupkg.sha512"
     },
+    "AttributeRouting/3.4.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GPFiSPGng5+OgkaKBPKlfLDpSiPO/WFOsCjJLWmAbkEbjsxcV2oSG/va6xtWKuA2eqCMFJf6F+sv+klZ+ZHBjg==",
+      "path": "attributerouting/3.4.2",
+      "hashPath": "attributerouting.3.4.2.nupkg.sha512"
+    },
+    "AttributeRouting.Core/3.4.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9d4bXMGKhutpufSfeayFZbTGESSZzDdHn2mkXZ/R4ZXRweRPLeo+aDIC95NxJwAdCcb8YLQCmLp6LbCAb7biZw==",
+      "path": "attributerouting.core/3.4.2",
+      "hashPath": "attributerouting.core.3.4.2.nupkg.sha512"
+    },
+    "AttributeRouting.Core.Web/3.4.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-G+HgV58iXOQ6mvN8MI9J6lAvplvKcGnkntQqISNS6Uh18QAxxDjOEVaJCL3NmJP0WuNbpp86r8ATje9QfGZE5A==",
+      "path": "attributerouting.core.web/3.4.2",
+      "hashPath": "attributerouting.core.web.3.4.2.nupkg.sha512"
+    },
     "Azure.Core/1.28.0": {
       "type": "package",
       "serviceable": true,
@@ -4349,12 +4425,12 @@
       "path": "microsoft.aspnetcore.responsecaching.abstractions/2.2.0",
       "hashPath": "microsoft.aspnetcore.responsecaching.abstractions.2.2.0.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Routing/2.2.0": {
+    "Microsoft.AspNetCore.Routing/2.2.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-jAhDBy0wryOnMhhZTtT9z63gJbvCzFuLm8yC6pHzuVu9ZD1dzg0ltxIwT4cfwuNkIL/TixdKsm3vpVOpG8euWQ==",
-      "path": "microsoft.aspnetcore.routing/2.2.0",
-      "hashPath": "microsoft.aspnetcore.routing.2.2.0.nupkg.sha512"
+      "sha512": "sha512-HcmJmmGYewdNZ6Vcrr5RkQbc/YWU4F79P3uPPBi6fCFOgUewXNM1P4kbPuoem7tN4f7x8mq7gTsm5QGohQ5g/w==",
+      "path": "microsoft.aspnetcore.routing/2.2.2",
+      "hashPath": "microsoft.aspnetcore.routing.2.2.2.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Routing.Abstractions/2.2.0": {
       "type": "package",
@@ -5447,6 +5523,13 @@
       "sha512": "sha512-GbetWNcPIaXvWtanHlBqlEp2KflFrsJf8RBNXmI8Yyeft9CSGxNrcsoKWEiEzyrn7gGVQ25ZC6ep9UfWPR0Otw==",
       "path": "tavis.uritemplates/2.0.0",
       "hashPath": "tavis.uritemplates.2.0.0.nupkg.sha512"
+    },
+    "WebActivator/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9svr86Y6l/moHfEEBVbiXNhCn82AFHSeBuCcdIkvMVk3ss2+rKyi6IWDlErbJJUdEUHCljM1dG+S8iLVFeBaGQ==",
+      "path": "webactivator/1.0.0",
+      "hashPath": "webactivator.1.0.0.nupkg.sha512"
     },
     "WebGrease/1.6.0": {
       "type": "package",

@@ -1,22 +1,28 @@
 ﻿<Properties StartupConfiguration="{1900C92F-6A65-4269-AEC6-739CF738D02E}|Default">
-  <MonoDevelop.Ide.ItemProperties.Happy_220Meat_220Farm PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Happy Meat Farm/wwwroot/css/site.css">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Happy Meat Farm/Controllers/VatNuoiController.cs">
     <Files>
-      <File FileName="Happy Meat Farm/Views/Shared/_Layout.cshtml" Line="126" Column="28" IsPinned="True" />
-      <File FileName="Happy Meat Farm/wwwroot/css/site.css" Line="17" Column="15" IsPinned="True" />
+      <File FileName="Happy Meat Farm/Views/Shared/_Layout.cshtml" Line="13" Column="215" IsPinned="True" />
+      <File FileName="Happy Meat Farm/wwwroot/css/site.css" Line="21" Column="30" IsPinned="True" />
+      <File FileName="Happy Meat Farm/Controllers/HomeController.cs" Line="42" Column="10" IsPinned="True" />
+      <File FileName="Happy Meat Farm/Controllers/VatNuoiController.cs" Line="33" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Happy Meat Farm" expanded="True" selected="True">
+          <Node name="Happy Meat Farm" expanded="True">
             <Node name="Happy Meat Farm" expanded="True">
               <Node name="Dependencies" expanded="True" />
               <Node name="Controllers" expanded="True" />
-              <Node name="Views" expanded="True">
+              <Node name="Views" expanded="True" selected="True">
+                <Node name="Home" expanded="True" />
+                <Node name="NhanVien" expanded="True" />
                 <Node name="Shared" expanded="True" />
+                <Node name="VatNuoi" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
                 <Node name="css" expanded="True" />
@@ -27,7 +33,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Happy_220Meat_220Farm PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

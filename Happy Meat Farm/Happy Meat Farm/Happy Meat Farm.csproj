@@ -37,6 +37,9 @@
     <PackageReference Include="PagedList" Version="1.17.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
     <PackageReference Include="WebGrease" Version="1.6.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Routing" Version="2.2.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Routing.Abstractions" Version="2.2.0" />
+    <PackageReference Include="AttributeRouting" Version="3.4.2" />
   </ItemGroup>
 
   <ItemGroup>
