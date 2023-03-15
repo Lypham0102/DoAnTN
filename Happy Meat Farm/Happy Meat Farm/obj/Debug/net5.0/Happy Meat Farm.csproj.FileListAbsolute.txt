@@ -717,3 +717,10 @@ C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/R
 /Users/dev/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/VatNuoi/ThemVatNuoi.cshtml.g.cs
 /Users/dev/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/VatNuoi/XuatChuong.cshtml.g.cs
 >>>>>>> b66e594fba10c4345fd6ef65b6fc08ea4a38be3c
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\VatNuoi\ThemChuong.cshtml.g.cs
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\VatNuoi\ThemVatNuoi.cshtml.g.cs
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\VatNuoi\VatNuoi.cshtml.g.cs
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\VatNuoi\XuatChuong.cshtml.g.cs
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\System.Web.Mvc.Extensions.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Shared\_LayoutLogin.cshtml.g.cs
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Shared\LoginLayout.cshtml.g.cs

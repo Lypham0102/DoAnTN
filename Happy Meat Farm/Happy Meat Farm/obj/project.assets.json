@@ -284,6 +284,9 @@
           "jQuery": "1.4.4"
         }
       },
+      "layout.mvc5/1.0.1": {
+        "type": "package"
+      },
       "Microsoft.AspNet.Mvc/5.2.9": {
         "type": "package",
         "dependencies": {
@@ -3007,6 +3010,27 @@
           "ref/netstandard1.2/_._": {}
         }
       },
+      "System.Web.Mvc.Extensions/1.1.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Web.Mvc.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Mvc.Extensions.dll": {}
+        }
+      },
+      "System.Web.Mvc.Extensions.Mvc.4/1.0.9": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Mvc": "4.0.30506"
+        },
+        "compile": {
+          "lib/net40/System.Web.Mvc.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/net40/System.Web.Mvc.Extensions.dll": {}
+        }
+      },
       "System.Xml.ReaderWriter/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -3287,6 +3311,28 @@
         "Content/Scripts/jquery.validate.min.js",
         "jquery.validation.1.19.5.nupkg.sha512",
         "jquery.validation.nuspec"
+      ]
+    },
+    "layout.mvc5/1.0.1": {
+      "sha512": "xxCEIcjMU4Eg6t+5nzSbKf0NS6CImf9kM4XynCi9MfhNqR1zuIT9u66I2QjrinuP0VSWUaW1brGO4JeO7gufnw==",
+      "type": "package",
+      "path": "layout.mvc5/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/Scripts/cross-domain/respond-proxy.html",
+        "content/Scripts/cross-domain/respond.proxy.gif",
+        "content/Scripts/cross-domain/respond.proxy.js",
+        "content/Scripts/html5shiv-printshiv.js",
+        "content/Scripts/html5shiv-printshiv.min.js",
+        "content/Scripts/html5shiv.js",
+        "content/Scripts/html5shiv.min.js",
+        "content/Views/Shared/_AdminMenuPartial.cshtml",
+        "content/Views/Shared/_Alerts.cshtml",
+        "content/Views/Shared/_Layout.cshtml",
+        "content/Views/Shared/_LoginPartial.cshtml",
+        "layout.mvc5.1.0.1.nupkg.sha512",
+        "layout.mvc5.nuspec"
       ]
     },
     "Microsoft.AspNet.Mvc/5.2.9": {
@@ -9487,6 +9533,34 @@
         "system.threading.timer.nuspec"
       ]
     },
+    "System.Web.Mvc.Extensions/1.1.1.2": {
+      "sha512": "A8+X7EW9un/RedIBhpA/LMSvWw8iaEa9mJt0nvcFYQM2F1CoggZp6e7c50CIDfL6g5/105u7Q/QO8m7EUGtL9A==",
+      "type": "package",
+      "path": "system.web.mvc.extensions/1.1.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/System.Web.Mvc.Extensions.dll",
+        "lib/net40/System.Web.Mvc.Extensions.xml",
+        "lib/net45/System.Web.Mvc.Extensions.dll",
+        "lib/net45/System.Web.Mvc.Extensions.xml",
+        "system.web.mvc.extensions.1.1.1.2.nupkg.sha512",
+        "system.web.mvc.extensions.nuspec"
+      ]
+    },
+    "System.Web.Mvc.Extensions.Mvc.4/1.0.9": {
+      "sha512": "jQbKz15sSHLDh6OLHRtZozBz+bdP52m6s7//BqXTrK/Zr/AwNKd1EiY6kFWodqJrd0crMG5r7uXs7PjKtDk14g==",
+      "type": "package",
+      "path": "system.web.mvc.extensions.mvc.4/1.0.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/System.Web.Mvc.Extensions.dll",
+        "lib/net40/System.Web.Mvc.Extensions.xml",
+        "system.web.mvc.extensions.mvc.4.1.0.9.nupkg.sha512",
+        "system.web.mvc.extensions.mvc.4.nuspec"
+      ]
+    },
     "System.Xml.ReaderWriter/4.3.0": {
       "sha512": "GrprA+Z0RUXaR4N7/eW71j1rgMnEnEVlgii49GZyAjTH7uliMnrOU3HNFBr6fEDBCJCIdlVNq9hHbaDR621XBA==",
       "type": "package",
@@ -9678,10 +9752,13 @@
       "Newtonsoft.Json >= 13.0.3",
       "PagedList >= 1.17.0",
       "Swashbuckle.AspNetCore >= 6.5.0",
+      "System.Web.Mvc.Extensions >= 1.1.1.2",
+      "System.Web.Mvc.Extensions.Mvc.4 >= 1.0.9",
       "WebGrease >= 1.6.0",
       "bootstrap >= 5.2.3",
       "jQuery >= 3.6.3",
-      "jQuery.Validation >= 1.19.5"
+      "jQuery.Validation >= 1.19.5",
+      "layout.mvc5 >= 1.0.1"
     ]
   },
   "packageFolders": {
@@ -9803,6 +9880,14 @@
             "target": "Package",
             "version": "[6.5.0, )"
           },
+          "System.Web.Mvc.Extensions": {
+            "target": "Package",
+            "version": "[1.1.1.2, )"
+          },
+          "System.Web.Mvc.Extensions.Mvc.4": {
+            "target": "Package",
+            "version": "[1.0.9, )"
+          },
           "WebGrease": {
             "target": "Package",
             "version": "[1.6.0, )"
@@ -9818,6 +9903,10 @@
           "jQuery.Validation": {
             "target": "Package",
             "version": "[1.19.5, )"
+          },
+          "layout.mvc5": {
+            "target": "Package",
+            "version": "[1.0.1, )"
           }
         },
         "imports": [
@@ -9919,6 +10008,26 @@
       "warningLevel": 1,
       "message": "Package 'PagedList 1.17.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
       "libraryId": "PagedList",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Web.Mvc.Extensions 1.1.1.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "System.Web.Mvc.Extensions",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Web.Mvc.Extensions.Mvc.4 1.0.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "System.Web.Mvc.Extensions.Mvc.4",
       "targetGraphs": [
         "net5.0"
       ]

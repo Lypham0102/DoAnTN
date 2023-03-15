@@ -120,6 +120,14 @@
               "target": "Package",
               "version": "[6.5.0, )"
             },
+            "System.Web.Mvc.Extensions": {
+              "target": "Package",
+              "version": "[1.1.1.2, )"
+            },
+            "System.Web.Mvc.Extensions.Mvc.4": {
+              "target": "Package",
+              "version": "[1.0.9, )"
+            },
             "WebGrease": {
               "target": "Package",
               "version": "[1.6.0, )"
@@ -135,6 +143,10 @@
             "jQuery.Validation": {
               "target": "Package",
               "version": "[1.19.5, )"
+            },
+            "layout.mvc5": {
+              "target": "Package",
+              "version": "[1.0.1, )"
             }
           },
           "imports": [
