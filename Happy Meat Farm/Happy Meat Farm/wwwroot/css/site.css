@@ -17,8 +17,8 @@ a.navbar-brand {
   float: left;
 }
 
-.navbar-color{
-    background-color:darkslategray;
+.navbar-color {
+    background-color: #32384d;
 }
 
 .main-content {
@@ -42,7 +42,7 @@ a.navbar-brand {
     left: 0;
     top: 0;
     height: 100%;
-    background-color: #61ff93;
+    background-color: #4f73c9;
 }
 .sidebar-offcanvas{
     
@@ -280,6 +280,7 @@ body {
     overflow-x: hidden;
 }
 .footer {
+    margin-top: 30px;
     margin-left: 300px;
     float:right;
     position: absolute;

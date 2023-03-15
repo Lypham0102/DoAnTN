@@ -6,6 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Views\VatNuoi\" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="wwwroot\js\script.js" />
   </ItemGroup>
 
@@ -42,6 +45,7 @@
 
   <ItemGroup>
     <Folder Include="Scripts\" />
+    <Folder Include="Views\VatNuoi\" />
   </ItemGroup>
 
 </Project>
