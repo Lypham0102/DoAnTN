@@ -1,26 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/dev/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Happy Meat Farm.csproj": {}
+    "C:\\Users\\ADMIN\\Desktop\\DoAnTN\\Happy Meat Farm\\Happy Meat Farm\\Happy Meat Farm.csproj": {}
   },
   "projects": {
-    "/Users/dev/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Happy Meat Farm.csproj": {
+    "C:\\Users\\ADMIN\\Desktop\\DoAnTN\\Happy Meat Farm\\Happy Meat Farm\\Happy Meat Farm.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/dev/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Happy Meat Farm.csproj",
+        "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\DoAnTN\\Happy Meat Farm\\Happy Meat Farm\\Happy Meat Farm.csproj",
         "projectName": "Happy Meat Farm",
-        "projectPath": "/Users/dev/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Happy Meat Farm.csproj",
-        "packagesPath": "/Users/dev/.nuget/packages/",
-        "outputPath": "/Users/dev/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/",
+        "projectPath": "C:\\Users\\ADMIN\\Desktop\\DoAnTN\\Happy Meat Farm\\Happy Meat Farm\\Happy Meat Farm.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ADMIN\\Desktop\\DoAnTN\\Happy Meat Farm\\Happy Meat Farm\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/dev/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -131,6 +132,14 @@
               "target": "Package",
               "version": "[6.5.0, )"
             },
+            "System.Web.Mvc.Extensions": {
+              "target": "Package",
+              "version": "[1.1.1.2, )"
+            },
+            "System.Web.Mvc.Extensions.Mvc.4": {
+              "target": "Package",
+              "version": "[1.0.9, )"
+            },
             "WebGrease": {
               "target": "Package",
               "version": "[1.6.0, )"
@@ -146,6 +155,10 @@
             "jQuery.Validation": {
               "target": "Package",
               "version": "[1.19.5, )"
+            },
+            "layout.mvc5": {
+              "target": "Package",
+              "version": "[1.0.1, )"
             }
           },
           "imports": [
@@ -154,25 +167,10 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.osx-x64",
-              "version": "[5.0.17, 5.0.17]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -181,7 +179,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.201/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
         }
       }
     }

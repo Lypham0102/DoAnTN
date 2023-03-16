@@ -56,10 +56,13 @@
           "Newtonsoft.Json": "13.0.3",
           "PagedList": "1.17.0",
           "Swashbuckle.AspNetCore": "6.5.0",
+          "System.Web.Mvc.Extensions": "1.1.1.2",
+          "System.Web.Mvc.Extensions.Mvc.4": "1.0.9",
           "WebGrease": "1.6.0",
           "bootstrap": "5.2.3",
           "jQuery": "3.6.3",
           "jQuery.Validation": "1.19.5",
+          "layout.mvc5": "1.0.1",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions.Reference": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "5.0.0.0",
@@ -445,6 +448,7 @@
           "jQuery": "3.6.3"
         }
       },
+      "layout.mvc5/1.0.1": {},
       "Microsoft.AspNet.Mvc/5.2.9": {
         "dependencies": {
           "Microsoft.AspNet.Razor": "3.2.9",
@@ -1329,12 +1333,12 @@
           "runtimes/win-arm/lib/net5.0/dotnet-aspnet-codegenerator-design.exe": {
             "rid": "win-arm",
             "assetType": "runtime",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "5.0.221.10809"
           },
           "runtimes/win-arm64/lib/net5.0/dotnet-aspnet-codegenerator-design.exe": {
             "rid": "win-arm64",
             "assetType": "runtime",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "5.0.221.10809"
           }
         },
         "compile": {
@@ -1495,12 +1499,12 @@
           "runtimes/win/native/snappy32.dll": {
             "rid": "win",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "1.1.1.7"
           },
           "runtimes/win/native/snappy64.dll": {
             "rid": "win",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "1.1.1.7"
           }
         },
         "compile": {
@@ -2472,6 +2476,22 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "System.Web.Mvc.Extensions/1.1.1.2": {
+        "runtime": {
+          "lib/net45/System.Web.Mvc.Extensions.dll": {
+            "assemblyVersion": "1.1.0.6",
+            "fileVersion": "1.1.0.6"
+          }
+        },
+        "compile": {
+          "lib/net45/System.Web.Mvc.Extensions.dll": {}
+        }
+      },
+      "System.Web.Mvc.Extensions.Mvc.4/1.0.9": {
+        "dependencies": {
+          "Microsoft.AspNet.Mvc": "5.2.9"
+        }
+      },
       "System.Xml.ReaderWriter/4.3.0": {
         "dependencies": {
           "System.Collections": "4.3.0",
@@ -2537,7 +2557,7 @@
         "runtime": {
           "lib/WebGrease.dll": {
             "assemblyVersion": "1.6.5135.21930",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "1.6.5135.21930"
           }
         },
         "compile": {
@@ -4278,6 +4298,13 @@
       "path": "jquery.validation/1.19.5",
       "hashPath": "jquery.validation.1.19.5.nupkg.sha512"
     },
+    "layout.mvc5/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xxCEIcjMU4Eg6t+5nzSbKf0NS6CImf9kM4XynCi9MfhNqR1zuIT9u66I2QjrinuP0VSWUaW1brGO4JeO7gufnw==",
+      "path": "layout.mvc5/1.0.1",
+      "hashPath": "layout.mvc5.1.0.1.nupkg.sha512"
+    },
     "Microsoft.AspNet.Mvc/5.2.9": {
       "type": "package",
       "serviceable": true,
@@ -5502,6 +5529,20 @@
       "sha512": "sha512-Z6YfyYTCg7lOZjJzBjONJTFKGN9/NIYKSxhU5GRd+DTwHSZyvWp1xuI5aR+dLg+ayyC5Xv57KiY4oJ0tMO89fQ==",
       "path": "system.threading.timer/4.3.0",
       "hashPath": "system.threading.timer.4.3.0.nupkg.sha512"
+    },
+    "System.Web.Mvc.Extensions/1.1.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-A8+X7EW9un/RedIBhpA/LMSvWw8iaEa9mJt0nvcFYQM2F1CoggZp6e7c50CIDfL6g5/105u7Q/QO8m7EUGtL9A==",
+      "path": "system.web.mvc.extensions/1.1.1.2",
+      "hashPath": "system.web.mvc.extensions.1.1.1.2.nupkg.sha512"
+    },
+    "System.Web.Mvc.Extensions.Mvc.4/1.0.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jQbKz15sSHLDh6OLHRtZozBz+bdP52m6s7//BqXTrK/Zr/AwNKd1EiY6kFWodqJrd0crMG5r7uXs7PjKtDk14g==",
+      "path": "system.web.mvc.extensions.mvc.4/1.0.9",
+      "hashPath": "system.web.mvc.extensions.mvc.4.1.0.9.nupkg.sha512"
     },
     "System.Xml.ReaderWriter/4.3.0": {
       "type": "package",

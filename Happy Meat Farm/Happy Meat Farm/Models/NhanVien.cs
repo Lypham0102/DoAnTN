@@ -19,5 +19,8 @@ namespace Happy_Meat_Farm.Models
         public string CCCD { get; set; }
         public string SDT { get; set; }
         public string DiaChi { get; set; }
+        public string MaNT { get; set; }
+        public string TenTaiKhoan { get; set; }
+        public string Passwork { get; set; }
     }
 }
