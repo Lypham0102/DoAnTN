@@ -49,18 +49,32 @@ namespace Happy_Meat_Farm.Controllers
             var md = _context.GetNhanVienDetails(Name);
             return View(md);
         }
+
+
         [HttpGet]
         public IActionResult Delete(string Name)
         {
             var md = _context.GetNhanVienDetails(Name);
+            
             return View(md);
         }
+        //public IActionResult Delete(string id)
+        //{
+        //    var employee = _context.Employees.FindById(id);
+        //    if (employee == null)
+        //    {
+        //        return HttpNotFound();
+        //    }
+        //    return View(employee);
+        //}
+
         [HttpPost]
         public IActionResult DeletePost(string Name)
         {
             _context.Delete(Name);
             return RedirectToAction("Index");
         }
+
         public IActionResult Login()
         {
             return View();
