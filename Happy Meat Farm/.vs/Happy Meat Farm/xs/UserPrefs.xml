@@ -4,15 +4,15 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Happy Meat Farm/Views/NhanVien/Delete.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Happy Meat Farm/Views/Shared/_Layout.cshtml">
     <Files>
-      <File FileName="Happy Meat Farm/Views/Shared/_Layout.cshtml" Line="6" Column="56" IsPinned="True" />
+      <File FileName="Happy Meat Farm/Views/Shared/_Layout.cshtml" Line="16" Column="7" IsPinned="True" />
       <File FileName="Happy Meat Farm/wwwroot/css/site.css" Line="21" Column="30" IsPinned="True" />
       <File FileName="Happy Meat Farm/Controllers/HomeController.cs" Line="42" Column="10" IsPinned="True" />
-      <File FileName="Happy Meat Farm/Views/Shared/_LayoutLogin.cshtml" Line="22" Column="64" />
-      <File FileName="Happy Meat Farm/Startup.cs" Line="75" Column="14" />
-      <File FileName="Happy Meat Farm/Views/NhanVien/Login.cshtml" Line="1" Column="1" />
-      <File FileName="Happy Meat Farm/Views/NhanVien/Delete.cshtml" Line="1" Column="1" />
+      <File FileName="Happy Meat Farm/Views/Shared/_LayoutLogin.cshtml" />
+      <File FileName="Happy Meat Farm/Views/NhanVien/Delete.cshtml" Line="52" Column="11" />
+      <File FileName="Happy Meat Farm/Controllers/NhanVienController.cs" Line="62" Column="35" />
+      <File FileName="Happy Meat Farm/Data/NhanVienDBContext.cs" Line="20" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -28,10 +28,10 @@
               <Node name="Services" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />
-                <Node name="NhanVien" expanded="True">
-                  <Node name="Delete.cshtml" selected="True" />
+                <Node name="NhanVien" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="_Layout.cshtml" selected="True" />
                 </Node>
-                <Node name="Shared" expanded="True" />
                 <Node name="VatNuoi" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True" />
@@ -41,6 +41,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Happy_220Meat_220Farm PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.ItemProperties.Happy_220Meat_220Farm PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
