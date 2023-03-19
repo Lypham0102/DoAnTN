@@ -68,12 +68,20 @@ namespace Happy_Meat_Farm.Controllers
         {
             return View();
         }
+        public IActionResult BayDan()
+        {
+            return View();
+        }
 
         public IActionResult ThemVatNuoi()
         {
             return View();
         }
         public IActionResult ThemChuong()
+        {
+            return View();
+        }
+        public IActionResult ThemBayDan()
         {
             return View();
         }
