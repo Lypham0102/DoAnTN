@@ -3,7 +3,6 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@model IEnumerable<Happy_Meat_Farm.Models.BayDan>
 
 <h2>Danh Sach Bay Dan</h2>
 
@@ -17,9 +16,6 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>@Html.DisplayFor(modelItem => item.MaBayDan)</tr>
-        }
+       
     </tbody>
 </table>

@@ -20,6 +20,16 @@ namespace Happy_Meat_Farm.Data
 
         }
 
+        //public IMongoCollection<CaThe>GetCollection<CaThe>(string Name)
+        //{
+        //    return _db.GetCollection<CaThe>("CaThe");
+        //}
+        //public IMongoCollection<CaThe> Find(FilterDefinition<CaThe> filter)
+        //{
+        //    return _db.GetCollection<CaThe>("CaThe").Find(filter);
+        //}
+
+
         public IMongoCollection<CaThe> cathecollection =>
             _db.GetCollection<CaThe>("CaThe");
 

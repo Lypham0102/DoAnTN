@@ -512,5 +512,5 @@ C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/R
 /Users/dev/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.pdb
 /Users/dev/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.genruntimeconfig.cache
 /Users/dev/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/ref/Happy Meat Farm.dll
-/Users/dev/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/VatNuoi/ThemBayDan.cshtml.g.cs
-/Users/dev/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/VatNuoi/BayDan.cshtml.g.cs
+/Users/dev/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/BayDan/IndexBayDan.cshtml.g.cs
+/Users/dev/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/BayDan/ThemBayDan.cshtml.g.cs
