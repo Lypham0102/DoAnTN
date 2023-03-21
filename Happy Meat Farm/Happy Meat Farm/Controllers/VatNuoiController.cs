@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Happy_Meat_Farm.Interface;
 using Happy_Meat_Farm.Models;
+using MongoDB.Bson;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -12,7 +13,7 @@ namespace Happy_Meat_Farm.Controllers
 {
     public class VatNuoiController : Controller
     {
-        //private readonly ICaThe _context;
+        private readonly ICaThe _context;
 
         //public VatNuoiController(ICaThe context)
         //{
@@ -63,17 +64,33 @@ namespace Happy_Meat_Farm.Controllers
         //    _context.Delete(Name);
         //    return RedirectToAction("Index");
         //}
+
+
         // GET: /<controller>/
         public IActionResult VatNuoi()
         {
             return View();
         }
+        //public IActionResult ShowBayDan()
+        //{
+        //    var VatNuoi = _context.GetCollection<CaThe>("BayDan")
+        //    //var allVatNuoi = VatNuoi.Find(new BsonDocument()).ToList();
+        //        .Aggregate()
+        //        .Lookup("BayDan", "MaBayDan", "_id", "BayDan")
+        //        .ToList();
+
+        //    return View(VatNuoi);
+        //}
 
         public IActionResult ThemVatNuoi()
         {
             return View();
         }
         public IActionResult ThemChuong()
+        {
+            return View();
+        }
+        public IActionResult ThemBayDan()
         {
             return View();
         }

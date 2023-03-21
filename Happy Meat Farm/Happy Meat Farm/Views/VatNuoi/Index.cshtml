@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<Happy_Meat_Farm.Models.CaThe>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Vật Nuôi";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -10,9 +10,9 @@
     <ul>
         <li>Tổng cá thể: [92]</li>
         <li>Tổng số bầy: [4]</li>
-        <li>---Số lượng heo giống: [2]</li>
-        <li>---Số lượng heo con: [40]</li>
-        <li>---Số lượng heo thịt: [50]</li>
+        <li>Số lượng heo giống: [2]</li>
+        <li>Số lượng heo con: [40]</li>
+        <li>Số lượng heo thịt: [50]</li>
     </ul>
 </div>
 <div><h3>Danh sách cá thể</h3></div>
@@ -20,7 +20,7 @@
     <a asp-action="Create">Thêm cá thể</a>
 </p>
 <table class="table">
-    <thead>
+    @*<thead>
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model._id)
@@ -66,5 +66,5 @@
                 </td>
             </tr>
         }
-    </tbody>
+    </tbody>*@
 </table>

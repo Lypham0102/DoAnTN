@@ -13,6 +13,7 @@ using Microsoft.Extensions.Options;
 using Happy_Meat_Farm.Models;
 using Happy_Meat_Farm.Data;
 using Happy_Meat_Farm.Interface;
+using Happy_Meat_Farm.Controllers;
 
 namespace Happy_Meat_Farm
 {
@@ -41,6 +42,10 @@ namespace Happy_Meat_Farm
             //    var uri = s.GetRequiredService<IConfiguration>()["MongoUri"];
             //    return new MongoClient(uri);
             //});
+
+            services.AddSingleton<IMongoClient>(new MongoClient("mongodb://localhost:5001"));
+            services.AddTransient<CaTheController>();
+
             services.AddControllersWithViews();
             services.AddTransient<INhanVien, NhanVienDBContext>();
 
@@ -49,7 +54,13 @@ namespace Happy_Meat_Farm
                  options.ConnectionString = Configuration.GetSection("MongoDB:ConnectionString").Value;
                  options.Database = Configuration.GetSection("MongoDB:Database").Value;
             });
+            // ...
+            //services.AddMongoClient("mongodb://localhost:5001");
+            //services.AddTransient<CaTheController>();
+            // ..
         }
+        
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
