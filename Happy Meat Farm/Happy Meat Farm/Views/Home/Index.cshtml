@@ -1,14 +1,21 @@
 ﻿@{
-    ViewData["Title"] = "Tổng quan";
+    ViewData["Title"] = "Tổng quan trang trại";
 }
-
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+<script src="https://firebase.google.com/docs/web/learn-more#config-object"></script>
+<script src="https://firebase.google.com/docs/web/setup#available-libraries"></script>
 <div class="index">
     <h1>@ViewData["Title"]</h1>
 </div>
 <div class="index-container">
     <div class="temperature box box1">
-        <h2>Nhiệt độ môi trường</h2>
-        <p class="value">25 độ C</p>
+        <script src="https://cdn.lordicon.com//libs/frhvbuzj/lord-icon-2.0.2.js"></script>
+        <h2><i class="fas fa-tint"></i>HUMIDITY:</h2>
+        <h2 id="wet"></h2>
+        <h2><i class="fas fa-tint"></i>TEMPERATURE:</h2>
+        <h2 id="temp"></h2>
     </div>
     <div class="revenue box box2">
         <h2>Thống kê doanh thu</h2>
@@ -41,4 +48,52 @@
         </ul>
     </div>
 </div>
+https://firebase.google.com/docs/web/setup#available-libraries
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+https://firebase.google.com/docs/web/learn-more#config-object
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+        apiKey: "AIzaSyCiSaknvNYmF3wd578-plD_5NWSA7PyjSY",
+        authDomain: "esp8266-database-inventor.firebaseapp.com",
+        databaseURL: "https://esp8266-database-inventor-default-rtdb.firebaseio.com",
+        projectId: "esp8266-database-inventor",
+        storageBucket: "esp8266-database-inventor.appspot.com",
+        messagingSenderId: "423165376147",
+        appId: "1:423165376147:web:01b7d90369ef89bd5bff66",
+        measurementId: "G-6Y0CS5BME0"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+
+
+
+    //functions
+    // make sure that the name in ' ' match with name of your database child
+    var temp = document.getElementById('temp');
+    var dbRef = firebase.database().ref().child('TEMPERATURE');
+    dbRef.on('value', snap => temp.innerText = snap.val());
+
+
+    var wet = document.getElementById('wet');
+    var dbRef2 = firebase.database().ref('HUMIDITY');
+    dbRef2.on('value', snap => wet.innerHTML = snap.val());
+</script>
+<script src="~/js/JavaScript.js"></script>
+
+
+
+
+
 

@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <RootNamespace>Happy_Meat_Farm</RootNamespace>
   </PropertyGroup>
 
@@ -15,6 +15,13 @@
   <ItemGroup>
     <PackageReference Include="Antlr" Version="3.5.0.2" />
     <PackageReference Include="bootstrap" Version="5.2.3" />
+    <PackageReference Include="Firebase.js" Version="2.1.2" />
+    <PackageReference Include="FirebaseAdmin" Version="2.3.0" />
+    <PackageReference Include="FirebaseAdminAuthentication.DependencyInjection" Version="1.1.0" />
+    <PackageReference Include="FirebaseAdminCore" Version="2.0.0" />
+    <PackageReference Include="FireSharp" Version="2.0.4" />
+    <PackageReference Include="Google.Apis.FirebaseDynamicLinks.v1" Version="1.60.0.2510" />
+    <PackageReference Include="Google.Cloud.Firestore" Version="3.1.0" />
     <PackageReference Include="jQuery" Version="3.6.3" />
     <PackageReference Include="jQuery.Validation" Version="1.19.5" />
     <PackageReference Include="layout.mvc5" Version="1.0.1" />
@@ -55,9 +62,7 @@
 
   <ItemGroup>
     <Folder Include="Scripts\" />
-    <Folder Include="wwwroot\css\" />
     <Folder Include="wwwroot\images\" />
-    <Folder Include="wwwroot\js\" />
     <Folder Include="wwwroot\lib\bootstrap\" />
     <Folder Include="wwwroot\lib\bootstrap\dist\js\" />
     <Folder Include="wwwroot\lib\jquery-validation-unobtrusive\" />

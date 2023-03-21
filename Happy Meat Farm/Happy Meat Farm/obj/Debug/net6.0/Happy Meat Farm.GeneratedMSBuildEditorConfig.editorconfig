@@ -1,0 +1,125 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Happy_Meat_Farm
+build_property.RootNamespace = Happy_Meat_Farm
+build_property.ProjectDir = C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/Home/NhietDoDoAm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOaGlldERvRG9BbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/Home/QuanLyBanHang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxRdWFuTHlCYW5IYW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/Home/QuanLyCongViec.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxRdWFuTHlDb25nVmllYy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/Home/ThongKe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUaG9uZ0tlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/NhanVien/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/NhanVien/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/NhanVien/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/NhanVien/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/NhanVien/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/NhanVien/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/NhanVien/ViewNhanVien.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5cVmlld05oYW5WaWVuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/Shared/_LayoutLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/VatNuoi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmF0TnVvaVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/VatNuoi/ThemChuong.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmF0TnVvaVxUaGVtQ2h1b25nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/VatNuoi/ThemVatNuoi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmF0TnVvaVxUaGVtVmF0TnVvaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/VatNuoi/VatNuoi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmF0TnVvaVxWYXROdW9pLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/VatNuoi/XuatChuong.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmF0TnVvaVxYdWF0Q2h1b25nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
