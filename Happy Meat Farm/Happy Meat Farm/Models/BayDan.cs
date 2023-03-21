@@ -12,9 +12,14 @@ namespace Happy_Meat_Farm.Models
     {
         [BsonId]
         [BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
-        public string _id { get; set; }
+        
         public string MaBayDan { get; set; }
         public string MaChuong { get; set; }
+    }
+    public class CaThe : BayDan
+    {
+        public string DacDiem { get; set; }
+        public string NgayTuoi { get; set; }
     }
 }
 
