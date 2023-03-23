@@ -18,15 +18,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {}
           }
         },
@@ -37,8 +37,8 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
             "Antlr": {
               "target": "Package",
@@ -74,7 +74,7 @@
             },
             "Google.Cloud.Firestore": {
               "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[3.2.0, )"
             },
             "Microsoft.AspNet.Mvc": {
               "target": "Package",
@@ -152,7 +152,7 @@
             },
             "MongoDB.Driver": {
               "target": "Package",
-              "version": "[2.14.1, )"
+              "version": "[2.19.0, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
@@ -184,7 +184,7 @@
             },
             "jQuery": {
               "target": "Package",
-              "version": "[3.6.3, )"
+              "version": "[3.6.4, )"
             },
             "jQuery.Validation": {
               "target": "Package",

@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Happy_Meat_Farm.Models.BayDan>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Danh sách bầy đàn</h1>
+
+<p>
+    <a asp-action="Create">Thêm đàn</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th style="width:180px"> Mã đàn </th>
+            <th style="width:180px"> Số chuồng </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model._id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Chuong)
+            </th>*@
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item._id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Chuong)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { Name = item._id }) |
+                    @Html.ActionLink("Details", "Details", new { Name = item._id }) |
+                    @Html.ActionLink("Delete", "Delete", new { Name = item._id })
+                    @Html.ActionLink("Inf", "Inf", new { Name = item._id })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

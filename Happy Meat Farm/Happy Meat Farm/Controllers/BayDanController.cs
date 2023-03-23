@@ -9,20 +9,67 @@ using Microsoft.AspNetCore.Http;
 
 namespace Happy_Meat_Farm.Controllers
 {
-    public class BayDanController : Controller
+    public class BayDanController: Controller
     {
-        
+        private readonly IBayDan _context;
 
-        // GET: /<controller>/
-        public IActionResult IndexBayDan()
+        public BayDanController(IBayDan context)
+        {
+            _context = context;
+        }
+
+        public IActionResult Index()
+        {
+            return View(_context.GetAllBayDan());
+        }
+        public IActionResult Create()
         {
             return View();
         }
-        public IActionResult ThemBayDan()
+        [HttpPost]
+        public IActionResult CreatePost(BayDan baydanData)
         {
-            return View();
+            _context.Create(baydanData);
+            return RedirectToAction("Index");
         }
-        
+        [HttpGet]
+        public IActionResult Edit(string Name)
+        {
+            var md = _context.GetBayDanDetails(Name);
+            return View(md);
+        }
+        [HttpPost]
+        public IActionResult EditPost(string _id, BayDan baydandata)
+        {
+            _context.Update(_id, baydandata);
+            return RedirectToAction("Index");
+        }
+        [HttpGet]
+        public IActionResult Details(string Name)
+        {
+            var md = _context.GetBayDanDetails(Name);
+            return View(md);
+        }
+        [HttpGet]
+        public IActionResult Delete(string Name)
+        {
+            var md = _context.GetBayDanDetails(Name);
+            _context.Delete(Name);
+            return RedirectToAction("Index");
+            //return View(md);
+        }
+        [HttpPost]
+        public IActionResult DeletePost(string Name)
+        {
+            _context.Delete(Name);
+            return RedirectToAction("Index");
+        }
+
+        //public IActionResult CaTheBayDan(string Name)
+        //{
+        //    var md = _context.GetCaTheBayDan(Name);
+        //    return View(md);
+        //}
     }
 }
 

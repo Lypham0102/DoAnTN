@@ -1,5 +1,6 @@
 ﻿@model IEnumerable<Happy_Meat_Farm.Models.CaThe>
 
+
 @{
     ViewData["Title"] = "Vật Nuôi";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -20,13 +21,10 @@
     <a asp-action="Create">Thêm cá thể</a>
 </p>
 <table class="table">
-    @*<thead>
+    <thead>
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model._id)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MaCaThe)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.DacDiem)
@@ -35,7 +33,7 @@
                 @Html.DisplayNameFor(model => model.NgayTuoi)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.MaBayDan)
+                @Html.DisplayNameFor(model => model.MaChuong)
             </th>
             <th></th>
         </tr>
@@ -48,16 +46,13 @@
                     @Html.DisplayFor(modelItem => item._id)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.MaCaThe)
-                </td>
-                <td>
                     @Html.DisplayFor(modelItem => item.DacDiem)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.NgayTuoi)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.MaBayDan)
+                    @Html.DisplayFor(modelItem => item.MaChuong)
                 </td>
                 <td>
                     @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
@@ -66,5 +61,5 @@
                 </td>
             </tr>
         }
-    </tbody>*@
+    </tbody>
 </table>

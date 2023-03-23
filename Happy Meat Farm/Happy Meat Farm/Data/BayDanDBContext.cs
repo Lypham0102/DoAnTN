@@ -2,37 +2,105 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Happy_Meat_Farm.Interface;
+using Happy_Meat_Farm.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Options;
+using MongoDB.Driver;
 
 namespace Happy_Meat_Farm.Data
 {
-    // You may need to install the Microsoft.AspNetCore.Http.Abstractions package into your project
-    public class BayDanDBContext
+    public class BayDanDBContext : IBayDan
     {
-        private readonly RequestDelegate _next;
+        //public readonly IMongoDatabase _db;
 
-        public BayDanDBContext(RequestDelegate next)
+        //public BayDanDBContext(IOptions<Settings> options)
+        //{
+        //    var client = new MongoClient(options.Value.ConnectionString);
+        //    _db = client.GetDatabase(options.Value.Database);
+
+        //}
+
+        //public IMongoCollection<BayDan> baydancollection =>
+        //    _db.GetCollection<BayDan>("BayDan");
+
+        //public IEnumerable<BayDan> GetAllBayDan()
+        //{
+        //    return baydancollection.Find(a=>true).ToList();
+        //}
+        //public BayDan GetBayDanDetails(string Name)
+        //{
+        //    var baydandetails = baydancollection.Find(m => m._id == Name).FirstOrDefault();
+        //    return baydandetails;
+        //}
+
+        //public void Create(BayDan baydanData)
+        //{
+        //    baydancollection.InsertOne(baydanData);
+        //}
+        //public void Update(string _id, BayDan baydanData)
+        //{
+        //    var filter = Builders<BayDan>.Filter.Eq(c => c._id, _id);
+        //    var update = Builders<BayDan>.Update
+        //        .Set("Chuong", baydanData.Chuong);
+
+
+        //    baydancollection.UpdateOne(filter, update);
+        //}
+
+        //public void Delete(string Name)
+        //{
+        //    var filter = Builders<BayDan>.Filter.Eq(c => c._id, Name);
+        //    baydancollection.DeleteOne(filter);
+        //}
+        public readonly IMongoDatabase _db;
+
+        public BayDanDBContext(IOptions<Settings> options)
         {
-            _next = next;
+            var clinet = new MongoClient(options.Value.ConnectionString);
+            _db = clinet.GetDatabase(options.Value.Database);
         }
 
-        public Task Invoke(HttpContext httpContext)
-        {
+        public IMongoCollection<BayDan> baydancollection =>
+            _db.GetCollection<BayDan>("BayDan");
 
-            return _next(httpContext);
+        public IMongoCollection<CaThe> cathebaydancollection =>
+            _db.GetCollection<CaThe>("CaThe");
+
+        public IEnumerable<BayDan> GetAllBayDan()
+        {
+            return baydancollection.Find(a => true).ToList();
+        }
+
+        public BayDan GetBayDanDetails(string Name)
+        {
+            var baydandetails = baydancollection.Find(m => m._id == Name).FirstOrDefault();
+            return baydandetails;
+        }
+        public void Create(BayDan baydanData)
+        {
+            baydancollection.InsertOne(baydanData);
+        }
+
+        public void Update(string _id, BayDan baydanData)
+        {
+            var filter = Builders<BayDan>.Filter.Eq(c => c._id, _id);
+            var update = Builders<BayDan>.Update
+                .Set("Chuong", baydanData.Chuong);
+
+
+            baydancollection.UpdateOne(filter, update);
+        }
+
+        public void Delete(string Name)
+        {
+            var filter = Builders<BayDan>.Filter.Eq(c => c._id, Name);
+            baydancollection.DeleteOne(filter);
         }
 
 
-    }
 
-    // Extension method used to add the middleware to the HTTP request pipeline.
-    public static class BayDanDBContextExtensions
-    {
-        public static IApplicationBuilder UseMiddlewareClassTemplate(this IApplicationBuilder builder)
-        {
-            return builder.UseMiddleware<BayDanDBContext>();
-        }
     }
 }
 

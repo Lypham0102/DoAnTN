@@ -1,0 +1,41 @@
+﻿@model Happy_Meat_Farm.Models.BayDan
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>BayDan</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model._id)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model._id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Chuong)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Chuong)
+        </dd>
+    </dl>
+</div>
+
+<div>
+    <div>
+        <a asp-controller="VatNuoi" asp-action="Index">
+            <button type="button">
+                <i><span>Danh sách cá thể vật nuôi</span></i>
+            </button>
+        </a>
+    </div>
+
+
+    @*@Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |*@
+    <a asp-action="Index">Back to List</a>
+</div>

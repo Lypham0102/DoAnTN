@@ -44,11 +44,12 @@ namespace Happy_Meat_Farm
             //});
 
             services.AddSingleton<IMongoClient>(new MongoClient("mongodb://localhost:5001"));
-            services.AddTransient<CaTheController>();
+            //services.AddTransient<CaTheController>();
 
             services.AddControllersWithViews();
             services.AddTransient<INhanVien, NhanVienDBContext>();
-
+            services.AddTransient<IBayDan, BayDanDBContext>();
+            services.AddTransient<ICaThe, CaTheDBContext>();
             services.Configure<Settings>(options =>
             {
                  options.ConnectionString = Configuration.GetSection("MongoDB:ConnectionString").Value;
@@ -87,8 +88,8 @@ namespace Happy_Meat_Farm
                 endpoints.MapControllerRoute(
                     name: "default",
 
-                    pattern: "{controller=NhanVien}/{action=Login}/{id?}");
-                    //pattern: "{controller=Home}/{action=Index}/{id?}");
+                    //pattern: "{controller=NhanVien}/{action=Login}/{id?}");
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
 
             });
         }

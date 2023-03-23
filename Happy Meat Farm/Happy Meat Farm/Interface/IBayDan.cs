@@ -10,14 +10,15 @@ namespace Happy_Meat_Farm.Interface
 {
     public interface IBayDan
     {
-        IMongoCollection<BayDan> BayDancollection { get; }
+        IMongoCollection<BayDan> baydancollection { get; }
         IEnumerable<BayDan> GetAllBayDan();
         BayDan GetBayDanDetails(string Name);
+        //CaThe GetCaTheBayDan(string Name);
 
-        void Create(BayDan BayDanData);
-        void Update(string _id, BayDan BayDanData);
-        
-
+        void Create(BayDan baydanData);
+        void Update(string _id, BayDan baydanData);
+        void Delete(string Name);
+        //void Inf(string cathetheobayData);
     }
 }
 

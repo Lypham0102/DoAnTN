@@ -15,14 +15,14 @@ namespace Happy_Meat_Farm.Controllers
     {
         private readonly ICaThe _context;
 
-        //public VatNuoiController(ICaThe context)
-        //{
-        //    _context = context;
-        //}
-        //public IActionResult Index()
-        //{
-        //    return View(_context.GetAllCaThe());
-        //}
+        public VatNuoiController(ICaThe context)
+        {
+            _context = context;
+        }
+        public IActionResult Index()
+        {
+            return View(_context.GetAllCaThe());
+        }
 
         //public IActionResult Create()
         //{

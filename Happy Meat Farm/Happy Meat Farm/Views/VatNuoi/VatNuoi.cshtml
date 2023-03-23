@@ -1,7 +1,11 @@
-﻿
+﻿@model IEnumerable<Happy_Meat_Farm.Models.CaThe>
+
+
 @{
     ViewData["Title"] = "Vật Nuôi";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
 <p><h2 style="margin-left: 320px">Thông tin vật nuôi</h2></p>
 <div style="margin-left:280px; height: 200px; margin-top:5px" class="daily-report">
     <ul>
@@ -13,17 +17,49 @@
     </ul>
 </div>
 <div><h3>Danh sách cá thể</h3></div>
-<table class="table" ">
+<p>
+    <a asp-action="Create">Thêm cá thể</a>
+</p>
+<table class="table">
     <thead>
         <tr>
-            <th style="width:180px"> Mã cá thể </th>
-            <th style="width:200px"> Đặc điểm </th>
-            <th style="width:200px"> Ngày tuổi </th>
-            @*<th style="width:120px"> CCCD </th>
-                <th style="width:120px"> SĐT</th>
-                <th style="width:150px"> Địa chỉ </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model._id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DacDiem)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NgayTuoi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MaChuong)
+            </th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item._id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DacDiem)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NgayTuoi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MaChuong)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                </td>
+            </tr>
+        }
+    </tbody>
 </table>
-<a asp-action="#"><h4>Danh sách heo giống</h4></a>
