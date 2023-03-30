@@ -32,16 +32,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/BayDan/BayDanShow.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmF5RGFuXEJheURhblNob3cuY3NodG1s
+[C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/BayDan/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmF5RGFuXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/BayDan/IndexBayDan.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmF5RGFuXEluZGV4QmF5RGFuLmNzaHRtbA==
+[C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/BayDan/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmF5RGFuXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/BayDan/ThemBayDan.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmF5RGFuXFRoZW1CYXlEYW4uY3NodG1s
+[C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/BayDan/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmF5RGFuXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/BayDan/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmF5RGFuXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/BayDan/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmF5RGFuXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/Home/Index.cshtml]
@@ -112,20 +120,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmF0TnVvaVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/VatNuoi/ThemChuong.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmF0TnVvaVxUaGVtQ2h1b25nLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/VatNuoi/ThemVatNuoi.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmF0TnVvaVxUaGVtVmF0TnVvaS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/VatNuoi/VatNuoi.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmF0TnVvaVxWYXROdW9pLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/VatNuoi/XuatChuong.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmF0TnVvaVxYdWF0Q2h1b25nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/_ViewImports.cshtml]

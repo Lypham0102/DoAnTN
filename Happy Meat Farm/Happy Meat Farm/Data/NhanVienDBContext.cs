@@ -61,6 +61,7 @@ namespace Happy_Meat_Farm.Data
             var filter = Builders<NhanVien>.Filter.Eq(c => c.TenNV, Name);
             nhanviencollection.DeleteOne(filter);
         }
+        
 
     }
 }

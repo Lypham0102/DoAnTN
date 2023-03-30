@@ -6,6 +6,7 @@ using Happy_Meat_Farm.Interface;
 using Happy_Meat_Farm.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 
@@ -99,8 +100,18 @@ namespace Happy_Meat_Farm.Data
             baydancollection.DeleteOne(filter);
         }
 
-
-
+        //public BayDan Inf(string Name)
+        //{
+        //    var baydancathe = baydancollection.Find(m => m.Chuong == Name).FirstOrDefault();
+        //    return baydancathe;
+        //}
+        
+        public IMongoCollection<CaThe> cathecollection =>
+            _db.GetCollection<CaThe>("CaThe");
+        public IEnumerable<CaThe> GetCaTheTheoBay(string Name)
+        {
+            return cathecollection.Find(a => a.Chuong == Name).ToList();
+        }
     }
 }
 

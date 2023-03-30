@@ -15,7 +15,7 @@ namespace Happy_Meat_Farm.Models
         public string _id { get; set; }
         public string DacDiem { get; set; }
         public string NgayTuoi { get; set; }
-        public string MaChuong { get; set; }
+        public string Chuong { get; set; }
 
     }
 

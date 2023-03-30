@@ -22,6 +22,8 @@ namespace Happy_Meat_Farm.Controllers
         public IActionResult Index()
         {
             return View(_context.GetAllCaThe());
+            //var md = _context.GetAllCaThe(Name).ToString();
+            //return View(md);
         }
 
         //public IActionResult Create()
@@ -67,8 +69,10 @@ namespace Happy_Meat_Farm.Controllers
 
 
         // GET: /<controller>/
-        public IActionResult VatNuoi()
+        [HttpGet]
+        public IActionResult VatNuoi(string Name)
         {
+            //var md = _context.GetCaTheTheoBay(Name);
             return View();
         }
         //public IActionResult ShowBayDan()
@@ -78,26 +82,35 @@ namespace Happy_Meat_Farm.Controllers
         //        .Aggregate()
         //        .Lookup("BayDan", "MaBayDan", "_id", "BayDan")
         //        .ToList();
-
         //    return View(VatNuoi);
         //}
+        //public IActionResult CaTheoTheoBay(string Name)
+        //{
+        //    return View(_context.GetCaTheTheoBay(Name));
+        //}
 
-        public IActionResult ThemVatNuoi()
-        {
-            return View();
+        //[HttpGet]
+        //public IActionResult ChiTietTheoBayDan(string Name)
+        //{
+        //    var md = _context.GetCaTheTheoBay(Name);
+        //    return View(md);
         }
-        public IActionResult ThemChuong()
-        {
-            return View();
-        }
-        public IActionResult ThemBayDan()
-        {
-            return View();
-        }
-        public IActionResult XuatChuong()
-        {
-            return View();
-        }
-    }
+        //public IActionResult ThemVatNuoi()
+        //{
+        //    return View();
+        //}
+        //public IActionResult ThemChuong()
+        //{
+        //    return View();
+        //}
+        //public IActionResult ThemBayDan()
+        //{
+        //    return View();
+        //}
+        //public IActionResult XuatChuong()
+        //{
+        //    return View();
+        //}
+    //}
 }
 

@@ -262,10 +262,7 @@ C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\R
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Shared\_LayoutLogin.cshtml.g.cs
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\VatNuoi\Index.cshtml.g.cs
-C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\VatNuoi\ThemChuong.cshtml.g.cs
-C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\VatNuoi\ThemVatNuoi.cshtml.g.cs
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\VatNuoi\VatNuoi.cshtml.g.cs
-C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\VatNuoi\XuatChuong.cshtml.g.cs
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.RazorTargetAssemblyInfo.cache
@@ -277,13 +274,17 @@ C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\H
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Happy Meat Farm.genruntimeconfig.cache
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\ref\Happy Meat Farm.dll
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\BayDan\Index.cshtml.g.cs
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\BayDan\Create.cshtml.g.cs
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\BayDan\Edit.cshtml.g.cs
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\BayDan\Delete.cshtml.g.cs
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\BayDan\Details.cshtml.g.cs
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\staticwebassets\Happy Meat Farm.StaticWebAssets.Pack.cache
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\staticwebassets\msbuild.Happy Meat Farm.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\staticwebassets\msbuild.build.Happy Meat Farm.props
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.Happy Meat Farm.props
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.Happy Meat Farm.props
 C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\refint\Happy Meat Farm.dll
-C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\BayDan\Create.cshtml.g.cs
-C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\BayDan\Edit.cshtml.g.cs
-C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\BayDan\Delete.cshtml.g.cs
-C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\BayDan\Details.cshtml.g.cs
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\CaThe\Inf.cshtml.g.cs
+C:\Users\ADMIN\Desktop\DoAnTN\Happy Meat Farm\Happy Meat Farm\obj\Debug\net5.0\Razor\Views\BayDan\Inf.cshtml.g.cs

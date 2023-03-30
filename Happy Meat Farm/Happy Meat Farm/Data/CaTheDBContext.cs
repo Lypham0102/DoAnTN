@@ -26,6 +26,20 @@ namespace Happy_Meat_Farm.Data
         {
             return cathecollection.Find(a=>true).ToList();
         }
+        //public IEnumerable<CaThe>GetCaTheTheoBay(string Name)
+        //{
+        //    return cathecollection.Find(a => a.Chuong == Name).ToList();
+        //}
+        //public CaThe GetCaTheTheoBay(string Name)
+        //{
+        //    var cathetheobay = cathecollection.Find(m => m.Chuong == Name).FirstOrDefault();
+        //    return cathetheobay;
+        //}
+        //public CaThe GetCaTheTheoBay(string Name)
+        //{
+        //    return cathecollection.Find(a => a.Chuong == Name).ToList();
+
+        //}
         public CaThe GetCaTheDetails(string Name)
         {
             var cathedetails = cathecollection.Find(m => m._id == Name).FirstOrDefault();
@@ -42,7 +56,7 @@ namespace Happy_Meat_Farm.Data
             var update = Builders<CaThe>.Update
                 .Set("DacDiem", catheData.DacDiem)
                 .Set("NgayTuoi", catheData.NgayTuoi)
-                .Set("MaChuong", catheData.MaChuong);
+                .Set("Chuong", catheData.Chuong);
             cathecollection.UpdateOne(filter, update);
         }
         public void Delete(string Name)
@@ -50,5 +64,10 @@ namespace Happy_Meat_Farm.Data
             var filter = Builders<CaThe>.Filter.Eq(c => c._id, Name);
             cathecollection.DeleteOne(filter);
         }
+        public IEnumerable<CaThe> GetCaTheTheoBay(string Name)
+        {
+            return cathecollection.Find(a => a.Chuong == Name).ToList();
+        }
+
     }
 }
