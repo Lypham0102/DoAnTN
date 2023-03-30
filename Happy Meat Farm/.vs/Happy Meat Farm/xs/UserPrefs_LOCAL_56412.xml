@@ -1,0 +1,52 @@
+﻿<Properties StartupConfiguration="{1900C92F-6A65-4269-AEC6-739CF738D02E}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Happy_220Meat_220Farm PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Happy Meat Farm/Views/Shared/_Layout.cshtml">
+    <Files>
+      <File FileName="Happy Meat Farm/Views/Shared/_Layout.cshtml" Line="110" Column="31" IsPinned="True" />
+      <File FileName="Happy Meat Farm/wwwroot/css/site.css" Line="42" Column="13" IsPinned="True" />
+      <File FileName="Happy Meat Farm/Controllers/HomeController.cs" Line="42" Column="10" IsPinned="True" />
+      <File FileName="Happy Meat Farm/Views/VatNuoi/Index.cshtml" />
+      <File FileName="Happy Meat Farm/Views/NhanVien/Index.cshtml" />
+      <File FileName="Happy Meat Farm/Views/Home/Index.cshtml" />
+      <File FileName="Happy Meat Farm/Views/VatNuoi/VatNuoi.cshtml" />
+      <File FileName="Happy Meat Farm/Views/VatNuoi/ThemVatNuoi.cshtml" />
+      <File FileName="Happy Meat Farm/Views/VatNuoi/ThemChuong.cshtml" />
+      <File FileName="Happy Meat Farm/Controllers/VatNuoiController.cs" />
+      <File FileName="Happy Meat Farm/Interface/IBayDan.cs" />
+      <File FileName="Happy Meat Farm/Controllers/BayDanController.cs" />
+      <File FileName="Happy Meat Farm/Data/CaTheDBContext.cs" />
+      <File FileName="Happy Meat Farm/Data/BayDanDBContext.cs" />
+      <File FileName="Happy Meat Farm/Data/NhanVienController.cs" />
+      <File FileName="Happy Meat Farm/Views/Home/NhietDoDoAm.cshtml" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Happy Meat Farm" expanded="True">
+            <Node name="Happy Meat Farm" expanded="True" selected="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Interface" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="BayDan" expanded="True" />
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True" />
+                <Node name="VatNuoi" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+</Properties>

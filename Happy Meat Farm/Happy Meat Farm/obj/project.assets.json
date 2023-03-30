@@ -12112,11 +12112,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/dev/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Happy Meat Farm.csproj",
+      "projectUniqueName": "/Users/dev/Library/Mobile Documents/com~apple~CloudDocs/Coding/DoAnTN/Happy Meat Farm/Happy Meat Farm/Happy Meat Farm.csproj",
       "projectName": "Happy Meat Farm",
-      "projectPath": "/Users/dev/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/Happy Meat Farm.csproj",
+      "projectPath": "/Users/dev/Library/Mobile Documents/com~apple~CloudDocs/Coding/DoAnTN/Happy Meat Farm/Happy Meat Farm/Happy Meat Farm.csproj",
       "packagesPath": "/Users/dev/.nuget/packages/",
-      "outputPath": "/Users/dev/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/",
+      "outputPath": "/Users/dev/Library/Mobile Documents/com~apple~CloudDocs/Coding/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/dev/.nuget/NuGet/NuGet.Config"

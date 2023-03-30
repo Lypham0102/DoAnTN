@@ -1,0 +1,49 @@
+﻿<Properties StartupConfiguration="{1900C92F-6A65-4269-AEC6-739CF738D02E}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Happy_220Meat_220Farm PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Happy Meat Farm/Controllers/CaTheController.cs">
+    <Files>
+      <File FileName="Happy Meat Farm/Views/Shared/_Layout.cshtml" Line="98" Column="97" IsPinned="True" />
+      <File FileName="Happy Meat Farm/Views/BayDan/Index.cshtml" Line="13" Column="33" />
+      <File FileName="Happy Meat Farm/Interface/ICaThe.cs" Line="1" Column="1" />
+      <File FileName="Happy Meat Farm/Models/BayDan.cs" Line="19" Column="1" />
+      <File FileName="Happy Meat Farm/Models/CaThe.cs" Line="1" Column="1" />
+      <File FileName="Happy Meat Farm/Interface/IBayDan.cs" Line="1" Column="1" />
+      <File FileName="Happy Meat Farm/Controllers/VatNuoiController.cs" Line="1" Column="1" />
+      <File FileName="Happy Meat Farm/Controllers/CaTheController.cs" Line="15" Column="53" />
+      <File FileName="Happy Meat Farm/Startup.cs" Line="47" Column="54" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Happy Meat Farm" expanded="True">
+            <Node name="Happy Meat Farm" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Interface" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="BayDan" expanded="True" />
+                <Node name="Home" expanded="True" />
+                <Node name="NhanVien" expanded="True" />
+                <Node name="Shared" expanded="True" />
+                <Node name="VatNuoi" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+</Properties>
