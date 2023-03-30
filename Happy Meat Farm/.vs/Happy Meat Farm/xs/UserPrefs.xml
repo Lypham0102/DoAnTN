@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{1900C92F-6A65-4269-AEC6-739CF738D02E}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Happy Meat Farm/Controllers/BayDanController.cs">
     <Files>
-      <File FileName="Happy Meat Farm/Scripts/Blockchain.js" Line="6" Column="34" />
+      <File FileName="Happy Meat Farm/Scripts/Blockchain.js" />
       <File FileName="Happy Meat Farm/Controllers/BayDanController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
@@ -9,10 +9,12 @@
         <State name="__root__">
           <Node name="Happy Meat Farm" expanded="True">
             <Node name="Happy Meat Farm" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="BayDanController.cs" selected="True" />
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
               </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Data" expanded="True" />
+              <Node name="Interface" expanded="True" />
               <Node name="Scripts" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Shared" expanded="True" />

@@ -56,6 +56,7 @@
           "Microsoft.CodeAnalysis.Analyzers": "3.0.0",
           "Microsoft.CodeDom.Providers.DotNetCompilerPlatform": "3.6.0",
           "Microsoft.EntityFrameworkCore": "5.0.0",
+          "Microsoft.EntityFrameworkCore.Analyzers": "5.0.0",
           "Microsoft.Graph": "5.1.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "5.0.2",
           "Microsoft.Web.Infrastructure": "2.0.0",
