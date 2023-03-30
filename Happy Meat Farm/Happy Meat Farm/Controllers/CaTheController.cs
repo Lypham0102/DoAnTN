@@ -23,6 +23,10 @@ namespace Happy_Meat_Farm.Controllers
         {
             return View(_context.GetAllCaThe());
         }
+        //public IActionResult TheoBay(string Name)
+        //{
+        //    return View(_context.GetCaTheTheoBay(Name));
+        //}
         public IActionResult Create()
         {
             return View();
@@ -63,6 +67,12 @@ namespace Happy_Meat_Farm.Controllers
             _context.Delete(_id);
             return RedirectToAction("Index");
         }
+        //public IActionResult Inf(string Name)
+        //{
+        //    var md = _context.GetCaTheTheoBay(Name);
+        //    return View();
+        //}
+
     }
 }
 

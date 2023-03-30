@@ -88,8 +88,8 @@ namespace Happy_Meat_Farm
                 endpoints.MapControllerRoute(
                     name: "default",
 
-                    //pattern: "{controller=NhanVien}/{action=Login}/{id?}");
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=NhanVien}/{action=Login}/{id?}");
+                    //pattern: "{controller=Home}/{action=Index}/{id?}");
 
             });
         }

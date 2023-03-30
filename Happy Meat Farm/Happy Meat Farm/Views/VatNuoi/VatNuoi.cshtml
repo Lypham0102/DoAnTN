@@ -33,7 +33,7 @@
                 @Html.DisplayNameFor(model => model.NgayTuoi)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.MaChuong)
+                @Html.DisplayNameFor(model => model.Chuong)
             </th>
             <th></th>
         </tr>
@@ -52,12 +52,12 @@
                     @Html.DisplayFor(modelItem => item.NgayTuoi)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.MaChuong)
+                    @Html.DisplayFor(modelItem => item.Chuong)
                 </td>
                 <td>
-                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                    @Html.ActionLink("Edit", "Edit", new {  Name = item._id }) |
+                    @Html.ActionLink("Details", "Details", new {  Name = item._id }) |
+                    @Html.ActionLink("Delete", "Delete", new {  Name = item._id })
                 </td>
             </tr>
         }

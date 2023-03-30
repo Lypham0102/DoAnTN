@@ -70,6 +70,11 @@ namespace Happy_Meat_Farm.Controllers
         //    var md = _context.GetCaTheBayDan(Name);
         //    return View(md);
         //}
+        public IActionResult Inf(string Name)
+        {
+            var md = _context.GetCaTheTheoBay(Name);
+            return View(md);
+        }
     }
 }
 
