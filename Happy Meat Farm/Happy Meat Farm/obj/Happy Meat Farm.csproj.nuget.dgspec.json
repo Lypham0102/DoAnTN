@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/dev/Library/Mobile Documents/com~apple~CloudDocs/Coding/DoAnTN/Happy Meat Farm/Happy Meat Farm/Happy Meat Farm.csproj": {}
+    "/Users/minhhieu/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/Happy Meat Farm.csproj": {}
   },
   "projects": {
-    "/Users/dev/Library/Mobile Documents/com~apple~CloudDocs/Coding/DoAnTN/Happy Meat Farm/Happy Meat Farm/Happy Meat Farm.csproj": {
+    "/Users/minhhieu/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/Happy Meat Farm.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/dev/Library/Mobile Documents/com~apple~CloudDocs/Coding/DoAnTN/Happy Meat Farm/Happy Meat Farm/Happy Meat Farm.csproj",
+        "projectUniqueName": "/Users/minhhieu/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/Happy Meat Farm.csproj",
         "projectName": "Happy Meat Farm",
-        "projectPath": "/Users/dev/Library/Mobile Documents/com~apple~CloudDocs/Coding/DoAnTN/Happy Meat Farm/Happy Meat Farm/Happy Meat Farm.csproj",
-        "packagesPath": "/Users/dev/.nuget/packages/",
-        "outputPath": "/Users/dev/Library/Mobile Documents/com~apple~CloudDocs/Coding/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/",
+        "projectPath": "/Users/minhhieu/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/Happy Meat Farm.csproj",
+        "packagesPath": "/Users/minhhieu/.nuget/packages/",
+        "outputPath": "/Users/minhhieu/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/dev/.nuget/NuGet/NuGet.Config"
+          "/Users/minhhieu/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"

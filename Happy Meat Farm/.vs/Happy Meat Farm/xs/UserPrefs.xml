@@ -1,23 +1,44 @@
 ﻿<Properties StartupConfiguration="{1900C92F-6A65-4269-AEC6-739CF738D02E}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Happy Meat Farm/Controllers/BayDanController.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../../../usr/local/share/dotnet/sdk/7.0.202/Sdks/Microsoft.NET.Sdk/targets/Microsoft.PackageDependencyResolution.targets">
     <Files>
-      <File FileName="Happy Meat Farm/Scripts/Blockchain.js" />
-      <File FileName="Happy Meat Farm/Controllers/BayDanController.cs" Line="1" Column="1" />
+      <File FileName="Happy Meat Farm/Views/Shared/_Layout.cshtml" Line="110" Column="31" IsPinned="True" />
+      <File FileName="Happy Meat Farm/wwwroot/css/site.css" Line="42" Column="13" IsPinned="True" />
+      <File FileName="Happy Meat Farm/Controllers/HomeController.cs" Line="42" Column="10" IsPinned="True" />
+      <File FileName="Happy Meat Farm/Views/VatNuoi/Index.cshtml" />
+      <File FileName="Happy Meat Farm/Views/NhanVien/Index.cshtml" />
+      <File FileName="Happy Meat Farm/Views/Home/Index.cshtml" />
+      <File FileName="Happy Meat Farm/Views/VatNuoi/VatNuoi.cshtml" />
+      <File FileName="Happy Meat Farm/Controllers/VatNuoiController.cs" />
+      <File FileName="Happy Meat Farm/Interface/IBayDan.cs" />
+      <File FileName="Happy Meat Farm/Controllers/BayDanController.cs" />
+      <File FileName="Happy Meat Farm/Data/CaTheDBContext.cs" />
+      <File FileName="Happy Meat Farm/Data/BayDanDBContext.cs" />
+      <File FileName="Happy Meat Farm/Views/Home/NhietDoDoAm.cshtml" />
+      <File FileName="Happy Meat Farm/Views/CaThe/Inf.cshtml" />
+      <File FileName="../../../../../../usr/local/share/dotnet/sdk/7.0.202/Sdks/Microsoft.NET.Sdk/targets/Microsoft.PackageDependencyResolution.targets" Line="266" Column="5" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Happy Meat Farm" expanded="True">
             <Node name="Happy Meat Farm" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
-              </Node>
+              <Node name="Dependencies" expanded="True" />
               <Node name="Controllers" expanded="True" />
               <Node name="Data" expanded="True" />
               <Node name="Interface" expanded="True" />
-              <Node name="Scripts" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Services" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Shared" expanded="True" />
+                <Node name="BayDan" expanded="True" />
+                <Node name="CaThe" expanded="True" />
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="_Layout.cshtml" selected="True" />
+                </Node>
+                <Node name="VatNuoi" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -25,11 +46,9 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Happy_220Meat_220Farm PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Happy_220Meat_220Farm PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
