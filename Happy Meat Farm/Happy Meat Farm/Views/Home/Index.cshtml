@@ -1,5 +1,6 @@
 ﻿@{
     ViewData["Title"] = "Tổng quan trang trại";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
@@ -85,14 +86,9 @@
     firebase.initializeApp(firebaseConfig);
     firebase.analytics();
 
-
-
-    //functions
-    // make sure that the name in ' ' match with name of your database child
     var temp = document.getElementById('temp');
     var dbRef = firebase.database().ref().child('TEMPERATURE');
     dbRef.on('value', snap => temp.innerText = snap.val());
-
 
     var wet = document.getElementById('wet');
     var dbRef2 = firebase.database().ref('HUMIDITY');

@@ -7,7 +7,6 @@ using Happy_Meat_Farm.Interface;
 using Happy_Meat_Farm.Models;
 using MongoDB.Bson;
 
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace Happy_Meat_Farm.Controllers
 {

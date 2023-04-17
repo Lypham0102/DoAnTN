@@ -14,6 +14,10 @@ using Happy_Meat_Farm.Models;
 using Happy_Meat_Farm.Data;
 using Happy_Meat_Farm.Interface;
 using Happy_Meat_Farm.Controllers;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Happy_Meat_Farm.Services;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace Happy_Meat_Farm
 {
@@ -30,22 +34,41 @@ namespace Happy_Meat_Farm
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            ////services.Configure<MyDatabaseSettings>(
-            ////Configuration.GetSection(nameof(MyDatabaseSettings)));
+            services.AddSingleton<IMongoClient>(sp =>
+        sp.GetRequiredService<IOptions<MongoClient>>().Value);
 
-            ////services.AddSingleton<MyDatabaseSettings>(sp =>
-            ////sp.GetRequiredService<IOptions<MyDatabaseSettings>>().Value);
 
-            //services.AddSingleton<IMongoClient, MongoClient>(s =>
-            //{
+            services.AddScoped<INhanVien, NhanVienDBContext>();
+            services.AddScoped<NhanVienServices>();
 
-            //    var uri = s.GetRequiredService<IConfiguration>()["MongoUri"];
-            //    return new MongoClient(uri);
-            //});
+
+            services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+
+            .AddJwtBearer(options =>
+             {
+                 options.RequireHttpsMetadata = false;
+                 options.SaveToken = true;
+                 options.TokenValidationParameters = new TokenValidationParameters
+                 {
+                     ValidateIssuerSigningKey = true,
+                     //IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(Configuration["Jwt:Key"])),
+                     //ValidateIssuer = false,
+                     //ValidateAudience = false,
+                     ValidateIssuer = true,
+                     ValidateAudience = true,
+                     ValidateLifetime = true,
+                     ValidIssuer = "https://example.com",
+                     ValidAudience = "https://example.com",
+                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("YOUR_SECRET_KEY_HERE"))
+
+                 };
+             });
 
             services.AddSingleton<IMongoClient>(new MongoClient("mongodb://localhost:5001"));
-            //services.AddTransient<CaTheController>();
-
             services.AddControllersWithViews();
             services.AddTransient<INhanVien, NhanVienDBContext>();
             services.AddTransient<IBayDan, BayDanDBContext>();
@@ -55,10 +78,7 @@ namespace Happy_Meat_Farm
                  options.ConnectionString = Configuration.GetSection("MongoDB:ConnectionString").Value;
                  options.Database = Configuration.GetSection("MongoDB:Database").Value;
             });
-            // ...
-            //services.AddMongoClient("mongodb://localhost:5001");
-            //services.AddTransient<CaTheController>();
-            // ..
+            
         }
         
 
@@ -87,11 +107,16 @@ namespace Happy_Meat_Farm
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-
-                    pattern: "{controller=NhanVien}/{action=Login}/{id?}");
+                    pattern: "{controller=Auth}/{action=Login}/{id?}");
                     //pattern: "{controller=Home}/{action=Index}/{id?}");
 
             });
+            app.UseAuthentication();
+            app.UseAuthorization();
+
+            
+
+
         }
     }
 }

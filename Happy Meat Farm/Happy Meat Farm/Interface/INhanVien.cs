@@ -12,7 +12,7 @@ namespace Happy_Meat_Farm.Interface
         IMongoCollection<NhanVien> nhanviencollection { get; }
         IEnumerable<NhanVien> GetAllNhanVien();
         NhanVien GetNhanVienDetails(string Name);
-
+        //NhanVien Authenticate(string TenTaiKhoan, string Passwork);
         void Create(NhanVien nhanvienData);
         void Update(string _id, NhanVien nhanvienData);
         void Delete(string Name);

@@ -8,6 +8,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using MongoDB.Driver;
 using MongoDB.Bson;
+using System.Security.Cryptography;
+using Microsoft.AspNetCore.Http;
 
 namespace Happy_Meat_Farm.Controllers
 {
@@ -19,7 +21,7 @@ namespace Happy_Meat_Farm.Controllers
         {
             _logger = logger;
         }
-        //private IMongoCollection<NhanVien>_nhanvienCollection;
+        private IMongoCollection<NhanVien>_nhanvienCollection;
         //public HomeController(IMongoClient client)
         //{
         //    //_logger = logger;
@@ -27,18 +29,17 @@ namespace Happy_Meat_Farm.Controllers
         //    _nhanvienCollection = database.GetCollection<NhanVien>("NhanViens");
 
         //}
+        public IActionResult Index()
+        {
+            return View();
+        }
+
 
         [HttpGet]
         public IEnumerable<NhanVien> Get() 
         {
             return null;
             //return _nhanvienCollection.Find(s => s.MaNV != "").ToList();
-        }
-        
-
-        public IActionResult Index()
-        {
-            return View();
         }
 
         public IActionResult QuanLyCongViec()

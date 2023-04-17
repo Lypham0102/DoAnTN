@@ -6,17 +6,23 @@ using Happy_Meat_Farm.Interface;
 using Happy_Meat_Farm.Models;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
+using System.Runtime.InteropServices;
+using Microsoft.Graph.Models;
 
 namespace Happy_Meat_Farm.Data
 {
-    public class NhanVienDBContext : INhanVien
+    public class NhanVienDBContext : INhanVien  
     {
         public readonly IMongoDatabase _db;
+        public readonly MongoClient _mongoClient;
+        public readonly IMongoCollection<NhanVien> _NV;
 
         public NhanVienDBContext(IOptions<Settings> options)
         {
             var client = new MongoClient(options.Value.ConnectionString);
             _db = client.GetDatabase(options.Value.Database);
+
+            _NV = _db.GetCollection<NhanVien>("NhanVien");
 
         }
 
@@ -32,7 +38,7 @@ namespace Happy_Meat_Farm.Data
             var nhanviendetails = nhanviencollection.Find(m=>m.TenNV == Name).FirstOrDefault();
             return nhanviendetails;
         }
-
+        
         public void Create(NhanVien nhanvienData)
         {
             nhanviencollection.InsertOne(nhanvienData);
@@ -50,18 +56,52 @@ namespace Happy_Meat_Farm.Data
                 .Set("TenTaiKhoan", nhanvienData.TenTaiKhoan)
                 .Set("Passwork", nhanvienData.Passwork);
 
-
             nhanviencollection.UpdateOne(filter, update);
         }
 
+        //GetUserByUsernameAsync
+        public async Task<NhanVien> GetUserByUsernameAsync(string username)
+        {
+            var nhanVienCollection = _mongoClient.GetDatabase("YourDatabaseName").GetCollection<NhanVien>("nhanvien");
+            var filter = Builders<NhanVien>.Filter.Eq("TenTaiKhoan", username);
+            var result = await nhanVienCollection.Find(filter).FirstOrDefaultAsync();
+            return result;
+        }
+
+        //AddUserAsync
+        public async Task<bool> AddUserAsync(NhanVien user)
+        {
+            try
+            {
+                await _NV.InsertOneAsync(user);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+
         public void Delete(string Name)
         {
-
-            //var filter = Builders<NhanVien>.Filter.Eq(c => c.TenNV, Name);
             var filter = Builders<NhanVien>.Filter.Eq(c => c.TenNV, Name);
             nhanviencollection.DeleteOne(filter);
         }
+
         
+
+        //public NhanVien Authenticate(string TenTaiKhoan, string Passwork)
+        //{
+        //    var account = _NV.Find(x => x.TenTaiKhoan == TenTaiKhoan && x.Passwork == Passwork).FirstOrDefault();
+
+        //    if (account == null)
+        //    {
+        //        return null;
+        //    }
+
+        //    return account;
+        //}
 
     }
 }
