@@ -28,7 +28,6 @@ namespace Happy_Meat_Farm.Controllers
         public readonly NhanVienDBContext _dbContext;
         public readonly IConfiguration _configuration;
 
-        // GET: /<controller>/
         public IActionResult Index()
         {
             return View();
@@ -104,6 +103,14 @@ namespace Happy_Meat_Farm.Controllers
             await _dbContext.AddUserAsync(user);
 
             return Ok();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            return RedirectToAction("Login", "Auth");
         }
 
 
