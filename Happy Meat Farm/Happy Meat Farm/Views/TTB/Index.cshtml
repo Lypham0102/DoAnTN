@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Happy_Meat_Farm.Models.TTBModel>
+
+@{
+    ViewData["Title"] = "Trang thiết bị";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Danh Sách Trang Thiết Bị</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th style="width:250px"> Tên </th>
+            <th style="width:250px"> Loại </th>
+            <th style="width:250px"> Kích thước </th>
+            <th style="width:250px"> Chất Liệu  </th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null)
+        {
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TenTrangThietBi)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LoaiTrangThietBi)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.KichThuoc)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ChatLieu)
+                    </td>
+                </tr>
+            }
+        }
+
+    </tbody>
+</table>
+<button>
+    <a asp-action="Create">Thêm trang thiết bị </a>
+</button>
+

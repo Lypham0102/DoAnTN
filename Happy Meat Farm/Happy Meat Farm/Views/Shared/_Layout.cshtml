@@ -91,15 +91,22 @@
                                 </h2>
                                 <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">
-                                        <a class="nav-link text-black-50" asp-controller="" asp-action="">
-                                            <span class="text">Quản Lý Thức Ăn</span>
+                                        <a class="nav-link text-black-50" asp-controller="ThucAn" asp-action="Index">
+                                            <span class="text">Thức Ăn</span>
                                         </a>
                                     </div>
                                 </div>
                                 <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">
-                                        <a class="nav-link text-black-50" asp-controller="" asp-action="">
-                                            <span class="text">Quản Lý Công Cụ</span>
+                                        <a class="nav-link text-black-50" asp-controller="Thuoc" asp-action="Index">
+                                            <span class="text">Thuốc</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <a class="nav-link text-black-50" asp-controller="TTB" asp-action="Index">
+                                            <span class="text">Trang Thiết Bị</span>
                                         </a>
                                     </div>
                                 </div>
@@ -151,7 +158,7 @@
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Thông tin</a></li>
                     <li><a class="dropdown-item" href="#">Cài đặt</a></li>
-                    <li><a class="dropdown-item" asp-area=" " asp-controller="Auth" asp-action="Logout" href="#">Đăng xuất</a></li>
+                    <li><a class="dropdown-item" href="#"> Đăng xuất</a></li>
                 </ul>
             </div>
 
@@ -168,9 +175,10 @@
         </div>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer style="position: fixed; bottom: 0; left: 300px; right: 0; background-color: #333; color: #fff; text-align: center; padding: 10px;">
+
         <div class="container">
-            &copy; 2023 - <a asp-area="" asp-controller="Home" asp-action="Index"> Happy Meat Farm 17 Mar Version</a>- Project Design 3 - VJIT
+             &copy; 2023 - <a asp-area="" asp-controller="Home" asp-action="Index"> Happy Meat Farm 17 Mar Version</a>- Project Design 3 - VJIT
         </div>
     </footer>
 
@@ -183,7 +191,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
-=======
+
     <!--https://firebase.google.com/docs/web/setup#available-libraries--> 
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>

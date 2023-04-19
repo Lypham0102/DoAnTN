@@ -34,10 +34,11 @@ namespace Happy_Meat_Farm
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSingleton<IMongoClient>(sp =>
-        sp.GetRequiredService<IOptions<MongoClient>>().Value);
+            services.AddSingleton<IMongoClient>(sp => sp.GetRequiredService<IOptions<MongoClient>>().Value);
 
-
+            services.AddScoped<TTB_Interface, TTBRepository>();
+            services.AddScoped<IThuoc, ThuocDBContext>();
+            services.AddScoped<IThucAn, ThucAnDBContext>();
             services.AddScoped<INhanVien, NhanVienDBContext>();
             services.AddScoped<NhanVienServices>();
 
@@ -73,6 +74,7 @@ namespace Happy_Meat_Farm
             services.AddTransient<INhanVien, NhanVienDBContext>();
             services.AddTransient<IBayDan, BayDanDBContext>();
             services.AddTransient<ICaThe, CaTheDBContext>();
+            services.AddTransient<IThucAn, ThucAnDBContext>();
             services.Configure<Settings>(options =>
             {
                  options.ConnectionString = Configuration.GetSection("MongoDB:ConnectionString").Value;
@@ -107,15 +109,11 @@ namespace Happy_Meat_Farm
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Auth}/{action=Login}/{id?}");
-                    //pattern: "{controller=Home}/{action=Index}/{id?}");
+                    //pattern: "{controller=Auth}/{action=Login}/{id?}");
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
 
             });
             app.UseAuthentication();
-            app.UseAuthorization();
-
-            
-
 
         }
     }

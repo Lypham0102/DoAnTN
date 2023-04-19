@@ -9,6 +9,8 @@
     <None Remove="Views\VatNuoi\" />
     <None Remove="Views\BayDan\" />
     <None Remove="Views\Auth\" />
+    <None Remove="Views\ThucAn\" />
+    <None Remove="Views\Thuoc\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\js\script.js" />
@@ -74,6 +76,8 @@
     <Folder Include="wwwroot\lib\jquery\" />
     <Folder Include="wwwroot\lib\jquery\dist\" />
     <Folder Include="Views\Auth\" />
+    <Folder Include="Views\ThucAn\" />
+    <Folder Include="Views\Thuoc\" />
   </ItemGroup>
 
 </Project>

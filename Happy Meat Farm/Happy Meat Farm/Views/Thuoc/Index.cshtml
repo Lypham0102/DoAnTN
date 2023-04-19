@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Happy_Meat_Farm.Models.ThuocModel>
+
+@{
+    ViewData["Title"] = "Thuốc";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Danh Sách Thuốc</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th style="width:250px"> Tên Thuốc </th>
+            <th style="width:250px"> Loại Thuốc </th>
+            <th style="width:250px"> Chỉ Định </th>
+            <th style="width:250px"> Liều Lượng </th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null)
+        {
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TenThuoc)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LoaiThuoc)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ChiDinh)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LieuLuong)
+                    </td>
+                </tr>
+            }
+        }
+
+
+    </tbody>
+</table>
+
+
