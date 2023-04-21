@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Happy_Meat_Farm.Interface;
 using Happy_Meat_Farm.Services;
+using Happy_Meat_Farm.Models;
 using Microsoft.Extensions.Configuration;
-
 
 namespace Happy_Meat_Farm.Controllers
 {
@@ -24,6 +24,49 @@ namespace Happy_Meat_Farm.Controllers
         {
             return View(thucAn.GetAllThucAn());
             //return View();
+        }
+        public IActionResult Create()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult CreatePost(ThucAnModel ThucAnData)
+        {
+            thucAn.Create(ThucAnData);
+            return RedirectToAction("Index");
+        }
+        [HttpGet]
+        public IActionResult Details(string Name)
+        {
+            var md = thucAn.GetThucAnDetails(Name);
+            return View(md);
+        }
+
+        [HttpGet]
+        public IActionResult Edit(string Name)
+        {
+            var md = thucAn.GetThucAnDetails(Name);
+            return View(md);
+        }
+        [HttpPost]
+        public IActionResult EditPost(string _id, ThucAnModel ThucAnData)
+        {
+            thucAn.Update(_id, ThucAnData);
+            return RedirectToAction("Index");
+        }
+        [HttpGet]
+        public IActionResult Delete(string Name)
+        {
+            var md = thucAn.GetThucAnDetails(Name);
+            //return View(md);
+            thucAn.Delete(Name);
+            return RedirectToAction("Index");
+        }
+        [HttpPost]
+        public IActionResult DeletePost(string Name)
+        {
+            thucAn.Delete(Name);
+            return RedirectToAction("Index");
         }
     }
 }

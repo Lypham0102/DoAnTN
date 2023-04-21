@@ -75,6 +75,8 @@ namespace Happy_Meat_Farm
             services.AddTransient<IBayDan, BayDanDBContext>();
             services.AddTransient<ICaThe, CaTheDBContext>();
             services.AddTransient<IThucAn, ThucAnDBContext>();
+            services.AddTransient<TTB_Interface, TTBRepository>();
+            services.AddTransient<IThuoc, ThuocDBContext>();
             services.Configure<Settings>(options =>
             {
                  options.ConnectionString = Configuration.GetSection("MongoDB:ConnectionString").Value;

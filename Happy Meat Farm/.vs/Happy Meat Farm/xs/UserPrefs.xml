@@ -1,44 +1,32 @@
 ﻿<Properties StartupConfiguration="{1900C92F-6A65-4269-AEC6-739CF738D02E}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <Debugger.DebugSourceFolders />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Happy_220Meat_220Farm PreferredExecutionTarget="/Applications/Brave Browser.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Happy_220Meat_220Farm PreferredExecutionTarget="/Applications/Brave Browser.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Happy Meat Farm/Data/ThucAnDBContext.cs">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Happy Meat Farm/Startup.cs">
     <Files>
-      <File FileName="Happy Meat Farm/Models/ThucAnModel.cs" Line="8" Column="1" />
-      <File FileName="Happy Meat Farm/Models/NhanVien.cs" Line="1" Column="1" />
-      <File FileName="Happy Meat Farm/Interface/IThucAn.cs" Line="17" Column="36" />
-      <File FileName="Happy Meat Farm/Data/ThucAnDBContext.cs" Line="32" Column="55" />
-      <File FileName="Happy Meat Farm/Data/NhanVienDBContext.cs" Line="32" Column="46" />
-      <File FileName="Happy Meat Farm/Controllers/ThucAnController.cs" Line="10" Column="1" />
-      <File FileName="Happy Meat Farm/Controllers/NhanVienController.cs" Line="23" Column="55" />
-      <File FileName="Happy Meat Farm/Views/NhanVien/Index.cshtml" Line="31" Column="18" />
-      <File FileName="Happy Meat Farm/Views/ThucAn/Index.cshtml" Line="18" Column="13" />
-      <File FileName="Happy Meat Farm/Views/Shared/_Layout.cshtml" Line="94" Column="116" />
+      <File FileName="Happy Meat Farm/Data/TTBRepository.cs" />
+      <File FileName="Happy Meat Farm/Controllers/TTBController.cs" />
+      <File FileName="Happy Meat Farm/Views/TTB/Delete.cshtml" Line="66" Column="54" />
+      <File FileName="Happy Meat Farm/Views/TTB/Details.cshtml" Line="1" Column="1" />
+      <File FileName="Happy Meat Farm/Startup.cs" Line="78" Column="67" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Happy Meat Farm" expanded="True">
-            <Node name="Happy Meat Farm" expanded="True">
+            <Node name="Happy Meat Farm" expanded="True" selected="True">
               <Node name="Dependencies" expanded="True" />
               <Node name="Controllers" expanded="True" />
-              <Node name="Data" expanded="True">
-                <Node name="ThucAnDBContext.cs" selected="True" />
-              </Node>
-              <Node name="Interface" expanded="True" />
-              <Node name="Models" expanded="True" />
+              <Node name="Data" expanded="True" />
               <Node name="Services" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Auth" expanded="True" />
                 <Node name="BayDan" expanded="True" />
                 <Node name="NhanVien" expanded="True" />
-                <Node name="Shared" expanded="True" />
-                <Node name="ThucAn" expanded="True" />
+                <Node name="TTB" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -46,4 +34,5 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <Debugger.DebugSourceFolders />
 </Properties>

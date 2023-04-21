@@ -33,6 +33,11 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.DoiTuong)
                 </td>
+                <td>
+                    @Html.ActionLink("Chỉnh sửa", "Edit", new { Name = item.TenHang }) |
+                    @Html.ActionLink("Chi tiết", "Details", new { Name = item.TenHang }) |
+                    @Html.ActionLink("Xóa", "Delete", new { Name = item.TenHang })
+                </td>
             </tr>
             }
         }
@@ -40,3 +45,7 @@
 
     </tbody>
 </table>
+
+<button class="btn btn-primary">
+    <a class="text-white" asp-action="Create">Thêm thức ăn  </a>
+</button>

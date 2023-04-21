@@ -1,0 +1,51 @@
+﻿@model Happy_Meat_Farm.Models.ThucAnModel
+
+@{
+    ViewData["Title"] = "Thêm Thức Ăn";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Thêm mới thức ăn</h2>
+
+<form method="post" asp-action="CreatePost">
+    <div class="form-group">
+        <label asp-for=" TenHang" class=""> Tên hãng  </label>
+        <input asp-for=" TenHang" type="text" class="form-control" />
+        <span asp-validation-for="TenHang" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="MaLoai" class=""> Mã loại  </label>
+        <input asp-for="MaLoai" class="form-control" />
+        <span asp-validation-for="MaLoai" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="KhoiLuongTinh" class=""> Khối lượng tĩnh </label>
+        <input asp-for="KhoiLuongTinh" class="form-control" />
+        <span asp-validation-for="KhoiLuongTinh" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="DoiTuong" class=""> Đối Tượng  </label>
+        <input asp-for="DoiTuong" class="form-control" />
+        <span asp-validation-for="DoiTuong" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for=" DonGia" class=""> Đơn Giá </label>
+        <input asp-for="DonGia" class="form-control" />
+        <span asp-validation-for="DonGia" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="HanDung" class=""> Hạn Sử Dụng </label>
+        <input asp-for="HanDung" type="date" class="form-control" />
+        <span asp-validation-for="HanDung" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="SoLuong" class=""> Số lượng </label>
+        <input asp-for="SoLuong" class="form-control" />
+        <span asp-validation-for="SoLuong" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
+</form>
+<button class="btn btn-primary"><a class="text-white" asp-action="Index">Trở về danh sách</a></button>
+
+

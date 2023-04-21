@@ -34,13 +34,18 @@
                     <td>
                         @Html.DisplayFor(modelItem => item.ChatLieu)
                     </td>
+                    <td>
+                        @Html.ActionLink("Chỉnh sửa", "Edit", new { Name = item.TenTrangThietBi}) |
+                        @Html.ActionLink("Chi tiết", "Details", new { Name = item.TenTrangThietBi }) |
+                        @Html.ActionLink("Xóa", "Delete", new { Name = item.TenTrangThietBi })
+                    </td>
                 </tr>
             }
         }
 
     </tbody>
 </table>
-<button>
-    <a asp-action="Create">Thêm trang thiết bị </a>
+<button class="btn btn-primary">
+    <a class="text-white" asp-action="Create">Thêm trang thiết bị </a>
 </button>
 

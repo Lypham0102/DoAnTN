@@ -11,6 +11,10 @@ namespace Happy_Meat_Farm.Interface
 	{
         IMongoCollection<ThuocModel> ThuocCollection { get; }
         IEnumerable<ThuocModel> GetAllThuoc();
+        ThuocModel GetThuocDetails(string Name);
+        void Create(ThuocModel ThuocData);
+        void Update(string _id, ThuocModel ThuocData);
+        void Delete(string Name);
     }
 }
 
