@@ -1,4 +1,5 @@
-﻿@{
+﻿
+@{
     ViewData["Title"] = "Tổng quan trang trại";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -35,7 +36,7 @@
     <div class="daily-report">
         <h2>Thông tin trang trại</h2>
         <ul>
-            <li>Số nhân viên: [Số lượng nhân viên]</li>
+            <li>Số nhân viên: @ViewData["Count"]</li>
             <li>Số lượng heo giống: [Số lượng heo giống]</li>
             <li>Số lượng heo con: [Số lượng heo con]</li>
             <li>Số lượng heo thịt: [Số lượng heo thịt]</li>

@@ -34,57 +34,54 @@ namespace Happy_Meat_Farm
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSingleton<IMongoClient>(sp => sp.GetRequiredService<IOptions<MongoClient>>().Value);
+            // Register MongoClient
+            var mongoConnectionString = Configuration.GetSection("MongoDB:ConnectionString").Value;
+            var mongoDatabaseName = Configuration.GetSection("MongoDB:Database").Value;
+            var mongoClient = new MongoClient(mongoConnectionString);
+            services.AddSingleton(mongoClient);
+            services.AddScoped<IMongoDatabase>(s => mongoClient.GetDatabase(mongoDatabaseName));
 
+            // Register repositories
             services.AddScoped<TTB_Interface, TTBRepository>();
             services.AddScoped<IThuoc, ThuocDBContext>();
             services.AddScoped<IThucAn, ThucAnDBContext>();
             services.AddScoped<INhanVien, NhanVienDBContext>();
-            services.AddScoped<NhanVienServices>();
+            services.AddScoped<IBayDan, BayDanDBContext>();
+            services.AddScoped<ICaThe, CaTheDBContext>();
 
-
+            // Configure authentication
             services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
                 options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
             })
-
             .AddJwtBearer(options =>
-             {
-                 options.RequireHttpsMetadata = false;
-                 options.SaveToken = true;
-                 options.TokenValidationParameters = new TokenValidationParameters
-                 {
-                     ValidateIssuerSigningKey = true,
-                     //IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(Configuration["Jwt:Key"])),
-                     //ValidateIssuer = false,
-                     //ValidateAudience = false,
-                     ValidateIssuer = true,
-                     ValidateAudience = true,
-                     ValidateLifetime = true,
-                     ValidIssuer = "https://example.com",
-                     ValidAudience = "https://example.com",
-                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("YOUR_SECRET_KEY_HERE"))
+            {
+                options.RequireHttpsMetadata = false;
+                options.SaveToken = true;
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    ValidIssuer = "https://example.com",
+                    ValidAudience = "https://example.com",
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("YOUR_SECRET_KEY_HERE"))
+                };
+            });
 
-                 };
-             });
-
-            services.AddSingleton<IMongoClient>(new MongoClient("mongodb://localhost:5001"));
             services.AddControllersWithViews();
-            services.AddTransient<INhanVien, NhanVienDBContext>();
-            services.AddTransient<IBayDan, BayDanDBContext>();
-            services.AddTransient<ICaThe, CaTheDBContext>();
-            services.AddTransient<IThucAn, ThucAnDBContext>();
-            services.AddTransient<TTB_Interface, TTBRepository>();
-            services.AddTransient<IThuoc, ThuocDBContext>();
+
+            // Register settings
             services.Configure<Settings>(options =>
             {
-                 options.ConnectionString = Configuration.GetSection("MongoDB:ConnectionString").Value;
-                 options.Database = Configuration.GetSection("MongoDB:Database").Value;
+                options.ConnectionString = mongoConnectionString;
+                options.Database = mongoDatabaseName;
             });
-            
         }
-        
+
+
 
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

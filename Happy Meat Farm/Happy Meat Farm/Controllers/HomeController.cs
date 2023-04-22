@@ -10,36 +10,36 @@ using MongoDB.Driver;
 using MongoDB.Bson;
 using System.Security.Cryptography;
 using Microsoft.AspNetCore.Http;
+using Happy_Meat_Farm.Services;
+using Happy_Meat_Farm.Data;
 
 namespace Happy_Meat_Farm.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IMongoDatabase _database;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IMongoDatabase database)
         {
             _logger = logger;
+            _database = database;
         }
         private IMongoCollection<NhanVien>_nhanvienCollection;
-        //public HomeController(IMongoClient client)
-        //{
-        //    //_logger = logger;
-        //    var database = client.GetDatabase("TrangTrai");
-        //    _nhanvienCollection = database.GetCollection<NhanVien>("NhanViens");
-
-        //}
-        public IActionResult Index()
+        
+        public async Task<IActionResult> Index()
         {
+            var collection = _database.GetCollection<NhanVien>("NhanVien");
+            var count = await collection.CountDocumentsAsync(new BsonDocument());
+            ViewData["Count"] = count;
             return View();
         }
-
+       
 
         [HttpGet]
         public IEnumerable<NhanVien> Get() 
         {
             return null;
-            //return _nhanvienCollection.Find(s => s.MaNV != "").ToList();
         }
 
         public IActionResult QuanLyCongViec()

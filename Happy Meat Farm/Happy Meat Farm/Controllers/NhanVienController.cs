@@ -7,6 +7,7 @@ using Happy_Meat_Farm.Interface;
 using Happy_Meat_Farm.Models;
 using Microsoft.AspNetCore.Http;
 using Happy_Meat_Farm.Services;
+using Happy_Meat_Farm.Data;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -21,6 +22,7 @@ namespace Happy_Meat_Farm.Controllers
         private readonly INhanVien _context;
         public readonly NhanVienServices nhanVienServices;
         public readonly IConfiguration _configuration;
+        public readonly NhanVienDBContext nhanVienDBContext;
 
         public NhanVienController(INhanVien context)
         {
@@ -73,5 +75,11 @@ namespace Happy_Meat_Farm.Controllers
             _context.Delete(Name);
             return RedirectToAction("Index");
         }
+
+        //public async Task<IActionResult> CountNhanVien()
+        //{
+        //    var count = await nhanVienDBContext.CountNhanVienAsync();
+        //    return View(count);
+        //}
     }
 }

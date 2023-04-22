@@ -8,6 +8,7 @@ using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 using System.Runtime.InteropServices;
 using Microsoft.Graph.Models;
+using MongoDB.Bson;
 
 namespace Happy_Meat_Farm.Data
 {
@@ -17,7 +18,7 @@ namespace Happy_Meat_Farm.Data
         public readonly MongoClient _mongoClient;
         public readonly IMongoCollection<NhanVien> _NV;
 
-        public NhanVienDBContext(IOptions<Settings> options)
+        public NhanVienDBContext( IOptions<Settings> options)
         {
             var client = new MongoClient(options.Value.ConnectionString);
             _db = client.GetDatabase(options.Value.Database);
@@ -89,7 +90,14 @@ namespace Happy_Meat_Farm.Data
             nhanviencollection.DeleteOne(filter);
         }
 
-        
+        //đếm số lượng nhân viên
+        public async Task<long> CountAllNhanVien()
+        {
+            var nhanVienCollection = _mongoClient.GetDatabase("TrangTrai").GetCollection<NhanVien>("NhanVien");
+            return await nhanVienCollection.CountDocumentsAsync(new BsonDocument());
+        }
+
+
 
         //public NhanVien Authenticate(string TenTaiKhoan, string Passwork)
         //{
