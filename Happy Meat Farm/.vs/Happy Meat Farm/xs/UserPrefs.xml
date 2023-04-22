@@ -1,31 +1,26 @@
 ﻿<Properties StartupConfiguration="{1900C92F-6A65-4269-AEC6-739CF738D02E}|Default">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Happy_220Meat_220Farm PreferredExecutionTarget="/Applications/Brave Browser.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Happy_220Meat_220Farm PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Happy Meat Farm/Startup.cs">
-    <Files>
-      <File FileName="Happy Meat Farm/Data/TTBRepository.cs" />
-      <File FileName="Happy Meat Farm/Controllers/TTBController.cs" />
-      <File FileName="Happy Meat Farm/Views/TTB/Delete.cshtml" Line="66" Column="54" />
-      <File FileName="Happy Meat Farm/Views/TTB/Details.cshtml" Line="1" Column="1" />
-      <File FileName="Happy Meat Farm/Startup.cs" Line="78" Column="67" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Happy Meat Farm" expanded="True">
-            <Node name="Happy Meat Farm" expanded="True" selected="True">
+            <Node name="Happy Meat Farm" expanded="True">
               <Node name="Dependencies" expanded="True" />
-              <Node name="Controllers" expanded="True" />
-              <Node name="Data" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="ThucAnController.cs" selected="True" />
+              </Node>
               <Node name="Services" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="BayDan" expanded="True" />
                 <Node name="NhanVien" expanded="True" />
+                <Node name="ThucAn" expanded="True" />
+                <Node name="Thuoc" expanded="True" />
                 <Node name="TTB" expanded="True" />
               </Node>
             </Node>

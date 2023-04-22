@@ -1164,8 +1164,10 @@ C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/R
 /Users/dev/Library/Mobile Documents/com~apple~CloudDocs/Coding/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/TTB/Index.cshtml.g.cs
 /Users/dev/Library/Mobile Documents/com~apple~CloudDocs/Coding/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/TTB/Create.cshtml.g.cs
 /Users/dev/Library/Mobile Documents/com~apple~CloudDocs/Coding/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/TTB/Details.cshtml.g.cs
-/Users/dev/Library/Mobile Documents/com~apple~CloudDocs/Coding/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/TTB/Delete.cshtml.g.cs
 /Users/dev/Library/Mobile Documents/com~apple~CloudDocs/Coding/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/TTB/Edit.cshtml.g.cs
 /Users/dev/Library/Mobile Documents/com~apple~CloudDocs/Coding/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/Thuoc/Create.cshtml.g.cs
 /Users/dev/Library/Mobile Documents/com~apple~CloudDocs/Coding/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/Thuoc/Details.cshtml.g.cs
 /Users/dev/Library/Mobile Documents/com~apple~CloudDocs/Coding/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/ThucAn/Create.cshtml.g.cs
+/Users/dev/Library/Mobile Documents/com~apple~CloudDocs/Coding/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/Thuoc/Edit.cshtml.g.cs
+/Users/dev/Library/Mobile Documents/com~apple~CloudDocs/Coding/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/ThucAn/Details.cshtml.g.cs
+/Users/dev/Library/Mobile Documents/com~apple~CloudDocs/Coding/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/ThucAn/Edit.cshtml.g.cs

@@ -1,11 +1,11 @@
-﻿@model Happy_Meat_Farm.Models.ThuocModel 
+﻿@model Happy_Meat_Farm.Models.ThucAnModel
 
 @{
     ViewData["Title"] = "Chi tiết";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Thông tin trang thiết Bị</h1>
+<h1>Thông tin thức ăn</h1>
 <dl class="row">
     <dt class="col-sm-2">
         ID:
@@ -14,43 +14,31 @@
         @Html.DisplayFor(model => model._id)
     </dd>
     <dt class="col-sm-2">
-        Tên thuốc:
+        Tên Hãng:
     </dt>
     <dd class="col-sm-10">
-        @Html.DisplayFor(model => model.TenThuoc)
+        @Html.DisplayFor(model => model.TenHang)
     </dd>
     <dt class="col-sm-2">
-        Ngày sản xuất:
+        Mã loại:
     </dt>
     <dd class="col-sm-10">
-        @Html.DisplayFor(model => model.NSX)
+        @Html.DisplayFor(model => model.MaLoai)
     </dd>
     <dt class="col-sm-2">
-        Loại thuốc:
+        Khối lượng tĩnh:
     </dt>
     <dd class="col-sm-10">
-        @Html.DisplayFor(model => model.LoaiThuoc)
+        @Html.DisplayFor(model => model.KhoiLuongTinh)
     </dd>
     <dt class="col-sm-2">
-        Chỉ định:
+        Đối tượng:
     </dt>
     <dd class="col-sm-10">
-        @Html.DisplayFor(model => model.ChiDinh)
+        @Html.DisplayFor(model => model.DoiTuong)
     </dd>
     <dt class="col-sm-2">
-        Liều lượng:
-    </dt>
-    <dd class="col-sm-10">
-        @Html.DisplayFor(model => model.LieuLuong)
-    </dd>
-    <dt class="col-sm-2">
-        Dung tích:
-    </dt>
-    <dd class="col-sm-10">
-        @Html.DisplayFor(model => model.DungTich)
-    </dd>
-    <dt class="col-sm-2">
-        Hạn sử dụng
+        Hạn sử dụng:
     </dt>
     <dd class="col-sm-10">
         @Html.DisplayFor(model => model.HanDung)
@@ -60,6 +48,12 @@
     </dt>
     <dd class="col-sm-10">
         @Html.DisplayFor(model => model.DonGia)
+    </dd>
+    <dt class="col-sm-2">
+        ID Phiếu nhập:
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.SoLuong)
     </dd>
     <dt class="col-sm-2">
         Thuộc Nông Trại:
@@ -73,17 +67,12 @@
     <dd class="col-sm-10">
         @Html.DisplayFor(model => model._idKiemKe)
     </dd>
-    <dt class="col-sm-2">
-        ID Phiếu nhập:
-    </dt>
-    <dd class="col-sm-10">
-        @Html.DisplayFor(model => model._idPhieuNhapThuoc)
-    </dd>
+   
 </dl>
 @*<div>
-    <button class="btn btn-primary">
-        <a class="text-white" asp-action="Index">Trở về</a>
-    </button>
-</div>*@
+        <button class="btn btn-primary">
+            <a class="text-white" asp-action="Index">Trở về</a>
+        </button>
+    </div>*@
 
 
