@@ -12,6 +12,7 @@ using System.Security.Cryptography;
 using Microsoft.AspNetCore.Http;
 using Happy_Meat_Farm.Services;
 using Happy_Meat_Farm.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Happy_Meat_Farm.Controllers
 {
@@ -26,12 +27,22 @@ namespace Happy_Meat_Farm.Controllers
             _database = database;
         }
         private IMongoCollection<NhanVien>_nhanvienCollection;
-        
+
+        [Authorize]
         public async Task<IActionResult> Index()
         {
             var collection = _database.GetCollection<NhanVien>("NhanVien");
             var count = await collection.CountDocumentsAsync(new BsonDocument());
             ViewData["Count"] = count;
+
+            var cathecollection = _database.GetCollection<CaThe>("CaThe");
+            var countCathe = await cathecollection.CountDocumentsAsync(new BsonDocument());
+            ViewData["countCathe"] = countCathe;
+
+            var baydancollection = _database.GetCollection<BayDan>("BayDan");
+            var countBaydan = await baydancollection.CountDocumentsAsync(new BsonDocument());
+            ViewData["countBaydan"] = countBaydan;
+
             return View();
         }
        
@@ -50,28 +61,11 @@ namespace Happy_Meat_Farm.Controllers
         {
             return View();
         }
-        public IActionResult QuanLyVatNuoi()
-        {
-            return View();
-        }
+        
         public IActionResult ThongKe()
         {
             return View();
         }
-        public IActionResult ThemChuong()
-        {
-            return View();
-        }
-        public IActionResult XuatChuong()
-        {
-            return View();
-        }
-        public IActionResult ThongTinVatNuoi()
-        {
-            return View();
-        }
-
-
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

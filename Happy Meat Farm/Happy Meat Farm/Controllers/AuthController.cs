@@ -112,43 +112,6 @@ namespace Happy_Meat_Farm.Controllers
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
             return RedirectToAction("Login", "Auth");
         }
-
-
-
-
-
-
-        //[AllowAnonymous]
-        //[HttpPost("authenticate")]
-        //public IActionResult Authenticate([FromBody] NhanVien model)
-        //{
-        //    var account = nhanVienServices.Authenticate(model.TenTaiKhoan, model.Passwork);
-
-        //    if (account == null)
-        //    {
-        //        return BadRequest(new { message = "Tên tài khoản hoặc mật khẩu không hợp " });
-        //    }
-
-        //    var tokenHandler = new JwtSecurityTokenHandler();
-        //    var key = Encoding.ASCII.GetBytes(_configuration["Jwt:Key"]);
-        //    var tokenDescriptor = new SecurityTokenDescriptor
-        //    {
-        //        Subject = new ClaimsIdentity(new Claim[]
-        //        {
-        //    new Claim(ClaimTypes.Name, account.TenTaiKhoan),
-        //    //new Claim(ClaimTypes.Role, account.)
-        //        }),
-        //        Expires = DateTime.UtcNow.AddDays(7),
-        //        SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
-        //    };
-        //    var token = tokenHandler.CreateToken(tokenDescriptor);
-        //    var tokenString = tokenHandler.WriteToken(token);
-
-        //    return Redirect(Url.Action("Index", "Home"));
-
-        //    //return Ok(new { Token = tokenString });
-        //}
-
     }
 }
 

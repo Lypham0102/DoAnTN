@@ -1,12 +1,12 @@
 ﻿<Properties StartupConfiguration="{1900C92F-6A65-4269-AEC6-739CF738D02E}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Happy_220Meat_220Farm PreferredExecutionTarget="/Applications/Brave Browser.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Happy Meat Farm/Controllers/HomeController.cs">
+    <Files>
+      <File FileName="Happy Meat Farm/Views/Shared/_Layout.cshtml" Line="23" Column="43" />
+      <File FileName="Happy Meat Farm/Controllers/HomeController.cs" Line="31" Column="13" />
+      <File FileName="Happy Meat Farm/Views/Auth/Login.cshtml" Line="26" Column="3" />
+      <File FileName="Happy Meat Farm/Controllers/AuthController.cs" Line="41" Column="30" />
+      <File FileName="Happy Meat Farm/Data/NhanVienDBContext.cs" Line="64" Column="37" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -14,14 +14,18 @@
             <Node name="Happy Meat Farm" expanded="True">
               <Node name="Dependencies" expanded="True" />
               <Node name="Controllers" expanded="True">
-                <Node name="ThucAnController.cs" selected="True" />
+                <Node name="HomeController.cs" selected="True" />
               </Node>
+              <Node name="Data" expanded="True" />
               <Node name="Services" expanded="True" />
               <Node name="Views" expanded="True">
+                <Node name="Auth" expanded="True" />
+                <Node name="Home" expanded="True" />
                 <Node name="NhanVien" expanded="True" />
-                <Node name="ThucAn" expanded="True" />
-                <Node name="Thuoc" expanded="True" />
-                <Node name="TTB" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -30,4 +34,11 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <Debugger.DebugSourceFolders />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Happy_220Meat_220Farm PreferredExecutionTarget="/Applications/Brave Browser.app" />
 </Properties>
