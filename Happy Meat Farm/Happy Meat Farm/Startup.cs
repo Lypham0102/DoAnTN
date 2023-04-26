@@ -110,8 +110,8 @@ namespace Happy_Meat_Farm
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    //pattern: "{controller=Auth}/{action=Login}/{id?}");
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Auth}/{action=Login}/{id?}");
+                    //pattern: "{controller=Home}/{action=Index}/{id?}");
 
             });
             app.UseAuthentication();
