@@ -5,7 +5,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Inf</h1>
+<h1>Danh sách cá thể </h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -13,18 +13,11 @@
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model._id)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DacDiem)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.NgayTuoi)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Chuong)
-            </th>
+            <th style="width:180px"> Mã Cá Thể  </th>
+            <th style="width:180px">Đặc Điểm </th>
+            <th style="width:180px"> Ngày Tuổi  </th>
+            
+            <th style="width:380px"> Tuỳ chọn  </th>
             <th></th>
         </tr>
     </thead>
@@ -40,14 +33,17 @@
             <td>
                 @Html.DisplayFor(modelItem => item.NgayTuoi)
             </td>
-            <td>
+            
+            @*<td>
                 @Html.DisplayFor(modelItem => item.Chuong)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-            </td>
+            </td>*@
+        <td>
+            <a class="btn btn-primary" href="@Url.Action("Edit", new { /* id=item.PrimaryKey */ })">Sửa</a>
+
+            <a class="btn btn-primary" href="@Url.Action("Details", new { /* id=item.PrimaryKey */ })">Chi tiết</a>
+
+            <a class="btn btn-danger" href="@Url.Action("Delete", new { /* id=item.PrimaryKey */ })" onclick="return confirm('Xoá đối tượng này khỏi bầy đàn?')">Chết</a>
+        </td>
         </tr>
 }
     </tbody>

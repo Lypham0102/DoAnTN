@@ -20,7 +20,9 @@ namespace Happy_Meat_Farm.Models
         public string SDT { get; set; }
         public string DiaChi { get; set; }
         public string MaNT { get; set; }
+        [BsonElement("TenTaiKhoan")]
         public string TenTaiKhoan { get; set; }
+        [BsonElement("Passwork")]
         public string Passwork { get; set; }
     }
 }

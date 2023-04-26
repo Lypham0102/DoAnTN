@@ -11,6 +11,7 @@
     <None Remove="Views\Auth\" />
     <None Remove="Views\ThucAn\" />
     <None Remove="Views\Thuoc\" />
+    <None Remove="Views\LichTiemChung\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\js\script.js" />
@@ -78,6 +79,7 @@
     <Folder Include="Views\Auth\" />
     <Folder Include="Views\ThucAn\" />
     <Folder Include="Views\Thuoc\" />
+    <Folder Include="Views\LichTiemChung\" />
   </ItemGroup>
 
 </Project>

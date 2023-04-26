@@ -19,99 +19,43 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using MongoDB.Driver;
-
-
 namespace Happy_Meat_Farm.Controllers
 {
+
     public class AuthController : Controller
     {
-        public readonly NhanVienDBContext _dbContext;
-        public readonly IConfiguration _configuration;
+        private readonly IAuth _userRepository;
 
-        public IActionResult Index()
+        public AuthController(IAuth userRepository)
+        {
+            _userRepository = userRepository;
+        }
+
+        [HttpGet]
+        public IActionResult Login()
         {
             return View();
         }
 
-        [HttpPost("login")]
-        public async Task<IActionResult> Login([FromBody] NhanVien model)
-        {
-            var user = await _dbContext.GetUserByUsernameAsync(model.TenTaiKhoan);
-
-            if (user == null)
-            {
-                return BadRequest("Tài khoản hoặc mật khẩu không chính xác");
-            }
-
-            var passwordHasher = new PasswordHasher<NhanVien>();
-            var result = passwordHasher.VerifyHashedPassword(user, user.TenTaiKhoan, model.Passwork);
-
-            if (result == PasswordVerificationResult.Failed)
-            {
-                return BadRequest("Tài khoản hoặc mật khẩu không chính xác ");
-            }
-
-            var token = GenerateJwtToken(user);
-
-            return Redirect(Url.Action("Index", "Home"));
-        }
-
-        private string GenerateJwtToken(NhanVien user)
-        {
-            var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.ASCII.GetBytes(_configuration["Jwt:Secret"]);
-            var tokenDescriptor = new SecurityTokenDescriptor
-            {
-                Subject = new ClaimsIdentity(new Claim[]
-                {
-            new Claim(ClaimTypes.NameIdentifier, user.TenTaiKhoan.ToString()),
-            new Claim(ClaimTypes.Name, user.TenNV)
-                }),
-                Expires = DateTime.UtcNow.AddHours(2),
-                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
-            };
-            var token = tokenHandler.CreateToken(tokenDescriptor);
-            var tokenString = tokenHandler.WriteToken(token);
-            return tokenString;
-        }
-
-        [HttpPost("register")]
-        public async Task<IActionResult> Register([FromBody] NhanVien model)
-        {
-            var user = await _dbContext.GetUserByUsernameAsync(model.TenTaiKhoan);
-
-            if (user != null)
-            {
-                return BadRequest("Tài khoản đã tồn tại");
-            }
-
-            user = new NhanVien
-            {
-                MaNV = model.MaNV,
-                TenNV = model.TenNV,
-                CCCD = model.CCCD,
-                SDT = model.SDT,
-                DiaChi = model.DiaChi,
-                MaNT = model.MaNT,
-                TenTaiKhoan = model.TenTaiKhoan,
-                Passwork = model.Passwork,
-            };
-
-            var passwordHasher = new PasswordHasher<NhanVien>();
-            user.Passwork = passwordHasher.HashPassword(user, user.Passwork);
-
-            await _dbContext.AddUserAsync(user);
-
-            return Ok();
-        }
-
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Logout()
+        public async Task<IActionResult> Login(NhanVien model)
         {
-            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-            return RedirectToAction("Login", "Auth");
+            if (ModelState.IsValid)
+            {
+                var user = await _userRepository.GetUser(model.TenTaiKhoan, model.Passwork);
+                if (user != null)
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Invalid username or password.");
+                }
+            }
+            return View(model);
         }
     }
+
 }
 

@@ -48,6 +48,8 @@ namespace Happy_Meat_Farm
             services.AddScoped<INhanVien, NhanVienDBContext>();
             services.AddScoped<IBayDan, BayDanDBContext>();
             services.AddScoped<ICaThe, CaTheDBContext>();
+            services.AddScoped<ILichTiemChung, LichTiemChungDBContext>();
+            services.AddScoped<IAuth, AuthDBContext>();
 
             // Configure authentication
             services.AddAuthentication(options =>

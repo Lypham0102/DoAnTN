@@ -13,36 +13,30 @@
 <table class="table">
     <thead>
         <tr>
-            <th style="width:180px"> Mã đàn </th>
+           
             <th style="width:180px"> Số chuồng </th>
-            @*<th>
-                @Html.DisplayNameFor(model => model._id)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Chuong)
-            </th>*@
-            <th></th>
+            <th style="width:280px"> Số cá thể  </th>
+            <th style="width:280px"> Tuỳ chọn  </th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
+          
             <td>
-                @Html.DisplayFor(modelItem => item._id)
+                @Html.DisplayFor(modelItem => item.Chuong)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Chuong)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { Name = item._id }) |
-                    @Html.ActionLink("Details", "Details", new { Name = item._id }) |
-                    @Html.ActionLink("Delete", "Delete", new { Name = item._id }) |
-                    @Html.ActionLink("Inf", "Inf", new { Name = item.Chuong }) |
-                    @*<a asp-controller="CaThe" asp-action="Inf">
-                        <button type="button">
-                            <i><span>Danh sách cá thể vật nuôi</span></i>
-                        </button>
-                    </a>*@
+           
+                <button class="btn btn-primary" onclick="location.href='@Url.Action("Edit", new { Name = item._id })'">Sửa</button>
+
+                <button class="btn btn-primary" onclick="location.href='@Url.Action("Details", new { Name = item._id })'">Chi tiết bầy</button>
+
+                <button class="btn btn-primary" onclick="location.href='@Url.Action("Inf", new { Name = item.Chuong })'">Chi tiết cá thể</button>
+
             </td>
         </tr>
 }

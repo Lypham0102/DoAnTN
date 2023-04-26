@@ -59,6 +59,7 @@ namespace Happy_Meat_Farm.Controllers
         public IActionResult Delete(string _id)
         {
             var md = _context.GetCaTheDetails(_id);
+            _context.Delete(_id);
             return View(md);
         }
         [HttpPost]

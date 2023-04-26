@@ -14,47 +14,7 @@ namespace Happy_Meat_Farm.Data
 {
     public class BayDanDBContext : IBayDan
     {
-        //public readonly IMongoDatabase _db;
-
-        //public BayDanDBContext(IOptions<Settings> options)
-        //{
-        //    var client = new MongoClient(options.Value.ConnectionString);
-        //    _db = client.GetDatabase(options.Value.Database);
-
-        //}
-
-        //public IMongoCollection<BayDan> baydancollection =>
-        //    _db.GetCollection<BayDan>("BayDan");
-
-        //public IEnumerable<BayDan> GetAllBayDan()
-        //{
-        //    return baydancollection.Find(a=>true).ToList();
-        //}
-        //public BayDan GetBayDanDetails(string Name)
-        //{
-        //    var baydandetails = baydancollection.Find(m => m._id == Name).FirstOrDefault();
-        //    return baydandetails;
-        //}
-
-        //public void Create(BayDan baydanData)
-        //{
-        //    baydancollection.InsertOne(baydanData);
-        //}
-        //public void Update(string _id, BayDan baydanData)
-        //{
-        //    var filter = Builders<BayDan>.Filter.Eq(c => c._id, _id);
-        //    var update = Builders<BayDan>.Update
-        //        .Set("Chuong", baydanData.Chuong);
-
-
-        //    baydancollection.UpdateOne(filter, update);
-        //}
-
-        //public void Delete(string Name)
-        //{
-        //    var filter = Builders<BayDan>.Filter.Eq(c => c._id, Name);
-        //    baydancollection.DeleteOne(filter);
-        //}
+     
         public readonly IMongoDatabase _db;
 
         public BayDanDBContext(IOptions<Settings> options)

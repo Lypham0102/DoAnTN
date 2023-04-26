@@ -27,15 +27,6 @@
 </div>
 
 <div>
-    <div>
-        <a asp-controller="CaThe" asp-action="Inf">
-            <button type="button">
-                <i><span>Danh sách cá thể vật nuôi</span></i>
-            </button>
-        </a>
-    </div>
-
-
-    @*@Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |*@
-    <a asp-action="Index">Back to List</a>
+    <button class="btn btn-primary" onclick="location.href='@Url.Action("Index")'">Back to List</button>
+    
 </div>

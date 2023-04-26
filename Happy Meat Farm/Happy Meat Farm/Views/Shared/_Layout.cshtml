@@ -15,9 +15,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 <body>
-    @*<div class="loader_bg">
+    <div class="loader_bg">
         <div class="loader"><img src="~/images/load.gif" alt="#" /></div>
-    </div>*@
+    </div>
     <div class="sidebar-container">
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
             @*<div class="sidebar-brand ">
@@ -30,7 +30,13 @@
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Thông tin</a></li>
                         <li><a class="dropdown-item" href="#">Cài đặt</a></li>
-                        <li><a class="dropdown-item" href="#"> Đăng xuất</a></li>
+                        <li class="dropdown-item" href="#">
+                            <a class="nav-link font-weight-bold" asp-area=" " asp-controller="Auth" asp-action="Login">
+                                <button class="btn btn-link text-black-50 font-weight-bold" type="button">
+                                    <i class='bx bx-home'><span>Đăng nhập</span></i>
+                                </button>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <ul>
@@ -67,7 +73,12 @@
                                 <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">
                                         <a class="nav-link text-black-50" asp-controller="BayDan" asp-action="Index">
-                                            <span class="text">Danh Sách Bầy Đàn</span>
+                                            <span class="text">Danh sách bầy đàn</span>
+                                        </a>
+                                    </div>
+                                    <div class="accordion-body">
+                                        <a class="nav-link text-black-50" asp-controller="BayDan" asp-action="Index">
+                                            <span class="text">Danh Sách heo giống </span>
                                         </a>
                                     </div>
                                     <div class="accordion-body">
@@ -83,6 +94,11 @@
                                     <div class="accordion-body">
                                         <a class="nav-link text-black-50" asp-controller="VatNuoi" asp-action="XuatChuong">
                                             <span class="text">Xuất chuồng</span>
+                                        </a>
+                                    </div>
+                                    <div class="accordion-body">
+                                        <a class="nav-link text-black-50" asp-controller="LichTiemChung" asp-action="Index">
+                                            <span class="text">Lịch tiêm chủng</span>
                                         </a>
                                     </div>
                                 </div>

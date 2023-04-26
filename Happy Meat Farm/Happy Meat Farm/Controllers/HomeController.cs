@@ -28,7 +28,7 @@ namespace Happy_Meat_Farm.Controllers
         }
         private IMongoCollection<NhanVien>_nhanvienCollection;
 
-        [Authorize]
+        //[Authorize]
         public async Task<IActionResult> Index()
         {
             var collection = _database.GetCollection<NhanVien>("NhanVien");

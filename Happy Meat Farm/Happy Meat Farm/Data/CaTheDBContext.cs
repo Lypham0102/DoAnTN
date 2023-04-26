@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 using Happy_Meat_Farm.Models;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
+using MongoDB.Bson;
 
 namespace Happy_Meat_Farm.Data
 {
     public class CaTheDBContext : ICaThe
     {
         public readonly IMongoDatabase _db;
+        public readonly MongoClient _mongoClient;
 
         public CaTheDBContext(IOptions<Settings> options)
         {
@@ -68,6 +70,7 @@ namespace Happy_Meat_Farm.Data
         {
             return cathecollection.Find(a => a.Chuong == Name).ToList();
         }
+        
 
     }
 }

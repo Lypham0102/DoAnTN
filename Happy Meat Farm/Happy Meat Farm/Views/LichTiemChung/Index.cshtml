@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Happy_Meat_Farm.Models.LichTiemChung>
+
+@{
+    ViewData["Title"] = "Lịch tiêm chủng  ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Danh sách các đợt tiêm chủng </h1>
+
+<p>
+    <a asp-action="Create">Thêm đợt tiêm chủng </a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th style="width:180px"> Tên đợt tiêm  </th>
+            <th style="width:250px"> Ngày tuổi tiêm  </th>
+<th style="width:120px"> CCCD </th>
+    <th style="width:120px"> SĐT</th>
+    <th style="width:150px"> Địa chỉ </th>
+</tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.TenDotTiem)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NgayTuoiTiem)
+                </td>
+
+                <td>
+                    @Html.ActionLink("Chỉnh sửa", "Edit", new { Name = item._id }) |
+                    @Html.ActionLink("Chi tiết", "Details", new { Name = item._id }) |
+                    @Html.ActionLink("Xóa", "Delete", new { Name = item._id })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
