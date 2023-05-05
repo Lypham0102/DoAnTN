@@ -18,16 +18,7 @@ namespace Happy_Meat_Farm.Services
 		{
             _context = context;
         }
-        //public async Task<long> CountAllNhanVien()
-        //{
-        //    var nhanVienCollection = _mongoClient.GetDatabase("TrangTrai").GetCollection<NhanVien>("NhanVien");
-        //    return await nhanVienCollection.CountDocumentsAsync(new BsonDocument());
-        //}
-
-        //public NhanVien Authenticate(string TenTaiKhoan, string Passwork)
-        //{
-        //    return _context.Authenticate(TenTaiKhoan, Passwork);
-        //}
+   
     }
 }
 

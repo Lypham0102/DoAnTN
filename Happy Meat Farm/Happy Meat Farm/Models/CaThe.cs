@@ -10,6 +10,8 @@ namespace Happy_Meat_Farm.Models
     [BsonIgnoreExtraElements]
     public class CaThe
     {
+        internal byte[] QrCodeImageBytes;
+
         [BsonId]
         [BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
         public string _id { get; set; }

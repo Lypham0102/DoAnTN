@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Happy_Meat_Farm.Interface;
@@ -8,7 +11,12 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
+using MongoDB.Bson;
 using MongoDB.Driver;
+using Newtonsoft.Json;
+using QRCoder;
+using ZXing;
+using ZXing.Common;
 
 namespace Happy_Meat_Farm.Data
 {
@@ -70,8 +78,34 @@ namespace Happy_Meat_Farm.Data
             _db.GetCollection<CaThe>("CaThe");
         public IEnumerable<CaThe> GetCaTheTheoBay(string Name)
         {
+
             return cathecollection.Find(a => a.Chuong == Name).ToList();
         }
+
+
+
+        //public IActionResult GetQRCode(string id)
+        //{
+        //    // Lấy thông tin cá thể từ MongoDB theo _id
+
+
+        //    var individual = cathecollection.Find(m => m._id == ObjectId.Parse(id).ToString()).FirstOrDefault();
+
+
+        //    // Tạo mã QR code từ _id của cá thể
+        //    QRCodeGenerator qrGenerator = new QRCodeGenerator();
+        //    QRCodeData qrCodeData = qrGenerator.CreateQrCode(individual._id.ToString(), QRCodeGenerator.ECCLevel.Q);
+        //    QRCode qrCode = new QRCode(qrCodeData);
+
+        //    // Ghi mã QR code vào MemoryStream
+        //    MemoryStream ms = new MemoryStream();
+        //    Bitmap qrCodeImage = qrCode.GetGraphic(20);
+        //    qrCodeImage.Save(ms, ImageFormat.Png);
+        //    ms.Seek(0, SeekOrigin.Begin);
+
+        //    // Trả về dữ liệu MemoryStream để hiển thị trên trang web
+        //    return new Microsoft.AspNetCore.Mvc.FileStreamResult(ms, "image/png");
+
     }
 }
 

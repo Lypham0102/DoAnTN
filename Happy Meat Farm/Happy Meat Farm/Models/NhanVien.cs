@@ -24,5 +24,11 @@ namespace Happy_Meat_Farm.Models
         public string TenTaiKhoan { get; set; }
         [BsonElement("Passwork")]
         public string Passwork { get; set; }
+        public string ChucVu { get; set; }
+        public string HeSoLuong { get; set; }
+        public string NganHang { get; set; }
+        public string STK { get; set; }
+        public string _idNongTrai { get; set; }
+        
     }
 }

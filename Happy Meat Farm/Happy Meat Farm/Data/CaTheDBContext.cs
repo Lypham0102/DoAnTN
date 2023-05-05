@@ -7,6 +7,12 @@ using Happy_Meat_Farm.Models;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 using MongoDB.Bson;
+using Microsoft.AspNetCore.Mvc;
+using QRCoder;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
+using System.Web.Mvc;
 
 namespace Happy_Meat_Farm.Data
 {
@@ -25,23 +31,13 @@ namespace Happy_Meat_Farm.Data
             _db.GetCollection<CaThe>("CaThe");
 
         public IEnumerable<CaThe> GetAllCaThe()
-        {
+        { 
             return cathecollection.Find(a=>true).ToList();
         }
-        //public IEnumerable<CaThe>GetCaTheTheoBay(string Name)
-        //{
-        //    return cathecollection.Find(a => a.Chuong == Name).ToList();
-        //}
-        //public CaThe GetCaTheTheoBay(string Name)
-        //{
-        //    var cathetheobay = cathecollection.Find(m => m.Chuong == Name).FirstOrDefault();
-        //    return cathetheobay;
-        //}
-        //public CaThe GetCaTheTheoBay(string Name)
-        //{
-        //    return cathecollection.Find(a => a.Chuong == Name).ToList();
 
-        //}
+        //Đếm cá thể
+        
+
         public CaThe GetCaTheDetails(string Name)
         {
             var cathedetails = cathecollection.Find(m => m._id == Name).FirstOrDefault();
@@ -68,9 +64,11 @@ namespace Happy_Meat_Farm.Data
         }
         public IEnumerable<CaThe> GetCaTheTheoBay(string Name)
         {
+           
             return cathecollection.Find(a => a.Chuong == Name).ToList();
         }
         
+
 
     }
 }

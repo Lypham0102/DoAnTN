@@ -17,16 +17,16 @@ namespace Happy_Meat_Farm.Data
     {
 
         
-        private readonly IMongoCollection<NhanVien> _users;
+        private readonly IMongoCollection<ChuTrai> _users;
 
         public AuthDBContext(IMongoDatabase database)
         {
-            _users = database.GetCollection<NhanVien>("NhanVien");
+            _users = database.GetCollection<ChuTrai>("ChuTrai");
         }
 
-        public async Task<NhanVien> GetUser(string username, string password)
+        public async Task<ChuTrai> GetUser(string username, string password)
         {
-            var filter = Builders<NhanVien>.Filter.Eq(u => u.TenTaiKhoan, username) & Builders<NhanVien>.Filter.Eq(u => u.Passwork, password);
+            var filter = Builders<ChuTrai>.Filter.Eq(u => u.Account, username) & Builders<ChuTrai>.Filter.Eq(u => u.Password, password);
             return await _users.Find(filter).FirstOrDefaultAsync();
         }
     

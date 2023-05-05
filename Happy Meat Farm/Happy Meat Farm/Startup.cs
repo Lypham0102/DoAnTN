@@ -18,6 +18,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Happy_Meat_Farm.Services;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace Happy_Meat_Farm
 {
@@ -40,6 +41,13 @@ namespace Happy_Meat_Farm
             var mongoClient = new MongoClient(mongoConnectionString);
             services.AddSingleton(mongoClient);
             services.AddScoped<IMongoDatabase>(s => mongoClient.GetDatabase(mongoDatabaseName));
+            services.AddMvc();
+            services.AddSession();
+            services.AddSession(options =>
+            {
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            });
 
             // Register repositories
             services.AddScoped<TTB_Interface, TTBRepository>();
@@ -50,8 +58,17 @@ namespace Happy_Meat_Farm
             services.AddScoped<ICaThe, CaTheDBContext>();
             services.AddScoped<ILichTiemChung, LichTiemChungDBContext>();
             services.AddScoped<IAuth, AuthDBContext>();
-
+            services.AddScoped<INongTrai, NongTraiDBContext>();
+            services.AddScoped<IChuTrai, ChuTraiDBContext>();
             // Configure authentication
+
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+            .AddCookie(options =>
+            {
+                options.LoginPath = "/Account/Login";
+                options.AccessDeniedPath = "/Account/Forbidden";
+            });
+
             services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -119,10 +136,10 @@ namespace Happy_Meat_Farm
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Auth}/{action=Login}/{id?}");
+                    //pattern: "{controller=Auth}/{action=Login}/{id?}");
                     //pattern: "{controller=Home}/{action=Index}/{id?}");
-
-            });
+                    pattern: "{controller=ChuTrai}/{action=Login}/{id?}");
+        });
             app.UseAuthentication();
 
             app.UseSession();

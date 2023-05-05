@@ -39,22 +39,24 @@ namespace Happy_Meat_Farm.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login(NhanVien model)
+        public async Task<IActionResult> Login(ChuTrai model)
         {
             if (ModelState.IsValid)
             {
-                var user = await _userRepository.GetUser(model.TenTaiKhoan, model.Passwork);
+                var user = await _userRepository.GetUser(model.Account, model.Password);
                 if (user != null)
                 {
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Index", "NongTrai");
                 }
                 else
                 {
-                    ModelState.AddModelError("", "Invalid username or password.");
+                    ModelState.AddModelError("", "Vui lòng điền đủ thông tin đăng nhập hoặc kiểm tra lại thông tin tài !");
+
                 }
             }
             return View(model);
         }
+
     }
 
 }

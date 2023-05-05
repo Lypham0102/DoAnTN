@@ -15,9 +15,10 @@
         <tr>
             <th style="width:180px"> Mã nhân viên </th>
             <th style="width:250px"> Tên nhân viên </th>
+            <th style="width:250px"> Chức vụ </th>
             @*<th style="width:120px"> CCCD </th>
-            <th style="width:120px"> SĐT</th>
-            <th style="width:150px"> Địa chỉ </th>*@
+        <th style="width:120px"> SĐT</th>
+        <th style="width:150px"> Địa chỉ </th>*@
         </tr>
     </thead>
     <tbody>
@@ -32,10 +33,10 @@
             <td>
                 @Html.DisplayFor(modelItem => item.TenNV)
             </td>
-            @*<td>
-                @Html.DisplayFor(modelItem => item.CCCD)
-            </td>
             <td>
+                @Html.DisplayFor(modelItem => item.ChucVu)
+            </td>
+            @*<td>
                 @Html.DisplayFor(modelItem => item.SDT)
             </td>
             <td>
@@ -44,7 +45,7 @@
         <td>
             @Html.ActionLink("Chỉnh sửa", "Edit", new { Name = item.TenNV }) |
             @Html.ActionLink("Chi tiết", "Details", new { Name = item.TenNV }) |
-            @Html.ActionLink("Xóa", "Delete", new { Name = item.TenNV })
+            @Html.ActionLink("Sa thải", "Delete", new { Name = item.TenNV })
         </td>
         </tr>
 }

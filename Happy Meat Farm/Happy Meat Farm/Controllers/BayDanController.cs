@@ -6,6 +6,15 @@ using System.Threading.Tasks;
 using Happy_Meat_Farm.Interface;
 using Happy_Meat_Farm.Models;
 using Microsoft.AspNetCore.Http;
+using MongoDB.Bson;
+using MongoDB.Driver;
+using System.IO;
+using ZXing;
+using ZXing.Common;
+using System.Drawing;
+using System.Drawing.Imaging;
+using Microsoft.Graph.Models;
+using ZXing.QrCode;
 
 namespace Happy_Meat_Farm.Controllers
 {
@@ -64,17 +73,14 @@ namespace Happy_Meat_Farm.Controllers
             _context.Delete(Name);
             return RedirectToAction("Index");
         }
-
-        //public IActionResult CaTheBayDan(string Name)
-        //{
-        //    var md = _context.GetCaTheBayDan(Name);
-        //    return View(md);
-        //}
         public IActionResult Inf(string Name)
         {
             var md = _context.GetCaTheTheoBay(Name);
             return View(md);
         }
+        
+
+
     }
 }
 
