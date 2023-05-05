@@ -1470,6 +1470,75 @@ C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/R
 /Users/phamcongly/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.genruntimeconfig.cache
 /Users/phamcongly/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/ref/Happy Meat Farm.dll
 /Users/phamcongly/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/LichTiemChung/Index.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.csproj.AssemblyReference.cache
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.GeneratedMSBuildEditorConfig.editorconfig
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.AssemblyInfoInputs.cache
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.AssemblyInfo.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.csproj.CoreCompileInputs.cache
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.MvcApplicationPartsAssemblyInfo.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.MvcApplicationPartsAssemblyInfo.cache
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.RazorComponent.input.cache
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/RazorDeclaration/Views/Shared/_SidebarPartialView.razor.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.RazorComponent.output.cache
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/RazorDeclaration/Happy Meat Farm.dll
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.TagHelpers.input.cache
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.TagHelpers.output.cache
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.RazorCoreGenerate.cache
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/Shared/_SidebarPartialView.razor.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/Auth/Login.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/BayDan/Create.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/BayDan/Delete.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/BayDan/Details.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/BayDan/Edit.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/BayDan/Index.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/BayDan/Inf.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/CaThe/Inf.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/Home/Index.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/Home/NhietDoDoAm.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/Home/QuanLyBanHang.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/Home/QuanLyCongViec.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/Home/ThongKe.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/LichTiemChung/Index.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/NhanVien/Create.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/NhanVien/Delete.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/NhanVien/Details.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/NhanVien/Edit.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/NhanVien/Index.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/NhanVien/ViewNhanVien.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/Shared/Error.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/Shared/_Layout.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/Shared/_LayoutBlank.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/ThucAn/Create.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/ThucAn/Details.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/ThucAn/Edit.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/ThucAn/Index.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/Thuoc/Create.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/Thuoc/Details.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/Thuoc/Edit.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/Thuoc/Index.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/TTB/Create.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/TTB/Details.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/TTB/Edit.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/TTB/Index.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/VatNuoi/Index.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/VatNuoi/VatNuoi.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/_ViewImports.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/_ViewStart.cshtml.g.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.RazorAssemblyInfo.cache
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.RazorAssemblyInfo.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/scopedcss/bundle/Happy Meat Farm.styles.css
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/staticwebassets/Happy Meat Farm.StaticWebAssets.Manifest.cache
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/staticwebassets/Happy Meat Farm.StaticWebAssets.Pack.cache
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/staticwebassets/msbuild.Happy Meat Farm.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/staticwebassets/msbuild.build.Happy Meat Farm.props
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/staticwebassets/msbuild.buildMultiTargeting.Happy Meat Farm.props
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/staticwebassets/msbuild.buildTransitive.Happy Meat Farm.props
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.RazorTargetAssemblyInfo.cache
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.RazorTargetAssemblyInfo.cs
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.dll
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/refint/Happy Meat Farm.dll
+/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.pdb
 /Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/bin/Debug/net5.0/appsettings.Development.json
 /Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/bin/Debug/net5.0/appsettings.json
 /Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/bin/Debug/net5.0/bundleconfig.json
@@ -1701,76 +1770,7 @@ C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/R
 /Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/bin/Debug/net5.0/runtimes/linux/native/libmongocrypt.so
 /Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/bin/Debug/net5.0/runtimes/osx/native/libmongocrypt.dylib
 /Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/bin/Debug/net5.0/runtimes/win/native/mongocrypt.dll
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.csproj.AssemblyReference.cache
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.GeneratedMSBuildEditorConfig.editorconfig
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.AssemblyInfoInputs.cache
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.AssemblyInfo.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.csproj.CoreCompileInputs.cache
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.MvcApplicationPartsAssemblyInfo.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.MvcApplicationPartsAssemblyInfo.cache
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.RazorAssemblyInfo.cache
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.RazorAssemblyInfo.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/scopedcss/bundle/Happy Meat Farm.styles.css
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/staticwebassets/Happy Meat Farm.StaticWebAssets.Manifest.cache
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/staticwebassets/Happy Meat Farm.StaticWebAssets.Pack.cache
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/staticwebassets/msbuild.Happy Meat Farm.Microsoft.AspNetCore.StaticWebAssets.props
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/staticwebassets/msbuild.build.Happy Meat Farm.props
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/staticwebassets/msbuild.buildMultiTargeting.Happy Meat Farm.props
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/staticwebassets/msbuild.buildTransitive.Happy Meat Farm.props
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.TagHelpers.input.cache
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.TagHelpers.output.cache
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.RazorCoreGenerate.cache
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/Auth/Login.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/BayDan/Create.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/BayDan/Delete.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/BayDan/Details.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/BayDan/Edit.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/BayDan/Index.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/BayDan/Inf.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/CaThe/Inf.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/Home/Index.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/Home/NhietDoDoAm.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/Home/QuanLyBanHang.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/Home/QuanLyCongViec.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/Home/ThongKe.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/LichTiemChung/Index.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/NhanVien/Create.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/NhanVien/Delete.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/NhanVien/Details.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/NhanVien/Edit.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/NhanVien/Index.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/NhanVien/ViewNhanVien.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/Shared/Error.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/Shared/_Layout.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/Shared/_LayoutBlank.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/ThucAn/Create.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/ThucAn/Details.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/ThucAn/Edit.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/ThucAn/Index.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/Thuoc/Create.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/Thuoc/Details.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/Thuoc/Edit.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/Thuoc/Index.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/TTB/Create.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/TTB/Details.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/TTB/Edit.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/TTB/Index.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/VatNuoi/Index.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/VatNuoi/VatNuoi.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/_ViewImports.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/_ViewStart.cshtml.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.RazorTargetAssemblyInfo.cache
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.RazorTargetAssemblyInfo.cs
 /Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.Views.pdb
 /Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.csproj.CopyComplete
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.dll
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/refint/Happy Meat Farm.dll
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.pdb
 /Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.genruntimeconfig.cache
 /Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/ref/Happy Meat Farm.dll
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.RazorComponent.input.cache
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/RazorDeclaration/Views/Shared/_SidebarPartialView.razor.g.cs
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.RazorComponent.output.cache
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/RazorDeclaration/Happy Meat Farm.dll
-/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/Shared/_SidebarPartialView.razor.g.cs

@@ -75,6 +75,15 @@ namespace Happy_Meat_Farm
 
             services.AddControllersWithViews();
 
+            services.AddHttpContextAccessor();
+
+            services.AddSession(options =>
+            {
+                options.Cookie.Name = ".Happy_Meat_Farm.Session";
+                options.IdleTimeout = TimeSpan.FromSeconds(3600);
+            });
+
+
             // Register settings
             services.Configure<Settings>(options =>
             {
@@ -115,6 +124,8 @@ namespace Happy_Meat_Farm
 
             });
             app.UseAuthentication();
+
+            app.UseSession();
 
         }
     }

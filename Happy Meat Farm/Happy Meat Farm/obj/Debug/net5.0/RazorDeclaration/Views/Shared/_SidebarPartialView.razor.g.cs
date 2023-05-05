@@ -19,19 +19,6 @@ namespace Happy_Meat_Farm.Views.Shared
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 2 "/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/Shared/_SidebarPartialView.razor"
-       
-
-    //var nhanVienCollection = _database.GetCollection<NhanVien>("Employee");
-    //var employeeFullName = HttpContext.Session.GetString("EmployeeFullName");
-    //var employee = nhanVienCollection.Find(e => e.FullName == employeeFullName).FirstOrDefault();
-    //ViewBag.EmployeeFullName = employee.FullName;
-
-
-#line default
-#line hidden
-#nullable disable
     }
 }
 #pragma warning restore 1591
