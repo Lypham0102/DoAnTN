@@ -1,0 +1,164 @@
+﻿@model IEnumerable<Happy_Meat_Farm.Models.NongTrai>
+
+@{
+    ViewData["Title"] = "Nông trại ";
+    Layout = "~/Views/Shared/_LayoutBlank.cshtml";
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<h1>Danh sách nông trại </h1>
+
+<style>
+    body {
+        text-align: center;
+    }
+
+    h1 {
+        margin-top: 45px;
+        margin-left: 270px;
+        color: white;
+        border-bottom: 2px solid white;
+    }
+
+    .nongtrai {
+        display: inline-block;
+        width: 250px;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid black;
+        border: 1px solid #ccc;
+        padding: 10px;
+        background-color: #D2B48C;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    .popup .popuptext {
+        position: fixed;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        background-color: #0074D9;
+        border: 1px solid #fff;
+        border-radius: 6px;
+        padding: 8px 0;
+        color: #fff;
+        text-align: center;
+        display: none;
+        visibility: hidden;
+        width: 250px;
+        background-color: #0074D9;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 8px 0;
+        position: absolute;
+        z-index: 1;
+        border: 1px solid #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .popup:hover .popuptext {
+        display: block;
+    }
+
+    .hide {
+        background-color: #0074D9;
+        display: none;
+    }
+
+    .popuptext {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #FAF0E6;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        padding: 8px 0;
+        color: #000000;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        width: 350px;
+        height: 250px;
+        border-color: #000000;
+    }
+
+    .popup-hide .popuptext {
+        display: none;
+    }
+
+    .taonongtrai {
+        margin: 10px;
+        padding: 10px;
+        background-color: #D2B48C;
+        border-radius: 10px;
+        display: inline-flex; /* thêm thuộc tính display và sử dụng giá trị inline-flex để nó được hiển thị ngang hàng với các thẻ nông trại */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 250px; /* đặt chiều rộng cho thẻ để nó có cùng kích thước với các thẻ nông trại */
+        height: 200px; /* đặt chiều cao cho thẻ để nó có cùng kích thước với các thẻ nông trại */
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px;
+    }
+</style>
+
+<div class="container">
+    @foreach (var item in Model)
+    {
+        <div class="nongtrai popup">
+            <h3>@item.TenNongTrai</h3>
+            <p>Vât nuôi: @item.TenVatNuoi</p>
+            <div>
+                <a class="btn btn-primary" style="background-color: #CD853F" href="@Url.Action("Index", "Home", new { id=item._idChuTrai })">Vào nông trại</a>
+                <a class="btn btn-danger" style="background-color: #8B4513" href="@Url.Action("Delete", new { /* id=item.PrimaryKey */ })" onclick="return confirm('Bạn có chắc muốn giải thể nông trại n không?')">Giải thể</a>
+            </div>
+            <div class="popuptext hide">
+                <h3>@item.TenNongTrai</h3>
+                <p>Địa chỉ: @item.DiaChi</p>
+                <p>Diện tích: @item.DienTich m²</p>
+                <p>Vật nuôi: @item.TenVatNuoi</p>
+                <p>Số chuồng: @item.SoChuongNuoi</p>
+            </div>
+        </div>
+    }
+    <div class="taonongtrai" style="height:140px; width:250px">
+        <a asp-action="Create" style="font-size: 24px; color:#8B4513">
+            <i class="fas fa-plus" style="font-size: 80px"></i>
+        </a>
+    </div>
+</div>
+
+<script>// Lấy tất cả các thẻ div nongtrai trên trang web
+    var nongtrai = document.querySelectorAll('.nongtrai');
+
+    // Lặp qua từng thẻ div nongtrai
+    nongtrai.forEach(function (item) {
+        // Tạo biến lưu trữ thẻ pop-up của từng thẻ div nongtrai
+        var popup = item.querySelector('.popuptext');
+
+        // Sự kiện mouseover để hiển thị pop-up
+        item.addEventListener('mouseover', function () {
+            popup.classList.remove('hide');
+        });
+
+
+        // Sự kiện mouseout để ẩn pop-up
+        item.addEventListener('mouseout', function () {
+            popup.classList.add('hide');
+        });
+
+        // Đặt vị trí của pop-up trên trang web
+        popup.style.top = (item.offsetTop + item.offsetHeight) + 'px';
+        popup.style.left = (item.offsetLeft + item.offsetWidth / 2 - popup.offsetWidth / 2) + 'px';
+
+        // Thêm pop-up vào trang web
+        document.body.appendChild(popup);
+    });</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-P2i+PvOaGJLc9IdbUPyBDnnp+IbcA7MWdZ1HhZT6U+LsU/g1sjUzBKLBNJgxQpi/RRR+I/54Ph4n4Zbx7Vp/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />

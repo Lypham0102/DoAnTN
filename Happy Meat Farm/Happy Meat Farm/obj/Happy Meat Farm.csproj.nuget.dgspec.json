@@ -1,26 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/Happy Meat Farm.csproj": {}
+    "/Users/phamcongly/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/Happy Meat Farm.csproj": {}
   },
   "projects": {
-    "/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/Happy Meat Farm.csproj": {
+    "/Users/phamcongly/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/Happy Meat Farm.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/Happy Meat Farm.csproj",
+        "projectUniqueName": "/Users/phamcongly/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/Happy Meat Farm.csproj",
         "projectName": "Happy Meat Farm",
-        "projectPath": "/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/Happy Meat Farm.csproj",
-        "packagesPath": "/Users/dev/.nuget/packages/",
-        "outputPath": "/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/",
+        "projectPath": "/Users/phamcongly/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/Happy Meat Farm.csproj",
+        "packagesPath": "/Users/phamcongly/.nuget/packages/",
+        "outputPath": "/Users/phamcongly/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/dev/.nuget/NuGet/NuGet.Config"
+          "/Users/phamcongly/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -119,6 +118,10 @@
               "target": "Package",
               "version": "[2.2.0, )"
             },
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.CodeAnalysis.Analyzers": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -169,6 +172,14 @@
               "target": "Package",
               "version": "[1.17.0, )"
             },
+            "QRCoder": {
+              "target": "Package",
+              "version": "[1.4.3, )"
+            },
+            "QrCode.Net": {
+              "target": "Package",
+              "version": "[0.4.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
@@ -184,6 +195,10 @@
             "WebGrease": {
               "target": "Package",
               "version": "[1.6.0, )"
+            },
+            "ZXing.Net": {
+              "target": "Package",
+              "version": "[0.16.1, )"
             },
             "bootstrap": {
               "target": "Package",
@@ -235,7 +250,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
         }
       }
     }

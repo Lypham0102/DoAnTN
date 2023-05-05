@@ -7,6 +7,14 @@ using Microsoft.AspNetCore.Mvc;
 using MongoDB.Driver;
 using Microsoft.Extensions.Configuration;
 using Happy_Meat_Farm.Interface;
+using ZXing;
+using System.Drawing;
+using ZXing.QrCode;
+using System.IO;
+using System.Security.Cryptography;
+using MongoDB.Bson;
+using QRCoder;
+using System.Drawing.Imaging;
 
 namespace Happy_Meat_Farm.Controllers
 {
@@ -68,11 +76,21 @@ namespace Happy_Meat_Farm.Controllers
             _context.Delete(_id);
             return RedirectToAction("Index");
         }
-        //public IActionResult Inf(string Name)
+        public IActionResult Inf(string Name)
+        {
+            var md = _context.GetCaTheTheoBay(Name);
+            return View();
+        }
+        //public ActionResult GenerateQRCode(string id)
         //{
-        //    var md = _context.GetCaTheTheoBay(Name);
-        //    return View();
+        //    var writer = new BarcodeWriterGeneric();
+        //    writer.Format = BarcodeFormat.QR_CODE;
+        //    var result = new Bitmap(writer.Write(_), new Size(200, 200));
+        //    var stream = new MemoryStream();
+        //    result.Save(stream, ImageFormat.Png);
+        //    return File(stream.ToArray(), "image/png");
         //}
+        
 
     }
 }

@@ -12,7 +12,7 @@ namespace Happy_Meat_Farm.Interface
     
         public interface IAuth
         {
-            Task<NhanVien> GetUser(string TenTaiKhoan, string Passwork);
+            Task<ChuTrai> GetUser(string account, string password);
         }
     
 }

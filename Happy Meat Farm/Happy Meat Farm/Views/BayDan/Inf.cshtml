@@ -1,5 +1,6 @@
 ﻿@model IEnumerable<Happy_Meat_Farm.Models.CaThe>
 
+
 @{
     ViewData["Title"] = "Inf";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -10,41 +11,47 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+<td style="font-weight: bold; color: blue; width:380px">Số cá thể trong danh sách: @Model.Count()</td>
 <table class="table">
     <thead>
         <tr>
-            <th style="width:180px"> Mã Cá Thể  </th>
+            <th style="width:180px">Mã QR  </th>
+            <th style="width:180px">Mã cá thể </th>
             <th style="width:180px">Đặc Điểm </th>
             <th style="width:180px"> Ngày Tuổi  </th>
-            
             <th style="width:380px"> Tuỳ chọn  </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item._id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DacDiem)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NgayTuoi)
-            </td>
-            
-            @*<td>
-                @Html.DisplayFor(modelItem => item.Chuong)
-            </td>*@
-        <td>
-            <a class="btn btn-primary" href="@Url.Action("Edit", new { /* id=item.PrimaryKey */ })">Sửa</a>
+       @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <img src="@Url.Action("GetQRCode", "Cathe", new { id = item._id })" />
+                </td>
 
-            <a class="btn btn-primary" href="@Url.Action("Details", new { /* id=item.PrimaryKey */ })">Chi tiết</a>
+                <td>
+                    @Html.DisplayFor(modelItem => item._id)   
+                </td>
+                
+                <td>
+                    @Html.DisplayFor(modelItem => item.DacDiem)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NgayTuoi)
+                </td>
+                <td>
+                    <a class="btn btn-primary" href="@Url.Action("Edit", new { /* id=item.PrimaryKey */ })">Sửa</a>
 
-            <a class="btn btn-danger" href="@Url.Action("Delete", new { /* id=item.PrimaryKey */ })" onclick="return confirm('Xoá đối tượng này khỏi bầy đàn?')">Chết</a>
-        </td>
-        </tr>
-}
+                    <a class="btn btn-primary" href="@Url.Action("Details", new { /* id=item.PrimaryKey */ })">Chi tiết</a>
+
+                    <a class="btn btn-danger" href="@Url.Action("Delete", new { /* id=item.PrimaryKey */ })" onclick="return confirm('Xoá đối tượng này khỏi bầy đàn?')">Chết</a>
+                </td>
+            </tr>
+        }
+
     </tbody>
+    
 </table>
+    

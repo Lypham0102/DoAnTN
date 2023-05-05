@@ -1774,3 +1774,18 @@ C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/R
 /Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.RazorComponent.output.cache
 /Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/RazorDeclaration/Happy Meat Farm.dll
 /Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/Shared/_SidebarPartialView.razor.g.cs
+/Users/phamcongly/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.RazorComponent.input.cache
+/Users/phamcongly/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/RazorDeclaration/Views/Shared/_SidebarPartialView.razor.g.cs
+/Users/phamcongly/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Happy Meat Farm.RazorComponent.output.cache
+/Users/phamcongly/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/RazorDeclaration/Happy Meat Farm.dll
+/Users/phamcongly/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/Shared/_SidebarPartialView.razor.g.cs
+/Users/phamcongly/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/bin/Debug/net5.0/Gma.QrCodeNet.Encoding.dll
+/Users/phamcongly/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/bin/Debug/net5.0/QRCoder.dll
+/Users/phamcongly/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/bin/Debug/net5.0/System.Drawing.Common.dll
+/Users/phamcongly/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/bin/Debug/net5.0/zxing.dll
+/Users/phamcongly/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/bin/Debug/net5.0/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll
+/Users/phamcongly/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/bin/Debug/net5.0/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
+/Users/phamcongly/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/ChuTrai/RegisterChuTrai.cshtml.g.cs
+/Users/phamcongly/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/ChuTrai/login.cshtml.g.cs
+/Users/phamcongly/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/NongTrai/Index.cshtml.g.cs
+/Users/phamcongly/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/NongTrai/DanhSachNongTrai.cshtml.g.cs

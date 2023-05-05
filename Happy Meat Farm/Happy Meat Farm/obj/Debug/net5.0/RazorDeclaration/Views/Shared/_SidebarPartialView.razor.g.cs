@@ -20,7 +20,7 @@ namespace Happy_Meat_Farm.Views.Shared
         }
         #pragma warning restore 1998
 #nullable restore
-#line 2 "/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/Shared/_SidebarPartialView.razor"
+#line 2 "/Users/phamcongly/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/Views/Shared/_SidebarPartialView.razor"
        
 
     //var nhanVienCollection = _database.GetCollection<NhanVien>("Employee");
