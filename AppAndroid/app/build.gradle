@@ -36,7 +36,10 @@ dependencies {
 
     implementation 'javax.mail:javax.mail-api:1.6.2'
     //implementation 'javax.naming:jndi:1.2.1'
-    implementation 'org.mongodb:mongodb-driver-sync:4.3.3'
+    implementation 'org.mongodb:mongo-java-driver:3.12.7'
+    //implementation 'org.mongodb:mongodb-driver-sync:4.3.3'
+    implementation group: 'javax.naming', name: 'jndi', version: '1.2.1'
+
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     testImplementation 'junit:junit:4.13.2'

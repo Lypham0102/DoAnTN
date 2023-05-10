@@ -18,11 +18,7 @@ public class NhanVienModels {
     private String _idNongTrai;
     private String MaNongTrai;
 
-    public NhanVienModels(String MaNV, String TenNV,
-                          String CCCD, String SDT, String DiaChi,
-                          String MaNT, String TenTaiKhoan, String Passwork,
-                          String ChucVu, String HeSoLuong, String NganHang,
-                          String STK, String _idNongTrai, String MaNongTrai, String maNongTrai) {
+    public NhanVienModels() {
         this._id = new ObjectId();
         this.MaNV = MaNV;
         this.TenNV = TenNV;
@@ -44,6 +40,8 @@ public class NhanVienModels {
     public void set_id (ObjectId _id) {this._id = _id;}
     public String getMaNV() {return this.MaNV;}
     public void setMaNV(String MaNV) {this.MaNV = MaNV;}
+    public String getTenNV() {return this.TenNV;}
+    public void setTenNV(String MaNV) {this.TenNV = TenNV;}
     public String getCCCD() {return this.CCCD;}
     public void setCCCD(String CCCD) {this.CCCD = CCCD;}
     public String getSDT() {return this.SDT;}
