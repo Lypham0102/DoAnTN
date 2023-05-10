@@ -11,31 +11,31 @@
 
 <div style="text-align:center;">
     <div>
-        <h2 style=" margin-bottom: 10px; ">@ViewData["Title"]</h2>
+        <h2 style="margin-bottom: 10px; color: white; ">Tổng quan trang trại</h2>
     </div>
 
     <div class="index-container">
         <script src="https://cdn.lordicon.com//libs/frhvbuzj/lord-icon-2.0.2.js"></script>
 
-        <div class="temperature box box1">
-            <h2 class="text-white">Nhiệt độ môi trường </h2>
-            <p class="value" id="temp"></p>
+        <div class="temperature box box1" style="background-color: white; color: #800000;">
+            <h2>Nhiệt độ môi trường </h2>
+            <p class="value" style="color: #CD5C5C;" id="temp"></p>
         </div>
 
-        <div class="revenue box box2">
-            <h2 class="text-white">Độ Ẩm Môi Trường </h2>
-            <p class="value" id="wet"></p>
+        <div class="revenue box box2" style="background-color: white; color: #800000;">
+            <h2>Độ Ẩm Môi Trường </h2>
+            <p class="value" style="color: #48D1CC;" id="wet"></p>
         </div>
-        <div class="sochuong box box3">
-            <h2 class="text-white">Số lượng chuồng nuôi</h2>
-            <p class="value">@ViewData["countBayDan"]</p>
+        <div class="sochuong box box3" style="background-color: white; color: #800000;">
+            <h2>Số lượng chuồng nuôi</h2>
+            <p class="value" style="color:black;">@ViewData["countBayDan"]</p>
         </div>
-        <div class="vatnuoi box box4">
-            <h2 class="text-white">Số lượng vật nuôi</h2>
-            <p class="value">@ViewData["countCathe"]</p>
+        <div class="vatnuoi box box4" style="background-color: white; color: #800000;">
+            <h2>Số lượng vật nuôi</h2>
+            <p class="value" style="color:black;">@ViewData["countCathe"]</p>
         </div>
         <div class="daily-report">
-            <h3>Thông tin trang trại</h3>
+            <h3 style="color: #800000;">Thông tin trang trại</h3>
             <ul style="text-align: left;">
                 <li>Số nhân viên: @ViewData["Count"]</li>
                 <li>Số lượng heo giống: [Số lượng heo giống]</li>
@@ -44,7 +44,7 @@
             </ul>
         </div>
         <div class="daily-report">
-            <h3>Lịch tiêm chủng</h3>
+            <h3 style="color: #800000;">Lịch tiêm chủng</h3>
             <ul style="text-align: left;">
                 <li>Ngày [XX/XX/XXXX] [mã chuồng] [loại thuốc]</li>
                 <li>Ngày [XX/XX/XXXX] [mã chuồng] [loại thuốc]</li>

@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Happy_Meat_Farm.Data;
 using Microsoft.Graph.Models;
+using MongoDB.Bson;
 
 namespace Happy_Meat_Farm.Interface
 {
@@ -13,6 +14,6 @@ namespace Happy_Meat_Farm.Interface
         public interface IAuth
         {
             Task<ChuTrai> GetUser(string account, string password);
-        }
+    }
     
 }

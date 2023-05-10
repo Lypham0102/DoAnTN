@@ -19,6 +19,9 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using MongoDB.Driver;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection;
+
 namespace Happy_Meat_Farm.Controllers
 {
 
@@ -56,6 +59,9 @@ namespace Happy_Meat_Farm.Controllers
             }
             return View(model);
         }
+
+
+
 
     }
 

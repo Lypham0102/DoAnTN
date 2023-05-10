@@ -7,8 +7,10 @@ using Happy_Meat_Farm.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.Graph.Models;
+using MongoDB.Bson;
 using MongoDB.Driver;
 
 namespace Happy_Meat_Farm.Data
@@ -29,7 +31,9 @@ namespace Happy_Meat_Farm.Data
             var filter = Builders<ChuTrai>.Filter.Eq(u => u.Account, username) & Builders<ChuTrai>.Filter.Eq(u => u.Password, password);
             return await _users.Find(filter).FirstOrDefaultAsync();
         }
-    
+       
+
+       
 
     }
 }
