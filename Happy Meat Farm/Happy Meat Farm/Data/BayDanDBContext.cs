@@ -10,6 +10,7 @@ using Happy_Meat_Farm.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using MongoDB.Bson;
 using MongoDB.Driver;
@@ -79,32 +80,48 @@ namespace Happy_Meat_Farm.Data
         public IEnumerable<CaThe> GetCaTheTheoBay(string Name)
         {
 
-            return cathecollection.Find(a => a.Chuong == Name).ToList();
+            //return cathecollection.Find(a => a.Chuong == Name).ToList();
+            var caTheList = cathecollection.Find(a => a.Chuong == Name).ToList();
+
+            foreach (var caThe in caTheList)
+            {
+                // Tính ngày tuổi của cá thể
+                int tuoi = TinhNgayTuoi(caThe._id);
+
+                // Cập nhật giá trị tuổi lên MongoDB
+                CapNhatNgayTuoi(caThe._id, tuoi);
+
+                // Gán giá trị tuổi cho thuộc tính trong đối tượng caThe (cá thể)
+                caThe.NgayTuoi = tuoi;
+            }
+
+            return caTheList;
+        }
+        public CaThe GetCaTheDetails(string id)
+        {
+            var caTheDetails = cathecollection.Find(c => c._id == id).FirstOrDefault();
+            return caTheDetails;
+        }
+        public int TinhNgayTuoi(string Name)
+        {
+            var caThe = cathecollection.Find(c => c._id == Name).FirstOrDefault();
+            if (caThe == null)
+            {
+                // Xử lý khi không tìm thấy cá thể
+                return -1;
+            }
+
+            TimeSpan ngayTuoi = DateTime.Now - caThe.NgayNuoi;
+            return (int)ngayTuoi.TotalDays;
         }
 
+        public void CapNhatNgayTuoi(string id, int tuoi)
+        {
+            var filter = Builders<CaThe>.Filter.Eq(c => c._id, id);
+            var update = Builders<CaThe>.Update.Set(c => c.NgayTuoi, tuoi);
+            cathecollection.UpdateOne(filter, update);
+        }
 
-
-        //public IActionResult GetQRCode(string id)
-        //{
-        //    // Lấy thông tin cá thể từ MongoDB theo _id
-
-
-        //    var individual = cathecollection.Find(m => m._id == ObjectId.Parse(id).ToString()).FirstOrDefault();
-
-
-        //    // Tạo mã QR code từ _id của cá thể
-        //    QRCodeGenerator qrGenerator = new QRCodeGenerator();
-        //    QRCodeData qrCodeData = qrGenerator.CreateQrCode(individual._id.ToString(), QRCodeGenerator.ECCLevel.Q);
-        //    QRCode qrCode = new QRCode(qrCodeData);
-
-        //    // Ghi mã QR code vào MemoryStream
-        //    MemoryStream ms = new MemoryStream();
-        //    Bitmap qrCodeImage = qrCode.GetGraphic(20);
-        //    qrCodeImage.Save(ms, ImageFormat.Png);
-        //    ms.Seek(0, SeekOrigin.Begin);
-
-        //    // Trả về dữ liệu MemoryStream để hiển thị trên trang web
-        //    return new Microsoft.AspNetCore.Mvc.FileStreamResult(ms, "image/png");
 
     }
 }

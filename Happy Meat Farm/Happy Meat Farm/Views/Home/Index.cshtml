@@ -3,16 +3,20 @@
     ViewData["Title"] = "Tổng quan trang trại";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
 <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
 <script src="https://firebase.google.com/docs/web/learn-more#config-object"></script>
 <script src="https://firebase.google.com/docs/web/setup#available-libraries"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 
 <div style="text-align:center;">
     <div>
         <h2 style="margin-bottom: 10px; color: white; ">Tổng quan trang trại</h2>
     </div>
+
 
     <div class="index-container">
         <script src="https://cdn.lordicon.com//libs/frhvbuzj/lord-icon-2.0.2.js"></script>
@@ -52,6 +56,8 @@
                 <li>Ngày [XX/XX/XXXX] [mã chuồng] [loại thuốc]</li>
             </ul>
         </div>
+
+        <h1>@ViewData["Message"]</h1>
     </div>
 </div>
 <!--https://firebase.google.com/docs/web/setup#available-libraries -->
@@ -95,7 +101,22 @@
     var wet = document.getElementById('wet');
     var dbRef2 = firebase.database().ref('HUMIDITY');
     dbRef2.on('value', snap => wet.innerHTML = snap.val());</script>
+
 <script src="~/js/JavaScript.js"></script>
+
+@*<script>const twilio = require('twilio');
+    const accountSid = 'AC0abe64fe348a8ce67a95cf76f32ddf5f';
+    const authToken = '8bcd7be9e20a6691d73b2f693f3afc3f';
+    const client = new twilio(accountSid, authToken);
+    const temp = 35; // Giả sử nhiệt độ hiện tại là 35 độ C
+    client.messages
+        .create({
+            body: 'Nhiệt độ là: ' + temp + '. Nhiệt độ đạt cảnh báo!!!',
+            from: '+18052738662',
+            to: '+84386834480'
+        })
+        .then(message => console.log(message.sid))
+        .catch(error => console.log(error));</script>*@
 
 
 

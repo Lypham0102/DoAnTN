@@ -4,18 +4,83 @@
     ViewData["Title"] = "Thêm mới nhân viên ";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<style>
+    body {
+        background-image: none;
+        background-size: cover;
+        background-position: center;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
 
+    .form-control {
+        display: block;
+        width: 100%;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    }
+
+    input[type="submit"] {
+        display: block;
+        width: 100%;
+        padding: 6px 12px;
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        color: #fff;
+        background-color: #337ab7;
+        border-color: #2e6da4;
+    }
+
+    .form-title {
+        margin-bottom: 20px;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .form-container {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
 <h2>Thêm nhân viên mới</h2>
 
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-4 mx-auto">
         <form asp-action="CreatePost">
-            @*<div asp-validation-summary="ModelOnly" class="text-danger"></div>
-        <div class="form-group">
-            <label asp-for="_id" class="control-label"></label>
-            <input asp-for="_id" class="form-control" />
-            <span asp-validation-for="_id" class="text-danger"></span>
-        </div>*@
             <div class="form-group">
                 <label asp-for="MaNV" class="control-label">Mã nhân viên</label>
                 <input asp-for="MaNV" class="form-control" />
@@ -55,6 +120,26 @@
                 <label asp-for="Passwork" class="control-label">Password</label>
                 <input asp-for="Passwork" class="form-control" />
                 <span asp-validation-for="Passwork" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ChucVu" class="control-label">Chức vụ</label>
+                <input asp-for="ChucVu" class="form-control" />
+                <span asp-validation-for="ChucVu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HeSoLuong" class="control-label">Hệ số lương</label>
+                <input asp-for="HeSoLuong" class="form-control" />
+                <span asp-validation-for="HeSoLuong" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NganHang" class="control-label">Ngân hàng</label>
+                <input asp-for="NganHang" class="form-control" />
+                <span asp-validation-for="NganHang" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="STK" class="control-label">Số tài khoản</label>
+                <input asp-for="STK" class="form-control" />
+                <span asp-validation-for="STK" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />

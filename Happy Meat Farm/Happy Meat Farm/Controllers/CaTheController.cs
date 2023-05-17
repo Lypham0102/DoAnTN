@@ -76,11 +76,11 @@ namespace Happy_Meat_Farm.Controllers
             _context.Delete(_id);
             return RedirectToAction("Index");
         }
-        public IActionResult Inf(string Name)
-        {
-            var md = _context.GetCaTheTheoBay(Name);
-            return View();
-        }
+        //public IActionResult Inf(string Name)
+        //{
+        //    var md = _context.GetCaTheTheoBay(Name);
+        //    return View();
+        //}
         //public ActionResult GenerateQRCode(string id)
         //{
         //    var writer = new BarcodeWriterGeneric();

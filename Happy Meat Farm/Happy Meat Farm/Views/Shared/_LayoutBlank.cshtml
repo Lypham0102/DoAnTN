@@ -18,7 +18,9 @@
 </head>
 @*style="background-color: #FAF0E6;"*@
 <body>
-
+    <div class="loader_bg">
+        <div class="loader"><img src="~/images/loadfarm.gif" alt="#" /></div>
+    </div>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-color border-bottom box-shadow mb-3" style="background-color: #DEB887; height: 60px;">
             <div class="brand">
@@ -28,6 +30,7 @@
             </div>
         </nav>
     </header>
+    <script src="~/js/script.js"></script>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -40,6 +43,9 @@
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
     @RenderSection("Scripts", required: false)
 </body>
 </html>
+

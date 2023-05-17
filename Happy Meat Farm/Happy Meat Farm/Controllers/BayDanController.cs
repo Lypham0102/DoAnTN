@@ -15,12 +15,19 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using Microsoft.Graph.Models;
 using ZXing.QrCode;
+using Twilio.TwiML.Voice;
+using ZXing.ImageSharp;
+using ZXing.SkiaSharp;
+using SkiaSharp;
+using System.Runtime.InteropServices;
+
 
 namespace Happy_Meat_Farm.Controllers
 {
     public class BayDanController: Controller
     {
         private readonly IBayDan _context;
+        
 
         public BayDanController(IBayDan context)
         {
@@ -73,14 +80,54 @@ namespace Happy_Meat_Farm.Controllers
             _context.Delete(Name);
             return RedirectToAction("Index");
         }
+        public IActionResult CaTheDetails(string id)
+        {
+            var caThe = _context.GetCaTheDetails(id);
+            if (caThe == null)
+            {
+                // Xử lý khi không tìm thấy cá thể
+                return NotFound();
+            }
+            return View(caThe);
+        }
+
         public IActionResult Inf(string Name)
         {
             var md = _context.GetCaTheTheoBay(Name);
             return View(md);
         }
-        
 
+        public ActionResult QrCodeImage(string data)
+        {
+            // tạo mã QR code từ chuỗi dữ liệu
+            var writer = new BarcodeWriterPixelData()
+            {
+                Format = BarcodeFormat.QR_CODE,
+                Options = new EncodingOptions
+                {
+                    Height = 100,
+                    Width = 100
+                }
+            };
 
+            var pixelData = writer.Write(data);
+
+            // chuyển đổi mã QR code thành byte array
+            using (var bitmap = new SKBitmap(pixelData.Width, pixelData.Height, SKColorType.Rgba8888, SKAlphaType.Premul))
+            using (var stream = new MemoryStream())
+            {
+                // ghi dữ liệu vào bitmap
+                var pixels = bitmap.GetPixels();
+                Marshal.Copy(pixelData.Pixels, 0, pixels, pixelData.Pixels.Length);
+
+                // lưu bitmap dưới dạng byte array
+                bitmap.Encode(stream, SKEncodedImageFormat.Png, 100);
+                var bytes = stream.ToArray();
+
+                // trả về hình ảnh mã QR code dưới dạng byte array
+                return File(bytes, "image/png");
+            }
+        }
     }
 }
 

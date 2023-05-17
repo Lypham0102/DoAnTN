@@ -15,6 +15,8 @@ namespace Happy_Meat_Farm.Models
         
         public string _id { get; set; }
         public string Chuong { get; set; }
+        public string KichThuoc { get; set; }
+        public string _idNongTrai { get; set; }
     }
 }
 

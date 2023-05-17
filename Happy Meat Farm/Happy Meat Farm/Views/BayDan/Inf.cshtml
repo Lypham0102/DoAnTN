@@ -6,52 +6,151 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Danh sách cá thể </h1>
+<h1 style="text-align: center;">Danh sách cá thể </h1>
+<style>
+    body {
+        background-image: none;
+        background-size: cover;
+        background-position: center;
+    }
+    .qr-code-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 9998;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<td style="font-weight: bold; color: blue; width:380px">Số cá thể trong danh sách: @Model.Count()</td>
+        .qr-code-overlay.hidden {
+            display: none;
+        }
+    .qr-code-img.zoom {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100vh;
+        width: 80vh;
+        object-fit: contain;
+        z-index: 9999;
+    }
+    .hidden {
+        display: none;
+    }
+
+    .qr-code.zoom {
+        width: 250px; /* Kích thước ảnh sau khi phóng to */
+        height: 250px;
+    }
+    .qr-code-img {
+        width: 100px;
+        height: 100px;
+        transition: all 0.2s ease-in-out;
+    }
+    .custom-button {
+        background-color: #800000;
+        color: white;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        padding: 8px 16px;
+        margin-right: 10px;
+    }
+
+    .confirm-msg {
+        color: red;
+    }
+
+    .table {
+        background-color: #fff;
+        color: #000;
+        border-collapse: collapse;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        margin: auto;
+        width: 80%;
+        border: 1px solid #ddd;
+        border-collapse: collapse;
+    }
+
+        .table th, .table td {
+            border: 1px solid #000;
+            padding: 5px;
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        .table th {
+            background-color: #DEB887;
+            line-height: 1.5;
+        }
+
+        .table td {
+            background-color: #fff;
+        }
+
+    .highlight {
+        border: none;
+        background-color: #FAF0E6;
+        color: black;
+        padding: 2px 4px;
+        border-radius: 20px;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+    }
+</style>
+<div style="display: flex; align-items: center;">
+    <button type="button" class="btn btn-danger" style="background-color: #800000" onclick="location.href='@Url.Action("Create")'">Thêm cá thể</button>  
+</div>
+<span style="font-weight: bold; color: #800000 ; width: 380px; margin-left: 10px;">Số cá thể trong danh sách: @Model.Count()</span>
 <table class="table">
     <thead>
         <tr>
-            <th style="width:180px">Mã QR  </th>
-            <th style="width:180px">Mã cá thể </th>
-            <th style="width:180px">Đặc Điểm </th>
-            <th style="width:180px"> Ngày Tuổi  </th>
-            <th style="width:380px"> Tuỳ chọn  </th>
-            <th></th>
+            <th style="width: 250px; text-align: center;">Mã QR  </th>
+
+            <th style="width: 200px; text-align: center;">Đặc Điểm </th>
+            <th style="width: 200px; text-align: center;"> Ngày Tuổi  </th>
+            <th style="width: 300px; text-align: center;"> Tuỳ chọn  </th>
+
         </tr>
     </thead>
     <tbody>
-       @foreach (var item in Model)
+        @foreach (var item in Model)
         {
             <tr>
-                <td>
-                    <img src="@Url.Action("GetQRCode", "Cathe", new { id = item._id })" />
+                <td style="text-align: center; padding: 0;">
+                    @{
+                        string data = item._id;
+                    }
+                    <button class="qr-code-button" onclick="toggleQrCode(this)">
+                        QRCODE
+                    </button>
+                    <img class="qr-code-img hidden" src="@Url.Action("QrCodeImage", "BayDan", new { data = data })" height="120" width="120" />
                 </td>
 
-                <td>
-                    @Html.DisplayFor(modelItem => item._id)   
-                </td>
-                
-                <td>
+
+                <td style="text-align: center;">
                     @Html.DisplayFor(modelItem => item.DacDiem)
                 </td>
-                <td>
+                <td style="text-align: center;">
                     @Html.DisplayFor(modelItem => item.NgayTuoi)
                 </td>
-                <td>
-                    <a class="btn btn-primary" href="@Url.Action("Edit", new { /* id=item.PrimaryKey */ })">Sửa</a>
+                <td style="text-align: center;">
+                    <button class="highlight" onclick="location.href='@Url.Action("Edit", new { Name = item._id })'">Sửa</button>
 
-                    <a class="btn btn-primary" href="@Url.Action("Details", new { /* id=item.PrimaryKey */ })">Chi tiết</a>
+                    <button class="highlight" onclick="location.href='@Url.Action("Details", new { Name = item._id })'">Chi tiết bầy</button>
 
-                    <a class="btn btn-danger" href="@Url.Action("Delete", new { /* id=item.PrimaryKey */ })" onclick="return confirm('Xoá đối tượng này khỏi bầy đàn?')">Chết</a>
+                    <button class="btn btn-sm btn-dark" onclick="if(confirm('Xoá đối tượng này khỏi bầy đàn?')){location.href='@Url.Action("Delete", new { Name = item._id })'}">Chết</button>
+
                 </td>
             </tr>
         }
 
     </tbody>
-    
+
 </table>
-    
+<div style="height: 50px;"></div>

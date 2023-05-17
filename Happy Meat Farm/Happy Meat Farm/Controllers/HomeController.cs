@@ -13,11 +13,24 @@ using Microsoft.AspNetCore.Http;
 using Happy_Meat_Farm.Services;
 using Happy_Meat_Farm.Data;
 using Microsoft.AspNetCore.Authorization;
+using Twilio;
+using Twilio.Rest.Api.V2010.Account;
+using Twilio.Types;
+using FirebaseAdmin;
+using Google.Apis.Auth.OAuth2;
+using Firebase.Database;
+using Happy_Meat_Farm.Interface;
+using Microsoft.Extensions.Configuration;
+using System.Net.NetworkInformation;
+using System.IO;
+using System.Text;
+using Newtonsoft.Json.Linq;
 
 namespace Happy_Meat_Farm.Controllers
 {
     public class HomeController : Controller
     {
+
         private readonly ILogger<HomeController> _logger;
         private readonly IMongoDatabase _database;
 
@@ -26,11 +39,21 @@ namespace Happy_Meat_Farm.Controllers
             _logger = logger;
             _database = database;
         }
-        private IMongoCollection<NhanVien>_nhanvienCollection;
-
+        private IMongoCollection<NhanVien> _nhanvienCollection;
         //[Authorize]
         public async Task<IActionResult> Index()
         {
+            //var accountSid = "AC0abe64fe348a8ce67a95cf76f32ddf5f";
+            //var authToken = "8bcd7be9e20a6691d73b2f693f3afc3f";
+            //TwilioClient.Init(accountSid, authToken);
+            //var messageOptions = new CreateMessageOptions(new PhoneNumber("+84386834480"));
+            //messageOptions.From = new PhoneNumber("+18052738662");
+            //messageOptions.Body = "Test nhiệt độ, độ ẩm";
+
+            //var message = MessageResource.Create(messageOptions);
+            //Console.WriteLine(message.Body);
+
+
             var collection = _database.GetCollection<NhanVien>("NhanVien");
             var count = await collection.CountDocumentsAsync(new BsonDocument());
             ViewData["Count"] = count;
@@ -45,10 +68,10 @@ namespace Happy_Meat_Farm.Controllers
 
             return View();
         }
-       
+
 
         [HttpGet]
-        public IEnumerable<NhanVien> Get() 
+        public IEnumerable<NhanVien> Get()
         {
             return null;
         }
@@ -61,8 +84,13 @@ namespace Happy_Meat_Farm.Controllers
         {
             return View();
         }
-        
+
         public IActionResult ThongKe()
+        {
+            return View();
+        }
+
+        public IActionResult IOT()
         {
             return View();
         }
@@ -72,5 +100,10 @@ namespace Happy_Meat_Farm.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
     }
 }
+
+
+
+

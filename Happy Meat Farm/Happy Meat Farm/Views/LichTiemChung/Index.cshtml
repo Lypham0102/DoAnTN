@@ -1,30 +1,53 @@
 ﻿@model IEnumerable<Happy_Meat_Farm.Models.LichTiemChung>
 
 @{
-    ViewData["Title"] = "Lịch tiêm chủng  ";
+    ViewData["Title"] = "Lịch tiêm chủng ";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Danh sách các đợt tiêm chủng </h1>
+<style>
+    body {
+        background-image: none;
+        background-size: cover;
+        background-position: center;
+    }
+    .table {
+        background-color: #fff;
+        color: #000;
+        border-collapse: collapse;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
 
+    .table th, .table td {
+         border: 1px solid #000;
+         padding: 5px;
+    }
+
+        .table th {
+            background-color: #DEB887;
+            line-height: 1.5;
+        }
+
+    .table td {
+         background-color: #fff;
+    }
+</style>
+<h1>Danh sách các đợt tiêm chủng </h1>
 <p>
     <a asp-action="Create">Thêm đợt tiêm chủng </a>
 </p>
 <table class="table">
     <thead>
         <tr>
-            <th style="width:180px"> Tên đợt tiêm  </th>
-            <th style="width:250px"> Ngày tuổi tiêm  </th>
-<th style="width:120px"> CCCD </th>
-    <th style="width:120px"> SĐT</th>
-    <th style="width:150px"> Địa chỉ </th>
-</tr>
+            <th style="width:250px"> Tên đợt tiêm  </th>
+            <th style="width:300px"> Ngày tuổi tiêm  </th>
+            <th></th>
+        </tr>
     </thead>
     <tbody>
         @foreach (var item in Model)
         {
             <tr>
-
                 <td>
                     @Html.DisplayFor(modelItem => item.TenDotTiem)
                 </td>
@@ -33,12 +56,11 @@
                 </td>
 
                 <td>
-                    @Html.ActionLink("Chỉnh sửa", "Edit", new { Name = item._id }) |
-                    @Html.ActionLink("Chi tiết", "Details", new { Name = item._id }) |
-                    @Html.ActionLink("Xóa", "Delete", new { Name = item._id })
+                    <button onclick="location.href='@Url.Action("Edit", new { Name = item._id })'">Chỉnh sửa</button>
+                    <button onclick="location.href='@Url.Action("Details", new { Name = item._id })'">Chi tiết</button>
+                    <button onclick="location.href='@Url.Action("Delete", new { Name = item._id })'">Xóa</button>
                 </td>
             </tr>
         }
     </tbody>
 </table>
-

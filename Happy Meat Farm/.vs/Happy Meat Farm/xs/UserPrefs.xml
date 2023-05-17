@@ -1,55 +1,27 @@
 ﻿<Properties StartupConfiguration="{1900C92F-6A65-4269-AEC6-739CF738D02E}|Default">
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workbench ActiveDocument="Happy Meat Farm/Views/Shared/_Layout.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Happy Meat Farm/Data/BayDanDBContext.cs">
     <Files>
-      <File FileName="Happy Meat Farm/Views/Shared/_Layout.cshtml" Line="37" Column="7" />
-      <File FileName="Happy Meat Farm/Views/Shared/_LayoutBlank.cshtml" />
+      <File FileName="Happy Meat Farm/Views/Shared/_Layout.cshtml" Line="136" Column="120" />
       <File FileName="Happy Meat Farm/Controllers/HomeController.cs" />
-=======
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <Debugger.DebugSourceFolders />
-  <MonoDevelop.Ide.ItemProperties.Happy_220Meat_220Farm PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Happy Meat Farm/Views/Shared/_Layout.cshtml">
-    <Files>
-      <File FileName="Happy Meat Farm/Views/Shared/_Layout.cshtml" Line="26" Column="12" />
-      <File FileName="Happy Meat Farm/Controllers/HomeController.cs" />
-      <File FileName="Happy Meat Farm/Views/Auth/Login.cshtml" Line="11" Column="31" />
-      <File FileName="Happy Meat Farm/Controllers/AuthController.cs" />
-      <File FileName="Happy Meat Farm/Data/NhanVienDBContext.cs" />
-      <File FileName="Happy Meat Farm/Program.cs" />
-      <File FileName="Happy Meat Farm/Views/BayDan/Inf.cshtml" />
-      <File FileName="Happy Meat Farm/Models/CaThe.cs" />
-      <File FileName="Happy Meat Farm/appsettings.json" />
-      <File FileName="Happy Meat Farm/Views/NhanVien/Details.cshtml" />
-      <File FileName="Happy Meat Farm/Views/NhanVien/Edit.cshtml" />
-      <File FileName="Happy Meat Farm/Views/NhanVien/Index.cshtml" />
-      <File FileName="Happy Meat Farm/Data/CaTheDBContext.cs" />
-      <File FileName="Happy Meat Farm/Controllers/CaTheController.cs" />
-      <File FileName="Happy Meat Farm/Controllers/BayDanController.cs" />
-      <File FileName="Happy Meat Farm/Views/Home/Index.cshtml" Line="14" Column="87" />
+      <File FileName="Happy Meat Farm/Views/Home/Index.cshtml" />
       <File FileName="Happy Meat Farm/Views/BayDan/Index.cshtml" />
-      <File FileName="Happy Meat Farm/Data/BayDanDBContext.cs" />
-      <File FileName="Happy Meat Farm/Views/BayDan/Details.cshtml" />
-      <File FileName="Happy Meat Farm/Views/BayDan/Edit.cshtml" />
-      <File FileName="Happy Meat Farm/Controllers/NhanVienController.cs" />
+      <File FileName="Happy Meat Farm/Data/BayDanDBContext.cs" Line="105" Column="9" />
+      <File FileName="Happy Meat Farm/Views/BayDan/Details.cshtml" Line="32" Column="36" />
+      <File FileName="Happy Meat Farm/Views/BayDan/Edit.cshtml" Line="32" Column="88" />
+      <File FileName="Happy Meat Farm/Controllers/NhanVienController.cs" Line="64" Column="39" />
       <File FileName="Happy Meat Farm/Models/LichTiemChung.cs" />
       <File FileName="Happy Meat Farm/Models/ErrorViewModel.cs" />
-      <File FileName="Happy Meat Farm/Models/NhanVien.cs" />
+      <File FileName="Happy Meat Farm/Models/NhanVien.cs" Line="1" Column="1" />
       <File FileName="Happy Meat Farm/Interface/ILichTiemChung.cs" />
-      <File FileName="Happy Meat Farm/Interface/INhanVien.cs" />
+      <File FileName="Happy Meat Farm/Interface/INhanVien.cs" Line="1" Column="1" />
       <File FileName="Happy Meat Farm/Interface/IBayDan.cs" />
-      <File FileName="Happy Meat Farm/Views/BayDan/Create.cshtml" />
+      <File FileName="Happy Meat Farm/Views/BayDan/Create.cshtml" Line="100" Column="16" />
       <File FileName="Happy Meat Farm/Views/BayDan/Delete.cshtml" />
       <File FileName="Happy Meat Farm/Data/LichTiemChungDBContext.cs" />
       <File FileName="Happy Meat Farm/Controllers/LichTiemChungController.cs" />
       <File FileName="Happy Meat Farm/Services/NhanVienServices.cs" />
-      <File FileName="Happy Meat Farm/Views/LichTiemChung/Index.cshtml" />
-      <File FileName="Happy Meat Farm/Views/Shared/_LayoutBlank.cshtml" Line="11" Column="5" />
+      <File FileName="Happy Meat Farm/Views/LichTiemChung/Index.cshtml" Line="1" Column="1" />
+      <File FileName="Happy Meat Farm/Views/Shared/_LayoutBlank.cshtml" />
       <File FileName="Happy Meat Farm/Interface/ICaThe.cs" />
       <File FileName="Happy Meat Farm/Services/DocumentSevice.cs" />
       <File FileName="Happy Meat Farm/Interface/IAuth.cs" />
@@ -57,77 +29,124 @@
       <File FileName="Happy Meat Farm/Models/BayDan.cs" />
       <File FileName="../../../../../../usr/local/share/dotnet/sdk/7.0.203/Sdks/Microsoft.NET.Sdk/targets/Microsoft.PackageDependencyResolution.targets" />
       <File FileName="Happy Meat Farm/Happy Meat Farm.csproj" />
->>>>>>> 405ffe08 (update)
       <File FileName="Happy Meat Farm/Views/Shared/_SidebarPartialView.razor" />
-      <File FileName="Happy Meat Farm/Data/CaTheDBContext.cs" />
-      <File FileName="Happy Meat Farm/appsettings.json" />
-      <File FileName="Happy Meat Farm/Startup.cs" />
-<<<<<<< HEAD
-=======
-      <File FileName="Happy Meat Farm/Views/ChuTrai/RegisterChuTrai.cshtml" />
-      <File FileName="Happy Meat Farm/Views/ChuTrai/login.cshtml" />
-      <File FileName="../../../../../../usr/local/share/dotnet/sdk/7.0.203/Sdks/Microsoft.NET.Sdk.Razor/targets/Microsoft.NET.Sdk.Razor.CodeGeneration.targets" />
-      <File FileName="Happy Meat Farm/Views/NongTrai/DanhSachNongTrai.cshtml" Line="1" Column="1" />
+      <File FileName="Happy Meat Farm/Views/Shared/_ValidationScriptsPartial.cshtml" />
+      <File FileName="Happy Meat Farm/bundleconfig.json" />
+      <File FileName="Happy Meat Farm/libman.json" />
+      <File FileName="Happy Meat Farm/Views/_ViewStart.cshtml" />
+      <File FileName="Happy Meat Farm/Views/_ViewImports.cshtml" />
+      <File FileName="../../../../.nuget/packages/bootstrap/5.2.3/contentFiles/any/any/wwwroot/css/bootstrap.css" />
+      <File FileName="Happy Meat Farm/Models/NongTrai.cs" />
+      <File FileName="Happy Meat Farm/Models/ThucAnModel.cs" />
+      <File FileName="Happy Meat Farm/Interface/INongTrai.cs" />
+      <File FileName="Happy Meat Farm/Interface/IThucAn.cs" />
+      <File FileName="Happy Meat Farm/Data/NongTraiDBContext.cs" />
+      <File FileName="Happy Meat Farm/Data/Settings.cs" />
+      <File FileName="Happy Meat Farm/Controllers/NongTraiController.cs" />
+      <File FileName="Happy Meat Farm/Models/ChuTrai.cs" />
+      <File FileName="Happy Meat Farm/Interface/IChuTrai.cs" />
+      <File FileName="Happy Meat Farm/Data/ChuTraiDBContext.cs" />
+      <File FileName="Happy Meat Farm/Controllers/ChuTraiController.cs" Line="1" Column="1" />
+      <File FileName="Happy Meat Farm/Startup.cs" Line="63" Column="55" />
       <File FileName="Happy Meat Farm/wwwroot/css/site.css" />
-      <File FileName="Happy Meat Farm/Views/Camera/Index.cshtml" Line="17" Column="13" />
+      <File FileName="Happy Meat Farm/Views/Camera/Index.cshtml" />
       <File FileName="Happy Meat Farm/wwwroot/js/p2p.js" />
       <File FileName="Happy Meat Farm/wwwroot/js/JavaScript.js" />
       <File FileName="Happy Meat Farm/wwwroot/js/script.js" />
       <File FileName="Happy Meat Farm/Controllers/CameraController.cs" />
       <File FileName="Happy Meat Farm/wwwroot/js/Video.js" />
-      <File FileName="Happy Meat Farm/Views/NongTrai/Index.cshtml" Line="18" Column="9" />
->>>>>>> 405ffe08 (update)
+      <File FileName="Happy Meat Farm/Views/NongTrai/Index.cshtml" />
+      <File FileName="Happy Meat Farm/Views/Auth/UserProfile.cshtml" />
+      <File FileName="Happy Meat Farm/Views/NhanVien/Create.cshtml" />
+      <File FileName="Happy Meat Farm/Views/Home/QuanLyCongViec.cshtml" />
+      <File FileName="Happy Meat Farm/Views/Home/ThongKe.cshtml" />
+      <File FileName="Happy Meat Farm/wwwroot/js/main.js" />
+      <File FileName="Happy Meat Farm/wwwroot/css/Login.css" />
+      <File FileName="Happy Meat Farm/wwwroot/css/main.css" />
+      <File FileName="Happy Meat Farm/wwwroot/js/site.js" />
+      <File FileName="Happy Meat Farm/Controllers/SendsmsController.cs" />
+      <File FileName="Happy Meat Farm/Views/NhanVien/ViewNhanVien.cshtml" />
+      <File FileName="Happy Meat Farm/Views/ChuTrai/login.cshtml" />
+      <File FileName="Happy Meat Farm/Controllers/BayDanController.cs" Line="64" Column="32" />
+      <File FileName="Happy Meat Farm/Models/CaThe.cs" Line="1" Column="1" />
+      <File FileName="Happy Meat Farm/Views/BayDan/Inf.cshtml" />
+      <File FileName="../../../../.nuget/packages/zxing/2.1.1/readme.txt" />
+      <File FileName="Happy Meat Farm/Controllers/CaTheController.cs" />
+      <File FileName="Happy Meat Farm/Views/NhanVien/Details.cshtml" />
+      <File FileName="Happy Meat Farm/Views/NhanVien/Index.cshtml" Line="10" Column="32" />
+      <File FileName="Happy Meat Farm/appsettings.json" />
+      <File FileName="Happy Meat Farm/Views/Home/ProcessTemperature.cshtml" />
+      <File FileName="Happy Meat Farm/Views/NongTrai/DanhSachNongTrai.cshtml" />
+      <File FileName="Happy Meat Farm/Views/Home/QuanLyBanHang.cshtml" />
+      <File FileName="Happy Meat Farm/Data/CaTheDBContext.cs" Line="1" Column="1" />
+      <File FileName="Happy Meat Farm/Views/NhanVien/Edit.cshtml" Line="173" Column="34" />
+      <File FileName="Happy Meat Farm/Models/CaTheGiong.cs" Line="24" Column="48" />
+      <File FileName="Happy Meat Farm/Interface/ICaTheGiong.cs" Line="5" Column="30" />
+      <File FileName="Happy Meat Farm/Data/CaTheGiongDBContext.cs" Line="31" Column="57" />
+      <File FileName="Happy Meat Farm/Data/NhanVienDBContext.cs" Line="1" Column="1" />
+      <File FileName="Happy Meat Farm/Controllers/CaTheGiongController.cs" Line="26" Column="65" />
+      <File FileName="Happy Meat Farm/Cam/MyWebSocketHandler.cs" />
+      <File FileName="Happy Meat Farm/Controllers/AuthController.cs" />
+      <File FileName="Happy Meat Farm/Controllers/ThucAnController.cs" />
+      <File FileName="Happy Meat Farm/Controllers/ThuocController.cs" />
+      <File FileName="Happy Meat Farm/Controllers/TTBController.cs" />
+      <File FileName="Happy Meat Farm/Controllers/VatNuoiController.cs" />
+      <File FileName="Happy Meat Farm/Data/ThucAnDBContext.cs" />
+      <File FileName="Happy Meat Farm/Data/ThuocDBContext.cs" />
+      <File FileName="Happy Meat Farm/Data/TTBRepository.cs" />
+      <File FileName="Happy Meat Farm/Interface/IThuoc.cs" />
+      <File FileName="Happy Meat Farm/Interface/TTB_Interface.cs" />
+      <File FileName="Happy Meat Farm/Models/ThuocModel.cs" />
+      <File FileName="Happy Meat Farm/Models/TTBModel.cs" />
+      <File FileName="Happy Meat Farm/Views/Auth/Login.cshtml" />
+      <File FileName="Happy Meat Farm/Views/CaThe/Inf.cshtml" Line="1" Column="1" />
+      <File FileName="Happy Meat Farm/Views/ChuTrai/RegisterChuTrai.cshtml" />
+      <File FileName="Happy Meat Farm/Views/Home/IOT.cshtml" />
+      <File FileName="Happy Meat Farm/Views/NhanVien/Delete.cshtml" />
+      <File FileName="Happy Meat Farm/Views/Shared/Error.cshtml" />
+      <File FileName="Happy Meat Farm/wwwroot/lib/jquery-validation/dist/additional-methods.js" />
+      <File FileName="Happy Meat Farm/wwwroot/lib/jquery-validation/dist/jquery.validate.js" />
+      <File FileName="Happy Meat Farm/wwwroot/lib/jquery-validation/LICENSE.md" />
+      <File FileName="Happy Meat Farm/Program.cs" />
+      <File FileName="Happy Meat Farm/ScaffoldingReadMe.txt" />
+      <File FileName="Happy Meat Farm/Views/CaTheGiong/Index.cshtml" Line="84" Column="115" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Happy Meat Farm" expanded="True">
-<<<<<<< HEAD
-            <Node name="Happy Meat Farm" expanded="True" selected="True">
-              <Node name="Dependencies" expanded="True" />
-=======
             <Node name="Happy Meat Farm" expanded="True">
-              <Node name="Cam" expanded="True" />
->>>>>>> 405ffe08 (update)
               <Node name="Controllers" expanded="True" />
-              <Node name="Data" expanded="True" />
-              <Node name="Interface" expanded="True" />
+              <Node name="Data" expanded="True">
+                <Node name="BayDanDBContext.cs" selected="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
+              <Node name="Services" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Auth" expanded="True" />
-<<<<<<< HEAD
-                <Node name="NhanVien" expanded="True" />
-                <Node name="Shared" expanded="True" />
-=======
                 <Node name="BayDan" expanded="True" />
                 <Node name="Camera" expanded="True" />
+                <Node name="CaThe" expanded="True" />
+                <Node name="CaTheGiong" expanded="True" />
                 <Node name="ChuTrai" expanded="True" />
                 <Node name="Home" expanded="True" />
+                <Node name="LichTiemChung" expanded="True" />
                 <Node name="NhanVien" expanded="True" />
                 <Node name="NongTrai" expanded="True" />
-                <Node name="Shared" expanded="True">
-                  <Node name="_Layout.cshtml" selected="True" />
-                </Node>
+                <Node name="Shared" expanded="True" />
               </Node>
-              <Node name="wwwroot" expanded="True">
-                <Node name="js" expanded="True" />
->>>>>>> 405ffe08 (update)
-              </Node>
-              <Node name="wwwroot" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-<<<<<<< HEAD
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Happy_220Meat_220Farm PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MultiItemStartupConfigurations />
+  <Debugger.DebugSourceFolders />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <Debugger.DebugSourceFolders />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Happy_220Meat_220Farm PreferredExecutionTarget="/Applications/Brave Browser.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-=======
->>>>>>> 405ffe08 (update)
 </Properties>

@@ -5,28 +5,56 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Details</h1>
 
-<div>
-    <h4>BayDan</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model._id)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model._id)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Chuong)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Chuong)
-        </dd>
-    </dl>
+<style>
+    body {
+        background-image: none;
+        background-size: cover;
+        background-position: center;
+    }
+</style>
+<div class="container">
+    <h1 class="text-center mt-5 mb-4">Chi tiết nhân viên</h1>
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h4 class="card-title">Thông tin chuồng</h4>
+                    <hr />
+                    <dl class="row">
+                        <dt class="col-sm-3">
+                            ID:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model._id)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Chuồng:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.Chuong)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Kích thước (m²):
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.KichThuoc)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Mã trại:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model._idNongTrai)
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+<div style="height: 30px;"></div>
+<div>
+    <button class="btn btn-primary" style="background-color: #800000;" onclick="location.href='@Url.Action("Index")'">Back</button>
 
-<div>
-    <button class="btn btn-primary" onclick="location.href='@Url.Action("Index")'">Back to List</button>
-    
 </div>
+<div style="height: 50px;"></div>

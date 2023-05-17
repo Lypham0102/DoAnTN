@@ -60,6 +60,7 @@ namespace Happy_Meat_Farm
             services.AddScoped<IAuth, AuthDBContext>();
             services.AddScoped<INongTrai, NongTraiDBContext>();
             services.AddScoped<IChuTrai, ChuTraiDBContext>();
+            services.AddScoped<ICaTheGiong, CaTheGiongDBContext>();
             // Configure authentication
 
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)

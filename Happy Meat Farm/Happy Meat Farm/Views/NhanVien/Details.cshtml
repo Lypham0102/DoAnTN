@@ -1,91 +1,101 @@
 ﻿@model Happy_Meat_Farm.Models.NhanVien
-
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Chi tiết";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Chi tiết</h1>
-
-<div>
-    <h4>Thông tin nhân viên</h4>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            ID:
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model._id)
-        </dd>
-        <dt class="col-sm-2">
-            Mã nhân viên:
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.MaNV)
-        </dd>
-        <dt class="col-sm-2">
-            Tên nhân viên:
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.TenNV)
-        </dd>
-        <dt class="col-sm-2">
-            CCCD:
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.CCCD)
-        </dd>
-        <dt class="col-sm-2">
-            SĐT:
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.SDT)
-        </dd>
-        <dt class="col-sm-2">
-            Địa chỉ:
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.DiaChi)
-        </dd>
-        <dt class="col-sm-2">
-            Chức vụ:
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.ChucVu)
-        </dd>
-        <dt class="col-sm-2">
-            Hệ số lương:
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.HeSoLuong)
-        </dd>
-        <dt class="col-sm-2">
-            Ngân hàng:
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.NganHang)
-        </dd>
-        <dt class="col-sm-2">
-            STK:
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.STK)
-        </dd>
-        <dt class="col-sm-2">
-            Tên tài khoản:
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.TenTaiKhoan)
-        </dd>
-        <dt class="col-sm-2">
-            Mật khẩu:
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Passwork)
-        </dd>
-    </dl>
+<style>
+    body {
+        background-image: none;
+        background-size: cover;
+        background-position: center;
+    }
+</style>
+<div class="container">
+    <h1 class="text-center mt-5 mb-4">Chi tiết nhân viên</h1>
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h4 class="card-title">Thông tin nhân viên</h4>
+                    <hr />
+                    <dl class="row">
+                        <dt class="col-sm-3">
+                            ID:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model._id)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Mã nhân viên:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.MaNV)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Tên nhân viên:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.TenNV)
+                        </dd>
+                        <dt class="col-sm-3">
+                            CCCD:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.CCCD)
+                        </dd>
+                        <dt class="col-sm-3">
+                            SĐT:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.SDT)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Địa chỉ:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.DiaChi)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Chức vụ:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.ChucVu)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Hệ số lương:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.HeSoLuong)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Ngân hàng:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.NganHang)
+                        </dd>
+                        <dt class="col-sm-3">
+                            STK:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.STK)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Tên tài khoản:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.TenTaiKhoan)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Mật khẩu:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.Passwork)
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-@*<div>
-    @*Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) 
-    <a asp-action="Index">Trở về</a>
-</div>*@
+<div style="height: 50px;"></div>

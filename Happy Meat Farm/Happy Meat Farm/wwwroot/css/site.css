@@ -294,15 +294,30 @@ body {
     line-height: 60px; /* Vertically center the text there */
 }
 
-.loader_bg{
-    position: fixed;
+.loader_bg {
+/*    position: fixed;
     z-index: 9999999;
     background: #fff;
     width: 100%;
     height: 100%;
+*/
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 9999;
+    
+
 }
 
-.loader{
+.loader {
     height: 100%;
     width: 100%;
     position: absolute;
@@ -312,6 +327,8 @@ body {
     justify-content: center;
     align-items: center;
 }
-.loader img {
-    width: 280px;
-}
+    .loader img {
+        width: 100%;
+       
+        object-fit: contain;
+    }

@@ -1,26 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/Happy Meat Farm.csproj": {}
+    "/Users/phamcongly/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/Happy Meat Farm.csproj": {}
   },
   "projects": {
-    "/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/Happy Meat Farm.csproj": {
+    "/Users/phamcongly/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/Happy Meat Farm.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/Happy Meat Farm.csproj",
+        "projectUniqueName": "/Users/phamcongly/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/Happy Meat Farm.csproj",
         "projectName": "Happy Meat Farm",
-        "projectPath": "/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/Happy Meat Farm.csproj",
-        "packagesPath": "/Users/dev/.nuget/packages/",
-        "outputPath": "/Users/dev/myProject/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/",
+        "projectPath": "/Users/phamcongly/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/Happy Meat Farm.csproj",
+        "packagesPath": "/Users/phamcongly/.nuget/packages/",
+        "outputPath": "/Users/phamcongly/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/dev/.nuget/NuGet/NuGet.Config"
+          "/Users/phamcongly/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -47,9 +46,29 @@
               "target": "Package",
               "version": "[3.5.0.2, )"
             },
+            "Aspose.BarCode": {
+              "target": "Package",
+              "version": "[23.4.0, )"
+            },
             "AttributeRouting": {
               "target": "Package",
               "version": "[3.4.2, )"
+            },
+            "BarCode": {
+              "target": "Package",
+              "version": "[2023.5.1, )"
+            },
+            "BarcodeLib": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.101.0, )"
+            },
+            "ClosedXML.Report": {
+              "target": "Package",
+              "version": "[0.2.6, )"
             },
             "FireSharp": {
               "target": "Package",
@@ -70,6 +89,10 @@
             "FirebaseAdminCore": {
               "target": "Package",
               "version": "[2.0.0, )"
+            },
+            "FirebaseDatabase.net": {
+              "target": "Package",
+              "version": "[4.2.0, )"
             },
             "Google.Apis.FirebaseDynamicLinks.v1": {
               "target": "Package",
@@ -173,6 +196,14 @@
               "target": "Package",
               "version": "[2.19.0, )"
             },
+            "NETStandard.Library": {
+              "target": "Package",
+              "version": "[2.0.3, )"
+            },
+            "NetBarcode": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
@@ -189,6 +220,26 @@
               "target": "Package",
               "version": "[0.4.0, )"
             },
+            "SixLabors.ImageSharp": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "SkiaSharp": {
+              "target": "Package",
+              "version": "[2.88.3, )"
+            },
+            "SkiaSharp.NativeAssets.Linux": {
+              "target": "Package",
+              "version": "[2.88.3, )"
+            },
+            "SkiaSharp.Views": {
+              "target": "Package",
+              "version": "[2.88.3, )"
+            },
+            "SkiaSharp.Views.Forms": {
+              "target": "Package",
+              "version": "[2.88.3, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
@@ -201,13 +252,53 @@
               "target": "Package",
               "version": "[1.0.9, )"
             },
+            "Twilio": {
+              "target": "Package",
+              "version": "[6.6.0, )"
+            },
+            "Twilio.AspNet.Common": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
             "WebGrease": {
               "target": "Package",
               "version": "[1.6.0, )"
             },
+            "ZXing": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
             "ZXing.Net": {
               "target": "Package",
-              "version": "[0.16.1, )"
+              "version": "[0.16.9, )"
+            },
+            "ZXing.Net.Bindings.ImageSharp": {
+              "target": "Package",
+              "version": "[0.16.10, )"
+            },
+            "ZXing.Net.Bindings.ImageSharp.V2": {
+              "target": "Package",
+              "version": "[0.16.15, )"
+            },
+            "ZXing.Net.Bindings.SkiaSharp": {
+              "target": "Package",
+              "version": "[0.16.9, )"
+            },
+            "ZXing.Net.Bindings.Windows.Compatibility": {
+              "target": "Package",
+              "version": "[0.16.9, )"
+            },
+            "ZXing.Net.Bindings.ZKWeb.System.Drawing": {
+              "target": "Package",
+              "version": "[0.16.7, )"
+            },
+            "ZXing.Net.Mobile": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "ZXingBlazor": {
+              "target": "Package",
+              "version": "[0.2.7, )"
             },
             "bootstrap": {
               "target": "Package",
@@ -259,7 +350,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
         }
       }
     }

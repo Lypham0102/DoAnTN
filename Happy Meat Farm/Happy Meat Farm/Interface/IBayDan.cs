@@ -14,10 +14,14 @@ namespace Happy_Meat_Farm.Interface
         IEnumerable<BayDan> GetAllBayDan();
         BayDan GetBayDanDetails(string Name);
         IEnumerable<CaThe> GetCaTheTheoBay(string Name);
+        int TinhNgayTuoi(string Name);
+        void CapNhatNgayTuoi(string id, int tuoi);
+        CaThe GetCaTheDetails(string id);
 
         void Create(BayDan baydanData);
         void Update(string _id, BayDan baydanData);
         void Delete(string Name);
+
         //void Inf(string Name);
         //void Inf(string cathetheobayData);
     }

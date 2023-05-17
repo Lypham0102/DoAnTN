@@ -1,0 +1,131 @@
+﻿
+@{
+    ViewData["Title"] = "Tổng quan trang trại";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+<script src="https://firebase.google.com/docs/web/learn-more#config-object"></script>
+<script src="https://firebase.google.com/docs/web/setup#available-libraries"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+<div style="text-align:center;">
+    <div>
+        <h2 style="margin-bottom: 10px; color: white; ">Tổng quan trang trại</h2>
+    </div>
+
+
+    <div class="index-container">
+        <script src="https://cdn.lordicon.com//libs/frhvbuzj/lord-icon-2.0.2.js"></script>
+
+        <div class="temperature box box1" style="background-color: white; color: #800000;">
+            <h2>Nhiệt độ môi trường </h2>
+            <p class="value" style="color: #CD5C5C;" id="temp"></p>
+        </div>
+
+        <script>// Lấy giá trị của thẻ có id là "temp"
+
+            // Truy cập đối tượng HTML có id là "temp"
+            var tempElement = document.getElementById("temp");
+
+            // Lấy giá trị của phần tử HTML "temp"
+            var tempValue = tempElement.innerHTML;
+
+            // Chuyển đổi giá trị nhiệt độ thành số nguyên
+            var temperature = parseInt(tempValue);
+
+            // Tạo AJAX request
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "/HomeController/ProcessTemperature", true);
+            xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+
+            // Gửi giá trị nhiệt độ dưới dạng JSON
+            xhr.send(JSON.stringify({ temperature: temperature }));</script>
+
+        <div class="revenue box box2" style="background-color: white; color: #800000;">
+            <h2>Độ Ẩm Môi Trường </h2>
+            <p class="value" style="color: #48D1CC;" id="wet"></p>
+        </div>
+        <div class="sochuong box box3" style="background-color: white; color: #800000;">
+            <h2>Số lượng chuồng nuôi</h2>
+            <p class="value" style="color:black;">@ViewData["countBayDan"]</p>
+        </div>
+        <div class="vatnuoi box box4" style="background-color: white; color: #800000;">
+            <h2>Số lượng vật nuôi</h2>
+            <p class="value" style="color:black;">@ViewData["countCathe"]</p>
+        </div>
+        <div class="daily-report">
+            <h3 style="color: #800000;">Thông tin trang trại</h3>
+            <ul style="text-align: left;">
+                <li>Số nhân viên: @ViewData["Count"]</li>
+                <li>Số lượng heo giống: [Số lượng heo giống]</li>
+                <li>Số lượng heo con: [Số lượng heo con]</li>
+                <li>Số lượng heo thịt: [Số lượng heo thịt]</li>
+            </ul>
+        </div>
+        <div class="daily-report">
+            <h3 style="color: #800000;">Lịch tiêm chủng</h3>
+            <ul style="text-align: left;">
+                <li>Ngày [XX/XX/XXXX] [mã chuồng] [loại thuốc]</li>
+                <li>Ngày [XX/XX/XXXX] [mã chuồng] [loại thuốc]</li>
+                <li>Ngày [XX/XX/XXXX] [mã chuồng] [loại thuốc]</li>
+                <li>Ngày [XX/XX/XXXX] [mã chuồng] [loại thuốc]</li>
+            </ul>
+        </div>
+
+        <h1>@ViewData["Message"]</h1>
+    </div>
+</div>
+<!--https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+
+<script src="https://firebase.google.com/docs/web/learn-more#config-object"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use-->
+<script src="https://firebase.google.com/docs/web/setup#available-libraries"></script>
+<!--https://firebase.google.com/docs/web/learn-more#config-object-->
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to usehttps://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+
+<script>// Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+        apiKey: "AIzaSyCiSaknvNYmF3wd578-plD_5NWSA7PyjSY",
+        authDomain: "esp8266-database-inventor.firebaseapp.com",
+        databaseURL: "https://esp8266-database-inventor-default-rtdb.firebaseio.com",
+        projectId: "esp8266-database-inventor",
+        storageBucket: "esp8266-database-inventor.appspot.com",
+        messagingSenderId: "423165376147",
+        appId: "1:423165376147:web:01b7d90369ef89bd5bff66",
+        measurementId: "G-6Y0CS5BME0"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+
+    var temp = document.getElementById('temp');
+    var dbRef = firebase.database().ref().child('TEMPERATURE');
+    dbRef.on('value', snap => temp.innerText = snap.val());
+
+    var wet = document.getElementById('wet');
+    var dbRef2 = firebase.database().ref('HUMIDITY');
+    dbRef2.on('value', snap => wet.innerHTML = snap.val());</script>
+<script src="~/js/JavaScript.js"></script>
+
+
+
+
+
+
+
+
