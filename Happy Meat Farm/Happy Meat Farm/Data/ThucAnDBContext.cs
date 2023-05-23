@@ -16,37 +16,37 @@ namespace Happy_Meat_Farm.Data
     {
         public readonly IMongoDatabase mongoDatabase;
         public readonly MongoClient mongoClient;
-        public readonly IMongoCollection<ThucAnModel> _collection;
+        public readonly IMongoCollection<ThucAn> _collection;
 
         public ThucAnDBContext(IOptions<Settings> options)
         {
             var client = new MongoClient(options.Value.ConnectionString);
             mongoDatabase = client.GetDatabase(options.Value.Database);
 
-            _collection = mongoDatabase.GetCollection<ThucAnModel>("ThucAn");
+            _collection = mongoDatabase.GetCollection<ThucAn>("ThucAn");
         }
 
-        public IMongoCollection<ThucAnModel> ThucAnCollection =>
-            mongoDatabase.GetCollection<ThucAnModel>("ThucAn");
+        public IMongoCollection<ThucAn> ThucAnCollection =>
+            mongoDatabase.GetCollection<ThucAn>("ThucAn");
 
-        public IEnumerable<ThucAnModel> GetAllThucAn()
+        public IEnumerable<ThucAn> GetAllThucAn()
         {
             return ThucAnCollection.Find(a => true).ToList();
         }
-        public ThucAnModel GetThucAnDetails(string Name)
+        public ThucAn GetThucAnDetails(string Name)
         {
-            var details = ThucAnCollection.Find(m => m.TenHang == Name).FirstOrDefault();
+            var details = ThucAnCollection.Find(m => m._id == Name).FirstOrDefault();
             return details;
         }
 
-        public void Create(ThucAnModel ThucAnData)
+        public void Create(ThucAn ThucAnData)
         {
             ThucAnCollection.InsertOne(ThucAnData);
         }
-        public void Update(string _id, ThucAnModel ThucAnData)
+        public void Update(string _id, ThucAn ThucAnData)
         {
-            var filter = Builders<ThucAnModel>.Filter.Eq(c => c._id, _id);
-            var update = Builders<ThucAnModel>.Update
+            var filter = Builders<ThucAn>.Filter.Eq(c => c._id, _id);
+            var update = Builders<ThucAn>.Update
                 .Set("TenHang", ThucAnData.TenHang)
                 .Set("MaLoai", ThucAnData.MaLoai)
                 .Set("KhoiLuongTinh", ThucAnData.KhoiLuongTinh)
@@ -54,8 +54,7 @@ namespace Happy_Meat_Farm.Data
                 .Set("DonGia", ThucAnData.DonGia)
                 .Set("HanDung", ThucAnData.HanDung)
                 .Set("SoLuong", ThucAnData.SoLuong)
-                .Set("_idNongTrai", ThucAnData._idNongTrai)
-                .Set("_idKiemKe", ThucAnData._idKiemKe);
+                .Set("NgayTuoi", ThucAnData.NgayTuoi);
 
 
             ThucAnCollection.UpdateOne(filter, update);
@@ -64,7 +63,7 @@ namespace Happy_Meat_Farm.Data
 
         public void Delete(string Name)
         {
-            var filter = Builders<ThucAnModel>.Filter.Eq(c => c.TenHang, Name);
+            var filter = Builders<ThucAn>.Filter.Eq(c => c._id, Name);
             ThucAnCollection.DeleteOne(filter);
         }
     }

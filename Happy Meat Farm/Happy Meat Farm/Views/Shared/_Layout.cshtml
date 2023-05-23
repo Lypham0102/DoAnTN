@@ -26,21 +26,15 @@
             background-position: center;
         }
     </style>
+    
     <script>function toggleQrCode(button) {
-            var qrCodeImg = button.nextElementSibling;
-            qrCodeImg.classList.toggle("hidden");
-            qrCodeImg.classList.remove("zoom");
-        }
-
-        $(document).ready(function () {
-            $('.qr-code-img').click(function () {
-                $(this).toggleClass('zoom');
-            });
-
-            $('.qr-code-button').click(function () {
-                toggleQrCode(this);
-            });
-        });</script>
+            var img = button.nextElementSibling; // Lấy phần tử anh em tiếp theo của nút
+            if (img.classList.contains("hidden")) {
+                img.classList.remove("hidden"); // Xoá lớp "hidden" để hiển thị hình ảnh mã QR code
+            } else {
+                img.classList.add("hidden"); // Thêm lớp "hidden" để ẩn hình ảnh mã QR code
+            }
+        }</script>
     <script>// Lấy giá trị của thẻ có id là "temp"
 
         // Truy cập đối tượng HTML có id là "temp"
@@ -59,24 +53,19 @@
 
         // Gửi giá trị nhiệt độ dưới dạng JSON
         xhr.send(JSON.stringify({ temperature: temperature }));</script>
-    <script>// Define the values for area 1
-        var temp = 25;
-        var humidity = 50;
-        var ppm = 100;
+    <script>function deleteCaThe(id, button) {
+            if (confirm('Xoá đối tượng này khỏi bầy đàn?')) {
+                // Gửi yêu cầu xoá cá thể lên server (có thể sử dụng AJAX để gửi yêu cầu)
 
-        // Define the values for area 2
-        var temp1 = 28;
-        var humidity1 = 60;
-        var ppm1 = 120;
+                // Xoá dòng chứa cá thể khỏi bảng
+                var row = button.closest('tr');
+                row.remove();
 
-        // Display the values on the web page
-        document.getElementById("temp").innerHTML = temp;
-        document.getElementById("humidity").innerHTML = humidity;
-        document.getElementById("ppm").innerHTML = ppm;
-
-        document.getElementById("temp1").innerHTML = temp1;
-        document.getElementById("humidity1").innerHTML = humidity1;
-        document.getElementById("ppm1").innerHTML = ppm1;</script>
+                // Đẩy dòng chứa cá thể xuống cuối bảng
+                var tbody = document.querySelector('table tbody');
+                tbody.appendChild(row);
+            }
+        }</script>
 </head>
 
 <body style="background-color: #FAF0E6;">
@@ -112,7 +101,7 @@
 
                     </li>
                     <li class="nav-item sidebar-item">
-                        <a class="nav-link font-weight-bold" asp-area=" " asp-controller="Home" asp-action="QuanLyCongViec">
+                        <a class="nav-link font-weight-bold" asp-area=" " asp-controller="HienThiCanTiemChung" asp-action="HienThiCaTheCanTiemChung">
                             <button class="btn btn-link text-black-50 font-weight-bold" type="button">
                                 <i class='bx bx-task'><span>Quản lý công việc</span></i>
                             </button>

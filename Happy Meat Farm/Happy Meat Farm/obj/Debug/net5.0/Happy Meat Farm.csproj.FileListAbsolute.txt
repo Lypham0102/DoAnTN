@@ -1872,3 +1872,5 @@ C:/Users/ADMIN/Desktop/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/R
 /Users/phamcongly/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/Home/ProcessTemperature.cshtml.g.cs
 /Users/phamcongly/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/Home/IOT.cshtml.g.cs
 /Users/phamcongly/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/CaTheGiong/Index.cshtml.g.cs
+/Users/phamcongly/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/CaThe/Details.cshtml.g.cs
+/Users/phamcongly/Documents/GitHub/DoAnTN/Happy Meat Farm/Happy Meat Farm/obj/Debug/net5.0/Razor/Views/HienThiCanTIemChung/HienThiCaTheCanTiemChung.cshtml.g.cs

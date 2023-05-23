@@ -1,89 +1,85 @@
-﻿@model Happy_Meat_Farm.Models.ThuocModel 
+﻿@model Happy_Meat_Farm.Models.ThuocModel
 
 @{
     ViewData["Title"] = "Chi tiết";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Thông tin trang thiết Bị</h1>
-<dl class="row">
-    <dt class="col-sm-2">
-        ID:
-    </dt>
-    <dd class="col-sm-10">
-        @Html.DisplayFor(model => model._id)
-    </dd>
-    <dt class="col-sm-2">
-        Tên thuốc:
-    </dt>
-    <dd class="col-sm-10">
-        @Html.DisplayFor(model => model.TenThuoc)
-    </dd>
-    <dt class="col-sm-2">
-        Ngày sản xuất:
-    </dt>
-    <dd class="col-sm-10">
-        @Html.DisplayFor(model => model.NSX)
-    </dd>
-    <dt class="col-sm-2">
-        Loại thuốc:
-    </dt>
-    <dd class="col-sm-10">
-        @Html.DisplayFor(model => model.LoaiThuoc)
-    </dd>
-    <dt class="col-sm-2">
-        Chỉ định:
-    </dt>
-    <dd class="col-sm-10">
-        @Html.DisplayFor(model => model.ChiDinh)
-    </dd>
-    <dt class="col-sm-2">
-        Liều lượng:
-    </dt>
-    <dd class="col-sm-10">
-        @Html.DisplayFor(model => model.LieuLuong)
-    </dd>
-    <dt class="col-sm-2">
-        Dung tích:
-    </dt>
-    <dd class="col-sm-10">
-        @Html.DisplayFor(model => model.DungTich)
-    </dd>
-    <dt class="col-sm-2">
-        Hạn sử dụng
-    </dt>
-    <dd class="col-sm-10">
-        @Html.DisplayFor(model => model.HanDung)
-    </dd>
-    <dt class="col-sm-2">
-        Đơn giá:
-    </dt>
-    <dd class="col-sm-10">
-        @Html.DisplayFor(model => model.DonGia)
-    </dd>
-    <dt class="col-sm-2">
-        Thuộc Nông Trại:
-    </dt>
-    <dd class="col-sm-10">
-        @Html.DisplayFor(model => model._idNongTrai)
-    </dd>
-    <dt class="col-sm-2">
-        ID Kiểm kê:
-    </dt>
-    <dd class="col-sm-10">
-        @Html.DisplayFor(model => model._idKiemKe)
-    </dd>
-    <dt class="col-sm-2">
-        ID Phiếu nhập:
-    </dt>
-    <dd class="col-sm-10">
-        @Html.DisplayFor(model => model._idPhieuNhapThuoc)
-    </dd>
-</dl>
-@*<div>
-    <button class="btn btn-primary">
-        <a class="text-white" asp-action="Index">Trở về</a>
-    </button>
-</div>*@
+<style>
+    body {
+        background-image: none;
+        background-size: cover;
+        background-position: center;
+    }
+</style>
+<div class="container">
+    <h1 class="text-center mt-5 mb-4">Chi tiết thuốc</h1>
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h4 class="card-title">Thông tin thuốc</h4>
+                    <hr />
+                    <dl class="row">
+                        <dt class="col-sm-3">
+                            Tên thuốc:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.TenThuoc)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Nhà sản xuất:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.NSX)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Loại thuốc:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.LoaiThuoc)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Khối lượng:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.ChiDinh)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Đối tượng:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.LieuLuong)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Đơn giá:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.DungTich)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Hạn dùng:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.HanDung)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Đơn giá:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.DonGia)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Số lượng:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.SoLuong)
+                        </dd>
 
-
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="height: 50px;"></div>

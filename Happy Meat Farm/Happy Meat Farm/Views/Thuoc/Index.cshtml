@@ -4,48 +4,111 @@
     ViewData["Title"] = "Thuốc";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<style>
+    body {
+        background-image: none;
+        background-size: cover;
+        background-position: center;
+    }
 
-<h1>Danh Sách Thuốc</h1>
+    .custom-button {
+        background-color: #800000;
+        color: white;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        padding: 8px 16px;
+        margin-right: 10px;
+    }
 
+    .confirm-msg {
+        color: red;
+    }
+
+    .table {
+        background-color: #fff;
+        color: #000;
+        border-collapse: collapse;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+        .table th, .table td {
+            border: 1px solid #000;
+            padding: 5px;
+        }
+
+        .table th {
+            background-color: #DEB887;
+            line-height: 1.5;
+        }
+
+        .table td {
+            background-color: #fff;
+        }
+
+    .highlight {
+        border: none;
+        background-color: #FAF0E6;
+        color: black;
+        padding: 2px 4px;
+        border-radius: 20px;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+    }
+</style>
+<h1 style="text-align: center;">Danh Sách Thuốc</h1>
+<button class="custom-button">
+    <a asp-action="Create" style="text-decoration: none; color: white;">Thêm thuốc</a>
+</button>
+<div style="height: 10px;"></div>
 <table class="table">
     <thead>
         <tr>
-            <th style="width:250px"> Tên Thuốc </th>
-            <th style="width:250px"> Loại Thuốc </th>
-            <th style="width:250px"> Chỉ Định </th>
-            <th style="width:250px"> Liều Lượng </th>
+            <th style="width:180px"> Tên thuốc</th>
+            <th style="width:250px"> Loại thuốc </th>
+            <th style="width:250px"> Chỉ định </th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
-        @if (Model != null)
+        @foreach (var item in Model)
         {
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.TenThuoc)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.LoaiThuoc)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.ChiDinh)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.LieuLuong)
-                    </td>
-                    <td>
-                        @Html.ActionLink("Chỉnh sửa", "Edit", new { Name = item.TenThuoc }) |
-                        @Html.ActionLink("Chi tiết", "Details", new { Name = item.TenThuoc }) |
-                        @Html.ActionLink("Xóa", "Delete", new { Name = item.TenThuoc })
-                    </td>
-                </tr>
-            }
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TenThuoc)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LoaiThuoc)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ChiDinh)
+                </td>
+                <td>
+                    <button class="highlight" onclick="location.href='@Url.Action("Edit", new { Name = item._id })'">Chỉnh sửa</button>
+                    <button class="highlight" onclick="location.href='@Url.Action("Details", new { Name = item._id})'">Chi tiết</button>
+                    <button class="highlight" onclick="showConfirm('@item._id')">Xóa</button>
+                </td>
+            </tr>
+            <script>
+                function showConfirm(name) {
+                    if (confirm(`Bạn muốn xóa loại thuốc này không ${name} ?`)) {
+                        window.location.href = "@Url.Action("Delete", new { Name = item._id })";
+                    } else {
+                        let confirmMsg = document.getElementById("confirm-msg");
+                        confirmMsg.innerHTML = `<span class="confirm-msg">Bạn đã hủy thao tác xóa loại thuốc này ${name}.</span>`;
+                    }
+                }
+            </script>
+
+            <span id="confirm-msg"></span>
         }
+
     </tbody>
+
 </table>
-<button class="btn btn-primary">
-    <a class="text-white" asp-action="Create">Thêm thuốc  </a>
-</button>
-
-
+<div style="text-align:right;">
+    <div style="text-align:right;">
+        <button class="custom-button">
+            <a asp-action="Export" style="text-decoration: none; color: white;">Xuất Excel</a>
+        </button>
+    </div>
+</div>

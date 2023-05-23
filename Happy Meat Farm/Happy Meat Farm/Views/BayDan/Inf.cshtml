@@ -1,18 +1,18 @@
 ﻿@model IEnumerable<Happy_Meat_Farm.Models.CaThe>
 
-
 @{
     ViewData["Title"] = "Inf";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1 style="text-align: center;">Danh sách cá thể </h1>
+<h1 style="text-align: center;">Danh sách cá thể</h1>
 <style>
     body {
         background-image: none;
         background-size: cover;
         background-position: center;
     }
+
     .qr-code-overlay {
         position: fixed;
         top: 0;
@@ -29,6 +29,7 @@
         .qr-code-overlay.hidden {
             display: none;
         }
+
     .qr-code-img.zoom {
         position: fixed;
         top: 50%;
@@ -39,19 +40,22 @@
         object-fit: contain;
         z-index: 9999;
     }
+
     .hidden {
         display: none;
     }
 
     .qr-code.zoom {
-        width: 250px; /* Kích thước ảnh sau khi phóng to */
+        width: 250px;
         height: 250px;
     }
+
     .qr-code-img {
         width: 100px;
         height: 100px;
         transition: all 0.2s ease-in-out;
     }
+
     .custom-button {
         background-color: #800000;
         color: white;
@@ -77,7 +81,8 @@
         border-collapse: collapse;
     }
 
-        .table th, .table td {
+        .table th,
+        .table td {
             border: 1px solid #000;
             padding: 5px;
             text-align: center;
@@ -102,37 +107,40 @@
         border-radius: 20px;
         box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
     }
+
+    .dead {
+        background-color: #333333;
+        color: white;
+    }
 </style>
+
 <div style="display: flex; align-items: center;">
-    <button type="button" class="btn btn-danger" style="background-color: #800000" onclick="location.href='@Url.Action("Create")'">Thêm cá thể</button>  
+    <button type="button" class="btn btn-danger" style="background-color: #800000" onclick="location.href='@Url.Action("Create")'">Thêm cá thể</button>
 </div>
-<span style="font-weight: bold; color: #800000 ; width: 380px; margin-left: 10px;">Số cá thể trong danh sách: @Model.Count()</span>
+<span style="font-weight: bold; color: #800000; width: 380px; margin-left: 10px;">Số cá thể trong danh sách: @Model.Count()</span>
 <table class="table">
     <thead>
         <tr>
-            <th style="width: 250px; text-align: center;">Mã QR  </th>
-
-            <th style="width: 200px; text-align: center;">Đặc Điểm </th>
-            <th style="width: 200px; text-align: center;"> Ngày Tuổi  </th>
-            <th style="width: 300px; text-align: center;"> Tuỳ chọn  </th>
-
+            <th style="width: 250px; text-align: center;">Mã QR</th>
+            <th style="width: 200px; text-align: center;">Đặc Điểm</th>
+            <th style="width: 200px; text-align: center;">Ngày Tuổi</th>
+            <th style="width: 300px; text-align: center;">Tuỳ chọn</th>
         </tr>
     </thead>
     <tbody>
         @foreach (var item in Model)
         {
-            <tr>
+            <tr id="@item._id">
                 <td style="text-align: center; padding: 0;">
                     @{
                         string data = item._id;
+                        string detailUrl = Url.Action("Detail", "CaThe", new { id = item._id });
                     }
-                    <button class="qr-code-button" onclick="toggleQrCode(this)">
-                        QRCODE
+                    <button class="qr-code-button" onclick="toggleQrCode(this, '@detailUrl')">
+                        Mã QR Code
                     </button>
                     <img class="qr-code-img hidden" src="@Url.Action("QrCodeImage", "BayDan", new { data = data })" height="120" width="120" />
                 </td>
-
-
                 <td style="text-align: center;">
                     @Html.DisplayFor(modelItem => item.DacDiem)
                 </td>
@@ -141,16 +149,47 @@
                 </td>
                 <td style="text-align: center;">
                     <button class="highlight" onclick="location.href='@Url.Action("Edit", new { Name = item._id })'">Sửa</button>
-
-                    <button class="highlight" onclick="location.href='@Url.Action("Details", new { Name = item._id })'">Chi tiết bầy</button>
-
-                    <button class="btn btn-sm btn-dark" onclick="if(confirm('Xoá đối tượng này khỏi bầy đàn?')){location.href='@Url.Action("Delete", new { Name = item._id })'}">Chết</button>
+                    <button class="highlight" onclick="location.href='@Url.Action("Details", "CaThe", new { Name = item._id })'">Chi tiết cá thể</button>
+                    <button class="btn btn-sm btn-dark" onclick="showConfirm('@item._id')">Chết</button>
+                    <button class="highlight" onclick="showSellModal('@item._id')" data-toggle="modal" data-target="#sellModal">Bán</button>
 
                 </td>
             </tr>
         }
-
     </tbody>
-
 </table>
+
+<!-- Thêm mã HTML này vào trong thẻ <div> có class "table" -->
+<div class="modal fade" id="sellModal" tabindex="-1" role="dialog" aria-labelledby="sellModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="sellModalLabel">Thông tin bán cá thể</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="sellForm" action="@Url.Action("Sell", "CaThe")" method="post">
+                    <input type="hidden" id="caTheId" name="caTheId" />
+                    <div class="form-group">
+                        <label for="weight">Cân nặng:</label>
+                        <input type="text" class="form-control" id="weight" name="weight" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Giá bán:</label>
+                        <input type="text" class="form-control" id="price" name="price" required />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Bán</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>function showSellModal(caTheId) {
+        $('#caTheId').val(caTheId);
+        $('#sellModal').modal('show');
+    }</script>
+
 <div style="height: 50px;"></div>

@@ -21,6 +21,7 @@ namespace Happy_Meat_Farm.Models
         public string HanDung { get; set; }
         public string DonGia { get; set; }
         public string _idBayDan { get; set; }
+        public string SoLuong { get; set; }
     }
 }
 

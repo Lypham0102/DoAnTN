@@ -15,7 +15,7 @@ namespace Happy_Meat_Farm.Models
         [BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
         public string _id { get; set; }
         public string TenDotTiem  { get; set; }
-        public string NgayTuoiTiem { get; set; }
+        public int NgayTuoiTiem { get; set; }
         public string LieuLuongTiem { get; set; }
     }
 }

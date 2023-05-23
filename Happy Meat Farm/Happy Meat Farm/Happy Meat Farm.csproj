@@ -17,6 +17,7 @@
     <None Remove="Cam\" />
     <None Remove="Views\Camera\" />
     <None Remove="Views\CaTheGiong\" />
+    <None Remove="Views\HienThiCanTiemChung\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\js\script.js" />
@@ -119,6 +120,7 @@
     <Folder Include="Cam\" />
     <Folder Include="Views\Camera\" />
     <Folder Include="Views\CaTheGiong\" />
+    <Folder Include="Views\HienThiCanTiemChung\" />
   </ItemGroup>
 
   <ItemGroup>

@@ -99,7 +99,10 @@ namespace Happy_Meat_Farm.Controllers
 
         public ActionResult QrCodeImage(string data)
         {
-            // tạo mã QR code từ chuỗi dữ liệu
+            // Kết hợp mã cá thể và đường dẫn trang chi tiết
+            string detailUrl = Url.Action("Detail", "CaThe", new { Name = data });
+
+            // Tạo mã QR code từ đường dẫn trang chi tiết
             var writer = new BarcodeWriterPixelData()
             {
                 Format = BarcodeFormat.QR_CODE,
@@ -110,21 +113,21 @@ namespace Happy_Meat_Farm.Controllers
                 }
             };
 
-            var pixelData = writer.Write(data);
+            var pixelData = writer.Write(detailUrl);
 
-            // chuyển đổi mã QR code thành byte array
+            // Chuyển đổi mã QR code thành byte array
             using (var bitmap = new SKBitmap(pixelData.Width, pixelData.Height, SKColorType.Rgba8888, SKAlphaType.Premul))
             using (var stream = new MemoryStream())
             {
-                // ghi dữ liệu vào bitmap
+                // Ghi dữ liệu vào bitmap
                 var pixels = bitmap.GetPixels();
                 Marshal.Copy(pixelData.Pixels, 0, pixels, pixelData.Pixels.Length);
 
-                // lưu bitmap dưới dạng byte array
+                // Lưu bitmap dưới dạng byte array
                 bitmap.Encode(stream, SKEncodedImageFormat.Png, 100);
                 var bytes = stream.ToArray();
 
-                // trả về hình ảnh mã QR code dưới dạng byte array
+                // Trả về hình ảnh mã QR code dưới dạng byte array
                 return File(bytes, "image/png");
             }
         }

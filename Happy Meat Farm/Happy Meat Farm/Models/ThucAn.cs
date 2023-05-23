@@ -8,7 +8,7 @@ using MongoDB.Bson.Serialization.Attributes;
 namespace Happy_Meat_Farm.Models
 {
     [BsonIgnoreExtraElements]
-    public class ThucAnModel
+    public class ThucAn
 	{
         [BsonId]
         [BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
@@ -20,6 +20,7 @@ namespace Happy_Meat_Farm.Models
         public string DonGia { get; set; }
         public string HanDung { get; set; }
         public string SoLuong { get; set; }
+        public int NgayTuoi { get; set; }
         public string _idNongTrai { get; set; }
         public string _idKiemKe { get; set; }
     }

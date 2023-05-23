@@ -17,5 +17,6 @@ namespace Happy_Meat_Farm.Interface
         void Update(string _id, LichTiemChung LichTiemChungData);
         void Delete(string Name);
 
+
     }
 }

@@ -20,6 +20,7 @@ namespace Happy_Meat_Farm.Interface
         void Update(string _id, CaThe catheData);
         void Delete(string Name);
         //void Inf(string Name);
-        
+
+
     }
 }

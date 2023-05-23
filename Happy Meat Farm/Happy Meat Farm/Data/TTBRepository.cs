@@ -34,7 +34,7 @@ namespace Happy_Meat_Farm.Data
 
         public TTBModel GetTrangThietBiDetails(string Name)
         {
-            var details = TrangThietBiCollection.Find(m => m.TenTrangThietBi == Name).FirstOrDefault();
+            var details = TrangThietBiCollection.Find(m => m._id == Name).FirstOrDefault();
             return details;
         }
 
@@ -52,7 +52,8 @@ namespace Happy_Meat_Farm.Data
                 .Set("ChatLieu", TrangThietBiData.ChatLieu)
                 .Set("NSX", TrangThietBiData.NSX)
                 .Set("HanDung", TrangThietBiData.HanDung)
-                .Set("DonGia", TrangThietBiData.DonGia);
+                .Set("DonGia", TrangThietBiData.DonGia)
+                .Set("SoLuong", TrangThietBiData.SoLuong);
 
             TrangThietBiCollection.UpdateOne(filter, update);
         }

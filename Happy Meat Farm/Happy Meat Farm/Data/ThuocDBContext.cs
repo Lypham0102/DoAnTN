@@ -33,7 +33,7 @@ namespace Happy_Meat_Farm.Data
         }
         public ThuocModel GetThuocDetails(string Name)
         {
-            var details = ThuocCollection.Find(m => m.TenThuoc == Name).FirstOrDefault();
+            var details = ThuocCollection.Find(m => m._id == Name).FirstOrDefault();
             return details;
         }
 
@@ -45,17 +45,16 @@ namespace Happy_Meat_Farm.Data
         {
             var filter = Builders<ThuocModel>.Filter.Eq(c => c._id, _id);
             var update = Builders<ThuocModel>.Update
-                .Set("TenTrangThietBi", TrangThietBiData.TenThuoc)
-                .Set("LoaiTrangThietBi", TrangThietBiData.NSX)
-                .Set("KichThuoc", TrangThietBiData.LoaiThuoc)
-                .Set("ChatLieu", TrangThietBiData.ChiDinh)
-                .Set("NSX", TrangThietBiData.LieuLuong)
-                .Set("HanDung", TrangThietBiData.DungTich)
-                .Set("DonGia", TrangThietBiData.HanDung)
+                .Set("TenThuoc", TrangThietBiData.TenThuoc)
+                .Set("NSX", TrangThietBiData.NSX)
+                .Set("LoaiThuoc", TrangThietBiData.LoaiThuoc)
+                .Set("ChiDinh", TrangThietBiData.ChiDinh)
+                .Set("LieuLuong", TrangThietBiData.LieuLuong)
+                .Set("DungTich", TrangThietBiData.DungTich)
+                .Set("HanDung", TrangThietBiData.HanDung)
                 .Set("DonGia", TrangThietBiData.DonGia)
-                .Set("DonGia", TrangThietBiData._idNongTrai)
-                .Set("DonGia", TrangThietBiData._idKiemKe)
-                .Set("DonGia", TrangThietBiData._idPhieuNhapThuoc);
+                .Set("SoLuong", TrangThietBiData.SoLuong);
+                
 
 
             ThuocCollection.UpdateOne(filter, update);

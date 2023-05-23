@@ -1,4 +1,4 @@
-﻿@model Happy_Meat_Farm.Models.ThucAn
+﻿@model Happy_Meat_Farm.Models.CaThe
 @{
     ViewData["Title"] = "Chi tiết";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -12,12 +12,12 @@
     }
 </style>
 <div class="container">
-    <h1 class="text-center mt-5 mb-4">Chi tiết thức ăn</h1>
+    <h1 class="text-center mt-5 mb-4">Chi tiết cá thể</h1>
     <div class="row">
         <div class="col-md-8 offset-md-2">
             <div class="card shadow">
                 <div class="card-body">
-                    <h4 class="card-title">Thông tin thức ăn</h4>
+                    <h4 class="card-title">Thông tin cá thể</h4>
                     <hr />
                     <dl class="row">
                         <dt class="col-sm-3">
@@ -27,46 +27,22 @@
                             @Html.DisplayFor(model => model._id)
                         </dd>
                         <dt class="col-sm-3">
-                            Tên thức ăn:
+                            Ngày nuôi:
                         </dt>
                         <dd class="col-sm-9">
-                            @Html.DisplayFor(model => model.TenHang)
+                            @Html.DisplayFor(model => model.NgayNuoi)
                         </dd>
                         <dt class="col-sm-3">
-                            Mã loại:
+                            Cân nặng:
                         </dt>
                         <dd class="col-sm-9">
-                            @Html.DisplayFor(model => model.MaLoai)
+                            @Html.DisplayFor(model => model.CanNang)
                         </dd>
                         <dt class="col-sm-3">
-                            Khối lượng:
+                            Đặc điểm:
                         </dt>
                         <dd class="col-sm-9">
-                            @Html.DisplayFor(model => model.KhoiLuongTinh)
-                        </dd>
-                        <dt class="col-sm-3">
-                            Đối tượng:
-                        </dt>
-                        <dd class="col-sm-9">
-                            @Html.DisplayFor(model => model.DoiTuong)
-                        </dd>
-                        <dt class="col-sm-3">
-                            Đơn giá:
-                        </dt>
-                        <dd class="col-sm-9">
-                            @Html.DisplayFor(model => model.DonGia)
-                        </dd>
-                        <dt class="col-sm-3">
-                            Hạn dùng:
-                        </dt>
-                        <dd class="col-sm-9">
-                            @Html.DisplayFor(model => model.HanDung)
-                        </dd>
-                        <dt class="col-sm-3">
-                            Số lượng:
-                        </dt>
-                        <dd class="col-sm-9">
-                            @Html.DisplayFor(model => model.SoLuong)
+                            @Html.DisplayFor(model => model.DacDiem)
                         </dd>
                         <dt class="col-sm-3">
                             Ngày tuổi:
@@ -74,7 +50,30 @@
                         <dd class="col-sm-9">
                             @Html.DisplayFor(model => model.NgayTuoi)
                         </dd>
-
+                        <dt class="col-sm-3">
+                            Tình trạng sức khỏe:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.TinhTrangSucKhoe)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Thức ăn:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.ThucAn)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Ngày bán:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.NgayBan)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Giá bán:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.GiaBan)
+                        </dd>
                     </dl>
                 </div>
             </div>

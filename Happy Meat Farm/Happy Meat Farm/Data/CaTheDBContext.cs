@@ -54,7 +54,11 @@ namespace Happy_Meat_Farm.Data
             var update = Builders<CaThe>.Update
                 .Set("DacDiem", catheData.DacDiem)
                 .Set("NgayTuoi", catheData.NgayTuoi)
-                .Set("Chuong", catheData.Chuong);
+                .Set("Chuong", catheData.Chuong)
+                .Set("ThucAn", catheData.ThucAn)
+                .Set("CanNang", catheData.CanNang)
+                .Set("GiaBan", catheData.GiaBan)
+                .Set("NgayBan", catheData.NgayBan);
             cathecollection.UpdateOne(filter, update);
         }
         public void Delete(string Name)
@@ -67,26 +71,6 @@ namespace Happy_Meat_Farm.Data
            
             return cathecollection.Find(a => a.Chuong == Name).ToList();
         }
-        
-        //public int TinhNgayTuoi(string Name)
-        //{
-        //    var caThe = cathecollection.Find(c => c._id == Name).FirstOrDefault();
-        //    if (caThe == null)
-        //    {
-        //        // Xử lý khi không tìm thấy cá thể
-        //        return -1;
-        //    }
-
-        //    TimeSpan ngayTuoi = DateTime.Now - caThe.NgayNuoi;
-        //    return (int)ngayTuoi.TotalDays;
-        //}
-
-        //public void CapNhatNgayTuoi(string id, int tuoi)
-        //{
-        //    var filter = Builders<CaThe>.Filter.Eq(c => c._id, id);
-        //    var update = Builders<CaThe>.Update.Set(c => c.NgayTuoi, tuoi);
-        //    cathecollection.UpdateOne(filter, update);
-        //}
 
     }
 }

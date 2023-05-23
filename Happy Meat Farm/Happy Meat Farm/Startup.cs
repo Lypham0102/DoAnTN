@@ -61,6 +61,10 @@ namespace Happy_Meat_Farm
             services.AddScoped<INongTrai, NongTraiDBContext>();
             services.AddScoped<IChuTrai, ChuTraiDBContext>();
             services.AddScoped<ICaTheGiong, CaTheGiongDBContext>();
+            services.AddScoped<ICaTheRepository, CaTheRepository>();
+            services.AddScoped<ILichTiemChungRepository, LichTiemChungRepository>();
+
+
             // Configure authentication
 
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
@@ -136,14 +140,23 @@ namespace Happy_Meat_Farm
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
+                name: "hienthi",
+                pattern: "hienthi",
+                defaults: new { controller = "HienThiCanTiemChung", action = "HienThiCaTheCanTiemChung" }
+);
+
+                endpoints.MapControllerRoute(
                     name: "default",
                     //pattern: "{controller=Auth}/{action=Login}/{id?}");
                     //pattern: "{controller=Home}/{action=Index}/{id?}");
                     pattern: "{controller=ChuTrai}/{action=Login}/{id?}");
         });
+            
+
             app.UseAuthentication();
 
             app.UseSession();
+            
 
         }
     }

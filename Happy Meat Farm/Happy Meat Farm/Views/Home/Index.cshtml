@@ -20,43 +20,63 @@
 
     <div class="index-container">
         <script src="https://cdn.lordicon.com//libs/frhvbuzj/lord-icon-2.0.2.js"></script>
+        <div class="sochuong box box3" style="background-color: white; color: #800000;">
+            <h2>Heo giống</h2>
+            <p class="value" style="color:black;">@ViewData["countCathegiong"]</p>
+        </div>
 
         <div class="temperature box box1" style="background-color: white; color: #800000;">
-            <h2>Nhiệt độ môi trường </h2>
-            <p class="value" style="color: #CD5C5C;" id="temp"></p>
+            <h2>Heo con </h2>
+            <p class="value" style="color:black;">@ViewData["babyFishCount"]</p>
         </div>
 
         <div class="revenue box box2" style="background-color: white; color: #800000;">
-            <h2>Độ Ẩm Môi Trường </h2>
-            <p class="value" style="color: #48D1CC;" id="wet"></p>
-        </div>
-        <div class="sochuong box box3" style="background-color: white; color: #800000;">
-            <h2>Số lượng chuồng nuôi</h2>
-            <p class="value" style="color:black;">@ViewData["countBayDan"]</p>
-        </div>
-        <div class="vatnuoi box box4" style="background-color: white; color: #800000;">
-            <h2>Số lượng vật nuôi</h2>
-            <p class="value" style="color:black;">@ViewData["countCathe"]</p>
-        </div>
-        <div class="daily-report">
-            <h3 style="color: #800000;">Thông tin trang trại</h3>
-            <ul style="text-align: left;">
-                <li>Số nhân viên: @ViewData["Count"]</li>
-                <li>Số lượng heo giống: [Số lượng heo giống]</li>
-                <li>Số lượng heo con: [Số lượng heo con]</li>
-                <li>Số lượng heo thịt: [Số lượng heo thịt]</li>
-            </ul>
-        </div>
-        <div class="daily-report">
-            <h3 style="color: #800000;">Lịch tiêm chủng</h3>
-            <ul style="text-align: left;">
-                <li>Ngày [XX/XX/XXXX] [mã chuồng] [loại thuốc]</li>
-                <li>Ngày [XX/XX/XXXX] [mã chuồng] [loại thuốc]</li>
-                <li>Ngày [XX/XX/XXXX] [mã chuồng] [loại thuốc]</li>
-                <li>Ngày [XX/XX/XXXX] [mã chuồng] [loại thuốc]</li>
-            </ul>
+            <h2>Heo thịt nhỏ </h2>
+            <p class="value" style="color:black;">@ViewData["smallFishCount"]</p>
         </div>
 
+        <div class="vatnuoi box box4" style="background-color: white; color: #800000;">
+            <h2>Heo thịt lớn</h2>
+            <p class="value" style="color:black;">@ViewData["largeFishCount"]</p>
+        </div>
+
+        <div style="text-align: center; display: flex; justify-content: center;">
+            <div style="width: 50%;">
+                <!-- First Daily Report -->
+                <div class="daily-report" style="margin-bottom: 20px;">
+                    <h3 style="color: #800000;">Thông tin trang trại</h3>
+                    <ul>
+                        <li>Số nhân viên: @ViewData["Count"]</li>
+                        <li>Số lượng chuồng: @ViewData["countBayDan"]</li>
+                        <li>Số lượng heo: @ViewData["countTotal"]</li>
+                        <li>Số lượng heo giống: @ViewData["countCathegiong"]</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="width: 50%;">
+                <!-- Second Daily Report -->
+                <div class="daily-report">
+                    <h3 style="color: #800000;">Lịch tiêm chủng</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 200px;">Tên đợt tiêm</th>
+                                <th>Ngày tuổi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var lichtiemchung in (IEnumerable<LichTiemChung>)ViewData["lichtiemchungList"])
+                            {
+                                <tr>
+                                    <td>@lichtiemchung.TenDotTiem</td>
+                                    <td>@lichtiemchung.NgayTuoiTiem</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
         <h1>@ViewData["Message"]</h1>
     </div>
 </div>
@@ -103,21 +123,6 @@
     dbRef2.on('value', snap => wet.innerHTML = snap.val());</script>
 
 <script src="~/js/JavaScript.js"></script>
-
-@*<script>const twilio = require('twilio');
-    const accountSid = 'AC0abe64fe348a8ce67a95cf76f32ddf5f';
-    const authToken = '8bcd7be9e20a6691d73b2f693f3afc3f';
-    const client = new twilio(accountSid, authToken);
-    const temp = 35; // Giả sử nhiệt độ hiện tại là 35 độ C
-    client.messages
-        .create({
-            body: 'Nhiệt độ là: ' + temp + '. Nhiệt độ đạt cảnh báo!!!',
-            from: '+18052738662',
-            to: '+84386834480'
-        })
-        .then(message => console.log(message.sid))
-        .catch(error => console.log(error));</script>*@
-
 
 
 

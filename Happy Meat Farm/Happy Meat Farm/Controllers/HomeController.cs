@@ -39,21 +39,10 @@ namespace Happy_Meat_Farm.Controllers
             _logger = logger;
             _database = database;
         }
-        private IMongoCollection<NhanVien> _nhanvienCollection;
+        //private IMongoCollection<NhanVien> _nhanvienCollection;
         //[Authorize]
         public async Task<IActionResult> Index()
         {
-            //var accountSid = "AC0abe64fe348a8ce67a95cf76f32ddf5f";
-            //var authToken = "8bcd7be9e20a6691d73b2f693f3afc3f";
-            //TwilioClient.Init(accountSid, authToken);
-            //var messageOptions = new CreateMessageOptions(new PhoneNumber("+84386834480"));
-            //messageOptions.From = new PhoneNumber("+18052738662");
-            //messageOptions.Body = "Test nhiệt độ, độ ẩm";
-
-            //var message = MessageResource.Create(messageOptions);
-            //Console.WriteLine(message.Body);
-
-
             var collection = _database.GetCollection<NhanVien>("NhanVien");
             var count = await collection.CountDocumentsAsync(new BsonDocument());
             ViewData["Count"] = count;
@@ -65,6 +54,31 @@ namespace Happy_Meat_Farm.Controllers
             var baydancollection = _database.GetCollection<BayDan>("BayDan");
             var countBaydan = await baydancollection.CountDocumentsAsync(new BsonDocument());
             ViewData["countBaydan"] = countBaydan;
+
+            var cathegiongcollection = _database.GetCollection<CaTheGiong>("CaTheGiong");
+            var countCathegiong = await cathegiongcollection.CountDocumentsAsync(new BsonDocument());
+            ViewData["countCathegiong"] = countCathegiong;
+
+            ViewData["countTotal"] = countCathegiong + countCathe;
+
+            // Lấy thông tin từ collection LichTiemChung
+            var lichtiemchungcollection = _database.GetCollection<LichTiemChung>("LichTiemChung");
+            var lichtiemchungList = lichtiemchungcollection.Find(new BsonDocument()).ToList();
+            ViewData["lichtiemchungList"] = lichtiemchungList;
+
+
+            // Phân chia loại cá thể
+            var fishCollection = _database.GetCollection<CaThe>("CaThe");
+            var fishList = await fishCollection.Find(new BsonDocument()).ToListAsync();
+
+            var babyFishCount = fishList.Count(fish => fish.NgayTuoi >= 1 && fish.NgayTuoi <= 30);
+            var smallFishCount = fishList.Count(fish => fish.NgayTuoi >= 31 && fish.NgayTuoi <= 120);
+            var largeFishCount = fishList.Count(fish => fish.NgayTuoi >= 121);
+
+            ViewData["babyFishCount"] = babyFishCount;
+            ViewData["smallFishCount"] = smallFishCount;
+            ViewData["largeFishCount"] = largeFishCount;
+
 
             return View();
         }

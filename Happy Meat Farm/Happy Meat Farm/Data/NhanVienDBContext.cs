@@ -51,6 +51,7 @@ namespace Happy_Meat_Farm.Data
                 .Set("MaNV", nhanvienData.MaNV)
                 .Set("TenNV", nhanvienData.TenNV)
                 .Set("CCCD", nhanvienData.CCCD)
+                .Set("ChucVu", nhanvienData.ChucVu)
                 .Set("SDT", nhanvienData.SDT)
                 .Set("DiaChi", nhanvienData.DiaChi)
                 .Set("MaNongTrai", nhanvienData.MaNT)

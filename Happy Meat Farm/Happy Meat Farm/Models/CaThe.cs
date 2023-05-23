@@ -24,6 +24,10 @@ namespace Happy_Meat_Farm.Models
         public string _idNongTrai { get; set; }
         public string _idThucAn { get; set; }
         public string _idGiaiDoanNuoi { get; set; }
+        public DateTime NgayChet { get; set; }
+        public string ThucAn { get; set; }
+        public string GiaBan { get; set; }
+        public DateTime NgayBan { get; set; }
 
     }
 

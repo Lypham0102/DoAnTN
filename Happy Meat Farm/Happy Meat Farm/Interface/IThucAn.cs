@@ -9,11 +9,11 @@ namespace Happy_Meat_Farm.Interface
 {
 	public interface IThucAn
 	{
-		IMongoCollection<ThucAnModel> ThucAnCollection { get; }
-        IEnumerable<ThucAnModel> GetAllThucAn();
-        ThucAnModel GetThucAnDetails(string Name);
-        void Create(ThucAnModel nhanvienData);
-        void Update(string _id, ThucAnModel thucAnData);
+		IMongoCollection<ThucAn> ThucAnCollection { get; }
+        IEnumerable<ThucAn> GetAllThucAn();
+        ThucAn GetThucAnDetails(string Name);
+        void Create(ThucAn thucAnData);
+        void Update(string _id, ThucAn thucAnData);
         void Delete(string Name);
     }
 }
