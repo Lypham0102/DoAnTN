@@ -1,0 +1,83 @@
+﻿@model Happy_Meat_Farm.Models.CaThe
+@{
+    ViewData["Title"] = "Chi tiết";
+    Layout = "~/Views/Shared/_LayoutBlank.cshtml";
+}
+
+<style>
+    body {
+        background-image: none;
+        background-size: cover;
+        background-position: center;
+    }
+</style>
+<div class="container">
+    <h1 class="text-center mt-5 mb-4">Chi tiết cá thể</h1>
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h4 class="card-title">Thông tin cá thể</h4>
+                    <hr />
+                    <dl class="row">
+                        <dt class="col-sm-3">
+                            ID:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model._id)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Ngày nuôi:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.NgayNuoi)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Cân nặng:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.CanNang)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Đặc điểm:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.DacDiem)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Ngày tuổi:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.NgayTuoi)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Tình trạng sức khỏe:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.TinhTrangSucKhoe)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Thức ăn:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.ThucAn)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Ngày bán:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.NgayBan)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Giá bán:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.GiaBan)
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="height: 50px;"></div>

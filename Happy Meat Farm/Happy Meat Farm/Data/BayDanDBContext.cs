@@ -111,18 +111,9 @@ namespace Happy_Meat_Farm.Data
                 return -1;
             }
 
-            if (caThe.NgayBan == null)
-            {
-                // Nếu NgayBan của cá thể không có giá trị
-                TimeSpan NgayTuoi = DateTime.Now - caThe.NgayNuoi;
-                return (int)NgayTuoi.TotalDays;
-            }
-            else
-            {
-                // Nếu NgayBan của cá thể có giá trị
-                TimeSpan NgayTuoi = caThe.NgayBan - caThe.NgayNuoi;
-                return (int)NgayTuoi.TotalDays;
-            }
+            DateTime ngayHienTai = DateTime.Now;
+            TimeSpan ngayTuoi = ngayHienTai - caThe.NgayNuoi;
+            return (int)ngayTuoi.TotalDays;
         }
 
 

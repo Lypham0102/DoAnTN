@@ -100,7 +100,7 @@ namespace Happy_Meat_Farm.Controllers
         public ActionResult QrCodeImage(string data)
         {
             // Kết hợp mã cá thể và đường dẫn trang chi tiết
-            string detailUrl = Url.Action("Detail", "CaThe", new { Name = data });
+            string detailUrl = "https://happymeatfarm.azurewebsites.net" + Url.Action("QRCheck", "CaThe", new { Name = data });
 
             // Tạo mã QR code từ đường dẫn trang chi tiết
             var writer = new BarcodeWriterPixelData()

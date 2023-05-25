@@ -96,6 +96,9 @@
     <PackageReference Include="SkiaSharp.NativeAssets.Linux" Version="2.88.3" />
     <PackageReference Include="SkiaSharp.Views" Version="2.88.3" />
     <PackageReference Include="SkiaSharp.Views.Forms" Version="2.88.3" />
+    <PackageReference Include="Azure.Identity" Version="1.9.0" />
+    <PackageReference Include="Azure.Core" Version="1.32.0" />
+    <PackageReference Include="Microsoft.Azure.WebJobs" Version="3.0.37" />
   </ItemGroup>
 
   <ItemGroup>

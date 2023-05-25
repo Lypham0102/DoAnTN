@@ -96,6 +96,38 @@ namespace Happy_Meat_Farm.Controllers
 
             return View(caThe);
         }
+        public IActionResult QRCheck(string Name)
+        {
+            var caThe = _context.GetCaTheDetails(Name);
+
+            // Lấy danh sách các đối tượng ThucAn từ cơ sở dữ liệu MongoDB
+            List<ThucAn> danhSachThucAn = _ct.GetAllThucAn().ToList();
+
+            // Tạo danh sách mới để lưu thông tin thức ăn của CaThe
+            List<string> danhSachThucAnCaThe = new List<string>();
+
+            // Duyệt qua từng đối tượng ThucAn
+            foreach (var thucAn in danhSachThucAn)
+            {
+                // Kiểm tra nếu ngày tuổi của CaThe lớn hơn hoặc bằng ngày tuổi của ThucAn
+                if (caThe.NgayTuoi >= thucAn.NgayTuoi)
+                {
+                    // Tạo chuỗi thông tin thức ăn
+                    string thongTinThucAn = $"{thucAn.TenHang} - {thucAn.MaLoai}";
+
+                    // Thêm thông tin thức ăn vào danh sách
+                    danhSachThucAnCaThe.Add(thongTinThucAn);
+                }
+            }
+
+            // Cập nhật thông tin thức ăn của CaThe
+            caThe.ThucAn = string.Join(", ", danhSachThucAnCaThe);
+
+            // Cập nhật thông tin của CaThe vào cơ sở dữ liệu
+            _context.Update(caThe._id, caThe);
+
+            return View(caThe);
+        }
 
 
 

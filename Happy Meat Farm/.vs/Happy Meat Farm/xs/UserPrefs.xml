@@ -1,21 +1,26 @@
 ﻿<Properties StartupConfiguration="{1900C92F-6A65-4269-AEC6-739CF738D02E}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <Debugger.DebugSourceFolders />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.Happy_220Meat_220Farm PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Happy Meat Farm/Interface/INhanVien.cs">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Happy Meat Farm/Views/Shared/_Layout.cshtml">
     <Files>
-      <File FileName="Happy Meat Farm/Views/Shared/_Layout.cshtml" />
+      <File FileName="Happy Meat Farm/Views/Shared/_Layout.cshtml" Line="234" Column="3" />
       <File FileName="Happy Meat Farm/Controllers/HomeController.cs" />
       <File FileName="Happy Meat Farm/Views/Home/Index.cshtml" />
       <File FileName="Happy Meat Farm/Views/BayDan/Index.cshtml" />
       <File FileName="Happy Meat Farm/Data/BayDanDBContext.cs" />
       <File FileName="Happy Meat Farm/Views/BayDan/Details.cshtml" />
       <File FileName="Happy Meat Farm/Views/BayDan/Edit.cshtml" />
-      <File FileName="Happy Meat Farm/Controllers/NhanVienController.cs" Line="52" Column="41" />
+      <File FileName="Happy Meat Farm/Controllers/NhanVienController.cs" />
       <File FileName="Happy Meat Farm/Models/LichTiemChung.cs" />
       <File FileName="Happy Meat Farm/Models/ErrorViewModel.cs" />
       <File FileName="Happy Meat Farm/Models/NhanVien.cs" />
       <File FileName="Happy Meat Farm/Interface/ILichTiemChung.cs" />
-      <File FileName="Happy Meat Farm/Interface/INhanVien.cs" Line="5" Column="30" />
+      <File FileName="Happy Meat Farm/Interface/INhanVien.cs" />
       <File FileName="Happy Meat Farm/Interface/IBayDan.cs" />
       <File FileName="Happy Meat Farm/Views/BayDan/Create.cshtml" />
       <File FileName="Happy Meat Farm/Views/BayDan/Delete.cshtml" />
@@ -43,7 +48,7 @@
       <File FileName="Happy Meat Farm/Interface/IThucAn.cs" />
       <File FileName="Happy Meat Farm/Data/NongTraiDBContext.cs" />
       <File FileName="Happy Meat Farm/Data/Settings.cs" />
-      <File FileName="Happy Meat Farm/Controllers/NongTraiController.cs" Line="1" Column="1" />
+      <File FileName="Happy Meat Farm/Controllers/NongTraiController.cs" />
       <File FileName="Happy Meat Farm/Models/ChuTrai.cs" />
       <File FileName="Happy Meat Farm/Interface/IChuTrai.cs" />
       <File FileName="Happy Meat Farm/Data/ChuTraiDBContext.cs" />
@@ -84,7 +89,7 @@
       <File FileName="Happy Meat Farm/Models/CaTheGiong.cs" />
       <File FileName="Happy Meat Farm/Interface/ICaTheGiong.cs" />
       <File FileName="Happy Meat Farm/Data/CaTheGiongDBContext.cs" />
-      <File FileName="Happy Meat Farm/Data/NhanVienDBContext.cs" Line="54" Column="50" />
+      <File FileName="Happy Meat Farm/Data/NhanVienDBContext.cs" />
       <File FileName="Happy Meat Farm/Controllers/CaTheGiongController.cs" />
       <File FileName="Happy Meat Farm/Cam/MyWebSocketHandler.cs" />
       <File FileName="Happy Meat Farm/Controllers/AuthController.cs" />
@@ -122,7 +127,7 @@
       <File FileName="Happy Meat Farm/Data/CaTheRepository.cs" />
       <File FileName="Happy Meat Farm/Data/LichTiemChungRepository.cs" />
       <File FileName="Happy Meat Farm/Controllers/HienThiCanTiemChungController.cs" />
-      <File FileName="Happy Meat Farm/Views/HienThiCanTiemChung/HienThiCaTheCanTiemChung.cshtml" Line="66" Column="57" />
+      <File FileName="Happy Meat Farm/Views/HienThiCanTiemChung/HienThiCaTheCanTiemChung.cshtml" />
       <File FileName="Happy Meat Farm/Views/Thuoc/Index.cshtml" />
       <File FileName="Happy Meat Farm/Views/TTB/Index.cshtml" />
       <File FileName="Happy Meat Farm/Views/Thuoc/Details.cshtml" />
@@ -130,6 +135,7 @@
       <File FileName="Happy Meat Farm/Views/TTB/Edit.cshtml" />
       <File FileName="Happy Meat Farm/Views/Thuoc/Edit.cshtml" />
       <File FileName="Happy Meat Farm/Models/ThucAn.cs" />
+      <File FileName="Happy Meat Farm/Views/CaThe/QRCheck.cshtml" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -137,9 +143,7 @@
           <Node name="Happy Meat Farm" expanded="True">
             <Node name="Happy Meat Farm" expanded="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="Data" expanded="True">
-                <Node name="ThucAnDBContext.cs" selected="True" />
-              </Node>
+              <Node name="Data" expanded="True" />
               <Node name="Interface" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
@@ -150,7 +154,9 @@
                 <Node name="HienThiCanTiemChung" expanded="True" />
                 <Node name="Home" expanded="True" />
                 <Node name="NhanVien" expanded="True" />
-                <Node name="Shared" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="_Layout.cshtml" selected="True" />
+                </Node>
                 <Node name="ThucAn" expanded="True" />
                 <Node name="Thuoc" expanded="True" />
                 <Node name="TTB" expanded="True" />
@@ -161,10 +167,5 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <Debugger.DebugSourceFolders />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
