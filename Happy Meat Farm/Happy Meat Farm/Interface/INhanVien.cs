@@ -16,6 +16,7 @@ namespace Happy_Meat_Farm.Interface
         void Create(NhanVien nhanvienData);
         void Update(string _id, NhanVien nhanvienData);
         void Delete(string Name);
+        Task<NhanVien> GetNhanVienByAccountAsync(string account);
 
     }
 }

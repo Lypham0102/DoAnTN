@@ -98,19 +98,10 @@ namespace Happy_Meat_Farm.Data
             return await nhanVienCollection.CountDocumentsAsync(new BsonDocument());
         }
 
-
-
-        //public NhanVien Authenticate(string TenTaiKhoan, string Passwork)
-        //{
-        //    var account = _NV.Find(x => x.TenTaiKhoan == TenTaiKhoan && x.Passwork == Passwork).FirstOrDefault();
-
-        //    if (account == null)
-        //    {
-        //        return null;
-        //    }
-
-        //    return account;
-        //}
-
+        public async Task<NhanVien> GetNhanVienByAccountAsync(string account)
+        {
+            var filter = Builders<NhanVien>.Filter.Eq(x => x.TenTaiKhoan, account);
+            return await _NV.Find(filter).FirstOrDefaultAsync();
+        }
     }
 }

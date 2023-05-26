@@ -16,7 +16,8 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Graph.Models;
 using ClosedXML.Excel;
-
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
 
 namespace Happy_Meat_Farm.Controllers
 {
@@ -124,6 +125,36 @@ namespace Happy_Meat_Farm.Controllers
                 var content = stream.ToArray();
                 return File(content, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "DanhSachNhanVien.xlsx");
             }
+
+        }
+        [HttpGet]
+        public IActionResult Login()
+        {
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> Login(NhanVien model)
+        {
+            var nhanVien = await _context.GetNhanVienByAccountAsync(model.TenTaiKhoan);
+            if (nhanVien == null || nhanVien.Passwork != model.Passwork)
+            {
+                ModelState.AddModelError("", "Tài khoản hoặc mật khẩu không đúng");
+                return View(model);
+            }
+
+            var claims = new[] { new Claim(ClaimTypes.Name, nhanVien.TenNV) };
+            var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+            var principal = new ClaimsPrincipal(identity);
+            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
+
+            return RedirectToAction("HienThiCaTheCanTiemChungNV", "HienThiCanTiemChung");
+        }
+        [HttpGet]
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            return RedirectToAction("Index", "NongTrai");
+
         }
     }
 }

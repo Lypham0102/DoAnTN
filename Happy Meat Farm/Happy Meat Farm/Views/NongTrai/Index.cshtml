@@ -117,7 +117,7 @@
             <p>Vât nuôi: @item.TenVatNuoi</p>
             <div>
                 <a class="btn btn-primary" style="background-color: #CD853F" href="@Url.Action("Index", "Home", new { id=item._idChuTrai })">Vào nông trại</a>
-                <a class="btn btn-danger" style="background-color: #8B4513" href="@Url.Action("Delete", new { /* id=item.PrimaryKey */ })" onclick="return confirm('Bạn có chắc muốn giải thể nông trại n không?')">Giải thể</a>
+                <a class="btn btn-danger" style="background-color: #8B4513" href="@Url.Action("Delete", "",new { /* id=item.PrimaryKey */ })" onclick="return confirm('Bạn có chắc muốn giải thể nông trại n không?')">Giải thể</a>
             </div>
             <div class="popuptext hide">
                 <h3>@item.TenNongTrai</h3>

@@ -1,0 +1,165 @@
+﻿@{
+    ViewData["Title"] = "Công việc";
+    Layout = "~/Views/Shared/_LayoutBlank.cshtml";
+}
+<style>
+    body {
+        background-image: none;
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
+
+    h2 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: #666;
+        margin-bottom: 10px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    tr:hover {
+        background-color: #f9f9f9;
+    }
+
+    h3 {
+        margin-top: 20px;
+    }
+
+    h4 {
+        margin-top: 10px;
+    }
+
+    .dotTiem {
+        background-color: #f9f9f9;
+        padding: 10px;
+        margin-top: 10px;
+    }
+</style>
+
+<h2 style="text-align: center;">Lịch tiêm chủng</h2>
+
+<p>Số lượng cá thể cần tiêm chủng: @ViewBag.SoLuongCaTheCanTiemChung</p>
+
+@if (Model.Count > 0)
+{
+    Dictionary<string, Dictionary<string, List<(CaThe, string, DateTime)>>> groups = new Dictionary<string, Dictionary<string, List<(CaThe, string, DateTime)>>>();
+
+    foreach (var item in Model)
+    {
+        CaThe caThe = item.Item1;
+        string tenDotTiem = item.Item2;
+        int ngayTuoiTiemValue = item.Item3; // Thay đổi kiểu dữ liệu từ DateTime sang int
+        DateTime ngayTuoiTiem = new DateTime(ngayTuoiTiemValue); // Tạo đối tượng DateTime từ giá trị int
+
+        if (!groups.ContainsKey(caThe.Chuong))
+        {
+            groups[caThe.Chuong] = new Dictionary<string, List<(CaThe, string, DateTime)>>();
+        }
+
+        if (!groups[caThe.Chuong].ContainsKey(tenDotTiem))
+        {
+            groups[caThe.Chuong][tenDotTiem] = new List<(CaThe, string, DateTime)>();
+        }
+
+        groups[caThe.Chuong][tenDotTiem].Add((caThe, tenDotTiem, ngayTuoiTiem));
+    }
+
+    foreach (var chuong in groups)
+    {
+        <h3>Chuồng: @chuong.Key</h3>
+
+        foreach (var dotTiem in chuong.Value)
+        {
+            <div class="dotTiem">
+                <h4>Tên đợt tiêm: @dotTiem.Key</h4>
+
+                <table>
+                    <tr>
+                        <th style="width: 300px;">ID cá thể</th>
+                        <th>Tuổi cá thể (ngày)</th>
+                        <th>Ngày tuổi tiêm / Tên đợt tiêm</th> <!-- Thay đổi tiêu đề cột -->
+                        <th>Đã tiêm</th>
+                    </tr>
+                    @foreach (var item in dotTiem.Value)
+                    {
+                        CaThe caThe = item.Item1;
+                        string tenDotTiem = item.Item2;
+                        DateTime ngayTuoiTiem = item.Item3;
+
+                        <tr>
+                            <td>@caThe._id</td>
+                            <td>@caThe.NgayTuoi</td>
+                            <td>@tenDotTiem</td> <!-- Hiển thị tên đợt tiêm -->
+                            <td>
+                                <input type="checkbox" id="@caThe._id" name="caTheIds" value="@caThe._id" data-tenDotTiem="@tenDotTiem" onclick="updateCaTheThuoc(this)">
+                            </td>
+                        </tr>
+                    }
+                </table>
+            </div>
+        }
+    }
+}
+else
+{
+    <p>Không có cá thể cần tiêm chủng.</p>
+}
+
+<div style="height: 50px;"></div>
+
+<script>// Lưu trạng thái tích vào sessionStorage khi thay đổi checkbox
+    var checkboxes = document.getElementsByName("caTheIds");
+    for (var i = 0; i < checkboxes.length; i++) {
+        checkboxes[i].addEventListener("change", function () {
+            sessionStorage.setItem(this.value, this.checked);
+            updateCaTheThuoc(this); // Gọi hàm cập nhật thuốc chỉ cho checkbox này
+        });
+
+        // Khôi phục trạng thái tích từ sessionStorage khi load lại trang
+        var isChecked = sessionStorage.getItem(checkboxes[i].value);
+        if (isChecked === "true") {
+            checkboxes[i].checked = true;
+        } else {
+            checkboxes[i].checked = false;
+        }
+    }
+
+    // Gửi yêu cầu cập nhật thuốc khi thay đổi checkbox
+    function updateCaTheThuoc(checkbox) {
+        var caTheId = checkbox.value;
+        var tenDotTiem = checkbox.getAttribute("data-tenDotTiem"); // Lấy tên đợt tiêm từ thuộc tính dữ liệu
+        var isChecked = checkbox.checked;
+
+        $.ajax({
+            url: '/HienThiCanTiemChung/UpdateCaTheThuoc',
+            type: 'POST',
+            data: { caTheId: caTheId, tenDotTiem: tenDotTiem, isChecked: isChecked },
+            success: function (result) {
+                console.log("Cập nhật thuốc thành công.");
+            },
+            error: function (xhr, status, error) {
+                console.log("Đã xảy ra lỗi: " + error);
+            }
+        });
+    }</script>
+
+

@@ -58,7 +58,8 @@ namespace Happy_Meat_Farm.Data
                 .Set("ThucAn", catheData.ThucAn)
                 .Set("CanNang", catheData.CanNang)
                 .Set("GiaBan", catheData.GiaBan)
-                .Set("NgayBan", catheData.NgayBan);
+                .Set("NgayBan", catheData.NgayBan)
+                .Set("Thuoc", catheData.Thuoc);
             cathecollection.UpdateOne(filter, update);
         }
         public void Delete(string Name)

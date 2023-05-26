@@ -1,0 +1,39 @@
+﻿@model NhanVien
+@{
+    ViewData["Title"] = "Trang đăng nhập";
+    Layout = "~/Views/Shared/_LayoutBlank.cshtml";
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<div class="container">
+    <div class="row justify-content-center" style="margin-top: 120px ">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header" style="display: flex; justify-content: center; align-items: center; font-size: 25px; font-weight: bold; background-color: #DEB887; color: #800000;">Xin mời đăng nhập</div>
+                <div class="card-body">
+                    <form asp-action="Login" method="post">
+                        <div asp-validation-summary="All"></div>
+                        <div class="form-group" style="color: #800000;">
+                            <label asp-for="TenTaiKhoan" class="form-label"><i class="fas fa-user "></i> Username</label>
+                            <input asp-for="TenTaiKhoan" class="form-control" placeholder="Tên tài khoản" />
+                            <span asp-validation-for="TenTaiKhoan" class="text-danger"></span>
+                        </div>
+                        <div class="form-group" style="color: #800000; ">
+                            <label asp-for="Passwork" class="form-label"><i class="fas fa-lock"></i> Password </label>
+                            <input asp-for="Passwork" type="password" class="form-control" placeholder="Mật khẩu " />
+                            <span asp-validation-for="Passwork" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary w-100" style="background-color: #8B4513">Đăng nhập</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<!-- Trang HTML của View Login.cshtml -->
+<!-- Thêm các script của SweetAlert -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.1/dist/sweetalert2.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.1/dist/sweetalert2.min.js"></script>

@@ -133,14 +133,7 @@ namespace Happy_Meat_Farm.Controllers
             await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
 
             return RedirectToAction("Index", "NongTrai");
-
-
-
-
         }
-
-
-
         [HttpGet]
         public async Task<IActionResult> Logout()
         {
