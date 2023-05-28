@@ -53,7 +53,8 @@ namespace Happy_Meat_Farm.Data
                 .Set("LanDe", cathegiongData.LanDe)
                 .Set("LichSuPhoi", cathegiongData.LichSuPhoi)
                 .Set("ViTriChuong", cathegiongData.ViTriChuong)
-                .Set("TinhTrangSucKhoe", cathegiongData.TinhTrangSucKhoe);
+                .Set("TinhTrangSucKhoe", cathegiongData.TinhTrangSucKhoe)
+                .Set("NgayThai", cathegiongData.NgayThai);
             cathegiongcollection.UpdateOne(filter, update);
         }
         public void Delete(string Name)

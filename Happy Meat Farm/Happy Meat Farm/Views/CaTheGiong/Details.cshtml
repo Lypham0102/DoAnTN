@@ -1,6 +1,6 @@
-﻿@model Happy_Meat_Farm.Models.CaThe
+﻿@model Happy_Meat_Farm.Models.CaTheGiong
 @{
-    ViewData["Title"] = "Chi tiết";
+    ViewData["Title"] = "Chi tiết giống";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -30,7 +30,7 @@
                             Mã cá thể:
                         </dt>
                         <dd class="col-sm-9">
-                            @Html.DisplayFor(model => model.MaCT)
+                            @Html.DisplayFor(model => model.MaCTG)
                         </dd>
                         <dt class="col-sm-3">
                             Ngày nuôi:
@@ -39,49 +39,37 @@
                             @Html.DisplayFor(model => model.NgayNuoi)
                         </dd>
                         <dt class="col-sm-3">
-                            Cân nặng:
-                        </dt>
-                        <dd class="col-sm-9">
-                            @Html.DisplayFor(model => model.CanNang)
-                        </dd>
-                        <dt class="col-sm-3">
-                            Đặc điểm:
-                        </dt>
-                        <dd class="col-sm-9">
-                            @Html.DisplayFor(model => model.DacDiem)
-                        </dd>
-                        <dt class="col-sm-3">
                             Ngày tuổi:
                         </dt>
                         <dd class="col-sm-9">
                             @Html.DisplayFor(model => model.NgayTuoi)
                         </dd>
                         <dt class="col-sm-3">
-                            Tình trạng sức khỏe:
+                            Lần đẻ:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.LanDe)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Lần phối:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.LichSuPhoi)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Tình trạng:
                         </dt>
                         <dd class="col-sm-9">
                             @Html.DisplayFor(model => model.TinhTrangSucKhoe)
                         </dd>
                         <dt class="col-sm-3">
-                            Thức ăn:
+                            Vị trí chuồng:
                         </dt>
                         <dd class="col-sm-9">
-                            @Html.DisplayFor(model => model.ThucAn)
-                        </dd>
-                        <dt class="col-sm-3">
-                            Ngày bán:
-                        </dt>
-                        <dd class="col-sm-9">
-                            @Html.DisplayFor(model => model.NgayBan)
-                        </dd>
-                        <dt class="col-sm-3">
-                            Giá bán:
-                        </dt>
-                        <dd class="col-sm-9">
-                            @Html.DisplayFor(model => model.GiaBan)
+                            @Html.DisplayFor(model => model.ViTriChuong)
                         </dd>
                     </dl>
-                </div>
+                </div> 
             </div>
         </div>
     </div>

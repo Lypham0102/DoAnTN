@@ -1,0 +1,70 @@
+﻿@model Happy_Meat_Farm.Models.CaTheGiong
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    body {
+        background-image: none;
+        background-size: cover;
+        background-position: center;
+    }
+</style>
+
+<div class="container">
+    <h1 class="text-center mt-5 mb-4">Chỉnh sửa thông tin cá thể</h1>
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h4 class="card-title">Thông tin cá thể</h4>
+                    <hr />
+                    <form asp-action="EditPost">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                        <div class="form-group">
+                            <label asp-for="DacDiem" class="control-label">Đặc điểm</label>
+                            <input asp-for="DacDiem" class="form-control" />
+                            <span asp-validation-for="DacDiem" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="NgayNuoi" class="control-label">Ngày nuôi</label>
+                            <input asp-for="NgayNuoi" class="form-control" />
+                            <span asp-validation-for="NgayNuoi" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="NgayTuoi" class="control-label">Ngày nuôi</label>
+                            <input asp-for="NgayTuoi" class="form-control" />
+                            <span asp-validation-for="NgayTuoi" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="LanDe" class="control-label">Lần đẻ</label>
+                            <input asp-for="LanDe" class="form-control" />
+                            <span asp-validation-for="LanDe" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="LichSuPhoi" class="control-label">Lần phối</label>
+                            <input asp-for="LichSuPhoi" class="form-control" />
+                            <span asp-validation-for="LichSuPhoi" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="ViTriChuong" class="control-label">Vị trí chuồng</label>
+                            <input asp-for="ViTriChuong" class="form-control" />
+                            <span asp-validation-for="ViTriChuong" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="TinhTrangSucKhoe" class="control-label">Tình trạng</label>
+                            <input asp-for="TinhTrangSucKhoe" class="form-control" />
+                            <span asp-validation-for="TinhTrangSucKhoe" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Lưu" class="btn btn-primary" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="height: 50px;"></div>

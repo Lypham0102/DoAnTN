@@ -29,6 +29,7 @@ namespace Happy_Meat_Farm.Models
         public string GiaBan { get; set; }
         public DateTime NgayBan { get; set; }
         public string Thuoc { get; set; }
+        public string MaCT { get; set; }
     }
 
 

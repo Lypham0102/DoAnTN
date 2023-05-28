@@ -7,8 +7,49 @@
 <style>
     body {
         background-image: none;
-        background-size: cover;
-        background-position: center;
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 20px;
+        color: #333;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        /*        border: 1px solid #ccc;*/
+        border-radius: 10px; /* Thêm border-radius để bo góc bảng */
+        transition: box-shadow 0.3s ease;
+    }
+
+        table:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng khi di chuột vào */
+        }
+
+    th {
+        background-color: #f8f8f8;
+        color: #333;
+        font-weight: bold;
+        padding: 10px;
+        text-align: left;
+    }
+
+    td {
+        padding: 10px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tr:hover {
+        background-color: #e0e0e0;
     }
 
     .custom-button {
@@ -25,27 +66,6 @@
         color: red;
     }
 
-    .table {
-        background-color: #fff;
-        color: #000;
-        border-collapse: collapse;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    }
-
-        .table th, .table td {
-            border: 1px solid #000;
-            padding: 5px;
-        }
-
-        .table th {
-            background-color: #DEB887;
-            line-height: 1.5;
-        }
-
-        .table td {
-            background-color: #fff;
-        }
-
     .highlight {
         border: none;
         background-color: #FAF0E6;
@@ -53,6 +73,18 @@
         padding: 2px 4px;
         border-radius: 20px;
         box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+    }
+
+    .highlight-phoi {
+        background-color: #FFE4B5;
+    }
+
+    .btn-custom {
+        background-color: #FF9999;
+        border: 1px solid #ccc;
+        /* Viền màu xám */
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        /* Bóng */
     }
 </style>
 <h1 style="text-align: center;">Danh Sách Thuốc</h1>

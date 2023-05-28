@@ -57,7 +57,7 @@
                 <!-- Second Daily Report -->
                 <div class="daily-report">
                     <h3 style="color: #800000;">Lịch tiêm chủng</h3>
-                    <table>
+                    <table id="lichTiemChungTable">
                         <thead>
                             <tr>
                                 <th style="width: 200px;">Tên đợt tiêm</th>
@@ -75,6 +75,7 @@
                         </tbody>
                     </table>
                 </div>
+
             </div>
         </div>
         <h1>@ViewData["Message"]</h1>
@@ -123,7 +124,28 @@
     dbRef2.on('value', snap => wet.innerHTML = snap.val());</script>
 
 <script src="~/js/JavaScript.js"></script>
+<script>// Lấy bảng lịch tiêm chủng
+    var table = document.getElementById("lichTiemChungTable");
 
+    // Lưu danh sách lịch tiêm chủng vào mảng
+    var rows = Array.from(table.getElementsByTagName("tr")).slice(1); // Lấy các hàng trừ tiêu đề
+    var lichTiemChungArray = rows.map(function (row) {
+        return {
+            tenDotTiem: row.cells[0].innerText,
+            ngayTuoiTiem: parseInt(row.cells[1].innerText)
+        };
+    });
+
+    // Sắp xếp lịch tiêm chủng theo ngày tuổi tăng dần
+    lichTiemChungArray.sort(function (a, b) {
+        return a.ngayTuoiTiem - b.ngayTuoiTiem;
+    });
+
+    // Thay thế nội dung bảng với lịch tiêm chủng đã sắp xếp
+    rows.forEach(function (row, index) {
+        row.cells[0].innerText = lichTiemChungArray[index].tenDotTiem;
+        row.cells[1].innerText = lichTiemChungArray[index].ngayTuoiTiem;
+    });</script>
 
 
 

@@ -63,7 +63,7 @@ namespace Happy_Meat_Farm
             services.AddScoped<ICaTheGiong, CaTheGiongDBContext>();
             services.AddScoped<ICaTheRepository, CaTheRepository>();
             services.AddScoped<ILichTiemChungRepository, LichTiemChungRepository>();
-
+            services.AddScoped<ISanDe, SanDeDBContext>();
 
             // Configure authentication
 

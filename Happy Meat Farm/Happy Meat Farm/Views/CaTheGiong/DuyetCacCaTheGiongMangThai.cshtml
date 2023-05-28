@@ -1,0 +1,85 @@
+﻿@model List<CaTheGiong>
+
+@{
+    ViewData["Title"] = "Cá thể giống";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    body {
+        background-image: none;
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 20px;
+        color: #333;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        /*        border: 1px solid #ccc;*/
+        border-radius: 10px; /* Thêm border-radius để bo góc bảng */
+        transition: box-shadow 0.3s ease;
+    }
+
+        table:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng khi di chuột vào */
+        }
+
+    th {
+        background-color: #f8f8f8;
+        color: #333;
+        font-weight: bold;
+        padding: 10px;
+        text-align: left;
+    }
+
+    td {
+        padding: 10px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tr:hover {
+        background-color: #e0e0e0;
+    }
+    .highlight {
+        border: none;
+        background-color: #FAF0E6;
+        color: black;
+        padding: 2px 4px;
+        border-radius: 20px;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+    }
+</style>
+
+<h1>Danh sách các cá thể giống mang thai</h1>
+
+<table>
+    <tr>
+        <th>Mã cá thể</th>
+        <th>Vị trí</th>
+        <th>Ngày thụ thai</th>
+        <th>Ngày dự đoán đẻ</th>
+        <th>Số ngày còn lại</th>
+    </tr>
+    @foreach (var catheGiong in Model)
+    {
+        <tr>
+            <td>@catheGiong.MaCTG</td>
+            <td>@catheGiong.ViTriChuong</td>
+            <td>@catheGiong.NgayThai.ToString("dd/MM/yyyy")</td>
+            <td>@catheGiong.NgayDuDoanDe.ToString("dd/MM/yyyy")</td>
+            <td>@catheGiong.SoNgayConLai</td>
+        </tr>
+    }
+</table>

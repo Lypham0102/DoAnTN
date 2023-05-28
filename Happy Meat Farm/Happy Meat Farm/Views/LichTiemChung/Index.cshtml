@@ -8,40 +8,99 @@
 <style>
     body {
         background-image: none;
-        background-size: cover;
-        background-position: center;
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
     }
-    .table {
-        background-color: #fff;
-        color: #000;
+
+    h1 {
+        text-align: center;
+        margin-top: 20px;
+        color: #333;
+    }
+
+    table {
+        width: 100%;
         border-collapse: collapse;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        margin-top: 10px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        /*        border: 1px solid #ccc;*/
+        border-radius: 10px; /* Thêm border-radius để bo góc bảng */
+        transition: box-shadow 0.3s ease;
     }
 
-    .table th, .table td {
-         border: 1px solid #000;
-         padding: 5px;
-    }
-
-        .table th {
-            background-color: #DEB887;
-            line-height: 1.5;
+        table:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng khi di chuột vào */
         }
 
-    .table td {
-         background-color: #fff;
+    th {
+        background-color: #f8f8f8;
+        color: #333;
+        font-weight: bold;
+        padding: 10px;
+        text-align: left;
     }
+
+    td {
+        padding: 10px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tr:hover {
+        background-color: #e0e0e0;
+    }
+
+    .confirm-msg {
+        color: red;
+    }
+
+    .highlight {
+        border: none;
+        background-color: #FAF0E6;
+        color: black;
+        padding: 2px 4px;
+        border-radius: 20px;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+    }
+
+    .highlight-phoi {
+        background-color: #FFE4B5;
+    }
+
+    .btn-custom {
+        background-color: #FF9999;
+        border: 1px solid #ccc;
+        /* Viền màu xám */
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        /* Bóng */
+    }
+    .custom-button {
+        background-color: #800000;
+        color: white;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        padding: 8px 16px;
+        margin-right: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease;
+    }
+
+        .custom-button:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
 </style>
 <h1>Danh sách các đợt tiêm chủng </h1>
-<p>
-    <a asp-action="Create">Thêm đợt tiêm chủng </a>
-</p>
+<button class="custom-button" onclick="window.location.href='@Url.Action("Create")'">Thêm đợt tiêm chủng</button>
 <table class="table">
     <thead>
         <tr>
             <th style="width:250px"> Tên đợt tiêm  </th>
             <th style="width:300px"> Ngày tuổi tiêm  </th>
-            <th></th>
+            <th style="width:300px"> Tùy chọn </th>
         </tr>
     </thead>
     <tbody>
@@ -56,11 +115,12 @@
                 </td>
 
                 <td>
-                    <button onclick="location.href='@Url.Action("Edit", new { Name = item._id })'">Chỉnh sửa</button>
-                    <button onclick="location.href='@Url.Action("Details", new { Name = item._id })'">Chi tiết</button>
-                    <button onclick="location.href='@Url.Action("Delete", new { Name = item._id })'">Xóa</button>
+                    <button class="highlight" onclick="location.href='@Url.Action("Edit", new { Name = item._id })'">Chỉnh sửa</button>
+                    <button class="highlight" onclick="location.href='@Url.Action("Details", new { Name = item._id })'">Chi tiết</button>
+                    <button class="highlight" onclick="location.href='@Url.Action("Delete", new { Name = item._id })'">Xóa</button>
                 </td>
             </tr>
         }
     </tbody>
 </table>
+<div style="height: 50px;"></div>

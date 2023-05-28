@@ -16,21 +16,24 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Graph.Models;
 using ClosedXML.Excel;
-
+using System.Globalization;
 
 namespace Happy_Meat_Farm.Controllers
 {
     public class CaTheGiongController : Controller
     {
         private readonly ICaTheGiong _context;
+        private readonly ISanDe _sanDeContext;
         //public readonly CaTheGiongServices catheGiongServices;
         public readonly IConfiguration _configuration;
         public readonly CaTheGiongDBContext catheGiongDBContext;
 
-        public CaTheGiongController(ICaTheGiong context)
+        public CaTheGiongController(ICaTheGiong context, ISanDe sanDeContext)
         {
             _context = context;
+            _sanDeContext = sanDeContext;
         }
+
 
         public IActionResult Index()
         {
@@ -121,5 +124,78 @@ namespace Happy_Meat_Farm.Controllers
                 return File(content, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "DanhSachCaTheGiong.xlsx");
             }
         }
+        [HttpPost]
+        public IActionResult Phoi(string id)
+        {
+            var catheGiong = _context.GetCaTheGiongDetails(id);
+            if (catheGiong != null)
+            {
+                DateTime now = DateTime.Now;
+                int lichSuPhoi = 0;
+
+                if (catheGiong.LichSuPhoi != null)
+                {
+                    lichSuPhoi = catheGiong.LichSuPhoi.Value;
+                }
+
+                lichSuPhoi++;
+                catheGiong.LichSuPhoi = lichSuPhoi;
+                catheGiong.TinhTrangSucKhoe = "Vừa phối " + now.ToString("dd/MM/yyyy");
+                _context.Update(id, catheGiong);
+                return Ok();
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+        [HttpPost]
+        public IActionResult KhongDau(string id)
+        {
+            var catheGiong = _context.GetCaTheGiongDetails(id);
+            if (catheGiong != null)
+            {
+                catheGiong.LichSuPhoi = 0;
+                catheGiong.TinhTrangSucKhoe = "Tốt";
+                _context.Update(id, catheGiong);
+                return Ok();
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+
+        [HttpPost]
+        public IActionResult ThuThai(string id)
+        {
+            var catheGiong = _context.GetCaTheGiongDetails(id);
+            if (catheGiong != null)
+            {
+                catheGiong.TinhTrangSucKhoe = "Mang thai";
+                catheGiong.LichSuPhoi = 0;
+                catheGiong.NgayThai = DateTime.Now;
+                _context.Update(id, catheGiong);
+                return Ok();
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+        [HttpGet]
+        public IActionResult DuyetCacCaTheGiongMangThai()
+        {
+            var pregnantCaTheGiongs = _context.GetAllCaTheGiong().Where(c => c.TinhTrangSucKhoe == "Mang thai").ToList();
+            foreach (var catheGiong in pregnantCaTheGiongs)
+            {
+                DateTime duDoanDe = catheGiong.NgayThai.AddDays(110);
+                catheGiong.NgayDuDoanDe = duDoanDe;
+                catheGiong.SoNgayConLai = (duDoanDe - DateTime.Now).Days;
+            }
+            return View(pregnantCaTheGiongs);
+        }
+
+        
     }
 }
