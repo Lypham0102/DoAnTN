@@ -1,0 +1,214 @@
+﻿@model IEnumerable<Happy_Meat_Farm.Models.CaThe>
+
+@{
+    ViewData["Title"] = "Thông tin cá thể ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 style="text-align: center;">Danh sách cá thể</h1>
+<style>
+    body {
+        background-image: none;
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 20px;
+        color: #333;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        /*        border: 1px solid #ccc;*/
+        border-radius: 10px; /* Thêm border-radius để bo góc bảng */
+        transition: box-shadow 0.3s ease;
+    }
+
+        table:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng khi di chuột vào */
+        }
+
+    th {
+        background-color: #f8f8f8;
+        color: #333;
+        font-weight: bold;
+        padding: 10px;
+        text-align: left;
+    }
+
+    td {
+        padding: 10px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tr:hover {
+        background-color: #e0e0e0;
+    }
+
+    .custom-button {
+        background-color: #800000;
+        color: white;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        padding: 8px 16px;
+        margin-right: 10px;
+    }
+
+    .confirm-msg {
+        color: red;
+    }
+
+    .highlight {
+        border: none;
+        background-color: #FAF0E6;
+        color: black;
+        padding: 2px 4px;
+        border-radius: 20px;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+    }
+
+    .btn-custom {
+        background-color: #FF9999;
+        border: 1px solid #ccc;
+        /* Viền màu xám */
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        /* Bóng */
+    }
+
+    .qr-code-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 9998;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .qr-code-overlay.hidden {
+            display: none;
+        }
+
+    .qr-code-img.zoom {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100vh;
+        width: 80vh;
+        object-fit: contain;
+        z-index: 9999;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .qr-code.zoom {
+        width: 250px;
+        height: 250px;
+    }
+
+    .qr-code-img {
+        width: 100px;
+        height: 100px;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .dead {
+        background-color: #333333;
+        color: white;
+    }
+</style>
+
+<div style="display: flex; align-items: center;">
+    <button type="button" class="btn btn-danger" style="background-color: #800000" onclick="location.href='@Url.Action("Create")'">Thêm cá thể</button>
+</div>
+<span style="font-weight: bold; color: #800000; width: 380px; margin-left: 10px;">Số cá thể trong danh sách: @Model.Count()</span>
+<table class="table">
+    <thead>
+        <tr>
+            @*<th style="width: 250px; text-align: center;">Mã QR</th>*@
+            <th style="width: 200px; text-align: center;">Mã cá thể</th>
+            <th style="width: 200px; text-align: center;">Đặc điểm</th>
+            <th style="width: 300px; text-align: center;">Tuỳ chọn</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr id="@item._id">
+                @*<td style="text-align: center; padding: 0;">
+                        @{
+                            string data = item._id;
+                            string detailUrl = Url.Action("Detail", "CaThe", new { id = item._id });
+                        }
+                        <button class="qr-code-button" onclick="toggleQrCode(this, '@detailUrl')">
+                            Mã QR Code
+                        </button>
+                        <img class="qr-code-img hidden" src="@Url.Action("QrCodeImage", "BayDan", new { data = data })" height="120" width="120" />
+                    </td>*@
+                <td style="text-align: center;">
+                    @Html.DisplayFor(modelItem => item.MaCT)
+                </td>
+                <td style="text-align: center;">
+                    @Html.DisplayFor(modelItem => item.DacDiem)
+                </td>
+                <td style="text-align: center;">
+                    <button class="highlight" onclick="location.href='@Url.Action("Edit", new { Name = item._id })'">Sửa</button>
+                    <button class="highlight" onclick="location.href='@Url.Action("Details", "CaThe", new { Name = item._id })'">Chi tiết cá thể</button>
+                    <button class="highlight" onclick="showSellModal('@item._id')" data-toggle="modal" data-target="#sellModal">Bán</button>
+                    <button class="btn btn-sm btn-dark" onclick="showConfirm('@item._id')">Chết</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Thêm mã HTML này vào trong thẻ <div> có class "table" -->
+<div class="modal fade" id="sellModal" tabindex="-1" role="dialog" aria-labelledby="sellModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="sellModalLabel">Thông tin bán cá thể</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="sellForm" action="@Url.Action("Sell", "CaThe")" method="post">
+                    <input type="hidden" id="caTheId" name="caTheId" />
+                    <div class="form-group">
+                        <label for="weight">Cân nặng:</label>
+                        <input type="text" class="form-control" id="weight" name="weight" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Giá bán:</label>
+                        <input type="text" class="form-control" id="price" name="price" required />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Bán</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>function showSellModal(caTheId) {
+        $('#caTheId').val(caTheId);
+        $('#sellModal').modal('show');
+    }</script>
+
+<div style="height: 50px;"></div>

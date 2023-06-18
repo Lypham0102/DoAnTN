@@ -1,0 +1,146 @@
+﻿@model IEnumerable<Happy_Meat_Farm.Models.TTBModel>
+
+@{
+    ViewData["Title"] = "Trang thiết bị";
+    Layout = "~/Views/Shared/_LayoutNV.cshtml";
+}
+<style>
+    body {
+        background-image: none;
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 20px;
+        color: #333;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        /*        border: 1px solid #ccc;*/
+        border-radius: 10px; /* Thêm border-radius để bo góc bảng */
+        transition: box-shadow 0.3s ease;
+    }
+
+        table:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng khi di chuột vào */
+        }
+
+    th {
+        background-color: #f8f8f8;
+        color: #333;
+        font-weight: bold;
+        padding: 10px;
+        text-align: left;
+    }
+
+    td {
+        padding: 10px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tr:hover {
+        background-color: #e0e0e0;
+    }
+
+    .custom-button {
+        background-color: #800000;
+        color: white;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        padding: 8px 16px;
+        margin-right: 10px;
+    }
+
+    .confirm-msg {
+        color: red;
+    }
+
+    .highlight {
+        border: none;
+        background-color: #FAF0E6;
+        color: black;
+        padding: 2px 4px;
+        border-radius: 20px;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+    }
+
+    .highlight-phoi {
+        background-color: #FFE4B5;
+    }
+
+    .btn-custom {
+        background-color: #FF9999;
+        border: 1px solid #ccc;
+        /* Viền màu xám */
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        /* Bóng */
+    }
+</style>
+<h2 style="text-align: center;">Danh Sách Trang Thiết Bị</h2>
+<button class="custom-button">
+    <a asp-action="CreateNV" style="text-decoration: none; color: white;">Thêm thiết bị</a>
+</button>
+<div style="height: 10px;"></div>
+<table class="table">
+    <thead>
+        <tr>
+            <th style="width:180px"> Tên </th>
+            <th style="width:250px"> Loại </th>
+            <th style="width:250px"> Kích thước </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TenTrangThietBi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LoaiTrangThietBi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.KichThuoc)
+                </td>
+                <td>
+                    <button class="highlight" onclick="location.href='@Url.Action("EditNV", new { Name = item._id })'">Chỉnh sửa</button>
+                    <button class="highlight" onclick="location.href='@Url.Action("DetailsNV", new { Name = item._id})'">Chi tiết</button>
+                    <button class="highlight" onclick="showConfirm('@item._id')">Xóa</button>
+                </td>
+            </tr>
+            <script>
+                function showConfirm(name) {
+                    if (confirm(`Bạn muốn xóa trang thiết bị này không ${name} ?`)) {
+                        window.location.href = "@Url.Action("Delete", new { Name = item._id })";
+                    } else {
+                        let confirmMsg = document.getElementById("confirm-msg");
+                        confirmMsg.innerHTML = `<span class="confirm-msg">Bạn đã hủy thao tác xóa thiết bị ${name}.</span>`;
+                    }
+                }
+            </script>
+
+            <span id="confirm-msg"></span>
+        }
+
+    </tbody>
+
+</table>
+<div style="text-align:right;">
+    <div style="text-align:right;">
+        <button class="custom-button">
+            <a asp-action="Export" style="text-decoration: none; color: white;">Xuất Excel</a>
+        </button>
+    </div>
+</div>

@@ -1,0 +1,102 @@
+﻿
+<!DOCTYPE html>
+@{
+    ViewData["Title"] = "Camera ";
+    Layout = "~/Views/Shared/_LayoutNV.cshtml";
+}
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <title>&#128247;Camera</title>
+    <style>
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+            .video-container img {
+                width: calc(50% - 2px);
+                margin-right: 2px;
+                margin-bottom: 2px;
+                margin-block: 2px;
+            }
+
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+            button:hover {
+                background-color: white;
+                color: #4CAF50;
+            }
+
+        body {
+            background-image: none;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+
+</head>
+<body>
+    <button onclick="location.reload(); setTimeout(function(){ alert('Hình ảnh đã được cập nhật'); }, 5000);" style="border-radius: 8px;">
+        Cập nhật hình ảnh
+    </button>
+
+
+    <div class="video-container">
+
+        <img id="my-video1" src="http://115.79.209.40:85/webcapture.jpg?command=snap&channel=1?1683658236">
+        <img id="my-video2" src="http://14.241.197.164:85/webcapture.jpg?command=snap&channel=1?1683658034">
+        <img id="my-video3" src="http://14.241.197.164:86/webcapture.jpg?command=snap&channel=1?1683658315">
+        <img id="my-video4" src="http://115.79.209.40:84/webcapture.jpg?command=snap&channel=1?1683658112">
+    </div>
+    <div style="height: 50px;"></div>
+    <script>// Lặp vô hạn để cập nhật khung hình của stream
+        // Gọi hàm updateStream() mỗi 5 giây
+        setInterval(function () {
+            updateStream("my-video1", "http://www.insecam.org/en/view/914340/");
+            updateStream("my-video2", "http://www.insecam.org/en/view/921515/");
+            updateStream("my-video3", "http://www.insecam.org/en/view/892904/");
+            updateStream("my-video4", "http://www.insecam.org/en/view/914332/");
+        }, 1000);
+
+        function updateStream(id, url) {
+            var xhr = new XMLHttpRequest();
+
+            // Gửi yêu cầu đến máy chủ để lấy khung hình mới
+            xhr.open("GET", url + "&t=" + new Date().getTime(), true);
+
+            // Xử lý phản hồi từ máy chủ
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    // Cập nhật khung hình mới vào thẻ <img>
+                    document.getElementById(id).src = url + "&t=" + new Date().getTime();
+                } else {
+                    console.error("Không thể tải khung hình mới.");
+                }
+            };
+
+            // Xử lý lỗi kết nối
+            xhr.onerror = function () {
+                console.error("Lỗi kết nối đến máy chủ.");
+            };
+
+            // Gửi yêu cầu lấy khung hình mới
+            xhr.send();
+        }</script>
+</body>
+
+</html>
+

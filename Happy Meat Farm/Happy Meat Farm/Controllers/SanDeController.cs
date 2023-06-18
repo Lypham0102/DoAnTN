@@ -38,6 +38,10 @@ namespace Happy_Meat_Farm.Controllers
         {
             return View(_context.GetAllSanDe());
         }
+        public IActionResult IndexNV()
+        {
+            return View(_context.GetAllSanDe());
+        }
         public IActionResult Create()
         {
             return View();
@@ -84,6 +88,16 @@ namespace Happy_Meat_Farm.Controllers
         {
             return _context.GetAllSanDe().Where(s => s.TrangThai != "Đã dùng").ToList();
 
+        }
+        public IActionResult CacCaThe(string Name)
+        {
+            var md = _context.GetCaTheTheoSan(Name);
+            return View(md);
+        }
+        public IActionResult CacCaTheNV(string Name)
+        {
+            var md = _context.GetCaTheTheoSan(Name);
+            return View(md);
         }
     }
 }

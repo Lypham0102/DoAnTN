@@ -1,0 +1,80 @@
+﻿@model Happy_Meat_Farm.Models.TTBModel
+
+@{
+    ViewData["Title"] = "Chi tiết";
+    Layout = "~/Views/Shared/_LayoutNV.cshtml";
+}
+
+
+<style>
+    body {
+        background-image: none;
+        background-size: cover;
+        background-position: center;
+    }
+</style>
+<div class="container">
+    <h1 class="text-center mt-5 mb-4">Chi tiết thiết bị</h1>
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h4 class="card-title">Thông tin thiết bị</h4>
+                    <hr />
+                    <dl class="row">
+                        <dt class="col-sm-3">
+                            Tên thiết bị:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.TenTrangThietBi)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Loại:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.LoaiTrangThietBi)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Kích thước:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.KichThuoc)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Chất liệu:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.ChatLieu)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Nhà sản xuất:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.NSX)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Hạn dùng:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.HanDung)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Đơn giá:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.DonGia)
+                        </dd>
+                        <dt class="col-sm-3">
+                            Số lượng:
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.SoLuong)
+                        </dd>
+
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="height: 50px;"></div>

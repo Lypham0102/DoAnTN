@@ -151,7 +151,7 @@ namespace Happy_Meat_Farm.Controllers
         public IActionResult Sell(string caTheId, string weight, string price)
         {
             var caThe = _context.GetCaTheDetails(caTheId);
-            caThe.Chuong = null;
+            caThe.Chuong = "";
             // Lưu thông tin cân nặng và giá bán vào đối tượng "CaThe"
             caThe.CanNang = weight;
             caThe.GiaBan = price;
@@ -160,7 +160,12 @@ namespace Happy_Meat_Farm.Controllers
             string returnUrl = Request.Headers["Referer"].ToString();
             return Redirect(returnUrl);
         }
+        public IActionResult DanhSachCaTheDaBan()
+        {
+            var caTheDaBan = _context.GetAllCaThe().Where(c => c.Chuong == "").ToList();
 
+            return View(caTheDaBan);
+        }
 
     }
 

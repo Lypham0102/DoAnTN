@@ -141,7 +141,7 @@
 <table class="table">
     <thead>
         <tr>
-            <th style="width: 250px; text-align: center;">Mã QR</th>
+            @*<th style="width: 250px; text-align: center;">Mã QR</th>*@
             <th style="width: 200px; text-align: center;">Mã cá thể</th>
             <th style="width: 200px; text-align: center;">Đặc điểm</th>
             <th style="width: 300px; text-align: center;">Tuỳ chọn</th>
@@ -151,7 +151,7 @@
         @foreach (var item in Model)
         {
             <tr id="@item._id">
-                <td style="text-align: center; padding: 0;">
+                @*<td style="text-align: center; padding: 0;">
                     @{
                         string data = item._id;
                         string detailUrl = Url.Action("Detail", "CaThe", new { id = item._id });
@@ -160,7 +160,7 @@
                         Mã QR Code
                     </button>
                     <img class="qr-code-img hidden" src="@Url.Action("QrCodeImage", "BayDan", new { data = data })" height="120" width="120" />
-                </td>
+                </td>*@
                 <td style="text-align: center;">
                     @Html.DisplayFor(modelItem => item.MaCT)
                 </td>
@@ -172,8 +172,6 @@
                     <button class="highlight" onclick="location.href='@Url.Action("Details", "CaThe", new { Name = item._id })'">Chi tiết cá thể</button>
                     <button class="highlight" onclick="showSellModal('@item._id')" data-toggle="modal" data-target="#sellModal">Bán</button>
                     <button class="btn btn-sm btn-dark" onclick="showConfirm('@item._id')">Chết</button>
-
-
                 </td>
             </tr>
         }

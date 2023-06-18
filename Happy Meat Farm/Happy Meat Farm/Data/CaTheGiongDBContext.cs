@@ -40,6 +40,12 @@ namespace Happy_Meat_Farm.Data
             return cathegiongdetails;
         }
 
+        public CaTheGiong GetCaTheGiongSanDe(string Name)
+        {
+            var cathegiongsande = cathegiongcollection.Find(m => m.MaCTG == Name).FirstOrDefault();
+            return cathegiongsande;
+        }
+
         public void Create(CaTheGiong cathegiongData)
         {
             cathegiongcollection.InsertOne(cathegiongData);
@@ -49,12 +55,22 @@ namespace Happy_Meat_Farm.Data
             var filter = Builders<CaTheGiong>.Filter.Eq(c => c._id, _id);
             var update = Builders<CaTheGiong>.Update
                 .Set("NgayNuoi", cathegiongData.NgayNuoi)
+                .Set("MaCTG", cathegiongData.MaCTG)
                 .Set("DacDiem", cathegiongData.DacDiem)
                 .Set("LanDe", cathegiongData.LanDe)
                 .Set("LichSuPhoi", cathegiongData.LichSuPhoi)
                 .Set("ViTriChuong", cathegiongData.ViTriChuong)
                 .Set("TinhTrangSucKhoe", cathegiongData.TinhTrangSucKhoe)
                 .Set("NgayThai", cathegiongData.NgayThai);
+
+            cathegiongcollection.UpdateOne(filter, update);
+        }
+        public void UpdateViTriChuong(string maCTG, CaTheGiong cathegiongData)
+        {
+            var filter = Builders<CaTheGiong>.Filter.Eq(c => c.MaCTG, maCTG);
+            var update = Builders<CaTheGiong>.Update
+                .Set("ViTriChuong", cathegiongData.ViTriChuong)
+                .Set("TinhTrangSucKhoe", cathegiongData.TinhTrangSucKhoe);
             cathegiongcollection.UpdateOne(filter, update);
         }
         public void Delete(string Name)

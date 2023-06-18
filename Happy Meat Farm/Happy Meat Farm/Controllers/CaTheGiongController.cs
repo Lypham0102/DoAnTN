@@ -17,26 +17,42 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Graph.Models;
 using ClosedXML.Excel;
 using System.Globalization;
+using DocumentFormat.OpenXml.Office2010.Excel;
+using MongoDB.Driver;
 
 namespace Happy_Meat_Farm.Controllers
 {
+    public class UpdateViTriChuongRequest
+    {
+        public string MaCTG { get; set; }
+        public string ViTriChuong { get; set; }
+    }
+
     public class CaTheGiongController : Controller
     {
         private readonly ICaTheGiong _context;
         private readonly ISanDe _sanDeContext;
+        private readonly ICaThe _caTheContext;
         //public readonly CaTheGiongServices catheGiongServices;
         public readonly IConfiguration _configuration;
         public readonly CaTheGiongDBContext catheGiongDBContext;
 
-        public CaTheGiongController(ICaTheGiong context, ISanDe sanDeContext)
+        public CaTheGiongController(ICaTheGiong context, ISanDe sanDeContext, ICaThe caThecontext)
         {
             _context = context;
             _sanDeContext = sanDeContext;
+            _caTheContext = caThecontext;
         }
 
 
         public IActionResult Index()
         {
+
+            return View(_context.GetAllCaTheGiong());
+        }
+        public IActionResult IndexNV()
+        {
+
             return View(_context.GetAllCaTheGiong());
         }
         public IActionResult Create()
@@ -183,9 +199,12 @@ namespace Happy_Meat_Farm.Controllers
                 return NotFound();
             }
         }
+
         [HttpGet]
         public IActionResult DuyetCacCaTheGiongMangThai()
         {
+            ViewBag.SanDeList = _sanDeContext.GetAllSanDe().ToList();
+
             var pregnantCaTheGiongs = _context.GetAllCaTheGiong().Where(c => c.TinhTrangSucKhoe == "Mang thai").ToList();
             foreach (var catheGiong in pregnantCaTheGiongs)
             {
@@ -195,7 +214,80 @@ namespace Happy_Meat_Farm.Controllers
             }
             return View(pregnantCaTheGiongs);
         }
+        [HttpGet]
+        public IActionResult GetAllSanDe()
+        {
+            var sanDeList = _sanDeContext.GetAllSanDe().ToList();
+            return Json(sanDeList);
+        }
+        [HttpPost]
+        public IActionResult UpdateViTriChuong([FromBody] UpdateViTriChuongRequest request)
+        {
+            var catheGiong = _context.GetCaTheGiongSanDe(request.MaCTG);
+            if (catheGiong != null)
+            {
+                catheGiong.ViTriChuong = request.ViTriChuong;
+                _context.UpdateViTriChuong(request.MaCTG, catheGiong);
+                return Ok();
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+        [HttpPost]
+        public IActionResult Deliver(int quantity, string maCTG)
+        {
+            // Kiểm tra số lượng hợp lệ
+            if (quantity <= 0)
+            {
+                return BadRequest("Số lượng không hợp lệ");
+            }
 
-        
+            // Lấy thông tin của CaTheGiong mẫu
+            var sampleCaTheGiong = _context.GetCaTheGiongSanDe(maCTG);
+            sampleCaTheGiong.TinhTrangSucKhoe = "Tốt";
+            _context.UpdateViTriChuong( maCTG, sampleCaTheGiong);
+            // Kiểm tra xem CaTheGiong mẫu có tồn tại hay không
+            if (sampleCaTheGiong == null)
+            {
+                return NotFound("Không tìm thấy cá thể giống");
+            }
+
+            List<int> randomNumbers = new List<int>();
+            Random random = new Random();
+
+            // Tạo đồng loạt các cá thể mới
+            for (int i = 0; i < quantity; i++)
+            {
+                int maCT;
+                do
+                {
+                    maCT = random.Next(0, 100);
+                } while (randomNumbers.Contains(maCT));
+
+                randomNumbers.Add(maCT);
+
+                // Tạo cá thể mới với các thuộc tính giống với CaTheGiong mẫu
+                var newCaThe = new CaThe
+                {
+                    MaCT = maCT.ToString(),
+                    NgayNuoi = DateTime.Now,
+                    NgayTuoi = 0,
+                    DacDiem = sampleCaTheGiong.DacDiem,
+                    Chuong = sampleCaTheGiong.ViTriChuong,
+                    TinhTrangSucKhoe = "Tốt",
+                    _idNongTrai = sampleCaTheGiong._idNongTrai
+                };
+
+                // Lưu cá thể mới vào cơ sở dữ liệu
+                _caTheContext.Create(newCaThe);
+            }
+
+            return RedirectToAction("Index");
+        }
+
+
+
     }
 }

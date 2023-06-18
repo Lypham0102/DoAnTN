@@ -12,6 +12,7 @@ namespace Happy_Meat_Farm.Interface
         IMongoCollection<SanDe> sandecollection { get; }
         IEnumerable<SanDe> GetAllSanDe();
         SanDe GetSanDeDetails(string Name);
+        IEnumerable<CaThe> GetCaTheTheoSan(string Name);
         //NhanVien Authenticate(string TenTaiKhoan, string Passwork);
         void Create(SanDe sandeData);
         void Update(string _id, SanDe sandeData);

@@ -1,0 +1,157 @@
+﻿@{
+    ViewData["Title"] = "IOT ";
+    Layout = "~/Views/Shared/_LayoutNV.cshtml";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Temperature, Humidity and Gas Concentration</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-JO+m9LjfHmHl1OZwOkIjqihR7QUwz/KCNz7YP31lFb+HovL/R/WMwbwu8n4OY1WxMvkgOgInFnLs9lj9bmL8Ug==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        p {
+            font-size: 24px;
+            line-height: 36px;
+        }
+
+        body {
+            background-image: none;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .my-button {
+            background-color: grey;
+            color: white;
+            font-size: 1.2em;
+            padding: 4px 8px;
+            border-radius: 3px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+            border: 1px solid black;
+        }
+
+
+
+        .section-1, .section-2 {
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: white;
+        }
+
+
+            .section-1 h3, .section-2 h3 {
+                border-bottom: 1px solid #ddd;
+                padding-bottom: 10px;
+                margin-bottom: 20px;
+            }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-QLyE1D+3q2t29WYlXwJprN9blDzr/UY/6hyvRqQ22zA7IGM3oFSPfMQTUCwFm2V9mJi7Bj9KpLbgRr+Gs3xY6g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <div class="container-fluid">
+        <h2 style="text-align: center; color: #800000;">Quản lí các thông số của trang trại</h2>
+        <h6 style="color: grey;">Các thông số hiện tại của trang trại</h6>
+        <div class="row">
+            <div class="col-sm-6 section-1">
+                <!-- nội dung khu vực 1 -->
+                <h3 style="text-align: center;">Khu vực 1</h3>
+                <p><i class="fas fa-thermometer-half" style="color: red;"></i> <span id="temperature"></span> &#8451;</p>
+                <p><i class="fas fa-tint" style="color: blue;"></i> <span id="humidity"></span> %</p>
+                <p><i class="fas fa-smog" style="color: grey;"></i> <span id="ppm"></span> ppm</p>
+            </div>
+            <div class="col-sm-6 section-2">
+                <!-- nội dung khu vực 2 -->
+                <h3 style="text-align: center;">Khu vực 2</h3>
+                <p><i class="fas fa-thermometer-half" style="color: red;"></i> <span id="temperature1"></span> &#8451;</p>
+                <p><i class="fas fa-tint" style="color: blue;"></i> <span id="humidity1"></span> %</p>
+                <p><i class="fas fa-smog" style="color: grey;"></i> <span id="ppm1"></span> ppm</p>
+            </div>
+        </div>
+    </div>
+    <div style="height: 15px;"></div>
+    <form asp-area="" asp-controller="Camera" asp-action="IndexNV">
+        <button type="submit" class="my-button">Camera</button>
+    </form>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-JO+m9LjfHmHl1OZwOkIjqihR7QUwz/KCNz7YP31lFb+HovL/R/WMwbwu8n4OY1WxMvkgOgInFnLs9lj9bmL8Ug==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="~/js/JavaScript.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="https://firebase.google.com/docs/web/learn-more#config-object"></script>
+    <script src="https://firebase.google.com/docs/web/setup#available-libraries"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+    <script src="https://firebase.google.com/docs/web/learn-more#config-object"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use-->
+    <script src="https://firebase.google.com/docs/web/setup#available-libraries"></script>
+    <!--https://firebase.google.com/docs/web/learn-more#config-object-->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to usehttps://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script>// Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyCiSaknvNYmF3wd578-plD_5NWSA7PyjSY",
+            authDomain: "esp8266-database-inventor.firebaseapp.com",
+            databaseURL: "https://esp8266-database-inventor-default-rtdb.firebaseio.com",
+            projectId: "esp8266-database-inventor",
+            storageBucket: "esp8266-database-inventor.appspot.com",
+            messagingSenderId: "423165376147",
+            appId: "1:423165376147:web:01b7d90369ef89bd5bff66",
+            measurementId: "G-6Y0CS5BME0"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        //temp
+        var temperature = document.getElementById('temperature');
+        var dbRef = firebase.database().ref().child('TEMPERATURE');
+        dbRef.on('value', snap => temperature.innerText = snap.val());
+        //temp1
+        var temperature1 = document.getElementById('temperature1');
+        var dbRef = firebase.database().ref().child('TEMPERATURE1');
+        dbRef.on('value', snap => temperature1.innerText = snap.val());
+
+        //HUMIDITY
+        var humidity = document.getElementById('humidity');
+        var dbRef2 = firebase.database().ref('HUMIDITY');
+        dbRef2.on('value', snap => humidity.innerHTML = snap.val());
+        //HUMIDITY1
+        var humidity1 = document.getElementById('humidity1');
+        var dbRef2 = firebase.database().ref('HUMIDITY1');
+        dbRef2.on('value', snap => humidity1.innerHTML = snap.val());
+
+
+        //PPM
+        var ppm = document.getElementById('ppm');
+        var dbRef2 = firebase.database().ref('PPM');
+        dbRef2.on('value', snap => ppm.innerHTML = snap.val());
+        //PPM1
+        var ppm1 = document.getElementById('ppm1');
+        var dbRef2 = firebase.database().ref('PPM1');
+        dbRef2.on('value', snap => ppm1.innerHTML = snap.val());</script>
+
+    <script src="~/js/JavaScript.js"></script>
+</body>
+</html>

@@ -26,7 +26,16 @@ namespace Happy_Meat_Farm.Controllers
             return View(thucAn.GetAllThucAn());
             //return View();
         }
+        public IActionResult IndexNV()
+        {
+            return View(thucAn.GetAllThucAn());
+            //return View();
+        }
         public IActionResult Create()
+        {
+            return View();
+        }
+        public IActionResult CreateNV()
         {
             return View();
         }
@@ -42,9 +51,21 @@ namespace Happy_Meat_Farm.Controllers
             var md = thucAn.GetThucAnDetails(Name);
             return View(md);
         }
+        [HttpGet]
+        public IActionResult DetailsNV(string Name)
+        {
+            var md = thucAn.GetThucAnDetails(Name);
+            return View(md);
+        }
 
         [HttpGet]
         public IActionResult Edit(string Name)
+        {
+            var md = thucAn.GetThucAnDetails(Name);
+            return View(md);
+        }
+        [HttpGet]
+        public IActionResult EditNV(string Name)
         {
             var md = thucAn.GetThucAnDetails(Name);
             return View(md);

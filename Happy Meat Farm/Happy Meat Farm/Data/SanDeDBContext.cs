@@ -9,6 +9,7 @@ using MongoDB.Driver;
 using System.Runtime.InteropServices;
 using Microsoft.Graph.Models;
 using MongoDB.Bson;
+using SixLabors.ImageSharp.Drawing;
 
 namespace Happy_Meat_Farm.Data
 {
@@ -30,10 +31,16 @@ namespace Happy_Meat_Farm.Data
         public IMongoCollection<SanDe> sandecollection =>
             _db.GetCollection<SanDe>("SanDe");
 
+        //public IEnumerable<SanDe> GetAllSanDe()
+        //{
+        //    return sandecollection.Find(a => true).ToList();
+        //}
+
         public IEnumerable<SanDe> GetAllSanDe()
         {
-            return sandecollection.Find(a => true).ToList();
+            return _SD.Find(a => true).ToList();
         }
+
         public SanDe GetSanDeDetails(string Name)
         {
             var sandedetails = sandecollection.Find(m => m._id == Name).FirstOrDefault();
@@ -58,6 +65,49 @@ namespace Happy_Meat_Farm.Data
         {
             var filter = Builders<SanDe>.Filter.Eq(c => c._id, Name);
             sandecollection.DeleteOne(filter);
+        }
+
+        public IMongoCollection<CaThe> cathecollection =>
+            _db.GetCollection<CaThe>("CaThe");
+
+        public IEnumerable<CaThe> GetCaTheTheoSan(string Name)
+        {
+
+            //return cathecollection.Find(a => a.Chuong == Name).ToList();
+            var caTheList = cathecollection.Find(a => a.Chuong == Name).ToList();
+
+            foreach (var caThe in caTheList)
+            {
+                // Tính ngày tuổi của cá thể
+                int tuoi = TinhNgayTuoi(caThe._id);
+
+                // Cập nhật giá trị tuổi lên MongoDB
+                CapNhatNgayTuoi(caThe._id, tuoi);
+
+                // Gán giá trị tuổi cho thuộc tính trong đối tượng caThe (cá thể)
+                caThe.NgayTuoi = tuoi;
+            }
+
+            return caTheList;
+        }
+        public int TinhNgayTuoi(string Name)
+        {
+            var caThe = cathecollection.Find(c => c._id == Name).FirstOrDefault();
+            if (caThe == null)
+            {
+                // Xử lý khi không tìm thấy cá thể
+                return -1;
+            }
+
+            DateTime ngayHienTai = DateTime.Now;
+            TimeSpan ngayTuoi = ngayHienTai - caThe.NgayNuoi;
+            return (int)ngayTuoi.TotalDays;
+        }
+        public void CapNhatNgayTuoi(string id, int tuoi)
+        {
+            var filter = Builders<CaThe>.Filter.Eq(c => c._id, id);
+            var update = Builders<CaThe>.Update.Set(c => c.NgayTuoi, tuoi);
+            cathecollection.UpdateOne(filter, update);
         }
     }
 }

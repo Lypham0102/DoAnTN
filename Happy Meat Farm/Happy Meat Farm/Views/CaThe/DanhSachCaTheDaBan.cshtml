@@ -1,0 +1,191 @@
+﻿<style>
+    body {
+        background-image: none;
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 20px;
+        color: #333;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border: 1px solid #ccc;
+        border-radius: 10px; /* Thêm border-radius để bo góc bảng */
+        transition: box-shadow 0.3s ease;
+    }
+
+        table:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng khi di chuột vào */
+        }
+
+    th {
+        background-color: #f8f8f8;
+        color: #333;
+        font-weight: bold;
+        padding: 10px;
+        text-align: left;
+    }
+
+    td {
+        padding: 10px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tr:hover {
+        background-color: #e0e0e0;
+    }
+
+    .custom-button {
+        background-color: #800000;
+        color: white;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        padding: 8px 16px;
+        margin-right: 10px;
+    }
+
+    .confirm-msg {
+        color: red;
+    }
+
+    .highlight {
+        border: none;
+        background-color: #FAF0E6;
+        color: black;
+        padding: 2px 4px;
+        border-radius: 20px;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+    }
+
+    .highlight-phoi {
+        background-color: #FFE4B5;
+    }
+
+    .btn-custom {
+        background-color: #FF9999;
+        border: 1px solid #ccc;
+        /* Viền màu xám */
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        /* Bóng */
+    }
+
+    h2 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: #666;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        margin-top: 20px;
+    }
+
+    h4 {
+        margin-top: 10px;
+    }
+
+    .dotTiem {
+        background-color: #f9f9f9;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .qr-code-img.zoom {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100vh;
+        width: 80vh;
+        object-fit: contain;
+        z-index: 9999;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .qr-code.zoom {
+        width: 250px;
+        height: 250px;
+    }
+
+    .qr-code-img {
+        width: 100px;
+        height: 100px;
+        transition: all 0.2s ease-in-out;
+    }
+</style>
+
+<h2 style="text-align: center;">Danh sách cá thể đã bán</h2>
+
+@if (Model.Count > 0)
+{
+    Dictionary<DateTime, List<CaThe>> groups = new Dictionary<DateTime, List<CaThe>>();
+
+    foreach (var caThe in Model)
+    {
+        DateTime ngayBan = caThe.NgayBan.Date;
+
+        if (!groups.ContainsKey(ngayBan))
+        {
+            groups[ngayBan] = new List<CaThe>();
+        }
+
+        groups[ngayBan].Add(caThe);
+    }
+
+    foreach (var group in groups.OrderByDescending(g => g.Key))
+    {
+        <h3>Ngày bán: @group.Key.ToString("dd/MM/yyyy")</h3>
+
+        <table>
+            <tr>
+                <th style="width: 250px; text-align: center;">Mã QR</th>
+                <th style="width: 150px;">Mã cá thể</th>
+                <th style="width: 300px;">Đặc điểm</th>
+                <th style="width: 150px;">Cân nặng</th>
+                <th style="width: 150px;">Giá bán</th>
+            </tr>
+            @foreach (var caThe in group.Value)
+            {
+                <tr>
+                    <td style="text-align: center; padding: 0;">
+                        @{
+                            string data = caThe._id;
+                            string detailUrl = Url.Action("Detail", "CaThe", new { id = caThe._id });
+                        }
+                        <button class="qr-code-button" onclick="toggleQrCode(this, '@detailUrl')">
+                            Mã QR Code
+                        </button>
+                        <img class="qr-code-img hidden" src="@Url.Action("QrCodeImage", "BayDan", new { data = data })" height="120" width="120" />
+                    </td>
+                    <td>@caThe.MaCT</td>
+                    <td>@caThe.DacDiem</td>
+                    <td>@caThe.CanNang</td>
+                    <td>@caThe.GiaBan</td>
+                </tr>
+            }
+        </table>
+    }
+}
+else
+{
+    <p>Không có cá thể nào đã bán.</p>
+}
+
+<div style="height: 50px;"></div>

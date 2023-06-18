@@ -9,6 +9,10 @@ namespace Happy_Meat_Farm.Controllers
         {
             return View();
         }
+        public ActionResult IndexNV()
+        {
+            return View();
+        }
     }
 }
 

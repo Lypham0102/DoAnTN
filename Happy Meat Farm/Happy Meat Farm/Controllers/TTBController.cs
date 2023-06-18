@@ -24,7 +24,15 @@ namespace Happy_Meat_Farm.Controllers
         {
             return View(_Interface.GetAllTrangThietBi());
         }
+        public IActionResult IndexNV()
+        {
+            return View(_Interface.GetAllTrangThietBi());
+        }
         public IActionResult Create()
+        {
+            return View();
+        }
+        public IActionResult CreateNV()
         {
             return View();
         }
@@ -41,6 +49,12 @@ namespace Happy_Meat_Farm.Controllers
             var md = _Interface.GetTrangThietBiDetails(Name);
             return View(md);
         }
+        [HttpGet]
+        public IActionResult EditNV(string Name)
+        {
+            var md = _Interface.GetTrangThietBiDetails(Name);
+            return View(md);
+        }
         [HttpPost]
         public IActionResult EditPost(string _id, TTBModel TrangThietBiData)
         {
@@ -50,6 +64,12 @@ namespace Happy_Meat_Farm.Controllers
 
         [HttpGet]
         public IActionResult Details(string Name)
+        {
+            var md = _Interface.GetTrangThietBiDetails(Name);
+            return View(md);
+        }
+        [HttpGet]
+        public IActionResult DetailsNV(string Name)
         {
             var md = _Interface.GetTrangThietBiDetails(Name);
             return View(md);

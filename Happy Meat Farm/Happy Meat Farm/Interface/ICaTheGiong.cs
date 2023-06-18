@@ -12,9 +12,11 @@ namespace Happy_Meat_Farm.Interface
         IMongoCollection<CaTheGiong> cathegiongcollection { get; }
         IEnumerable<CaTheGiong> GetAllCaTheGiong();
         CaTheGiong GetCaTheGiongDetails(string Name);
+        CaTheGiong GetCaTheGiongSanDe(string Name);
         //NhanVien Authenticate(string TenTaiKhoan, string Passwork);
         void Create(CaTheGiong cathegiongData);
         void Update(string _id, CaTheGiong cathegiongData);
+        void UpdateViTriChuong(string _id, CaTheGiong cathegiongData);
         void Delete(string Name);
 
     }

@@ -1,0 +1,134 @@
+﻿@model Happy_Meat_Farm.Models.ThucAn
+
+@{
+    ViewData["Title"] = "Thêm Thức Ăn";
+    Layout = "~/Views/Shared/_LayoutNV.cshtml";
+}
+<style>
+    body {
+        background-image: none;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-control {
+        display: block;
+        width: 100%;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    }
+
+    input[type="submit"] {
+        display: block;
+        width: 100%;
+        padding: 6px 12px;
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        color: #fff;
+        background-color: #337ab7;
+        border-color: #2e6da4;
+    }
+
+    .form-title {
+        margin-bottom: 20px;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .form-container {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+<h2>Thêm thức ăn mới</h2>
+
+<div class="row">
+    <div class="col-md-4 mx-auto">
+        <form asp-action="CreatePost">
+            <div class="form-group">
+                <label asp-for="TenHang" class="control-label">Tên hãng</label>
+                <input asp-for="TenHang" class="form-control" />
+                <span asp-validation-for="TenHang" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MaLoai" class="control-label">Mã loại</label>
+                <input asp-for="MaLoai" class="form-control" />
+                <span asp-validation-for="MaLoai" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KhoiLuongTinh" class="control-label">Khối lượng tịnh</label>
+                <input asp-for="KhoiLuongTinh" class="form-control" />
+                <span asp-validation-for="KhoiLuongTinh" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DoiTuong" class="control-label">Đối tượng</label>
+                <input asp-for="DoiTuong" class="form-control" />
+                <span asp-validation-for="DoiTuong" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HanDung" class="control-label">Hạn dùng</label>
+                <input asp-for="HanDung" class="form-control" />
+                <span asp-validation-for="HanDung" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DonGia" class="control-label">Đơn giá</label>
+                <input asp-for="DonGia" class="form-control" />
+                <span asp-validation-for="DonGia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoLuong" class="control-label">Số lượng</label>
+                <input asp-for="SoLuong" class="form-control" />
+                <span asp-validation-for="SoLuong" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<div style="height: 50px;"></div>
+
+
+
+
+
+
+

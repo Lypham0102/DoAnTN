@@ -1,6 +1,6 @@
 ﻿@{
     ViewData["Title"] = "Công việc";
-    Layout = "~/Views/Shared/_LayoutBlank.cshtml";
+    Layout = "~/Views/Shared/_LayoutNV.cshtml";
 }
 <style>
     body {
@@ -148,7 +148,7 @@
                 <button style="margin-left: 950px;" onclick="markAllInjected(this)">Tất cả đã tiêm</button>
                 <table>
                     <tr>
-                        <th style="width: 300px;">ID cá thể</th>
+                        <th style="width: 300px;">Mã cá thể</th>
                         <th>Tuổi cá thể (ngày)</th>
                         <th>Ngày tuổi tiêm / Tên đợt tiêm</th> <!-- Thay đổi tiêu đề cột -->
                         <th>Đã tiêm</th>
@@ -160,7 +160,7 @@
                         DateTime ngayTuoiTiem = item.Item3;
 
                         <tr>
-                            <td>@caThe._id</td>
+                            <td>@caThe.MaCT</td>
                             <td>@caThe.NgayTuoi</td>
                             <td>@tenDotTiem</td> <!-- Hiển thị tên đợt tiêm -->
                             <td>

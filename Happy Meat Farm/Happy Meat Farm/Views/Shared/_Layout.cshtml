@@ -11,6 +11,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <!--My CSS-->
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
@@ -26,7 +28,7 @@
             background-position: center;
         }
     </style>
-    
+
     <script>function toggleQrCode(button) {
             var img = button.nextElementSibling; // Lấy phần tử anh em tiếp theo của nút
             if (img.classList.contains("hidden")) {
@@ -122,16 +124,16 @@
                                         </a>
                                     </div>
                                     <div class="accordion-body" style="background-color: #FFF8DC;">
-                                        <a class="nav-link text-black-50" asp-controller="CaTheGiong" asp-action="Index">
+                                        <a class="nav-link text-black-50" asp-controller="CaTheGiong" asp-action="IndexNV">
                                             <span class="text">Danh sách heo giống </span>
                                         </a>
                                     </div>
-                                    @*<div class="accordion-body" style="background-color: #FFF8DC;">
-                                        <a class="nav-link text-black-50" asp-controller="VatNuoi" asp-action="ThemVatNuoi">
-                                            <span class="text">Thêm vật nuôi</span>
+                                    <div class="accordion-body" style="background-color: #FFF8DC;">
+                                        <a class="nav-link text-black-50" asp-controller="SanDe" asp-action="Index">
+                                            <span class="text">Danh sách sàn đẻ</span>
                                         </a>
                                     </div>
-                                    <div class="accordion-body" style="background-color: #FFF8DC;">
+                                    @*<div class="accordion-body" style="background-color: #FFF8DC;">
                                         <a class="nav-link text-black-50" asp-controller="VatNuoi" asp-action="ThemChuong">
                                             <span class="text">Thêm chuồng</span>
                                         </a>
@@ -206,7 +208,7 @@
 
                     </li>
                     <li class="nav-item sidebar-item">
-                        <a class="nav-link font-weight-bold" asp-area=" " asp-controller="HienThiCanTiemChung" asp-action="HienThiCaTheCanTiemChungNV">
+                        <a class="nav-link font-weight-bold" asp-area=" " asp-controller="CaThe" asp-action="DanhSachCaTheDaBan">
                             <button class="btn btn-link text-black-50 font-weight-bold" type="button">
                                 <i class='bx bx-line-chart'><span>Thống kê</span></i>
                             </button>

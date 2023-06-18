@@ -1,0 +1,247 @@
+﻿@model IEnumerable<Happy_Meat_Farm.Models.CaTheGiong>
+
+@{
+    ViewData["Title"] = "Cá thể giống";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script>
+    var count = @Model.Count();
+    console.log("Số lượng thể giống đã được duyệt: " + count);
+</script>
+
+<style>
+    body {
+        background-image: none;
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 20px;
+        color: #333;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        /*        border: 1px solid #ccc;*/
+        border-radius: 10px; /* Thêm border-radius để bo góc bảng */
+        transition: box-shadow 0.3s ease;
+    }
+
+        table:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng khi di chuột vào */
+        }
+
+    th {
+        background-color: #f8f8f8;
+        color: #333;
+        font-weight: bold;
+        padding: 10px;
+        text-align: left;
+    }
+
+    td {
+        padding: 10px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tr:hover {
+        background-color: #e0e0e0;
+    }
+
+    .custom-button {
+        background-color: #800000;
+        color: white;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        padding: 8px 16px;
+        margin-right: 10px;
+    }
+
+    .confirm-msg {
+        color: red;
+    }
+
+    .highlight {
+        border: none;
+        background-color: #FAF0E6;
+        color: black;
+        padding: 2px 4px;
+        border-radius: 20px;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+    }
+
+    .highlight-phoi {
+        background-color: #FFE4B5;
+    }
+
+    .btn-custom {
+        background-color: #FF9999;
+        border: 1px solid #ccc;
+        /* Viền màu xám */
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        /* Bóng */
+    }
+</style>
+
+<h1>Danh sách cá thể giống</h1>
+<div style="height: 10px;"></div>
+<h5 style="color: gray;">Số lượng cá thể giống: @Model.Count()</h5>
+<div style="height: 10px;"></div>
+<div style="display: flex; align-items: center;">
+    <button class="custom-button">
+        <a asp-action="Create" style="text-decoration: none; color: white;">Thêm cá thể</a>
+    </button>
+    <button class="custom-button" onclick="filterPhoi()">Cá thể vừa phối</button>
+    <a class="btn btn-primary btn-custom" href="@Url.Action("DuyetCacCaTheGiongMangThai", "CaTheGiong")">Cá Thể Mang Thai</a>
+</div>
+<div style="height: 10px;"></div>
+<table class="table">
+    <thead>
+        <tr>
+            <th style="width: 120px">Mã cá thể</th>
+            <th style="width: 120px">Số chuồng</th>
+            <th style="width: 220px">Tình trạng</th>
+            <th style="width: 100px">Lần phối</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr id="row-@item.MaCTG">
+                <td>
+                    @Html.DisplayFor(modelItem => item.MaCTG)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ViTriChuong)
+                </td>
+                <td class="tinh-trang-suc-khoe">
+                    @Html.DisplayFor(modelItem => item.TinhTrangSucKhoe)
+                </td>
+                <td class="lich-su-phoi">
+                    @Html.DisplayFor(modelItem => item.LichSuPhoi)
+                </td>
+                <td>
+                    @*<button class="highlight" onclick="location.href='@Url.Action("Edit", new { Name = item._id })'">Chỉnh sửa</button>
+                    <button class="highlight" onclick="location.href='@Url.Action("Details", new { Name = item._id })'">Chi tiết</button>
+                    <button class="highlight" onclick="phoiCatheGiong('@item._id')">Phối</button>
+                    <button class="highlight" onclick="khongDau('@item._id')">Không đậu</button>
+                    <button class="highlight" onclick="thuThai('@item._id')">Thụ thai</button>*@
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div style="text-align: right;">
+    <div style="text-align: right;">
+        <button class="custom-button">
+            <a asp-action="Export" style="text-decoration: none; color: white;">Xuất Excel</a>
+        </button>
+    </div>
+</div>
+
+<script>let isFiltered = false;
+
+    function filterPhoi() {
+        const rows = document.getElementsByTagName("tr");
+        for (let i = 0; i < rows.length; i++) {
+            const row = rows[i];
+            const tinhTrangCell = row.querySelector(".tinh-trang-suc-khoe");
+            if (tinhTrangCell) {
+                const tinhTrang = tinhTrangCell.textContent.trim();
+                if (!isFiltered && !tinhTrang.includes("Vừa phối")) {
+                    row.style.display = "none";
+                } else {
+                    row.style.display = "";
+                }
+            }
+        }
+        isFiltered = !isFiltered;
+    }
+
+    function phoiCatheGiong(id) {
+        if (confirm(`Bạn muốn phối cá thể này ${id} ?`)) {
+            fetch(`/CaTheGiong/Phoi?id=${id}`, { method: 'POST' })
+                .then(response => {
+                    if (response.ok) {
+                        const row = document.getElementById(`row-${id}`);
+                        row.style.backgroundColor = '#FFE4B5';
+                        row.classList.add('highlight-phoi');
+                        const tinhTrangSucKhoeCell = row.querySelector('.tinh-trang-suc-khoe');
+                        tinhTrangSucKhoeCell.textContent = `Vừa phối ${formatDate(new Date())}`;
+                        location.reload(); // Tải lại trang
+                    } else {
+                        console.log('Lỗi khi cập nhật TinhTrangSucKhoe');
+                    }
+                });
+        } else {
+            let confirmMsg = document.getElementById("confirm-msg");
+            confirmMsg.innerHTML = `<span class="confirm-msg">Bạn đã hủy thao tác phối cá thể ${id}.</span>`;
+        }
+    }
+
+
+
+    function formatDate(date) {
+        const day = String(date.getDate()).padStart(2, '0');
+        const month = String(date.getMonth() + 1).padStart(2, '0');
+        const year = date.getFullYear();
+        return `${day}/${month}/${year}`;
+    }
+    //Không đậu
+    function khongDau(id) {
+        if (confirm(`Bạn muốn đánh dấu cá thể ${id} là Không đậu?`)) {
+            fetch(`/CaTheGiong/KhongDau?id=${id}`, { method: 'POST' })
+                .then(response => {
+                    if (response.ok) {
+                        const row = document.getElementById(`row-${id}`);
+                        row.style.backgroundColor = '#FAF0E6';
+                        const tinhTrangSucKhoeCell = row.querySelector('.tinh-trang-suc-khoe');
+                        tinhTrangSucKhoeCell.textContent = 'Tốt';
+                        location.reload(); // Tải lại trang
+                    } else {
+                        console.log('Lỗi khi cập nhật TinhTrangSucKhoe');
+                    }
+                });
+        } else {
+            let confirmMsg = document.getElementById("confirm-msg");
+            confirmMsg.innerHTML = `<span class="confirm-msg">Bạn đã hủy đánh dấu cá thể ${id} là Không đậu.</span>`;
+        }
+    }
+
+
+    //ThuThai
+    function thuThai(id) {
+        if (confirm(`Bạn muốn đánh dấu cá thể ${id} là thụ thai không?`)) {
+            const currentDate = formatDate(new Date());
+            fetch(`/CaTheGiong/ThuThai?id=${id}&ngayThai=${currentDate}`, { method: 'POST' })
+                .then(response => {
+                    if (response.ok) {
+                        const row = document.getElementById(`row-${id}`);
+                        row.style.backgroundColor = '#FAF0E6';
+                        const tinhTrangSucKhoeCell = row.querySelector('.tinh-trang-suc-khoe');
+                        tinhTrangSucKhoeCell.textContent = 'Mang thai';
+                        const lichSuPhoiCell = row.querySelector('.lich-su-phoi');
+                        lichSuPhoiCell.textContent = '0';
+                        location.reload(); // Tải lại trang
+                    } else {
+                        console.log('Lỗi khi cập nhật TinhTrangSucKhoe');
+                    }
+                });
+        } else {
+            let confirmMsg = document.getElementById("confirm-msg");
+            confirmMsg.innerHTML = `<span class="confirm-msg">Bạn đã hủy đánh dấu cá thể ${id} là thụ thai.</span>`;
+        }
+    }</script>
+<span id="confirm-msg"></span>

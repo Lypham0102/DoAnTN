@@ -106,7 +106,6 @@
     }
 </style>
 
-
 <h2 style="text-align: center;">Lịch tiêm chủng</h2>
 
 <p>Số lượng cá thể cần tiêm chủng: @ViewBag.SoLuongCaTheCanTiemChung</p>
@@ -122,17 +121,20 @@
         int ngayTuoiTiemValue = item.Item3; // Thay đổi kiểu dữ liệu từ DateTime sang int
         DateTime ngayTuoiTiem = new DateTime(ngayTuoiTiemValue); // Tạo đối tượng DateTime từ giá trị int
 
-        if (!groups.ContainsKey(caThe.Chuong))
+        if (!string.IsNullOrEmpty(caThe.Chuong)) // Chỉ duyệt những cá thể có chuồng khác rỗng
         {
-            groups[caThe.Chuong] = new Dictionary<string, List<(CaThe, string, DateTime)>>();
-        }
+            if (!groups.ContainsKey(caThe.Chuong))
+            {
+                groups[caThe.Chuong] = new Dictionary<string, List<(CaThe, string, DateTime)>>();
+            }
 
-        if (!groups[caThe.Chuong].ContainsKey(tenDotTiem))
-        {
-            groups[caThe.Chuong][tenDotTiem] = new List<(CaThe, string, DateTime)>();
-        }
+            if (!groups[caThe.Chuong].ContainsKey(tenDotTiem))
+            {
+                groups[caThe.Chuong][tenDotTiem] = new List<(CaThe, string, DateTime)>();
+            }
 
-        groups[caThe.Chuong][tenDotTiem].Add((caThe, tenDotTiem, ngayTuoiTiem));
+            groups[caThe.Chuong][tenDotTiem].Add((caThe, tenDotTiem, ngayTuoiTiem));
+        }
     }
 
     foreach (var chuong in groups)
@@ -145,8 +147,9 @@
                 <h4>Đợt tiêm: @dotTiem.Key</h4>
                 <table>
                     <tr>
-                        <th style="width: 300px;">ID cá thể</th>
-                        <th>Tuổi cá thể (ngày)</th>
+                        <th style="width: 300px;">Mã cá thể</th>
+                        <th style="width: 150px;">Tuổi cá thể (ngày)</th>
+                        @*<th>Tình trạng công việc</th>*@
                         @*<th>Ngày tuổi tiêm</th>*@
                     </tr>
                     @foreach (var item in dotTiem.Value)
@@ -156,7 +159,7 @@
                         DateTime ngayTuoiTiem = item.Item3;
 
                         <tr>
-                            <td>@caThe._id</td>
+                            <td>@caThe.MaCT</td>
                             <td>@caThe.NgayTuoi</td>
                             @*<td>@ngayTuoiTiem.ToString("dd/MM/yyyy")</td>*@
                         </tr>

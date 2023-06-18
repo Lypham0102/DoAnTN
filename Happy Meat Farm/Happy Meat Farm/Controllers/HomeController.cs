@@ -108,6 +108,10 @@ namespace Happy_Meat_Farm.Controllers
         {
             return View();
         }
+        public IActionResult IOTNV()
+        {
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
