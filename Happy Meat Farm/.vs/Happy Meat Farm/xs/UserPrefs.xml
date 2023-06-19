@@ -1,5 +1,12 @@
 ﻿<Properties StartupConfiguration="{1900C92F-6A65-4269-AEC6-739CF738D02E}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Happy_220Meat_220Farm PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
   <Debugger.DebugSourceFolders />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Happy Meat Farm/Data/CaTheDBContext.cs">
     <Files>
       <File FileName="Happy Meat Farm/Controllers/CaTheGiongController.cs" />
@@ -110,9 +117,7 @@
           <Node name="Happy Meat Farm" expanded="True">
             <Node name="Happy Meat Farm" expanded="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="Data" expanded="True">
-                <Node name="CaTheDBContext.cs" selected="True" />
-              </Node>
+              <Node name="Data" expanded="True" />
               <Node name="Interface" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
@@ -134,11 +139,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Happy_220Meat_220Farm PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
